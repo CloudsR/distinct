@@ -1,0 +1,75 @@
+<!--{template common/header}-->
+
+    <!-- Bootstrap -->
+    <link href="source/plugin/cxpform/resource/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<script type="text/javascript" src="source/plugin/cxpform/resource/js/jquery.js" language="javascript"></script>
+	<script type="text/javascript">var jq = jQuery.noConflict();</script>
+	<script type="text/javascript" src="source/plugin/cxpform/resource/js/jquery.form.js" language="javascript"></script>
+	<script type="text/javascript" src="source/plugin/cxpform/resource/js/jquery.validate.min.js" language="javascript"></script>
+	<script type="text/javascript" src="source/plugin/cxpform/resource/js/My97DatePicker/WdatePicker.js" language="javascript"></script>
+	<link rel="stylesheet" type="text/css" href="source/plugin/cxpform/resource/css/style.css" />
+
+	<div class="container-fluid">
+	  <div class="panel panel-default" style="margin-top:10px;">
+		<div class="panel-body">
+			<!--{if $submit_setting['show_title'] == '1'}-->
+			<h1>{$forminfo['title']}</h1>
+			<!--{/if}-->
+			<!--{if $submit_setting['show_description'] == '1'}-->
+			<div class="well">{$forminfo['description']}</div>
+			<!--{/if}-->
+			<form role="form" method="post" action="plugin.php?id=cxpform:style2&form_id={$form_id}&op=search">
+				<!--{loop $fields $field}-->
+			{eval if($field['is_search'] == '0') continue;}
+			  <div class="form-group">
+				<label for="search_item_{$field['id']}">{$field['field_label']}</label>
+				<input type="text" name="field_{$field['id']}" class="form-control" id="search_item_{$field['id']}" placeholder="{$search_arr[$field['id']]}">
+			  </div>
+			 <!--{/loop}-->
+			  <button type="submit" class="btn btn-primary">{lang cxpform:search}</button>
+			</form>		
+			<p></p>
+		  <div class="table-responsive">
+			<table class="table table-bordered table-striped">
+			  <thead>
+				<tr>
+				  <!--{loop $fields $field}-->
+				  {eval if($field['is_header'] == '0') continue;}
+			      <th>{$field['field_label']}</th>
+				  <!--{/loop}-->
+				</tr>
+			  </thead>
+			  <tbody>
+				<!--{eval $count = count($results);}-->
+				<!--{if $count > 0}-->
+				<!--{loop $results $kk $row}-->
+				<!--{eval $content_extra_arr = cxpform_content_extra($row['id']);}-->
+				<tr>
+					<!--{loop $fields $field}-->
+					{eval if($field['is_header'] == '0') continue;}
+					<td>{$content_extra_arr[$field['id']]}</td>
+					<!--{/loop}-->
+					
+				</tr>				
+				<!--{/loop}-->
+				<!--{else}-->
+				<tr><td colspan="{eval echo count($fields);}" style="text-align:center;">{lang cxpform:nodata}</td></tr>
+				<!--{/if}-->				
+			  </tbody>
+			</table>
+		  </div>
+		  <ul class="pagination">{$multi}</ul>
+		</div>
+	  </div>
+	</div>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="source/plugin/cxpform/resource/bootstrap/js/bootstrap.min.js"></script>
+<!--{template common/footer}-->

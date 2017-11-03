@@ -1,0 +1,84 @@
+<!--{subtemplate common/header}-->
+		<script type="text/javascript" src="source/plugin/cxpform/resource/js/jquery.js" language="javascript"></script>
+		<script type="text/javascript">var jq = jQuery.noConflict();</script>
+
+		<link rel="stylesheet" type="text/css" href="source/plugin/cxpform/resource/css/style.css" />
+
+			<style type="text/css">
+			.trodd{background-color:#F7F7F7;}
+			.trcur{background-color:#C2D5E3;}
+			.tfm td{padding:5px;}
+			
+			.dt td{padding:5px;}
+			</style>
+		
+		<div class="fl bm"><div class="bm bmw cl"><div class="bm_c"><div id="postbox">
+		<!--{if $submit_setting['show_title'] == '1'}-->
+		<h1 style="text-align:center;font-size:30px;">{$forminfo['title']}</h1>
+		<!--{/if}-->
+		
+		<!--{if $submit_setting['show_description'] == '1'}-->
+		<div style="padding:20px;line-height:25px;">{$forminfo['description']}</div>
+		<!--{/if}-->
+
+		<div style="padding:20px;"><div class="error" id="result"></div>
+		
+			<div class="bm_h cl">
+			  <span class="o"></span>
+			  <h2><a>{lang cxpform:search}</a></h2>
+			</div>
+				
+			<form method="post" action="plugin.php?id=cxpform:style1&form_id={$form_id}&op=search" id="cxpform{$form_id}">
+			<input type="hidden" name="formhash" value="{FORMHASH}" />	
+			<table cellspacing="0" cellpadding="0" class="tfm">
+			<!--{loop $fields $field}-->
+			{eval if($field['is_search'] == '0') continue;}
+			<tr>
+				<td width="30%">{$field['field_label']}:</td><td><input type="text" name="field_{$field['id']}" id="field_{$field['id']}" class="px" style="width:150px;" value="{$search_arr[$field['id']]}" /></td>
+			</tr>
+			
+			<!--{/loop}-->
+			<tr><td></td><td><button type="submit" name="formsubmit" id="cxpform{$form_id}btn" value="true" class="pn pnc"><strong>{lang cxpform:search}</strong></button> </td></tr>
+			</table>
+			</form>
+				
+				
+		
+			<div class="bm_h cl">
+				  <span class="o"></span>
+				  <h2><a>{lang cxpform:results}</a></h2>
+				</div>
+		   <table cellspacing="0" cellpadding="0" class="dt" border="1" style="width:100%;">
+			<tr class="header">
+				
+				<!--{loop $fields $field}-->
+				{eval if($field['is_header'] == '0') continue;}
+				<th>{$field['field_label']}</th>
+				<!--{/loop}-->
+			</tr>
+			<!--{eval $count = count($results);}-->
+			<!--{if $count > 0}-->
+			<!--{eval $kk = 0;}-->
+			<!--{loop $results $row}-->
+			<!--{eval $content_extra_arr = cxpform_content_extra($row['id']);}-->
+			<tr {if $kk % 2 == 1}class="alt"{/if}>
+				
+				<!--{loop $fields $field}-->
+				{eval if($field['is_header'] == '0') continue;}
+				<td>{$content_extra_arr[$field['id']]}</td>
+				<!--{/loop}-->
+				
+			</tr>
+			<!--{eval $kk++;}-->
+			<!--{/loop}-->
+			<!--{else}-->
+			<tr><td colspan="{eval echo count($fields);}" style="text-align:center;">{lang cxpform:nodata}</td></tr>
+			<!--{/if}-->
+		   </table>	
+		   <div class="cl" style="padding:4px 0 4px ;">{$multi}</div>	
+		</div></div></div>
+
+		
+		</div></div>
+	
+<!--{subtemplate common/footer}-->

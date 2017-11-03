@@ -1,0 +1,124 @@
+<!--{subtemplate common/header}-->
+		<script type="text/javascript" src="source/plugin/cxpform/resource/js/jquery.js" language="javascript"></script>
+		<script type="text/javascript">var jq = jQuery.noConflict();</script>
+		<script type="text/javascript" src="source/plugin/cxpform/resource/jquery.widget/jquery.citys.js"></script>
+		<script type="text/javascript" src="source/plugin/cxpform/resource/js/jquery.form.js" language="javascript"></script>
+		<script type="text/javascript" src="source/plugin/cxpform/resource/js/jquery.validate.min.js" language="javascript"></script>
+		<script type="text/javascript" src="source/plugin/cxpform/resource/js/My97DatePicker/WdatePicker.js" language="javascript"></script>
+		<link rel="stylesheet" type="text/css" href="source/plugin/cxpform/resource/css/style.css" />
+			<script type="text/javascript">
+				jq(function(){
+					jq('#fromurl').val(window.location.href);
+					jq('#cxpform{$form_id}').validate({
+						ignore: "",
+						errorPlacement: function(error, element) {
+							var id = element.attr('id');
+							if(element.attr("type") == "checkbox"){
+								id = element.attr("name").substring(0, element.attr("name").length - 2);
+								error.appendTo('#' + id + 'error');
+							}
+							if(element.attr("type") == "radio"){
+								id = element.attr("name");
+								error.appendTo('#' + id + 'error');
+							}
+							if(jq(document).find('#' + id + 'error')){
+								error.appendTo('#' + id + 'error');
+							}
+						}
+					});
+					jq('#cxpform{$form_id}').ajaxForm({
+						target:'#result',
+						success:function(responseText, statusText, xhr, form){
+							if(responseText == '{lang cxpform:success}'){
+								jq('#cxpform{$form_id}btn').attr('disabled','disabled');
+								showDialog(responseText, 'notice');
+							}else{
+								showDialog(responseText, 'notice');
+							}
+						}
+					});
+				});
+			</script>
+			<style type="text/css">
+			.trodd{background-color:#F7F7F7;}
+			.trcur{background-color:#C2D5E3;}
+			</style>
+<div id="pt" class="wp cl bbs">
+
+<div class="z">
+	<a href="index.php" class="nvhm">$_G['setting']['bbname']</a><em>&rsaquo;</em><a href="plugin.php?id=cxpform:style1&form_id={$forminfo['id']}">{$forminfo['title']}</a>
+
+</div>
+</div>			
+		<div class="fl bm"><div class="bm bmw cl"><div class="bm_c"><div id="postbox">
+		
+
+		
+		<!--{if $submit_setting['show_title'] == '1'}-->
+		<h1 style="text-align:center;font-size:30px;">{$forminfo['title']}</h1>
+		<!--{/if}-->
+		<!--{if $submit_setting['show_description'] == '1'}-->
+		<div style="padding:20px;line-height:25px;">{$forminfo['description']}</div>
+		<!--{/if}-->
+		
+		<div style="padding:20px;"><div class="error" id="result"></div>
+		<!--{eval $fieldcount = count($fields);}-->
+		<!--{if $fieldcount > 0}-->
+			
+			<form method="post" action="plugin.php?id=cxpform:style1&form_id={$form_id}" id="cxpform{$form_id}" enctype="multipart/form-data">
+			<input type="hidden" name="formhash" value="{FORMHASH}" />
+			<input type="hidden" name="fromurl" id="fromurl" />
+			<table cellspacing="0" cellpadding="0" class="tfm">
+				
+				<!--{eval $ii = 1;}-->
+				<!--{loop $fields $field}-->
+					<tr {if $ii % 2 == 1}class="trodd"{/if}><td style="border-bottom:1px solid #EFEFEF;padding:5px 0">
+						<strong style="padding-left:5px;">{$ii}{lang cxpform:dunhao} {$field['field_label']} {if $field['isrequired'] == '1'}<span class="rq">*</span>{/if}</strong>
+						<p style="padding:10px 20px 0 10px;"><!--{eval echo cxpform_render_field($field);}--></p>
+						{if $field['field_desc'] != ''}<p class="d" style="padding-left:10px;">{eval echo nl2br($field['field_desc']);}</p>{/if}
+					</td></tr>
+					<!--{eval $ii++;}-->
+				<!--{/loop}-->
+				
+
+				<!--{if $submit_setting['iscaptcha'] == '1'}-->
+					<tr><td style="border-bottom:1px solid #EFEFEF;padding:5px 0">
+						<strong style="padding-left:5px;">{lang cxpform:captcha}:<span class="rq">*</span></strong>
+						<p style="padding:10px 20px 0 10px;"><input type="text" name="captcha_code" id="captcha_code" class="px" style="width:100px;" autocomplete="off" /><img id="captcha_img" src="{$_G['siteurl']}source/plugin/cxpform/include/securimage/securimage_show.php" width="100" height="30" style="vertical-align:bottom;" /> <a href="#" onclick="document.getElementById('captcha_img').src='{$_G['siteurl']}source/plugin/cxpform/include/securimage/securimage_show.php?r=' + Math.random();return false;">{lang cxpform:reload_captcha}</a></p><p id="captcha_codeerror" style="padding-left:10px;clear:both;"></p>
+					</td></tr>
+					<script type="text/javascript">jq(function(){jq('#captcha_code').rules('add', {required:true,messages:{required:'{lang cxpform:captcha} {lang cxpform:empty}'}});});</script>
+				<!--{/if}-->
+				
+				<!--{if $submit_setting['show_submit_count'] == '1'}-->
+				<tr><td>{lang cxpform:submit_count}: {$submit_count}</td></tr>
+				<!--{/if}-->
+				
+				<!--{if $forminfo['status'] == '0'}-->
+					<tr><td class="error">{lang cxpform:can_not_submit}</td></tr>
+				<!--{else}-->
+					
+					<!--{if $forminfo['startdate'] != '0' && $forminfo['startdate'] > $curtime}-->
+						<tr><td class="error">{lang cxpform:can_not_submit1}</td></tr>
+					<!--{else}-->
+						<!--{if $forminfo['enddate'] != '0' && $forminfo['enddate'] < $curtime}-->
+							<tr><td class="error">{lang cxpform:can_not_submit}</td></tr>
+						<!--{else}-->
+							<tr><td><button type="submit" name="formsubmit" id="cxpform{$form_id}btn" value="true" class="pn pnc"><strong>{lang cxpform:submit}</strong></button>
+							<!--{if $submit_setting['show_history'] > 0}--> 
+							<a href="plugin.php?id=cxpform&op=my_contents&form_id={$form_id}" target="_blank">{lang cxpform:dashboard_nav2}</a><!--{/if}--></td></tr>
+						<!--{/if}-->
+					<!--{/if}-->
+					
+				<!--{/if}-->
+				
+				<tr><td align="right">Support by: <a href="http://addon.discuz.com/?@cxpform.plugin" target="_blank" rel="nofollow">cxpform</a></td></tr>
+			</table>
+			</form>
+			
+
+		<!--{/if}-->
+		</div></div></div>
+		
+		</div></div>
+	
+<!--{subtemplate common/footer}-->

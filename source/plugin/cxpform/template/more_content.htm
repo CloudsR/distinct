@@ -1,0 +1,195 @@
+<script type="text/javascript">
+function addtr(obje,smsid){
+  atime=new Date();
+  aid=atime.getMilliseconds();
+	filterstr = jq(obje).prev('#filter').val();
+	
+	orderid = jq('#leafattrlist').children('tr').length;
+	
+	switch(filterstr){
+		case 'addtime':
+			str = '<tr><td><input type="hidden" name="aclid[]" /><select name="logical[]" tabindex="4"><option value="or">{lang cxpform:more_content_tip5}</option><option value="and" selected="">{lang cxpform:more_content_tip6}</option></select></td><td><input type="hidden" name="filtertype[]" value="addtime" /><input type="hidden" name="executionorder[]" value="'+orderid+'" />{lang cxpform:more_content_tip13}</td><td><select name="comparison[]" tabindex="64"><option value="==" selected="">{lang cxpform:more_content_tip7}</option><option value="!=">{lang cxpform:more_content_tip8}</option><option value="&gt;">{lang cxpform:more_content_tip9}</option><option value="&gt;=">{lang cxpform:more_content_tip10}</option><option value="&lt;">{lang cxpform:more_content_tip11}</option><option value="&lt;=">{lang cxpform:more_content_tip12}</option></select></td><td><input type="text" name="data[]" readonly="readonly" value="{eval echo date("Y-m-d");}" style="width:200px;" class="wDate" onfocus="WdatePicker({dateFmt:\'yyyy-MM-dd\'})" /></td><td><input type="button" class="btn" value="{lang cxpform:delete}" onclick="deltr(this);" data-pk="" /></td></tr>';
+			break;
+		case 'bookingtime':
+			str = '<tr><td><input type="hidden" name="aclid[]" /><select name="logical[]" tabindex="4"><option value="or">{lang cxpform:more_content_tip5}</option><option value="and" selected="">{lang cxpform:more_content_tip6}</option></select></td><td><input type="hidden" name="filtertype[]" value="bookingtime" /><input type="hidden" name="executionorder[]" value="'+orderid+'" />{lang cxpform:more_content_tip14}</td><td><select name="comparison[]" tabindex="64"><option value="==" selected="">{lang cxpform:more_content_tip7}</option><option value="!=">{lang cxpform:more_content_tip8}</option><option value="&gt;">{lang cxpform:more_content_tip9}</option><option value="&gt;=">{lang cxpform:more_content_tip10}</option><option value="&lt;">{lang cxpform:more_content_tip11}</option><option value="&lt;=">{lang cxpform:more_content_tip12}</option></select></td><td><input type="text" name="data[]" readonly="readonly" value="{eval echo date("Y-m-d");}" class="wDate" onfocus="WdatePicker({dateFmt:\'yyyy-MM-dd\'})" style="width:200px;" /></td><td><input type="button" class="btn" value="{lang cxpform:delete}" onclick="deltr(this);" data-pk="" /> </td></tr>';
+			break;
+		case 'bookingperson':
+			str = '<tr><td><input type="hidden" name="aclid[]" /><select name="logical[]" tabindex="4"><option value="or">{lang cxpform:more_content_tip5}</option><option value="and" selected="">{lang cxpform:more_content_tip6}</option></select></td><td><input type="hidden" name="filtertype[]" value="bookingperson" /><input type="hidden" name="executionorder[]" value="'+orderid+'" />{lang cxpform:more_content_tip15}</td><td><select name="comparison[]" tabindex="64"><option value="==" selected="">{lang cxpform:more_content_tip7}</option><option value="!=">{lang cxpform:more_content_tip8}</option><option value="&gt;">{lang cxpform:more_content_tip9}</option><option value="&gt;=">{lang cxpform:more_content_tip10}</option><option value="&lt;">{lang cxpform:more_content_tip11}</option><option value="&lt;=">{lang cxpform:more_content_tip12}</option></select></td><td><input type="text" name="data[]" style="width:200px;" /></td><td><input type="button" class="btn" value="{lang cxpform:delete}" onclick="deltr(this);" data-pk="" /></td></tr>';
+			break;
+		case 'ip':
+			str = '<tr><td><input type="hidden" name="aclid[]" /><select name="logical[]" tabindex="4"><option value="or">{lang cxpform:more_content_tip5}</option><option value="and" selected="">{lang cxpform:more_content_tip6}</option></select></td><td><input type="hidden" name="filtertype[]" value="ip" /><input type="hidden" name="executionorder[]" value="'+orderid+'" />IP</td><td><select name="comparison[]" tabindex="125"><option value="==">{lang cxpform:more_content_tip7}</option><option value="!=">{lang cxpform:more_content_tip8}</option></select></td><td><input type="text" name="data[]" style="width:200px;" /></td><td><input type="button" class="btn" value="{lang cxpform:delete}" onclick="deltr(this);" data-pk="" /></td></tr>';
+			break;
+		case 'area':
+			str = '<tr><td><input type="hidden" name="aclid[]" /><select name="logical[]" tabindex="4"><option value="or">{lang cxpform:more_content_tip5}</option><option value="and" selected="">{lang cxpform:more_content_tip6}</option></select></td><td><input type="hidden" name="filtertype[]" value="area" /><input type="hidden" name="executionorder[]" value="'+orderid+'" />{lang cxpform:more_content_tip17}</td><td><select name="comparison[]" tabindex="122"><option value="==" selected="">{lang cxpform:more_content_tip7}</option><option value="!=">{lang cxpform:more_content_tip8}</option><option value="=~">{lang cxpform:more_content_tip18}</option><option value="!~">{lang cxpform:more_content_tip19}</option><option value="=x">{lang cxpform:more_content_tip20}</option><option value="!x">{lang cxpform:more_content_tip21}</option></select></td><td><input type="text" name="data[]" style="width:200px;" /></td><td><input type="button" class="btn" value="{lang cxpform:delete}" onclick="deltr(this);" data-pk="" /></td></tr>';
+			break;
+	}
+
+  jq("#leafattrlist").append(str);
+} 
+
+ function deltr(obje){
+
+  jq(obje).parent().parent('tr').remove();
+	var oval = jq('#todelaclid').val();
+	var pk = jq(obje).attr('data-pk');
+	if(oval == ''){
+		jq('#todelaclid').val(pk);
+	}else{
+		jq('#todelaclid').val(oval + ',' + pk);
+	}
+ }
+
+</script>
+
+<a href="{XF_PLUGIN_URL}pmod=form&op=more_content&form_id={$form_id}" class="addtr">{lang cxpform:more_content_list}</a>
+
+<!--{if $op1 == 'add'}-->
+<form name="cpform" method="post" autocomplete="off" action="{XF_PLUGIN_URL}pmod=form&op=more_content&form_id={$form_id}&op1=add" id="cpform" formsubmit="">
+<!--{else}-->
+<form name="cpform" method="post" autocomplete="off" action="{XF_PLUGIN_URL}pmod=form&op=more_content&form_id={$form_id}&op1=edit&id={$id}" id="cpform" formsubmit="">
+<!--{/if}-->
+<input type="hidden" name="formhash" value="{FORMHASH}">
+<input type="hidden" id="formscrolltop" name="scrolltop" value="">
+<input type="hidden" name="anchor" value="">
+<table class="tb tb2 ">
+<tbody>
+	<tr><th colspan="15" class="partition">{lang cxpform:add_more_content}</th></tr>
+	
+	<tr><td colspan="2" class="td27" s="1">{lang cxpform:more_content}:</td></tr>
+	
+	<tr class="noborder">
+		<td class="vtop rowform"><textarea name="content" style="width:500px;height:100px;"><!--{if $op1 == 'edit'}-->{$info['content']}<!--{/if}--></textarea></td>
+		
+	</tr>
+	
+	<tr><td colspan="2" class="td27" s="1">{lang cxpform:more_content_tip1}:</td></tr>
+
+	<tr class="noborder">
+		<td class="vtop">
+			<table class="tb">
+				<tr><td>{lang cxpform:more_content_tip2}<select id="filter" class="valid">
+		
+			<option value="addtime">{lang cxpform:more_content_tip13}</option>
+			<option value="bookingtime">{lang cxpform:more_content_tip14}</option>
+			<option value="bookingperson">{lang cxpform:more_content_tip15}</option>
+			<option value="ip">{lang cxpform:more_content_tip16}</option>
+			<option value="area">{lang cxpform:more_content_tip17}</option>
+			
+			</select><input type="button" class="btn" value="{lang cxpform:more_content_tip4}" onclick="addtr(this,0);"></td></tr>
+				<tr><td>{lang cxpform:more_content_tip3}</td></tr>
+				<tr><td>
+					<table class="tb">
+						<tbody id="leafattrlist">
+							<!--{if $op1 == 'add'}-->
+							<!--{else}-->
+							<!--{loop $acls $acl}-->
+							
+							<!--{if $acl['filtertype'] == 'addtime'}-->
+							<tr><td><input type="hidden" name="aclid[]" value="{$acl['id']}" />
+								<select name="logical[]" tabindex="4">
+									<option value="or" {if $acl['logical'] == 'or'}selected="selected"{/if}>{lang cxpform:more_content_tip5}</option>
+									<option value="and" {if $acl['logical'] == 'and'}selected="selected"{/if}>{lang cxpform:more_content_tip6}</option></select></td>
+									<td><input type="hidden" name="filtertype[]" value="{$acl['filtertype']}" /><input type="hidden" name="executionorder[]" value="{$acl['executionorder']}" />{lang cxpform:more_content_tip13}</td>
+									<td><select name="comparison[]" tabindex="64">
+									<option value="==" {if $acl['comparison'] == '=='}selected="selected"{/if}>{lang cxpform:more_content_tip7}</option>
+									<option value="!=" {if $acl['comparison'] == '!='}selected="selected"{/if}>{lang cxpform:more_content_tip8}</option>
+									<option value="&gt;" {if $acl['comparison'] == '>'}selected="selected"{/if}>{lang cxpform:more_content_tip9}</option>
+									<option value="&gt;=" {if $acl['comparison'] == '>='}selected="selected"{/if}>{lang cxpform:more_content_tip10}</option>
+									<option value="&lt;" {if $acl['comparison'] == '<'}selected="selected"{/if}>{lang cxpform:more_content_tip11}</option>
+									<option value="&lt;=" {if $acl['comparison'] == '<='}selected="selected"{/if}>{lang cxpform:more_content_tip12}</option>
+									</select></td>
+									<td><input type="text" name="data[]" readonly="readonly" value="{$acl['data']}" style="width:200px;" class="wDate" onfocus="WdatePicker({dateFmt:\'yyyy-MM-dd HH:mm:ss\'})" /></td>
+									<td><input type="button" class="btn" value="{lang cxpform:delete}" onclick="deltr(this);" data-pk="{$acl['id']}" /></td></tr>
+							<!--{/if}-->
+							
+							<!--{if $acl['filtertype'] == 'bookingtime'}-->
+							<tr><td><input type="hidden" name="aclid[]" value="{$acl['id']}" />
+								<select name="logical[]" tabindex="4">
+									<option value="or" {if $acl['logical'] == 'or'}selected="selected"{/if}>{lang cxpform:more_content_tip5}</option>
+									<option value="and" {if $acl['logical'] == 'and'}selected="selected"{/if}>{lang cxpform:more_content_tip6}</option></select></td>
+									<td><input type="hidden" name="filtertype[]" value="{$acl['filtertype']}" /><input type="hidden" name="executionorder[]" value="{$acl['executionorder']}" />{lang cxpform:more_content_tip13}</td>
+									<td><select name="comparison[]" tabindex="64">
+									<option value="==" {if $acl['comparison'] == '=='}selected="selected"{/if}>{lang cxpform:more_content_tip7}</option>
+									<option value="!=" {if $acl['comparison'] == '!='}selected="selected"{/if}>{lang cxpform:more_content_tip8}</option>
+									<option value="&gt;" {if $acl['comparison'] == '>'}selected="selected"{/if}>{lang cxpform:more_content_tip9}</option>
+									<option value="&gt;=" {if $acl['comparison'] == '>='}selected="selected"{/if}>{lang cxpform:more_content_tip10}</option>
+									<option value="&lt;" {if $acl['comparison'] == '<'}selected="selected"{/if}>{lang cxpform:more_content_tip11}</option>
+									<option value="&lt;=" {if $acl['comparison'] == '<='}selected="selected"{/if}>{lang cxpform:more_content_tip12}</option>
+									</select></td>
+									<td><input type="text" name="data[]" readonly="readonly" value="{$acl['data']}" style="width:200px;" class="wDate" onfocus="WdatePicker({dateFmt:\'yyyy-MM-dd\'})" /></td>
+									<td><input type="button" class="btn" value="{lang cxpform:delete}" onclick="deltr(this);" data-pk="{$acl['id']}" /></td></tr>
+							<!--{/if}-->	
+
+							<!--{if $acl['filtertype'] == 'bookingperson'}-->
+							<tr><td><input type="hidden" name="aclid[]" value="{$acl['id']}" />
+								<select name="logical[]" tabindex="4">
+									<option value="or" {if $acl['logical'] == 'or'}selected="selected"{/if}>{lang cxpform:more_content_tip5}</option>
+									<option value="and" {if $acl['logical'] == 'and'}selected="selected"{/if}>{lang cxpform:more_content_tip6}</option></select></td>
+									<td><input type="hidden" name="filtertype[]" value="{$acl['filtertype']}" /><input type="hidden" name="executionorder[]" value="{$acl['executionorder']}" />{lang cxpform:more_content_tip13}</td>
+									<td><select name="comparison[]" tabindex="64">
+									<option value="==" {if $acl['comparison'] == '=='}selected="selected"{/if}>{lang cxpform:more_content_tip7}</option>
+									<option value="!=" {if $acl['comparison'] == '!='}selected="selected"{/if}>{lang cxpform:more_content_tip8}</option>
+									<option value="&gt;" {if $acl['comparison'] == '>'}selected="selected"{/if}>{lang cxpform:more_content_tip9}</option>
+									<option value="&gt;=" {if $acl['comparison'] == '>='}selected="selected"{/if}>{lang cxpform:more_content_tip10}</option>
+									<option value="&lt;" {if $acl['comparison'] == '<'}selected="selected"{/if}>{lang cxpform:more_content_tip11}</option>
+									<option value="&lt;=" {if $acl['comparison'] == '<='}selected="selected"{/if}>{lang cxpform:more_content_tip12}</option>
+									</select></td>
+									<td><input type="text" name="data[]" readonly="readonly" value="{$acl['data']}" style="width:200px;" /></td>
+									<td><input type="button" class="btn" value="{lang cxpform:delete}" onclick="deltr(this);" data-pk="{$acl['id']}" /></td></tr>
+							<!--{/if}-->	
+
+							<!--{if $acl['filtertype'] == 'ip'}-->
+							<tr><td><input type="hidden" name="aclid[]" value="{$acl['id']}" />
+								<select name="logical[]" tabindex="4">
+									<option value="or" {if $acl['logical'] == 'or'}selected="selected"{/if}>{lang cxpform:more_content_tip5}</option>
+									<option value="and" {if $acl['logical'] == 'and'}selected="selected"{/if}>{lang cxpform:more_content_tip6}</option></select></td>
+									<td><input type="hidden" name="filtertype[]" value="{$acl['filtertype']}" /><input type="hidden" name="executionorder[]" value="{$acl['executionorder']}" />{lang cxpform:more_content_tip13}</td>
+									<td><select name="comparison[]" tabindex="64">
+									<option value="==" {if $acl['comparison'] == '=='}selected="selected"{/if}>{lang cxpform:more_content_tip7}</option>
+									<option value="!=" {if $acl['comparison'] == '!='}selected="selected"{/if}>{lang cxpform:more_content_tip8}</option>
+									</select></td>
+									<td><input type="text" name="data[]" readonly="readonly" value="{$acl['data']}" style="width:200px;" /></td>
+									<td><input type="button" class="btn" value="{lang cxpform:delete}" onclick="deltr(this);" data-pk="{$acl['id']}" /></td></tr>
+							<!--{/if}-->
+
+							<!--{if $acl['filtertype'] == 'area'}-->
+							<tr><td><input type="hidden" name="aclid[]" value="{$acl['id']}" />
+								<select name="logical[]" tabindex="4">
+									<option value="or" {if $acl['logical'] == 'or'}selected="selected"{/if}>{lang cxpform:more_content_tip5}</option>
+									<option value="and" {if $acl['logical'] == 'and'}selected="selected"{/if}>{lang cxpform:more_content_tip6}</option></select></td>
+									<td><input type="hidden" name="filtertype[]" value="{$acl['filtertype']}" /><input type="hidden" name="executionorder[]" value="{$acl['executionorder']}" />{lang cxpform:more_content_tip13}</td>
+									<td><select name="comparison[]" tabindex="64">
+									<option value="==" {if $acl['comparison'] == '=='}selected="selected"{/if}>{lang cxpform:more_content_tip7}</option>
+									<option value="!=" {if $acl['comparison'] == '!='}selected="selected"{/if}>{lang cxpform:more_content_tip8}</option>
+									<option value="=~" {if $acl['comparison'] == '=~'}selected="selected"{/if}>{lang cxpform:more_content_tip18}</option>
+									<option value="!~" {if $acl['comparison'] == '!~'}selected="selected"{/if}>{lang cxpform:more_content_tip19}</option>
+									<option value="=x" {if $acl['comparison'] == '=x'}selected="selected"{/if}>{lang cxpform:more_content_tip20}</option>
+									<option value="!x" {if $acl['comparison'] == '!x'}selected="selected"{/if}>{lang cxpform:more_content_tip21}</option>
+									</select></td>
+									<td><input type="text" name="data[]" readonly="readonly" value="{$acl['data']}" style="width:200px;"  /></td>
+									<td><input type="button" class="btn" value="{lang cxpform:delete}" onclick="deltr(this);" data-pk="{$acl['id']}" /></td></tr>
+							<!--{/if}-->							
+							
+							<!--{/loop}-->
+							
+							
+							
+							<!--{/if}-->
+							<input type="hidden" name="todelaclid" id="todelaclid" />
+						</tbody>
+					</table>
+				</td></tr>
+			</table>
+		</td>
+	</tr>
+
+
+
+	<tr>
+		<td colspan="15"><div class="fixsel"><input type="submit" class="btn" id="submit_formsubmit" name="formsubmit" title="{lang submit_tips}" value="{lang submit}"></div></td>
+	</tr>
+	
+	<script type="text/JavaScript">_attachEvent(document.documentElement, 'keydown', function (e) { entersubmit(e, 'formsubmit'); });</script>
+</tbody>
+</table>
+</form>

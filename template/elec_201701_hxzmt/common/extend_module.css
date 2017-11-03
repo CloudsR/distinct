@@ -1,0 +1,335 @@
+ /* -----------------------------------------------------------------
+
+The Whole CSS written by Elecom.
+(C) Elecom Inc.
+Annoucement here,Copyright
+Shenzhen.Eleccom Technology.使用原代码请联系作者QQ: 2300184378 / 2017-04-09 20:00:06
+
+---------------------------------------------------------------------------------------*/
+
+/* ------------------------------------------------------------------------ 一些通用模块的样式 */
+
+
+/** forum **/
+
+.fl, .bm { border-color: #F0F0F0}
+.bm_h { border-top: 0; border-color: #F0F0F0}
+.bm_h { background: #F9F9F9}
+.fl .bm_h { padding: 3px 10px; border-top: 1px solid #F0F0F0; border-color: #F0F0F0; background: #F9F9F9}
+.fl .bmw .bm_h h2 {}
+.fl .bmw .bm_h a { color: #333333; font-weight: 400; font-size: 16px}
+.fl_row td { border-top: 1px dashed #EDEDED}
+.fl_g dt { font-size: 15px}
+.fl_g dd { padding: 5px 0}
+.fl_g dl { margin-right: 10px}
+.shoucang .fl_g dd { padding: 0}
+.shoucang .fl_g dt { font-size: 12px}
+.fl_g dd, .fl_g dd em, .fl_g dd a { color: #999999}
+.bbda { border-bottom: 1px dashed #EDEDED}
+
+/* 论坛幻灯片/Banner */
+
+.focusBox{position:relative;width:800px;height:450px;overflow:hidden}
+.focusBox .pic{position:relative;z-index:0}
+.focusBox .pic li::before{content:"";position:absolute;width:100%;height:100%;z-index:50;opacity:1;-webkit-transition:all .3s ease;transition:all .3s ease;background:-webkit-gradient(linear,0 30%,0 100%,from(rgba(0,0,0,0)),to(#121515));background:-moz-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,0),#121515);background:-ms-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,0),#121515);background:-o-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,0),#121515)}
+.focusBox .pic img{width:800px;height:450px;display:block; transition: all .5s ease-out;}
+.focusBox .pic:hover img { transform: matrix(1.04,0,0,1.04,0,0)}
+.focusBox .hd{width:100%;position:absolute;bottom:13px;text-align:center;font-size:0;z-index:1}
+.focusBox .hd li{margin:0 4px; height:7px;overflow:hidden;width:7px;cursor:pointer;display:inline-block;zoom:1; border: 1px solid #FFFFFF; border-radius: 50%; background: none}
+.focusBox .t-h1{ width: 720px; margin:0 30px;bottom:22px;position:absolute;font-size:24px;color:#fff;z-index:2; font-weight: 400}
+.focusBox .hd .on{ background: #FFFFFF}
+
+/** end **/
+
+
+
+
+
+/** forum::forumdisplay **/
+
+.ct2 .mn { overflow: visible}
+.gonggao { padding-left: 23px; background: url({STYLEIMGDIR}/light.png) no-repeat left center}
+
+.bdl { border: 0; background: #F8F8F8}
+.bdl dd a { margin: 0; padding: 2px 10px}
+.bdl dt a { padding: 2px 15px 2px 10px}
+.bdl dt { margin-bottom: 0; border: 0; background: url({STYLEIMGDIR}/a_d1.png) no-repeat 100px center #F3F3F3}
+.bdl dl.a dt { margin-bottom: 0; background: url({STYLEIMGDIR}/a_u.png) no-repeat 100px center #F3F3F3}
+.bdl dl.a { background: none}
+.bdl dd.bdl_a a { padding-left: 7px; background-color: #FFF;font-weight: 700;color: #3ca5f6;border-left: 3px solid #3ca5f6}
+
+.top-tougao{display:block!important;margin: 10px 0 0 0}
+.top-tougao a {float: left; display: inline-block; padding: 0;font-size: 16px;position: relative;background-color: #3ca5f6;color: #fff !important;width: 70px;height: 40px;line-height: 40px;text-align: center;z-index: 10; text-decoration: none}
+.top-tougao a:hover { background: #2F99EA}
+
+.bm { border: 0}
+.fl .bm_h { padding: 0; background: none}
+.tl .bm_c { padding: 0}
+.pgs #newspecialtmp { padding: 8px 25px; color: #FFFFFF; font-size: 16px; text-decoration: none; background: #3ca5f6}
+.pgs #newspecialtmp:hover { background: #52adf3}
+.bankuai li { float: left;width: 130px; margin: 0 10px 10px 0; text-align: center;font-size: 16px;padding: 8px 0;background: #F0F0F0}
+.bankuai li a { font-weight: bold; color: #3ca5f6}
+.management a { color: #BBBBBB}
+
+.showmenu { padding: 8px 25px 8px 15px; background-color: #F3F3F3; background-position: 95% 50%}
+#f_pst { display: none}
+.p_pop, .p_pof, .sllt { border: 0; box-shadow: 0 1px 15px rgba(18,21,21,.2)}
+.p_pop a { border: 0; color: #333333}
+.p_pop a:hover { color: #3ca5f6; background: none}
+.pop_moremenu a.xw1 { color: #3ca5f6; background: none}
+
+#atarget, .unchk, .chked { color: #999999}
+
+#moderate .thread_tit { width: 100%; padding: 14px 0 16px 5px}
+#moderate .thread_tit a:hover { color: #3ca5f6 !important}
+#moderate .thread_tit img { vertical-align: middle}
+#threadlisttableid .by, #threadlisttableid .num { width: 0}
+.xst { font-family: 'Microsoft Yahei','Simsun',Tahoma;font-size: 16px}
+
+.tl .th, .tl th, .tl td { border-top: 1px solid #F0F0F0; border-bottom: 0}
+.tl tr:hover th, .tl tr:hover td { background: none}
+.tl .thread_tit .emt_box { line-height: 23px;font-size: 14px;color: #C0C0C0;margin: 3px 0}
+.tl .ts th, .tl .ts td { background: #FAFAFA}
+#separatorline .ts th, #separatorline .ts td { border: 0}
+.emptb .th, .emptb th, .emptb td { border-top: 0}
+
+.list_au_info { color: #999999; font-family: "Helvetica Neue",Arial,"Hiragino Sans GB","STHeiti","Microsoft Yahei","SimSun","WenQuanYi Micro Hei",sans-serif}
+.list_au_info a { color: #999999}
+.tl .forumtit .list_au_info { margin-top: 10px;height: 20px;overflow: hidden}
+.tl .forumtit .list_au_info, .tl .forumtit .list_au_info a { color: #AAAAAA}
+
+/* 切换按钮优化/Tab */
+#thread_types { width: 100%; height: auto; margin-bottom: 0; overflow: hidden}
+.ttp {  padding-top: 0; margin-bottom: 0}
+.ttp li { float: left; padding-bottom: 0; margin-bottom: 10px; border: 0; box-shadow: none}
+.ttp a, .ttp strong { float: none; display: block; text-decoration: none;padding: 0 20px !important; margin: 0 !important; font-size: 16px; height: 36px; line-height: 36px; color: #333333; border: 0; border-bottom: 0; box-shadow: none; transition: all 0s ease 0s; background: none}
+.ttp .a a, .ttp a:hover { color: #FFFFFF; font-weight: 400; background: #3ca5f6}
+.ttp a:hover { color: #FFFFFF; font-weight: 400; background: #3ca5f6}
+.ttp .a a:hover, #ttp_all a:hover { color: #FFFFFF; font-weight: 400; background: #3ca5f6 !important}
+.ttp .num { display: none}
+.ttp .a .num { font-weight: normal; background: none}
+.ttp .a a:hover { background-color:#FFF; background-position: 100% 7px}
+.pgbtn a, #autopbn.bm_h { padding: 3px 0;border: 1px solid #f0f0f0 !important; margin-bottom: 30px;margin-top: 0;height: 55px;line-height: 55px;color: #bbb;font-size: 16px;text-align: center;cursor: pointer;border-radius: 0;transition: all .2s ease-out; box-shadow: none; background: #FFFFFF}
+
+/** end **/
+
+
+
+
+
+
+/** forum::viewthread **/
+
+.bm { border: 0}
+.tedt { border: 1px solid #f0f0f0 !important}
+.tedt .bar { padding: 5px 10px; border-bottom: 1px solid #F0F0F0}
+.pnpost .pn { background: #3ca5f6 !important}
+.pr, .pc { margin-top: -3px}
+.psti { line-height: 28px !important}
+.attach_nopermission{width:708px!important}
+.t_avatar img{width:42px;height:42px;border-radius:50%}
+
+.ct2 .mn{float:right;width:710px;border-right:0;margin:0 30px 0 0}
+.ct2 .sd{width:340px}
+
+.authi,.authi a{line-height:26px;color:#999;font-size:14px}
+.authi .author{color:#F35B4F}
+
+.pg_viewthread #mdly{margin-top:-30px!important;margin-left:95px!important;z-index:200!important}
+.plc{padding:0}
+
+.time_active{background:0 0;margin-bottom:20px;padding:0 0 20px 0}
+.elecom_top_info{box-shadow:none;border-radius:0;background:#FAFAFA}
+.box-author-info{padding:30px 0;background:0 0;text-align:center}
+.box-author-info .toux img{border-radius:50%;width:98px;height:98px}
+.box-author-info p{margin-top:10px}
+.box-author-info a{color:#333}
+
+.elecom_thread_stat{font-size:14px;padding:5px 0 30px 0;margin:0;text-align:center;background:0 0}
+.elecom_thread_stat li{display:inline-block;float:none;width:120px;padding-top:3px;border-width:0 1px 0 0;color:#afafaf}
+.ie7 .elecom_thread_stat li{float:left}
+.elecom_thread_stat li a{font-weight:400;color:#BBB;font-size:14px}
+.elecom_thread_stat li a:hover{color:#333}
+.elecom_thread_stat li p{margin-top:0}
+
+.author-next-article{text-align:left;padding:10px 30px 30px 30px;width:280px;margin-top:0;font-size:14px;border-top:1px solid #F3F3F3}
+.author-next-article .author-one{font-size:14px;margin:12px 0;color:#bbb}
+.author-next-article a{color:#333}
+
+.top-tougao{display:block!important;margin: 10px 0 0 0}
+.top-tougao a {float: left; display: inline-block; padding: 0;font-size: 16px;position: relative;background-color: #3ca5f6;color: #fff !important;width: 70px;height: 40px;line-height: 40px;text-align: center;z-index: 10; text-decoration: none}
+.top-tougao a:hover { background: #2F99EA}
+
+.pcb img{max-width:710px}
+#f_pst .plc{padding:20px 0}
+.pls{width:0!important;background:0 0!important;border:0!important;display:none!important}
+
+.tedt .area{background:#FAFAFA}
+.pgbtn{display:none}
+.pob em a{float:left}
+.pob em a.showmenu { padding-right: 16px !important}
+.floors a{color:#CCC!important;padding:3px 6px!important;margin:0!important;border:1px solid #F3F3F3!important;font-size:12px!important}
+.floors a:hover{color:#3ca5f6!important;border:1px solid #3ca5f6!important;background:0 0!important}
+.t_fsz{min-height:30px}
+.reply_p{padding-bottom:20px;margin-bottom:20px;border-bottom:1px solid #F0F0F0!important}
+.reply_tit{font-size:18px;height:18px;line-height:18px;padding:15px 0 25px 0;margin:0 0 20px 0;color:#BBB;border-bottom:1px solid #EEE}
+.replyadd{padding-left:20px!important;margin:0 10px 0 20px!important;background:url({STYLEIMGDIR}
+/ding.png) no-repeat left 9px}
+.replysubtract{padding-left:20px!important;margin:0 10px!important;background:url({STYLEIMGDIR}
+/cai.png) no-repeat left 11px}
+.cmmnt,.editp{background:0 0!important}
+.fastre{font-size:14px;padding:0 0 0 20px;color:#BBB!important;background:url({STYLEIMGDIR}
+/dianping.png) no-repeat left 0!important}
+.inside_avt img{width:50px;height:50px;border-radius:50%}
+.reply_tit h2{float:left;padding:0 20px 0 0;margin:0 20px 0 0;height:18px;line-height:18px;font-size:18px;color:#333;border-right:1px solid #CCC; font-weight: 400}
+.viewthread_foot .y a{margin:0 0 0 8px;color:#BBB;font-size:14px}
+
+#tt_post{padding:0 22px}
+#tt_post a.post{padding:5px 22px;color:#FFF;background:#E74987}
+
+.elecom_poll{border:1px solid #eee;border-radius:3px;margin:20px 0}
+.elecom_poll .bm_h{background:0 0;font-size:14px!important}
+.elecom_poll .pcht{font-size:14px;width:auto;padding:0 20px 0 20px}
+.elecom_poll .elecom_poll_td{border-bottom:1px dashed #eee;padding-bottom:10px}
+.elecom_poll .pvt,.elecom_poll .pvts{padding-top:10px}
+.elecom_poll .pbg{height:16px}
+
+.zprrtt{height:auto;width:710px;background:0 0;border-bottom:0;border-radius:0}
+.moquu_xrxia{padding:23px 13px 20px 22px;width:255px;color:#868686}
+.moquu_rrskzx{width:710px;padding:0}
+.moquu_rrbt .css{height:auto;float:none}
+
+.article_tit{width:100%;margin-bottom:20px;font-size:18px;margin-top:5px;line-height:42px;font-weight:400;color:#428bd1;font-family:Verdana,"微软雅黑"}
+.article_tit h1{font-size:28px;margin-top:-3px;font-weight:400;height:auto;color:#333}
+.article_tit h1 a{color:#333;font-family:arial,微软雅黑}
+
+.column-link-box{float:left;color:#BBB;padding-bottom:0;margin:0;font-size:14px;line-height:18px;width:100%}
+.column-link-box p{font-family:arial,Microsoft Yahei}
+.column-link-box a{color:#BBB;padding-right:0;font-size:14px}
+
+.moquu_rrbt .css span{font-size:12px;color:#adadad;font-weight:400}
+
+.cc1{display:inline-block;background:url({STYLEIMGDIR}/by.png) no-repeat;width:25px;height:18px;text-indent:-9999px}
+.cc2{display:inline-block;background:url({STYLEIMGDIR}/nc.png) no-repeat;width:18px;height:18px;text-indent:-9999px}
+
+.moquu_rrsc{float:right;font-size:14px;background-color:#9b9b9b;color:#fff;display:block;height:36px;-webkit-transition:all .3s ease-out;-moz-transition:all .3s ease-out;transition:all .3s ease-out;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;line-height:36px;padding-right:12px;cursor:pointer}
+.moquu_rrsc a{font-size:14px;color:#fff}
+.moquu_rrsc i{width:18px;height:15px;display:block;float:left;background:url({STYLEIMGDIR}/moquu_xin.png);margin:12px 10px 0 10px}
+.moquu_rrtt{font-size:12px;float:right;padding-top:5px;text-align:right;color:#c4c4c4}
+.moquu_rrtt{font-size:12px;text-align:right;color:#c4c4c4}
+
+.bm,.mn{overflow:visible}
+
+.pi{margin-bottom:0;padding:15px 0}
+.pi strong a{padding:0;color:#999;border:none}
+.pi strong a:hover{color:#F35B4F}
+
+.time_hf_avtar{position:absolute;left:0}
+.time_hf_avtar img{width:48px;height:48px;border-radius:50%}
+
+.elecom_news_p{width:100px;height:32px;line-height:32px;background:#E2231A;display:inline-block;color:#fff;font-size:14px;text-align:center}
+.elecom_news_p:hover{color:#fff}
+.elecom_news_p img{vertical-align:middle;margin-top:-5px;margin-right:6px}
+.elecom_viewtop{padding:10px;background:#fff;border-bottom:2px solid #E2231A;position:relative;z-index:2;margin-bottom:-10px}
+.elecom_thread_medal{background:#fafafa;text-align:center;padding:10px;border-top:1px solid #eee}
+.elecom_thread_medal img{max-height:40px;margin-right:10px}
+.elecom_tuijianlist{padding:0 20px}
+.elecom_tuijianlist ul{padding:15px 0 5px}
+.elecom_tuijianlist ul li{padding:0 0 12px}
+.elecom_tuijianlist ul li span{float:left;margin:9px 8px 9px 0;height:5px;width:5px;background-color:silver;border-radius:3px}
+.elecom_tuijianlist ul li a{color:#555;font-size:14px}
+.elecom_tuijianlist ul li:hover span{background-color:#F35B4F}
+.elecom_tuijianlist ul li a:hover{color:#F35B4F}
+
+
+.plc .opacity{opacity:0}
+.plc .manage_group2{display:inline-block;vertical-align:middle;float:right;margin-right:-15px;margin-top:8px;height:16px;width:16px;background-image:url({STYLEIMGDIR}/icon/icon2.png);background-position:0 -40px}
+.plc:hover .opacity{opacity:1}
+.plc .p_pop a{font-size:12px}
+.plc .p_pop a:hover{color:#F35B4F}
+
+.elecom_comment span { margin:-3px 5px 0 0;vertical-align:middle;height:16px;width:16px;display:inline-block;background-image:url({STYLEIMGDIR}/icon/icon2.png);background-position:-120px 0}
+.elecom_comment:hover span{background-position:-120px -20px}
+.elecom_fastre span{margin:-3px 5px 0 0;vertical-align:middle;height:16px;width:16px;display:inline-block;background-image:url({STYLEIMGDIR}/icon/icon2.png);background-position:-20px 0}
+.elecom_fastre:hover span{background-position:-20px -20px}
+
+.times_editp span{margin:-3px 5px 0 0;vertical-align:middle;height:16px;width:16px;display:inline-block;background-image:url({STYLEIMGDIR}/icon/icon2.png);background-position:-300px 0}
+.times_editp:hover span{background-position:-300px -20px}
+.times_appendp span{margin:-3px 5px 0 0;vertical-align:middle;height:16px;width:16px;display:inline-block;background-image:url({STYLEIMGDIR}/icon/icon2.png);background-position:-20px 0}
+.times_appendp:hover span{background-position:-20px -20px}
+.times_push span{display:none;margin:-2px 5px 0 0;vertical-align:middle;height:16px;width:16px;background:0 0}
+.times_rate span{margin:-3px 5px 0 0;vertical-align:middle;height:16px;width:16px;display:inline-block;background-image:url({STYLEIMGDIR}/icon/icon2.png);background-position:-220px 0}
+.times_rate:hover span{background-position:-220px -20px}
+
+#elecom_button{padding:0}
+#elecom_button a{background:#fd8e58;border-radius:3px;color:#fff}
+#elecom_button i{background:0 0!important}
+#elecom_button a#k_favorite{background:#fd8e58;color:#fff}
+#elecom_button a#k_favorite span{color:#fff}
+#elecom_button a#ak_rate{display:none;background:#F93;color:#fff}
+#elecom_button a#ak_rate span{color:#fff}
+#elecom_button a.followp{display:none;background:#76cf61;color:#fff}
+#elecom_button a#k_collect{display:none;background:#fa7070;color:#fff}
+#elecom_button a#k_collect span{color:#fff}
+
+#elecom_button a#recommend_add{ display: inline-block; height:27px;line-height:27px;padding: 9px 52px;border-radius:0;color:#BBB;border:1px solid #f6f6f6;font-size:14px;background:0 0}
+#elecom_button a#recommend_add:hover{border:1px solid #EEE}
+#elecom_button a#recommend_add span{ float: left; padding-left: 10px; color:#BBB}
+#elecom_button a#recommend_subtract{display:none;background:#888;color:#fff}
+#elecom_button a#recommend_subtract span{color:#fff}
+
+#elecom_button a.sharep{display:none}
+#elecom_button a.sharep span{color:#fff}
+
+
+.pob{padding-bottom:5px}
+.pob em{float:right}
+.pob em a{height:36px;line-height:36px;padding:0 0 0 10px;color:#BBB}
+.pob em a:hover{color:#F35B4F}
+.po{border:none}
+
+.rate{border:0;background-color:#F6F6F6;border-radius:0;padding:0 20px 20px 20px;margin-bottom:0}
+.rate::before{content:'';display:block;position:relative;width:0;height:0;border:10px solid transparent;border-bottom:15px solid #f6f6f6;top:-24px;left:10px}
+.ratc,.ratl td,.ratl th{padding:8px 2px;border-bottom:0}
+.ratl img{border-radius:50%;margin-right:5px}
+.ratl_l a{color:#F35B4F}
+.ratl .xw1 .xi1{color:#f63756!important;background:0 0!important}
+.cm .psth{background:#fafafa;margin:15px 0;padding:8px 10px;width:auto;border-radius:3px;text-align:center;border:0}
+.icon_ring{border:2px solid #fff;background:#F35B4F;margin-bottom:2px}
+
+.elecom_replycredit strong{color:#F35B4F;margin:0 10px 0 5px}
+.elecom_replycredit{color:#f60;margin-top:5px}
+.elecom_replycredit img{vertical-align:middle;margin-top:-3px}
+
+#vfastpost{padding:0;margin: 10px 0 0 0;border-top:0;background:0 0}
+#postlist .show{color:#999}
+#postlist .show:hover{color:#F35B4F}
+
+.elecom_applylist{border:1px solid #eee;border-radius:3px;padding:0 10px;margin-top:20px}
+.elecom_applylist .dt td,.elecom_applylist .dt th{border-bottom:1px solid #f0f0f0}
+.elecom_applylist h2{color:#F35B4F}
+
+.sign{padding-top:35px;margin-top:20px;border-top:1px dashed #E8E8E8;background:url({STYLEIMGDIR}/sign.png) no-repeat left 15px!important}
+.pnpost .y{color:#999}
+
+.pcht table tr.ptl td{border-bottom:1px solid #f2f2f2;padding:15px 0}
+.elecom_dianping{border:1px solid #eee;padding:10px;font-size:14px}
+.elecom_dianping h3{color:#F35B4F;font-size:14px;border-bottom:1px solid #eee;margin-bottom:5px;padding-bottom:5px}
+.elecom_dianping .vm img{border-radius:50%;margin-right:5px}
+
+.tedt .pt{width:93%!important;padding:20px!important;min-height:140px;background:#FAFAFA}
+.forum_tag a{float:left;height:35px;padding:0 15px;background-color:#f0f0f0;color:#bbb;line-height:35px;margin-right:10px;margin-bottom:10px; font-size: 14px}
+.forum_tag a:hover{background-color:#ececec;color:#999}
+.t_f,.t_f td{font-size:16px;line-height:30px}
+a.elecom_fastre{display:none}
+.xl2 li{text-overflow:ellipsis;white-space:nowrap}
+.ad .pls{height:auto;background:0 0}
+
+.huodong_tit{padding:0 0 80px 0;margin:0 0 30px 0;background:url({STYLEIMGDIR}/event_tit.png) no-repeat left bottom}
+.huodong_tit img{max-width:710px}
+.psta img{border-radius:50%}
+.activity.xs1 { margin-bottom: 20px}
+.activity.xs1 .dt { border: 1px solid #EDEDED}
+.activity.xs1 .dt td, .activity.xs1 .dt th { padding: 8px; border-color: #EDEDED}
+
+/** end **/

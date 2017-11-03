@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[k_check_zz.plugin]]></item>
+	<item id="RevisionID"><![CDATA[5352]]></item>
+	<item id="SN"><![CDATA[2017072823ix0369ifYM]]></item>
+	<item id="RevisionDateline"><![CDATA[1408892401]]></item>
+	<item id="Data">
+		<item id="/cloud.inc.php"><![CDATA[b5dc95a9dbaf4c82b90fc89655cdbb00]]></item>
+		<item id="/discuz_plugin_k_check_zz_SC_GBK.xml"><![CDATA[780d380a1ff04f7478ebd1a3585ba3c1]]></item>
+		<item id="/discuz_plugin_k_check_zz_SC_UTF8.xml"><![CDATA[eb7ed37f40eaed08fa4813788647ab1e]]></item>
+		<item id="/discuz_plugin_k_check_zz_TC_UTF8.xml"><![CDATA[33325b646525e130be4dc41ccbbd74c3]]></item>
+		<item id="/discuz_plugin_k_check_zz_TC_BIG5.xml"><![CDATA[b9c866201163d657e10e3e58d90db66b]]></item>
+		<item id="/function_cloud.inc.php"><![CDATA[250fae0d0a6b6a17884a7e8cdf29f80c]]></item>
+	</item>
+</root>

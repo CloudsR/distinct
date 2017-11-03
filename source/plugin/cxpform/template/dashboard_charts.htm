@@ -1,0 +1,169 @@
+<!--{subtemplate common/header}-->
+<style type="text/css">
+.dt th{font-size:12px;}
+.dt td{font-size:12px!important;}
+</style>
+<div id="pt" class="wp cl bbs">
+
+<div class="z">
+	<a href="index.php" class="nvhm">$_G['setting']['bbname']</a><em>&rsaquo;</em><a href="plugin.php?id=cxpform:style1&form_id={$forminfo['id']}">{$forminfo['title']}</a><em>&rsaquo;</em>{lang cxpform:viewchart}
+
+</div>
+</div>
+<ul class="tb cl">
+<li ><a href="plugin.php?id=cxpform">{lang cxpform:dashboard_nav1}</a></li>
+<li><a href="plugin.php?id=cxpform&op=my_contents">{lang cxpform:dashboard_nav2}</a></li>
+<!--{if $form_id > 0}-->
+<li ><a href="plugin.php?id=cxpform&form_id={$form_id}&op=contents">{lang cxpform:data_manage}</a></li>
+<li  class="a"><a href="plugin.php?id=cxpform&form_id={$form_id}&op=charts">{lang cxpform:viewchart}</a></li>
+<!--{/if}-->
+</ul>
+		<script type="text/javascript" src="source/plugin/cxpform/resource/js/jquery.js" language="javascript"></script>
+		<script type="text/javascript">var jq = jQuery.noConflict();</script>
+		<script type="text/javascript" src="source/plugin/cxpform/resource/js/My97DatePicker/WdatePicker.js" language="javascript"></script>
+		<script src="http://s1.bdstatic.com/r/www/cache/ecom/esl/1-6-10/esl.js" charset="utf-8"></script><link rel="stylesheet" type="text/css" href="source/plugin/cxpform/resource/css/style.css" />
+<div class="fl bm"><div class="bm bmw cl"><div class="bm_c" style="padding-top:15px;padding-bottom:50px;">
+
+				
+<div>
+<div style="padding:10px 0;">
+{$searchform} <button type="submit" name="formsubmit" id="cxpform{$form_id}btn" value="true" class="pn pnc"><strong>{lang cxpform:search}</strong></button>
+</div>
+<div id="main" style="min-height:400px"></div>
+
+<table class="dt">
+		<tr class="header">
+			<th>{lang cxpform:field12}</th>
+			<th>{lang cxpform:submit_count}</th>
+		</tr>
+<!--{loop $dates $date}-->
+<tr>
+			<td>{$date}</td>
+			<td>{eval echo (array_key_exists($date, $results2) ? $results2[$date] : 0);}</td>
+		</tr>
+<!--{/loop}-->
+
+</table>
+<!--{if $category_str != ''}-->
+<script type="text/javascript">
+		var toolbox = {
+						show : true,
+						feature : {
+							mark : {
+								show: true,
+								title:{
+									mark:'{lang cxpform:mark1}',
+									mark:'{lang cxpform:mark2}',
+									mark:'{lang cxpform:mark3}'
+								}
+							},
+							dataView : {
+								show: true,
+								title: '{lang cxpform:dataView1}',
+								readOnly: false,
+								lang:['{lang cxpform:dataView2}','{lang cxpform:dataView3}','{lang cxpform:dataView4}']
+							},
+							magicType : {
+								show: true,
+								title:{
+									line:'{lang cxpform:magicType1}',
+									bar:'{lang cxpform:magicType2}'
+								},
+								type: ['line', 'bar']
+							},
+							restore : {show: true, title:'{lang cxpform:restore}'},
+							saveAsImage : {show: true, title:'{lang cxpform:saveAsImage}'}
+						}
+					};
+		var toolbox1 = {
+						show : true,
+						feature : {
+							mark : {
+								show: true,
+								title:{
+									mark:'{lang cxpform:mark1}',
+									mark:'{lang cxpform:mark2}',
+									mark:'{lang cxpform:mark3}'
+								}
+							},
+							dataView : {
+								show: true,
+								title: '{lang cxpform:dataView1}',
+								readOnly: false,
+								lang:['{lang cxpform:dataView2}','{lang cxpform:dataView3}','{lang cxpform:dataView4}']
+							},
+							restore : {show: true, title:'{lang cxpform:restore}'},
+							saveAsImage : {show: true, title:'{lang cxpform:saveAsImage}'}
+						}
+					};					
+        
+        require.config({
+            paths:{ 
+                'echarts' : 'http://echarts.baidu.com/build/echarts',
+                'echarts/chart/bar' : 'http://echarts.baidu.com/build/echarts'
+            }
+        });
+		       
+        require(
+            [
+                'echarts',
+                'echarts/chart/bar'
+            ],
+            function (ec) {
+               
+                var myChart = ec.init(document.getElementById('main')); 
+                
+                option = {
+					title : {
+						text: '{lang cxpform:form} {$forminfo['title']}',
+						subtext: '',
+						x:'center'
+					},
+					tooltip : {
+						trigger: 'axis'
+					},
+					legend: {
+						padding:10,
+						x:'left',
+						data:['{lang cxpform:submit_count}']
+					},
+					grid:{
+						x:100
+					},
+					toolbox: toolbox,
+					calculable : true,
+					xAxis : [
+						{
+							type : 'category',
+							// boundaryGap : false,
+							data : [{$category_str}]
+						}
+					],
+					yAxis : [
+						{
+							type : 'value'
+						}
+					],
+					series : [
+						{
+							name:'{lang cxpform:submit_count}',
+							type:'line',
+							data:[{$submit_str}]
+						}
+					]
+				};
+                    
+        
+                
+                myChart.setOption(option); 
+            }
+        );
+    </script>	
+	<!--{/if}-->
+	
+	<!--{eval cxpform_render_field_charts($form_id, $st, $et);}-->
+	
+</div>
+				
+	   </div></div></div>
+<!--{subtemplate common/footer}-->		

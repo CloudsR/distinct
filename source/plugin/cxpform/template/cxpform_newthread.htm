@@ -1,0 +1,179 @@
+<!--{block return}-->
+<input type="hidden" name="form_id" value="{$form_id}" />
+
+<div class="exfm cl">
+	<div class="sinf" style="width:550px;">
+		<dl>
+			<dt>
+				<span class="rq"></span><label for="">{lang cxpform:field_list}:</label></dt>
+			</dt>
+			<dd> <button type="button" class="pn" id="addfield"><span>{lang cxpform:add_field}</span></button>
+			</dd>
+			
+			<table>
+				<tr><th>{lang cxpform:field_label}</th><th>{lang cxpform:field_type}</th><th>{lang cxpform:field_sortid}</th><th>{lang cxpform:field_is_required}</th><th>{lang cxpform:show_other}</th><th></th></tr>
+				<!--{if $_G['gp_action'] == 'edit'}-->
+				<!--{loop $fields $field}-->
+				<tr class="field_item" id="field_item{$field['id']}">
+					<td><input type="hidden" name="field_id[{$field['id']}]" value="{$field['id']}" /><input type="text" name="field_label[{$field['id']}]" value="{$field['field_label']}" /></td>
+					<td><select name="field_type[{$field['id']}]" class="field_type" data-pk="{$field['id']}"><!--{loop $cxpform_field_type $arr}--><option value="{$arr[0]}" {if $field['field_type'] == $arr[0]}selected="selected"{/if}>{$arr[1]}</option><!--{/loop}--></select></td>
+					<td><input type="text" size="2" name="sortid1[{$field['id']}]" value="{$field['sortid']}" /></td>
+					<td><input type="hidden" name="isrequired[{$field['id']}]" checked="checked" value="0" /><input class="pc" type="checkbox" name="isrequired[{$field['id']}]" value="1" {if $field['isrequired'] == '1'}checked="checked"{/if} />{lang cxpform:isrequired}</td>
+					<td><input type="hidden" name="show_other[{$field['id']}]" checked="checked" value="0" /><input class="pc" type="checkbox" name="show_other[{$field['id']}]" value="1" {if $field['show_other'] == '1'}checked="checked"{/if} />{lang cxpform:other}</td>
+					<td><a class="d delfield" data-item-id="{$field['id']}" style="cursor:pointer;">del</a></td>
+				</tr>
+				
+				<tr id="option-tr{$field['id']}" {if $field['field_type'] == '3' || $field['field_type'] == '4' || $field['field_type'] == '13'}{else}style="display:none;"{/if}>
+					<td valign="top"><button type="button" class="pn addoption" data-pk="{$field['id']}"><span>{lang cxpform:add_field_option}</span></button></td>
+					<td colspan="4">
+						<table>
+							<tr><td>{lang cxpform:field_option_name}</td><td>{lang cxpform:field_option_image1}</td><td>{lang cxpform:field_sortid}</td><td></td></tr>
+							<tbody id="option_list{$field['id']}">
+								<!--{if $field['field_type'] == '3' || $field['field_type'] == '4' || $field['field_type'] == '13'}-->
+								<!--{loop $field['options'] $option}-->
+								<tr class="option_item{$field['id']}" id="option_item{$option['id']}"><td><input type="hidden" name="option_id[{$field['id']}][{$option['id']}]" value="{$option['id']}" /><input type="text" name="option_name[{$field['id']}][{$option['id']}]" value="{$option['option_name']}" /></td><td><input type="text" name="picurl[{$field['id']}][{$option['id']}]" value="{$option['picurl']}" /></td><td><input type="text" name="sortid2[{$field['id']}][{$option['id']}]" size="2" value="{$option['sortid']}" /></td><td><a class="d deloption" style="cursor:pointer;" data-pk="{$option['id']}">del</a></td></tr>
+								<!--{/loop}-->
+								<!--{else}-->
+								<!--{/if}-->
+							</tbody>
+						</table>
+					</td>
+				</tr>
+				<!--{/loop}-->
+				<!--{else}-->
+				<tr class="field_item" id="field_item0">
+					<td><input type="hidden" name="field_id[0]" /><input type="text" name="field_label[0]" /></td>
+					<td><select name="field_type[0]" class="field_type" data-pk="0"><!--{loop $cxpform_field_type $arr}--><option value="{$arr[0]}">{$arr[1]}</option><!--{/loop}--></select></td>
+					<td><input type="text" size="2" name="sortid1[0]" value="0" /></td>
+					<td><input type="hidden" name="isrequired[0]" value="0" checked="checked" /><input class="pc" type="checkbox" name="isrequired[0]" value="1" checked="checked" />{lang cxpform:isrequired}</td>
+					<td><input type="hidden" name="show_other[0]" value="0" checked="checked" /><input class="pc" type="checkbox" name="show_other[0]" value="1" checked="checked" />{lang cxpform:other}</td>
+					<td></td>
+				</tr>
+				
+				<tr id="option-tr0" style="display:none;">
+					<td valign="top"><button type="button" class="pn addoption" data-pk="0"><span>{lang cxpform:add_field_option}</span></button></td>
+					<td colspan="4">
+						<table>
+							<tr><td>{lang cxpform:field_option_name}</td><td>{lang cxpform:field_option_image1}</td><td>{lang cxpform:field_sortid}</td><td></td></tr>
+							<tr class="option_item0" id="option_item0"><td><input type="hidden" name="option_id[0][0]" /><input type="text" name="option_name[0][0]" /></td><td><input type="text" name="picurl[0][0]" /></td><td><input type="text" name="sortid2[0][0]" size="2" value="0" /></td><td><a class="d deloption" style="cursor:pointer;" data-pk="0">del</a></td></tr>
+							<tbody id="option_list0"></tbody>
+						</table>
+					</td>
+				</tr>
+				<!--{/if}-->
+				<tbody id="form_field_list"></tbody>
+			</table>
+			<input type="hidden" name="todelfieldids" id="todelfieldids" />
+			<input type="hidden" name="todeloptionids" id="todeloptionids" />
+			<script type="text/javascript" src="source/plugin/cxpform/resource/js/jquery.js" language="javascript"></script>
+			<script type="text/javascript">
+			var jq = jQuery.noConflict();
+			jq(function(){
+				
+				jq('#addfield').click(function(){
+					var optionstr = '';
+					<!--{loop $cxpform_field_type $arr}-->
+					optionstr += '<option value="{$arr[0]}">{$arr[1]}</option>';
+					<!--{/loop}-->
+					var newarr = new Array();
+					for(var ii=0; ii < jq('.field_item').length; ii++){
+						newarr.push(jq(jq('.field_item')[ii]).attr('id').substring(10));
+					}
+					var i = Math.max.apply(null, newarr) + 1;
+					if(i == '-Infinity') i=0;					
+					var flen = i;
+					jq('#form_field_list').append('<tr class="field_item" id="field_item' + flen + '">\
+					<td><input type="hidden" name="field_id[' + flen + ']" /><input type="text" name="field_label[' + flen + ']" /></td>\
+					<td><select name="field_type[' + flen + ']" class="field_type" data-pk="' + flen + '">' + optionstr + '</select></td>\
+					<td><input type="text" size="2" name="sortid1[' + flen + ']" value="0" /></td>\
+					<td><input type="hidden" name="isrequired[' + flen + ']" checked="checked" value="0" /><input class="pc" type="checkbox" name="isrequired[' + flen + ']" value="1" checked="checked" />{lang cxpform:isrequired}</td>\
+					<td><input type="hidden" name="show_other[' + flen + ']" checked="checked" value="0" /><input class="pc" type="checkbox" name="show_other[' + flen + ']" value="1" checked="checked" />{lang cxpform:other}</td>\
+					<td><a class="d delfield" data-item-id="' + flen + '">del</a></td>\
+				</tr><tr id="option-tr' + flen + '" style="display:none;">\
+					<td valign="top"><button type="button" class="pn addoption" data-pk="' + flen + '"><span>{lang cxpform:add_field_option}</span></button></td>\
+					<td colspan="4">\
+						<table>\
+							<tr><td>{lang cxpform:field_option_name}</td><td>{lang cxpform:field_option_image1}</td><td>{lang cxpform:field_sortid}</td><td></td></tr>\
+							<tr class="option_item' + flen + '" id="option_item0"><td><input type="hidden" name="option_id[' + flen + '][0]" /><input type="text" name="option_name[' + flen + '][0]" /></td><td><input type="text" name="picurl[' + flen + '][0]" /></td><td><input type="text" name="sortid2[' + flen + '][0]" size="2" value="0" /></td><td><a class="d deloption"  style="cursor:pointer;" data-pk="' + flen + '">del</a></td></tr>\
+							<tbody id="option_list' + flen + '"></tbody>\
+						</table>\
+					</td>\
+				</tr>');
+				});
+				
+				jq('body').on('click', '.delfield', function(){
+					var item_id = jq(this).attr('data-item-id');
+					jq('#field_item' + item_id).remove();
+					jq('#option-tr' + item_id).remove();
+					var old_val = jq('#todelfieldids').val();
+					if(item_id != '0'){
+						if(old_val == ''){
+							var new_val = ','  + item_id + ',';
+						}else{
+							var new_val = old_val + item_id + ',';
+						}
+						jq('#todelfieldids').val(new_val);
+					}
+				});
+				
+				jq('body').on('change', '.field_type', function(){
+					var pk = jq(this).attr('data-pk');
+					var val = jq(this).val();
+					switch(val){
+						case '3':
+						case '4':
+						case '13':
+							jq('#option-tr' + pk).show();
+							break;
+						default:
+							jq('#option-tr' + pk).hide();
+							break;
+					}
+				});
+				
+				jq('body').on('click', '.addoption', function(){
+					var pk = jq(this).attr('data-pk');
+					var newarr = new Array();
+					for(var ii=0; ii < jq('.option_item' + pk).length; ii++){
+						newarr.push(jq(jq('.option_item' + pk)[ii]).attr('id').substring(11));
+					}
+					var i = Math.max.apply(null, newarr) + 1;
+					if(i == '-Infinity') i=0;					
+					var olen = i;					
+					// var olen = jq('.option_item' + pk).length + 1;
+					jq('#option_list' + pk).append('<tr class="option_item' + pk + '" id="option_item' + olen + '"><td><input type="hidden" name="option_id[' + pk + '][' + olen + ']" /><input type="text" name="option_name[' + pk + '][' + olen + ']" /></td><td><input type="text" name="picurl[' + pk + '][' + olen + ']" /></td><td><input type="text" name="sortid2[' + pk + '][' + olen + ']" value="0" size="2" /></td><td><a class="d deloption" data-pk="' + olen + '">del</a></td></tr>');
+					addUploadEvent('newpoll_option_item' + pk + '' + olen, 'pollUploadProgress_option_item' + pk + '' + olen);
+				});
+				
+				jq('body').on('click', '.deloption', function(){
+					var pk = jq(this).attr('data-pk');
+					jq('#option_item' + pk).remove();
+					var old_val = jq('#todeloptionids').val();
+					if(pk != '0'){
+						if(old_val == ''){
+							var new_val = ','  + pk + ',';
+						}else{
+							var new_val = old_val + pk + ',';
+						}
+						jq('#todeloptionids').val(new_val);
+					}					
+				})
+			});
+			</script>
+		</dl>
+	</div>	
+	<div class="sadd z" style="width:300px">
+		<p class="mbn">
+		<label for="startdate">{lang cxpform:startdate}</label>
+		<input type="text" name="startdate" id="startdate" class="px" autocomplete="off" value="{$forminfo['startdate']}" onclick="showcalendar(event, this, true)" tabindex="1">
+		</p>
+		<p class="mbn">
+		<label for="enddate">{lang cxpform:enddate}</label>
+		<input type="text" name="enddate" id="enddate" class="px" autocomplete="off" value="{$forminfo['enddate']}" onclick="showcalendar(event, this, true)" tabindex="1">
+		</p>
+		<p class="mbn"><input type="hidden" name="visibilityform" value="0" checked="checked" />
+		<input type="checkbox" name="visibilityform" id="visibilityform" class="pc" value="1" tabindex="1" {if $visibilityform == '1'}checked="checked"{/if}><label for="visibilityform">{lang cxpform:visibilityform}</label>
+		</p>
+	</div>
+</div>
+<!--{/block}-->

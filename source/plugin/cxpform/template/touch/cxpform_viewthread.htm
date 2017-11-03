@@ -1,0 +1,59 @@
+<!--{block return}-->   
+	<script type="text/javascript" src="source/plugin/cxpform/resource/js/jquery.js" language="javascript"></script>
+	<script type="text/javascript">var jq = jQuery.noConflict();</script>
+	<script type="text/javascript" src="source/plugin/cxpform/resource/js/jquery.form.js" language="javascript"></script>
+	<script type="text/javascript" src="source/plugin/cxpform/resource/js/jquery.validate.min.js" language="javascript"></script>
+	<script type="text/javascript" src="source/plugin/cxpform/resource/js/My97DatePicker/WdatePicker.js" language="javascript"></script>
+	<link rel="stylesheet" type="text/css" href="source/plugin/cxpform/resource/css/style.css" />
+	<script type="text/javascript">
+		jq(function(){
+			if(top.location == self.location){
+				jq('#fromurl').val(window.location.href);
+			}else{
+				jq('#fromurl').val(parent.location.href);
+			}
+			jq('#cxpform{$form_id}').validate({
+						ignore: "",
+						errorPlacement: function(error, element) {
+							var id = element.attr('id');
+							if(element.attr("type") == "checkbox"){
+								id = element.attr("name").substring(0, element.attr("name").length - 2);
+								error.appendTo('#' + id + 'error');
+							}
+							if(element.attr("type") == "radio"){
+								id = element.attr("name");
+								error.appendTo('#' + id + 'error');
+							}
+							if(jq(document).find('#' + id + 'error')){
+								error.appendTo('#' + id + 'error');
+							}
+						}
+					});
+			jq('#cxpform{$form_id}').ajaxForm({
+				target:'#result',
+				success:function(responseText, statusText, xhr, form){
+					if(responseText == '{lang cxpform:success}'){
+						jq('#cxpform{$form_id}btn').attr('disabled','disabled');
+						showDialog(responseText, 'notice');
+					}else{
+						showDialog(responseText, 'notice');
+					}
+				}
+			});
+		});
+	</script><style type="text/css">.error{color:red;}</style>
+	
+ <div class="fl bm"><div class="bm bmw cl"><div class="bm_h cl">{lang cxpform:form} : {$forminfo['title']}</div><div class="bm_c"><div id="postbox">
+		
+		<div style="padding:20px;"><div class="error" id="result" style="color:red;"></div>
+			<form method="post" action="plugin.php?id=cxpform:style3&form_id={$form_id}" id="cxpform{$form_id}" enctype="multipart/form-data">
+			<input type="hidden" name="formhash" value="{FORMHASH}" />
+			<input type="hidden" name="fromurl" id="fromurl" />
+			<input type="hidden" name="tid" value="{$tid}" />
+			<table cellspacing="0" cellpadding="0" class="tfm">
+			{$form_element}
+			
+			<tr><td><button type="submit" name="formsubmit" id="cxpform{$form_id}btn" value="true" class="pn pnc"><strong>{lang cxpform:submit}</strong></button></td></tr>
+			
+			</table></div></div></div></div></div></div>
+<!--{/block}-->	

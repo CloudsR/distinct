@@ -1,0 +1,15 @@
+.Wdate{padding:0px;width:150px!important;}
+.addoption{cursor:pointer;}
+.deloption{cursor:pointer;}
+.cur_date{color:#fff;background:#F60;padding:2px;}
+.error{color:red;}
+
+.option-item{float:left;padding:0 10px 10px 10px;}
+.option-item .txt-wrap{text-align:center;padding:5px 0;}
+.option-item .img-wrap img{width:140px;height:140px;}
+
+@media(max-width:768px){
+	.header{position:relative;}
+	.header .hdc{height:auto;}
+}
+img{max-width:100%!important;}

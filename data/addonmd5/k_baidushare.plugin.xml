@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[k_baidushare.plugin]]></item>
+	<item id="RevisionID"><![CDATA[19158]]></item>
+	<item id="SN"><![CDATA[201707282359df4fmfhE]]></item>
+	<item id="RevisionDateline"><![CDATA[1372413602]]></item>
+	<item id="Data">
+		<item id="/discuz_plugin_k_baidushare_TC_BIG5.xml"><![CDATA[029f1e407bee38280d79e8f533e96304]]></item>
+		<item id="/k_baidushare.class.php"><![CDATA[7aa15535906716881a4cdf41fdaed5fe]]></item>
+		<item id="/discuz_plugin_k_baidushare_TC_UTF8.xml"><![CDATA[4745730ccc59f4d7204dfa7264ec5410]]></item>
+		<item id="/discuz_plugin_k_baidushare_SC_UTF8.xml"><![CDATA[ecbb1d667a4a853e9b82c70477ac0829]]></item>
+		<item id="/discuz_plugin_k_baidushare_SC_GBK.xml"><![CDATA[fa28d0aa0275e16299dcd0f4939fb4e7]]></item>
+	</item>
+</root>

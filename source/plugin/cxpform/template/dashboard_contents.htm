@@ -1,0 +1,76 @@
+<!--{subtemplate common/header}-->
+<style type="text/css">
+.dt th{font-size:12px;}
+.dt td{font-size:12px!important;}
+</style>
+<div id="pt" class="wp cl bbs">
+
+<div class="z">
+	<a href="index.php" class="nvhm">$_G['setting']['bbname']</a><em>&rsaquo;</em><a href="plugin.php?id=cxpform:style1&form_id={$forminfo['id']}">{$forminfo['title']}</a><em>&rsaquo;</em>{lang cxpform:data_manage}
+
+</div>
+</div>
+<ul class="tb cl">
+<li ><a href="plugin.php?id=cxpform">{lang cxpform:dashboard_nav1}</a></li>
+<li><a href="plugin.php?id=cxpform&op=my_contents">{lang cxpform:dashboard_nav2}</a></li>
+<!--{if $form_id > 0}-->
+<li  class="a"><a href="plugin.php?id=cxpform&form_id={$form_id}&op=contents">{lang cxpform:data_manage}</a></li>
+<li><a href="plugin.php?id=cxpform&form_id={$form_id}&op=charts">{lang cxpform:viewchart}</a></li>
+<!--{/if}-->
+</ul>
+		<script type="text/javascript" src="source/plugin/cxpform/resource/js/jquery.js" language="javascript"></script>
+		<script type="text/javascript">var jq = jQuery.noConflict();</script>
+<div class="fl bm"><div class="bm bmw cl"><div class="bm_c" style="padding-top:15px;padding-bottom:50px;overflow-x:auto;">
+<input type="button" value="{lang cxpform:back_list}" />
+		   <table cellspacing="0" cellpadding="0" class="dt" style="width:100%;">
+			<tr class="header">
+				<th nowrap>{lang cxpform:username}</th>
+				<th nowrap>{lang cxpform:time}</th>
+				<th nowrap>IP</th>
+				<th nowrap>{lang cxpform:area}</th>
+				<!--{if $forminfo['form_type'] == '3'}-->
+				<th nowrap>{lang cxpform:defaultfield3}</th>
+				<th nowrap>{lang cxpform:bookingnumber}</th>
+				<!--{/if}-->	
+				<!--{loop $fields $field}-->
+				{eval if($field['is_header'] == '0') continue;}
+				<th nowrap>{$field['field_label']}</th>
+				<!--{/loop}-->
+				<th nowrap>{lang cxpform:status}</th>
+				<th nowrap></th>
+			</tr>
+			<!--{loop $my_history $kk $history}-->
+			<!--{eval $content_extra_arr = cxpform_content_extra($history['id']);}-->
+			<tr {if $kk % 2 == 1}class="alt"{/if}>
+				<td>{$history['username']}</td>
+				<td>{eval echo date('Y-m-d H:i:s', $history['addtime']);}</td>
+				<td>{$history['ip']}</td>
+				<td>{$history['area']}</td>
+				<!--{if $forminfo['form_type'] == '3'}-->
+				<td>{$history['bookingtime']}</td>
+				<td>{$history['bookingnumber']}</td>
+				<!--{/if}-->	
+				<!--{loop $fields $field}-->
+				{eval if($field['is_header'] == '0') continue;}
+				<td>{$content_extra_arr[$field['id']]}</td>
+				<!--{/loop}-->
+				<td><font color="{$history['status_color']}">{$history['status_name']}</font></td>
+				<td nowrap>
+				<a href="#" onclick="jq('#detail{$history['id']}').show();return false;">{lang cxpform:detail}</a>   
+				<a href="plugin.php?id=cxpform:results&form_id={$history['form_id']}&op=logs&content_id={$history['id']}" onclick="showWindow('cxpformlog', this.href);return false;">{lang cxpform:results}</a>
+				</td>
+			</tr>
+			<tr style="display:none;" id="detail{$history['id']}"><td colspan="7">
+			<table style="margin-left:30px;">
+			<tr>
+				<th><strong>{lang cxpform:field_label}</strong></th>
+				<th><strong>{lang cxpform:field_value}</strong></th>
+			</tr>
+			<!--{eval cxpform_content_extra_1($history['id']);}-->
+			</table>
+			</td></tr>
+			<!--{/loop}-->
+		   </table>	
+		   <div class="cl" style="padding:4px 0 4px ;">{$multi}</div>	
+</div></div></div>	   
+<!--{subtemplate common/footer}-->		

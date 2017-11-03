@@ -1,0 +1,171 @@
+<!--{template common/header}-->
+    <!-- Bootstrap -->
+    <link href="source/plugin/cxpform/resource/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="source/plugin/cxpform/resource/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<script type="text/javascript" src="source/plugin/cxpform/resource/js/jquery.js" language="javascript"></script>
+	<script type="text/javascript">var jq = jQuery.noConflict();</script>
+	<script type="text/javascript" src="source/plugin/cxpform/resource/jquery.widget/jquery.citys.js"></script>
+	<script type="text/javascript" src="source/plugin/cxpform/resource/js/jquery.form.js" language="javascript"></script>
+	<script type="text/javascript" src="source/plugin/cxpform/resource/js/jquery.validate.min.js" language="javascript"></script>
+	<script type="text/javascript" src="source/plugin/cxpform/resource/js/My97DatePicker/WdatePicker.js" language="javascript"></script>
+	<link rel="stylesheet" type="text/css" href="source/plugin/cxpform/resource/css/style.css" />
+	<script type="text/javascript">
+		jq(function(){
+			if(top.location == self.location){
+				jq('#fromurl').val(window.location.href);
+			}else{
+				jq('#fromurl').val(parent.location.href);
+			}
+			jq('#cxpform{$form_id}').validate({
+						ignore: "",
+						errorPlacement: function(error, element) {
+							var id = element.attr('id');
+							if(element.attr("type") == "checkbox"){
+								id = element.attr("name").substring(0, element.attr("name").length - 2);
+								error.appendTo('#' + id + 'error');
+							}
+							if(element.attr("type") == "radio"){
+								id = element.attr("name");
+								error.appendTo('#' + id + 'error');
+							}
+							if(jq(document).find('#' + id + 'error')){
+								error.appendTo('#' + id + 'error');
+							}
+						}
+					});
+			jq('#cxpform{$form_id}').ajaxForm({
+				target:'#result',
+				success:function(responseText, statusText, xhr, form){
+					if(responseText == '{lang cxpform:success}'){
+						jq('#cxpform{$form_id}btn').attr('disabled','disabled');
+						jq('#myModalContent').html(responseText);
+						jq('#myModal').modal();
+					}else{
+						jq('#myModalContent').html(responseText);
+						jq('#myModal').modal();						
+					}
+					jq('#result').show();
+				}
+			});
+		});
+	</script>
+	<style type="text/css">
+	.form-group{border-bottom:1px solid #EFEFEF;clear:both;}
+	.caption{text-align:center;}
+	.caption label{font-weight:400;}
+	.caption label input{margin-right:5px;}
+	</style>
+<header class="header">
+	<div class="hdc cl">
+		<!--{if $_G['setting']['domain']['app']['mobile']}-->
+			{eval $nav = 'http://'.$_G['setting']['domain']['app']['mobile'];}
+		<!--{else}-->
+			{eval $nav = "forum.php";}
+		<!--{/if}-->
+		<h2><a title="$_G[setting][bbname]" href="$nav"><img src="{STATICURL}image/mobile/images/logo.png" /></a></h2>
+		<ul class="user_fun">
+			<li><a href="search.php?mod=forum" class="icon_search">{lang search}</a></li>
+			<li class="on"><a href="forum.php?forumlist=1" class="icon_threadlist">{lang forum_list}</a></li>
+			<li id="usermsg"><a href="<!--{if $_G[uid]}-->home.php?mod=space&uid=$_G[uid]&do=profile&mycenter=1<!--{else}-->member.php?mod=logging&action=login<!--{/if}-->" class="icon_userinfo">{lang user_info}</a><!--{if $_G[member][newpm]}--><span class="icon_msg"></span><!--{/if}--></li>
+			<!--{if $_G['setting']['mobile']['mobilehotthread']}-->
+			<li><a href="forum.php?mod=guide&view=hot" class="icon_hotthread">{lang hot_thread}</a></li>
+			<!--{/if}-->
+		</ul>
+	</div>
+</header>
+	<div class="container-fluid">
+	  <div class="panel panel-default" style="margin-top:10px;">
+		<div class="panel-body">
+	  
+	  <!--{if $submit_setting['show_title'] == '1'}-->
+		<h1 style="text-align:center;font-size:30px;">{$forminfo['title']}</h1>
+	  <!--{/if}-->
+		
+		
+		<!--{if $submit_setting['show_description'] == '1'}-->
+			<p>{$forminfo['description']}</p>
+		<!--{/if}-->
+		
+		<!--{eval $fields =cxpform_field_list($form_id);}-->
+		<!--{eval $count1 = count($fields);}-->
+		<!--{if $count1 > 0}-->
+	
+	  <div class="alert alert-danger" role="alert" id="result" style="display:none;"></div>
+	  <form role="form" method="post" id="cxpform{$form_id}" action="plugin.php?id=cxpform:style2&form_id={$form_id}" enctype="multipart/form-data">
+		 <input type="hidden" name="formhash" value="{FORMHASH}" />
+		 <input type="hidden" name="fromurl" id="fromurl" />
+		 
+		 <!--{loop $fields $field}-->
+			<!--{eval echo cxpform_render_field_bootstrap($field);}-->
+		 <!--{/loop}-->
+		
+		
+		
+		<!--{if $submit_setting['iscaptcha'] == '1'}-->
+		  <div class="form-group">
+			<label>{lang cxpform:captcha}:</label>
+			<input type="text" name="captcha_code" class="form-control" id="captcha_code" autocomplete="off" /><br /><img id="captcha_img" src="{$_G['siteurl']}source/plugin/cxpform/include/securimage/securimage_show.php" width="100" height="30" /> <a href="#" onclick="document.getElementById('captcha_img').src='{$_G['siteurl']}source/plugin/cxpform/include/securimage/securimage_show.php?r=' + Math.random();return false;">{lang cxpform:reload_captcha}</a><p class="help-block" id="captcha_codeerror"></p>
+		  </div><script type="text/javascript">jq(function(){jq('#captcha_code').rules('add', {required:true,messages:{required:'{lang cxpform:captcha}{lang cxpform:empty}'}});});</script>
+		
+		 <!--{/if}-->
+		 
+		 <!--{if $submit_setting['show_submit_count'] == '1'}-->
+			<div class="form-group">
+				<label>{lang cxpform:submit_count}:</label>
+				<p class="form-control-static"> {$submit_count}</p>
+			</div>
+		<!--{/if}-->
+				
+				<!--{if $forminfo['status'] == '0'}-->
+					<div class="alert alert-danger" role="alert">{lang cxpform:can_not_submit}</div>
+				<!--{else}-->
+				
+					<!--{if $forminfo['startdate'] != '0' && $forminfo['startdate'] > $curtime}-->
+						<div class="alert alert-danger" role="alert">{lang cxpform:can_not_submit1}</div>
+					<!--{else}-->
+						<!--{if $forminfo['enddate'] != '0' && $forminfo['enddate'] < $curtime}-->
+							<div class="alert alert-danger" role="alert">{lang cxpform:can_not_submit}</div>
+						<!--{else}-->
+							<button type="submit" class="btn btn-default" name="formsubmit" id="cxpform{$form_id}btn" value="{lang cxpform:submit}">{lang cxpform:submit}</button>
+						<!--{/if}-->
+					<!--{/if}-->
+					
+				<!--{/if}-->		 
+	
+		 
+		 
+		</form>
+	
+  <!--{/if}-->
+	</div>
+  </div>
+</div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">{lang cxpform:close}</span></button>
+        <h4 class="modal-title" id="myModalLabel">{lang cxpform:modal_title}</h4>
+      </div>
+      <div class="modal-body" id="myModalContent">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">{lang cxpform:close}</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="source/plugin/cxpform/resource/bootstrap/js/bootstrap.min.js"></script>
+    <script src="source/plugin/cxpform/resource/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="source/plugin/cxpform/resource/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+	
+<!--{template common/footer}-->

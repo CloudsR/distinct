@@ -1,0 +1,51 @@
+<!--{template common/header}-->
+<link rel="stylesheet" type="text/css" id="time_diy" href="template/elec_201701_hxzmt/style/css/menhu.css" />
+<link rel="stylesheet" type="text/css" id="time_diy" href="template/elec_201701_hxzmt/style/css/nanoscroller.css" />
+<style id="diy_style" type="text/css"></style>
+<script src="template/elec_201701_hxzmt/style/js/jquery.superslide.js" type="text/javascript"></script>
+<script src="template/elec_201701_hxzmt/style/js/scroller.js" type="text/javascript"></script>
+<script src="template/elec_201701_hxzmt/style/js/more.js" type="text/javascript"></script>
+
+<div class="wp cl" style="margin: 30px 0 0 0;">
+  <!--[diy=diy_top]--><div id="diy_top" class="area"></div><!--[/diy]-->
+  <div class="index_content">
+    <div class="index_left">
+      <div class="cl" style="height: 400px; overflow: hidden;">
+         <div style="float: left; width: 533px;">
+            <!--[diy=diy1_l]--><div id="diy1_l" class="area"></div><!--[/diy]-->
+         </div>
+         <div style="float: right; width: 257px;">
+            <!--[diy=diy1_r]--><div id="diy1_r" class="area"></div><!--[/diy]-->
+         </div>
+      </div>
+      <!--[diy=diy1]--><div id="diy1" class="area"></div><!--[/diy]-->
+      <!--[diy=ad1]--><div id="ad1" class="area"></div><!--[/diy]-->
+      <div class="box_s1 cl">
+      <!--[diy=diy_2]--><div id="diy_2" class="area"></div><!--[/diy]-->    
+      <!--[diy=diy2]--><div id="diy2" class="area"></div><!--[/diy]-->
+      </div>
+    </div>
+    <div class="index_right">
+      <div class="cl" style="height: auto; margin: 0 0 30px 0; box-shadow: none; overflow: hidden;">
+      <!--[diy=right_top]--><div id="right_top" class="area"></div><!--[/diy]-->
+      </div>
+      <!--[diy=right_top_down]--><div id="right_top_down" class="area"></div><!--[/diy]-->
+      <!--[diy=diy_right_1]--><div id="diy_right_1" class="area"></div><!--[/diy]-->
+      <!--[diy=diy_last]--><div id="diy_last" class="area"></div><!--[/diy]-->
+    </div>
+    <div class="cr"></div>
+  </div>
+  <!--[diy=diy_bottom]--><div id="diy_bottom" class="area"></div><!--[/diy]-->
+</div>
+
+<script type="text/javascript">
+jQuery.noConflict();
+if (jQuery(".nano").length > 0) {
+setTimeout(function() {
+jQuery(".nano").nanoScroller();
+}, 800);
+}
+</script>
+
+<script src="misc.php?mod=diyhelp&action=get&type=index&diy=yes&r={echo random(4)}" type="text/javascript"></script> 
+<!--{template common/footer}-->

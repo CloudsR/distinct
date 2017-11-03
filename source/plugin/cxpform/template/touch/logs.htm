@@ -1,0 +1,26 @@
+<!--{template common/header}-->
+<h3 class="flb">{lang cxpform:results} <span><a href="javascript:;" 
+class="flbc" onclick="hideWindow('$_G['gp_handlekey']');" title="{lang 
+close}">{lang close}</a></span></h3>
+
+		   <table cellspacing="0" cellpadding="0" class="dt" style="width:100%;">
+			<tr class="header">
+				<th nowrap>{lang cxpform:log_status}</th>
+				<th nowrap>{lang cxpform:log_content}</th>
+				<th nowrap>{lang cxpform:log_time}</th>
+			</tr>
+			<!--{if $count > 0}-->
+			<!--{loop $results $kk $row}-->
+			<tr {if $kk % 2 == 1}class="alt"{/if}>
+				<td>{$row['status_log']}</td>
+				<td>{$row['content']}</td>
+				<td>{eval echo date('Y-m-d H:i:s', $row['addtime']);}</td>
+			</tr>
+			<!--{/loop}-->
+			<!--{else}-->
+			<tr><td colspan="3">{lang cxpform:nodata}</td></tr>
+			<!--{/if}-->
+		   </table>	
+		   <div class="cl" style="padding:4px 0 4px ;">{$multi}</div>	
+<!--{template common/footer}-->	   
+		

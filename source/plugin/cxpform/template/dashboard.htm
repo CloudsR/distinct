@@ -1,0 +1,61 @@
+<!--{subtemplate common/header}-->
+<style type="text/css">
+.dt th{font-size:12px;}
+.dt td{font-size:12px!important;}
+</style>
+<div id="pt" class="wp cl bbs">
+
+<div class="z">
+	<a href="index.php" class="nvhm">$_G['setting']['bbname']</a><em>&rsaquo;</em>{lang cxpform:dashboard_nav1}
+
+</div>
+</div>
+<ul class="tb cl">
+<li  class="a"><a href="plugin.php?id=cxpform">{lang cxpform:dashboard_nav1}</a></li>
+<li><a href="plugin.php?id=cxpform&op=my_contents">{lang cxpform:dashboard_nav2}</a></li>
+<!--{if $form_id > 0}-->
+<li ><a href="plugin.php?id=cxpform&form_id={$form_id}&op=contents">{lang cxpform:data_manage}</a></li>
+<li ><a href="plugin.php?id=cxpform&form_id={$form_id}&op=charts">{lang cxpform:viewchart}</a></li>
+<!--{/if}-->
+</ul>
+		<script type="text/javascript" src="source/plugin/cxpform/resource/js/jquery.js" language="javascript"></script>
+		<script type="text/javascript">var jq = jQuery.noConflict();</script>
+<div class="fl bm"><div class="bm bmw cl"><div class="bm_c" style="padding-top:15px;padding-bottom:50px;">
+			<input type="button" value="{lang cxpform:new_form}" />
+		   <table cellspacing="0" cellpadding="0" class="dt" style="width:100%;">
+			<tr class="header">
+				<th>{lang cxpform:form_name}</th>
+				<th>{lang cxpform:form_type}</th>
+				<th>{lang cxpform:addtime}</th>
+				<th>{lang cxpform:status}</th>
+				<th>{lang cxpform:hits_count}</th>
+				<th>{lang cxpform:submit_count}</th>
+				<th>{lang cxpform:latest_submit_time}</th>
+				<th>{lang cxpform:op}</th>
+			</tr>
+			<!--{if $count > 0}-->
+			<!--{loop $forms $kk $form}-->
+			<tr {if $kk % 2 == 1}class="alt"{/if}>
+				<td>{$form['title']}</td>
+				<td>{$cxpform_type_arr[$form['form_type']]}{if $form['tid'] > 0}/{lang cxpform:is_thread}{/if}</td>
+				<td>{eval echo date('Y-m-d H:i:s', $form['addtime']);}</td>
+				<td>{if $form['status']}<font color="#0D0">{lang cxpform:opened}</font>{else}<font color="red">{lang cxpform:closed}</font>{/if}</td>
+				<td>{$form['hits']}</td>
+				<td>{$form['ccount']}</td>
+				<td>{eval echo $form['addtime1'] ? date('Y-m-d H:i:s', $form['addtime1']) : '';}</td>
+				<td>
+					<a href="plugin.php?id=cxpform:style1&form_id={$form['id']}" target="_blank">{lang cxpform:preview}</a> 
+					<a href="plugin.php?id=cxpform&form_id={$form['id']}&op=contents">{lang cxpform:data_manage}</a> 
+					<a href="plugin.php?id=cxpform&form_id={$form['id']}&op=charts">{lang cxpform:viewchart}</a>
+				</td>
+			</tr>
+			<!--{/loop}-->
+			<!--{else}-->
+			<tr>
+				<td colspan="8">{lang cxpform:nodata}</td>
+			</tr>
+			<!--{/if}-->
+		   </table>	
+		   <div class="cl" style="padding:4px 0 4px ;">{$multi}</div>	
+	</div></div></div>   
+<!--{subtemplate common/footer}-->		

@@ -1,0 +1,69 @@
+<!--{template common/header2}-->
+<link rel="stylesheet" type="text/css" id="time_diy" href="template/elec_201701_hx_dingzhi/style/css/menhu.css" />
+<link rel="stylesheet" type="text/css" id="time_diy" href="template/elec_201701_hx_dingzhi/style/css/nanoscroller.css" />
+<style id="diy_style" type="text/css"></style>
+<script src="template/elec_201701_hx_dingzhi/style/js/jquery.superslide.js" type="text/javascript"></script>
+<script src="template/elec_201701_hx_dingzhi/style/js/scroller.js" type="text/javascript"></script>
+<script src="template/elec_201701_hx_dingzhi/style/js/more.js" type="text/javascript"></script>
+
+</div>
+<div class="cl" style="padding: 20px 0; margin: 38px 0 30px 0; background: #FFFFFF;">
+   <div class="wp cl">
+      <div style="float: left; width: 780px;">
+      <!--[diy=diy_1]--><div id="diy_1" class="area"><div id="frameha9ck9" class="frame move-span cl frame-1"><div id="frameha9ck9_left" class="column frame-1-c"><div id="frameha9ck9_left_temp" class="move-span temp"></div><!--{block/64}--></div></div></div><!--[/diy]-->
+      </div>
+      <div style="float: right; width: 370px;">
+      <!--[diy=diy_2]--><div id="diy_2" class="area"><div id="framevUqzXw" class="frame move-span cl frame-1"><div id="framevUqzXw_left" class="column frame-1-c"><div id="framevUqzXw_left_temp" class="move-span temp"></div><!--{block/65}--></div></div><div id="frameQz6xmk" class="frame move-span cl frame-1"><div id="frameQz6xmk_left" class="column frame-1-c"><div id="frameQz6xmk_left_temp" class="move-span temp"></div><!--{block/66}--></div></div></div><!--[/diy]-->
+      </div>
+   </div>
+</div>
+<div class="wp cl">
+ <div style="float: left; width: 780px;">
+      <!--[diy=diy_3]--><div id="diy_3" class="area"><div id="framem2eGeh" class="frame move-span cl frame-1"><div id="framem2eGeh_left" class="column frame-1-c"><div id="framem2eGeh_left_temp" class="move-span temp"></div><!--{block/67}--></div></div><div id="frameF5pWCC" class="frame move-span cl frame-1"><div id="frameF5pWCC_left" class="column frame-1-c"><div id="frameF5pWCC_left_temp" class="move-span temp"></div><!--{block/68}--></div></div><div id="framefOYhDr" class="frame move-span cl frame-1"><div id="framefOYhDr_left" class="column frame-1-c"><div id="framefOYhDr_left_temp" class="move-span temp"></div><!--{block/69}--></div></div></div><!--[/diy]-->
+      <div class="cl">
+      <div class="cl" style="float: left; width: 380px;">
+      <!--[diy=diy_4]--><div id="diy_4" class="area"><div id="framefsrs96" class="frame move-span cl frame-1"><div id="framefsrs96_left" class="column frame-1-c"><div id="framefsrs96_left_temp" class="move-span temp"></div><!--{block/71}--></div></div></div><!--[/diy]-->
+      </div>
+      <div class="cl" style="float: right; width: 380px;">
+      <!--[diy=diy_5]--><div id="diy_5" class="area"><div id="frameW6gAG8" class="frame move-span cl frame-1"><div id="frameW6gAG8_left" class="column frame-1-c"><div id="frameW6gAG8_left_temp" class="move-span temp"></div><!--{block/70}--></div></div></div><!--[/diy]-->
+      </div>
+      </div>
+      </div>
+      <div style="float: right; width: 370px;">
+         <div class="login_box" style="margin-bottom: 30px;">
+            <div class="a_img">
+            <!--{if $_G['uid']}--><a href="home.php?mod=space&uid=$_G[uid]" target="_blank" title="{lang visit_my_space}" id="umnav" onMouseOver="showMenu({'ctrlid':this.id,'ctrlclass':'a'})"> 
+              <!--{avatar($_G[uid],middle)}-->
+              </a><!--{else}--><img src="template/elec_201701_hx_dingzhi/style/10.jpg" alt="" height="95" width="95"><!--{/if}-->
+            </div>
+            <div class="a_info">
+            <!--{if $_G['uid']}--><div class="cl">{$_G[member][username]}</div><div class="lg_button cl"><a href="home.php?mod=spacecp">{lang setup}</a><a id="nte_menu" href="home.php?mod=space&do=notice" class="notification" style="margin: 0; background: #616663;">提醒<!--{if $_G[member][newprompt]}--><span style="padding-left: 5px; color: #F08989;">$_G[member][newprompt]</span><!--{/if}--></a></div><!--{else}--><div class="cl" style="line-height: 24px;">亲爱的会员</br>欢迎回来</div><div class="lg_button cl"><a href="member.php?mod={$_G[setting][regname]}">注册</a><a href="member.php?mod=logging&action=login" onClick="showWindow('login', this.href)" style="margin: 0; background: #616663;">登录</a></div><!--{/if}-->
+            </div>
+         </div>
+         <!--[diy=diy_10]--><div id="diy_10" class="area"><div id="frameezF613" class="frame move-span cl frame-1"><div id="frameezF613_left" class="column frame-1-c"><div id="frameezF613_left_temp" class="move-span temp"></div><!--{block/72}--></div></div><div id="framecJVVK1" class="frame move-span cl frame-1"><div id="framecJVVK1_left" class="column frame-1-c"><div id="framecJVVK1_left_temp" class="move-span temp"></div><!--{block/73}--></div></div><div id="frameO7nNtT" class="frame move-span cl frame-1"><div id="frameO7nNtT_left" class="column frame-1-c"><div id="frameO7nNtT_left_temp" class="move-span temp"></div><!--{block/74}--></div></div><div id="frameCWHtlb" class="frame move-span cl frame-1"><div id="frameCWHtlb_left" class="column frame-1-c"><div id="frameCWHtlb_left_temp" class="move-span temp"></div><!--{block/75}--></div></div><div id="tabVR0rYR" class="tab1 frame-tab move-span cl"><div id="tabVR0rYR_title" class="tab-title title column cl" switchtype="click"><!--{block/76}--><!--{block/77}--></div><div id="tabVR0rYR_content" class="tb-c"></div><script type="text/javascript">initTab("tabVR0rYR","click");</script></div><div id="frameJeEzMi" class="frame move-span cl frame-1"><div id="frameJeEzMi_left" class="column frame-1-c"><div id="frameJeEzMi_left_temp" class="move-span temp"></div><!--{block/78}--></div></div></div><!--[/diy]-->
+      </div>
+</div>
+<div class="wp cl">
+   <div class="box cl" style="padding-bottom: 10px;">
+      <div class="cl">
+         <h3 style="margin-left: 20px;">焦点图</h3>
+      </div>
+      <div class="cl" style="margin: 0 20px;">
+         <div style="float: left; width: 370px; margin-right: 10px;">
+            <!--[diy=diy_11]--><div id="diy_11" class="area"><div id="framePCpEJz" class="frame move-span cl frame-1"><div id="framePCpEJz_left" class="column frame-1-c"><div id="framePCpEJz_left_temp" class="move-span temp"></div><!--{block/81}--></div></div><div id="framemIFFbv" class="frame move-span cl frame-1"><div id="framemIFFbv_left" class="column frame-1-c"><div id="framemIFFbv_left_temp" class="move-span temp"></div><!--{block/80}--></div></div></div><!--[/diy]-->
+         </div>
+         <div style="float: left; width: 180px; margin-right: 10px;">
+            <!--[diy=diy_12]--><div id="diy_12" class="area"><div id="frameI1ty92" class="frame move-span cl frame-1"><div id="frameI1ty92_left" class="column frame-1-c"><div id="frameI1ty92_left_temp" class="move-span temp"></div><!--{block/82}--></div></div></div><!--[/diy]-->
+         </div>
+         <div style="float: left; width: 250px; margin-right: 10px;">
+            <!--[diy=diy_13]--><div id="diy_13" class="area"><div id="framet1nYzi" class="frame move-span cl frame-1"><div id="framet1nYzi_left" class="column frame-1-c"><div id="framet1nYzi_left_temp" class="move-span temp"></div><!--{block/79}--></div></div></div><!--[/diy]-->
+         </div>
+         <div style="float: left; width: 300px; margin-right: 0;">
+            <!--[diy=diy_15]--><div id="diy_15" class="area"><div id="frameUbm4Z4" class="frame move-span cl frame-1"><div id="frameUbm4Z4_left" class="column frame-1-c"><div id="frameUbm4Z4_left_temp" class="move-span temp"></div><!--{block/83}--></div></div></div><!--[/diy]-->
+         </div>
+      </div>
+   </div>
+</div>
+
+ 
+<!--{template common/footer}-->
