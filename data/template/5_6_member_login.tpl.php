@@ -1,6 +1,6 @@
 <?php if(!defined('IN_DISCUZ')) exit('Access Denied'); hookscriptoutput('login');
 0
-|| checktplrefresh('./template/elec_201701_hx_dingzhi/member/login.htm', './template/default/common/seccheck.htm', 1501932682, '6', './data/template/5_6_member_login.tpl.php', './template/elec_201701_hx_dingzhi', 'member/login')
+|| checktplrefresh('./template/elec_201701_hx_dingzhi/member/login.htm', './template/default/common/seccheck.htm', 1509962683, '6', './data/template/5_6_member_login.tpl.php', './template/elec_201701_hx_dingzhi', 'member/login')
 ;?><?php include template('common/header'); ?><link rel="stylesheet" type="text/css" href="template/elec_201701_hx_dingzhi/style/css/member.css" />
 <div class="modal-backdrop fade in"></div><?php $loginhash = 'L'.random(4);?><?php if(empty($_GET['infloat'])) { ?>
 <div id="ct" class="ptm wp w cl">

@@ -405,7 +405,7 @@ jQuery(function() {
     <!--{/if}-->
     <!--{/if}-->
     
-    <!--{if $close_leftinfo}--><!--[diy=diyfastposttop]--><div id="diyfastposttop" class="area"></div><!--[/diy]--><!--{/if}-->
+    <!--{if $close_leftinfo}--><!--[diy=diyfastposttop]--><div id="diyfastposttop" class="area"><div id="frameA0Snsl" class="frame move-span cl frame-1"><div id="frameA0Snsl_left" class="column frame-1-c"><div id="frameA0Snsl_left_temp" class="move-span temp"></div><!--{block/86}--></div></div></div><!--[/diy]--><!--{/if}-->
     
     <!--{hook/viewthread_bottom}-->
     
@@ -526,8 +526,8 @@ jQuery(function() {
 		<!--{/if}-->
 		<a class="elecfabu" onclick="showWindow('newthread', 'forum.php?mod=post&amp;action=newthread&amp;fid=$_G[fid]')" href="javascript:;" title="{lang send_posts}">发布主题</a>
         <!--[diy=diy01]--><div id="diy01" class="area"></div><!--[/diy]-->
-        <div class="elec_ad_side"> <!--[diy=elecsideads]--><div id="elecsideads" class="area"><div id="frameQm3aq1" class="frame move-span cl frame-1"><div id="frameQm3aq1_left" class="column frame-1-c"><div id="frameQm3aq1_left_temp" class="move-span temp"></div><!--{block/57}--></div></div></div><!--[/diy]--></div>
-        <!--[diy=elec_tuijian]--><div id="elec_tuijian" class="area"><div id="frameczLRJ7" class="frame move-span cl frame-1"><div id="frameczLRJ7_left" class="column frame-1-c"><div id="frameczLRJ7_left_temp" class="move-span temp"></div><!--{block/58}--></div></div></div><!--[/diy]-->
+        <div class="elec_ad_side"> <!--[diy=elecsideads]--><div id="elecsideads" class="area"><div id="frameJl5Z6C" class="frame move-span cl frame-1"><div id="frameJl5Z6C_left" class="column frame-1-c"><div id="frameJl5Z6C_left_temp" class="move-span temp"></div><!--{block/84}--></div></div></div><!--[/diy]--></div>
+        <!--[diy=elec_tuijian]--><div id="elec_tuijian" class="area"><div id="framebsB62Z" class="frame move-span cl frame-1"><div id="framebsB62Z_left" class="column frame-1-c"><div id="framebsB62Z_left_temp" class="move-span temp"></div><!--{block/85}--></div></div></div><!--[/diy]-->
     </div>
      <!--{/if}-->
 </div>
