@@ -1,8 +1,8 @@
 <?php if(!defined('IN_DISCUZ')) exit('Access Denied'); 
 0
-|| checktplrefresh('./template/elec_201701_hx_dingzhi/common/header2.htm', './template/elec_201701_hx_dingzhi/common/header_common.htm', 1501769254, '6', './data/template/5_6_common_header2.tpl.php', './template/elec_201701_hx_dingzhi', 'common/header2')
-|| checktplrefresh('./template/elec_201701_hx_dingzhi/common/header2.htm', './template/elec_201701_hx_dingzhi/common/pubsearchform2.htm', 1501769254, '6', './data/template/5_6_common_header2.tpl.php', './template/elec_201701_hx_dingzhi', 'common/header2')
-|| checktplrefresh('./template/elec_201701_hx_dingzhi/common/header2.htm', './template/default/common/header_qmenu.htm', 1501769254, '6', './data/template/5_6_common_header2.tpl.php', './template/elec_201701_hx_dingzhi', 'common/header2')
+|| checktplrefresh('./template/elec_201701_hx_dingzhi/common/header2.htm', './template/elec_201701_hx_dingzhi/common/header_common.htm', 1510713489, '6', './data/template/5_6_common_header2.tpl.php', './template/elec_201701_hx_dingzhi', 'common/header2')
+|| checktplrefresh('./template/elec_201701_hx_dingzhi/common/header2.htm', './template/elec_201701_hx_dingzhi/common/pubsearchform2.htm', 1510713489, '6', './data/template/5_6_common_header2.tpl.php', './template/elec_201701_hx_dingzhi', 'common/header2')
+|| checktplrefresh('./template/elec_201701_hx_dingzhi/common/header2.htm', './template/default/common/header_qmenu.htm', 1510713489, '6', './data/template/5_6_common_header2.tpl.php', './template/elec_201701_hx_dingzhi', 'common/header2')
 ;?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">

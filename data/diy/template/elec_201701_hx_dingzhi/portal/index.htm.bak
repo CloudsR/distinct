@@ -10,22 +10,22 @@
 <div class="cl" style="padding: 20px 0; margin: 38px 0 30px 0; background: #FFFFFF;">
    <div class="wp cl">
       <div style="float: left; width: 780px;">
-      <!--[diy=diy_1]--><div id="diy_1" class="area"><div id="frameha9ck9" class="frame move-span cl frame-1"><div id="frameha9ck9_left" class="column frame-1-c"><div id="frameha9ck9_left_temp" class="move-span temp"></div><!--{block/64}--></div></div></div><!--[/diy]-->
+      <!--[diy=diy_1]--><div id="diy_1" class="area"><div id="frameNh94gx" class="frame move-span cl frame-1"><div id="frameNh94gx_left" class="column frame-1-c"><div id="frameNh94gx_left_temp" class="move-span temp"></div><!--{block/87}--></div></div></div><!--[/diy]-->
       </div>
       <div style="float: right; width: 370px;">
-      <!--[diy=diy_2]--><div id="diy_2" class="area"><div id="framevUqzXw" class="frame move-span cl frame-1"><div id="framevUqzXw_left" class="column frame-1-c"><div id="framevUqzXw_left_temp" class="move-span temp"></div><!--{block/65}--></div></div><div id="frameQz6xmk" class="frame move-span cl frame-1"><div id="frameQz6xmk_left" class="column frame-1-c"><div id="frameQz6xmk_left_temp" class="move-span temp"></div><!--{block/66}--></div></div></div><!--[/diy]-->
+      <!--[diy=diy_2]--><div id="diy_2" class="area"><div id="framesDFhEs" class="frame move-span cl frame-1"><div id="framesDFhEs_left" class="column frame-1-c"><div id="framesDFhEs_left_temp" class="move-span temp"></div><!--{block/88}--></div></div><div id="frameTDG7O1" class="frame move-span cl frame-1"><div id="frameTDG7O1_left" class="column frame-1-c"><div id="frameTDG7O1_left_temp" class="move-span temp"></div><!--{block/89}--></div></div></div><!--[/diy]-->
       </div>
    </div>
 </div>
 <div class="wp cl">
  <div style="float: left; width: 780px;">
-      <!--[diy=diy_3]--><div id="diy_3" class="area"><div id="framem2eGeh" class="frame move-span cl frame-1"><div id="framem2eGeh_left" class="column frame-1-c"><div id="framem2eGeh_left_temp" class="move-span temp"></div><!--{block/67}--></div></div><div id="frameF5pWCC" class="frame move-span cl frame-1"><div id="frameF5pWCC_left" class="column frame-1-c"><div id="frameF5pWCC_left_temp" class="move-span temp"></div><!--{block/68}--></div></div><div id="framefOYhDr" class="frame move-span cl frame-1"><div id="framefOYhDr_left" class="column frame-1-c"><div id="framefOYhDr_left_temp" class="move-span temp"></div><!--{block/69}--></div></div></div><!--[/diy]-->
+      <!--[diy=diy_3]--><div id="diy_3" class="area"><div id="framelIOgic" class="frame move-span cl frame-1"><div id="framelIOgic_left" class="column frame-1-c"><div id="framelIOgic_left_temp" class="move-span temp"></div><!--{block/90}--></div></div><div id="frameSuWWIA" class="frame move-span cl frame-1"><div id="frameSuWWIA_left" class="column frame-1-c"><div id="frameSuWWIA_left_temp" class="move-span temp"></div><!--{block/91}--></div></div><div id="framesHuZ62" class="frame move-span cl frame-1"><div id="framesHuZ62_left" class="column frame-1-c"><div id="framesHuZ62_left_temp" class="move-span temp"></div><!--{block/92}--></div></div></div><!--[/diy]-->
       <div class="cl">
       <div class="cl" style="float: left; width: 380px;">
-      <!--[diy=diy_4]--><div id="diy_4" class="area"><div id="framefsrs96" class="frame move-span cl frame-1"><div id="framefsrs96_left" class="column frame-1-c"><div id="framefsrs96_left_temp" class="move-span temp"></div><!--{block/71}--></div></div></div><!--[/diy]-->
+      <!--[diy=diy_4]--><div id="diy_4" class="area"><div id="frameP7qffQ" class="frame move-span cl frame-1"><div id="frameP7qffQ_left" class="column frame-1-c"><div id="frameP7qffQ_left_temp" class="move-span temp"></div><!--{block/94}--></div></div></div><!--[/diy]-->
       </div>
       <div class="cl" style="float: right; width: 380px;">
-      <!--[diy=diy_5]--><div id="diy_5" class="area"><div id="frameW6gAG8" class="frame move-span cl frame-1"><div id="frameW6gAG8_left" class="column frame-1-c"><div id="frameW6gAG8_left_temp" class="move-span temp"></div><!--{block/70}--></div></div></div><!--[/diy]-->
+      <!--[diy=diy_5]--><div id="diy_5" class="area"><div id="frameGp83Oa" class="frame move-span cl frame-1"><div id="frameGp83Oa_left" class="column frame-1-c"><div id="frameGp83Oa_left_temp" class="move-span temp"></div><!--{block/93}--></div></div></div><!--[/diy]-->
       </div>
       </div>
       </div>
@@ -40,7 +40,7 @@
             <!--{if $_G['uid']}--><div class="cl">{$_G[member][username]}</div><div class="lg_button cl"><a href="home.php?mod=spacecp">{lang setup}</a><a id="nte_menu" href="home.php?mod=space&do=notice" class="notification" style="margin: 0; background: #616663;">提醒<!--{if $_G[member][newprompt]}--><span style="padding-left: 5px; color: #F08989;">$_G[member][newprompt]</span><!--{/if}--></a></div><!--{else}--><div class="cl" style="line-height: 24px;">亲爱的会员</br>欢迎回来</div><div class="lg_button cl"><a href="member.php?mod={$_G[setting][regname]}">注册</a><a href="member.php?mod=logging&action=login" onClick="showWindow('login', this.href)" style="margin: 0; background: #616663;">登录</a></div><!--{/if}-->
             </div>
          </div>
-         <!--[diy=diy_10]--><div id="diy_10" class="area"><div id="frameezF613" class="frame move-span cl frame-1"><div id="frameezF613_left" class="column frame-1-c"><div id="frameezF613_left_temp" class="move-span temp"></div><!--{block/72}--></div></div><div id="framecJVVK1" class="frame move-span cl frame-1"><div id="framecJVVK1_left" class="column frame-1-c"><div id="framecJVVK1_left_temp" class="move-span temp"></div><!--{block/73}--></div></div><div id="frameO7nNtT" class="frame move-span cl frame-1"><div id="frameO7nNtT_left" class="column frame-1-c"><div id="frameO7nNtT_left_temp" class="move-span temp"></div><!--{block/74}--></div></div><div id="frameCWHtlb" class="frame move-span cl frame-1"><div id="frameCWHtlb_left" class="column frame-1-c"><div id="frameCWHtlb_left_temp" class="move-span temp"></div><!--{block/75}--></div></div><div id="tabVR0rYR" class="tab1 frame-tab move-span cl"><div id="tabVR0rYR_title" class="tab-title title column cl" switchtype="click"><!--{block/76}--><!--{block/77}--></div><div id="tabVR0rYR_content" class="tb-c"></div><script type="text/javascript">initTab("tabVR0rYR","click");</script></div><div id="frameJeEzMi" class="frame move-span cl frame-1"><div id="frameJeEzMi_left" class="column frame-1-c"><div id="frameJeEzMi_left_temp" class="move-span temp"></div><!--{block/78}--></div></div></div><!--[/diy]-->
+         <!--[diy=diy_10]--><div id="diy_10" class="area"><div id="frameXHFZVA" class="frame move-span cl frame-1"><div id="frameXHFZVA_left" class="column frame-1-c"><div id="frameXHFZVA_left_temp" class="move-span temp"></div><!--{block/95}--></div></div><div id="frameOE3UuS" class="frame move-span cl frame-1"><div id="frameOE3UuS_left" class="column frame-1-c"><div id="frameOE3UuS_left_temp" class="move-span temp"></div><!--{block/96}--></div></div><div id="frames1e1AS" class="frame move-span cl frame-1"><div id="frames1e1AS_left" class="column frame-1-c"><div id="frames1e1AS_left_temp" class="move-span temp"></div><!--{block/97}--></div></div><div id="framej7ju89" class="frame move-span cl frame-1"><div id="framej7ju89_left" class="column frame-1-c"><div id="framej7ju89_left_temp" class="move-span temp"></div><!--{block/98}--></div></div><div id="tabcY2LyR" class="tab1 frame-tab move-span cl"><div id="tabcY2LyR_title" class="tab-title title column cl" switchtype="click"><!--{block/99}--><!--{block/100}--></div><div id="tabcY2LyR_content" class="tb-c"></div><script type="text/javascript">initTab("tabcY2LyR","click");</script></div><div id="framenb540J" class="frame move-span cl frame-1"><div id="framenb540J_left" class="column frame-1-c"><div id="framenb540J_left_temp" class="move-span temp"></div><!--{block/101}--></div></div></div><!--[/diy]-->
       </div>
 </div>
 <div class="wp cl">
@@ -50,16 +50,16 @@
       </div>
       <div class="cl" style="margin: 0 20px;">
          <div style="float: left; width: 370px; margin-right: 10px;">
-            <!--[diy=diy_11]--><div id="diy_11" class="area"><div id="framePCpEJz" class="frame move-span cl frame-1"><div id="framePCpEJz_left" class="column frame-1-c"><div id="framePCpEJz_left_temp" class="move-span temp"></div><!--{block/81}--></div></div><div id="framemIFFbv" class="frame move-span cl frame-1"><div id="framemIFFbv_left" class="column frame-1-c"><div id="framemIFFbv_left_temp" class="move-span temp"></div><!--{block/80}--></div></div></div><!--[/diy]-->
+            <!--[diy=diy_11]--><div id="diy_11" class="area"><div id="frameNA8BpH" class="frame move-span cl frame-1"><div id="frameNA8BpH_left" class="column frame-1-c"><div id="frameNA8BpH_left_temp" class="move-span temp"></div><!--{block/104}--></div></div><div id="frameJBA0x4" class="frame move-span cl frame-1"><div id="frameJBA0x4_left" class="column frame-1-c"><div id="frameJBA0x4_left_temp" class="move-span temp"></div><!--{block/103}--></div></div></div><!--[/diy]-->
          </div>
          <div style="float: left; width: 180px; margin-right: 10px;">
-            <!--[diy=diy_12]--><div id="diy_12" class="area"><div id="frameI1ty92" class="frame move-span cl frame-1"><div id="frameI1ty92_left" class="column frame-1-c"><div id="frameI1ty92_left_temp" class="move-span temp"></div><!--{block/82}--></div></div></div><!--[/diy]-->
+            <!--[diy=diy_12]--><div id="diy_12" class="area"><div id="frameNEMkIM" class="frame move-span cl frame-1"><div id="frameNEMkIM_left" class="column frame-1-c"><div id="frameNEMkIM_left_temp" class="move-span temp"></div><!--{block/105}--></div></div></div><!--[/diy]-->
          </div>
          <div style="float: left; width: 250px; margin-right: 10px;">
-            <!--[diy=diy_13]--><div id="diy_13" class="area"><div id="framet1nYzi" class="frame move-span cl frame-1"><div id="framet1nYzi_left" class="column frame-1-c"><div id="framet1nYzi_left_temp" class="move-span temp"></div><!--{block/79}--></div></div></div><!--[/diy]-->
+            <!--[diy=diy_13]--><div id="diy_13" class="area"><div id="frameQR3ctr" class="frame move-span cl frame-1"><div id="frameQR3ctr_left" class="column frame-1-c"><div id="frameQR3ctr_left_temp" class="move-span temp"></div><!--{block/102}--></div></div></div><!--[/diy]-->
          </div>
          <div style="float: left; width: 300px; margin-right: 0;">
-            <!--[diy=diy_15]--><div id="diy_15" class="area"><div id="frameUbm4Z4" class="frame move-span cl frame-1"><div id="frameUbm4Z4_left" class="column frame-1-c"><div id="frameUbm4Z4_left_temp" class="move-span temp"></div><!--{block/83}--></div></div></div><!--[/diy]-->
+            <!--[diy=diy_15]--><div id="diy_15" class="area"><div id="frameE2mDdp" class="frame move-span cl frame-1"><div id="frameE2mDdp_left" class="column frame-1-c"><div id="frameE2mDdp_left_temp" class="move-span temp"></div><!--{block/106}--></div></div></div><!--[/diy]-->
          </div>
       </div>
    </div>

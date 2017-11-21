@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>预订详情页</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <style type="text/css">
+    body {
+        font: 12px/1.5 Tahoma, 'Microsoft Yahei', 'Simsun';
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    ul li {
+        list-style: none;
+    }
+    
+    a {
+        text-decoration: none;
+        cursor: pointer;
+        color: inherit
+    }
+    
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    
+    .clear {
+        clear: both;
+        font-size: 0;
+    }
+    
+    .clearfix:after {
+        content: "\200B";
+        display: block;
+        height: 0;
+        visibility: hidden;
+        clear: both;
+    }
+    
+    .clearfix {
+        *zoom: 1;
+    }
+    
+    .res_warp {
+        width: 1170px;
+        margin: 30px auto;
+        font-size: 14px;
+    }
+    
+    .res-top {}
+    
+    .res-top .r-top-left {
+        float: left;
+        width: 400px;
+    }
+    
+    .r-top-left h2 {}
+    
+    .r-top-left p {
+        margin-top: 10px;
+        line-height: 22px;
+    }
+    
+    .r-top-left p label {
+        display: inline-block;
+        height: auto;
+    }
+    
+    .r-top-left p span {
+        display: inline-block;
+        vertical-align: top;
+        width: 320px;
+    }
+    
+    .res-top .r-top-right {
+        float: right;
+        width: 579px;
+        height: 316px;
+    }
+    
+    .res-top .r-top-right img {
+        display: block;
+        width: 579px;
+        height: 316px;
+    }
+    
+    .res-title {
+        border-left: 4px solid #66cc99;
+        padding-left: 10px;
+        margin-top: 30px;
+    }
+    
+    .res-info-lf {
+        margin-top: 20px;
+        width: 783px;
+        float: left;
+    }
+    
+    .res-info-lf table {
+        color: #666;
+        table-layout: fixed;
+    }
+    
+    .res-info-lf table tr {
+        line-height: 40px;
+    }
+    
+    .res-info-lf table thead th {
+        color: #66cc99;
+        font-size: 12px;
+    }
+    
+    .res-info-lf table thead th:first-child {
+        color: #666
+    }
+    
+    .res-info-lf table tbody tr {
+        padding: 5px;
+        height: 20px;
+    }
+    
+    .res-info-lf table tbody tr:first-child td {
+        border-top: 1px solid #ddd;
+    }
+    
+    .res-info-lf table tbody tr:last-child td {
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .res-info-lf table tbody tr td {
+        background: #f3f3f3;
+        height: 20px;
+    }
+    
+    .res-info-lf table tbody tr td:nth-child(2) {
+        border-left: 1px solid #ddd
+    }
+    
+    .res-info-lf table tbody tr td:nth-child(2) {
+        border-left: 1px solid #ddd
+    }
+    
+    .res-info-lf table tbody tr td:first-child {
+        background: #fff;
+        border: none !important;
+    }
+    
+    .res-info-lf table tbody tr td span {
+        display: block;
+        width: 50px;
+        height: 26px;
+        background: #fff;
+        border: 1px solid #999;
+        border-radius: 5px;
+        margin: 10px auto;
+    }
+    
+    .res-info-lf table tbody tr td span.cur_select {
+        background: #66cc99;
+        border: 1px solid #ccc;
+    }
+    
+    .res-info-lf table tbody tr td span.no_select {
+        background: #ccc;
+        border: 1px solid #ccc;
+    }
+    
+    .res-info-rg {
+        float: right;
+        width: 325px;
+        padding: 15px 30px;
+        margin-top: 60px;
+        border: 1px solid #ddd;
+        height: 642px;
+        border-left: none;
+    }
+    
+    .res-info-rg ul {
+        padding: 10px 0;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .res-info-rg ul li {
+        list-style: none;
+        float: left;
+        width: 33.3%;
+    }
+    
+    .res-info-rg ul li i {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        border: 1px solid #ddd;
+        border-radius: 2px;
+    }
+    
+    .res-info-rg ul li span {
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 2px;
+    }
+    
+    .res-info-rg ul li i.rg-no {
+        background: #c1c0c0;
+    }
+    
+    .res-info-rg ul li i.rg-cur {
+        background: #66cc99;
+    }
+    
+    .reg-yd {
+        margin-top: 30px;
+    }
+    
+    .reg-yd p {
+        line-height: 22px;
+    }
+    
+    .reg-yd input {
+        border: none;
+        border-radius: 5px;
+        display: block;
+        width: 190px;
+        height: 50px;
+        margin: 40px auto 0;
+        background: #66cc99;
+        color: #fff;
+    }
+    
+    .reg-yd a {
+        display: block;
+        color: #666;
+        float: right;
+        margin-right: 50px;
+        text-decoration: none;
+        ;
+    }
+    
+ .reg-tips {
+        display: block;
+        margin: 30px 10px;
+      
+        color: #999;
+        font-size: 12px;
+    }
+    
+    .res-content .booking-date {
+        width: 100%;
+        height: 32px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        overflow: hidden
+    }
+    
+    .res-content .booking-date ul {
+        text-align: left
+    }
+    
+    .res-content .booking-date ul li {
+        float: left;
+        width: 120px;
+        color: #66cc99;
+        font-size: 14px;
+        text-align: center;
+        padding: 5px 0px;
+
+    }
+    
+    .res-content .booking-date ul li.active {
+        color: white;
+        background-color: #66cc99;
+        border-radius: 10px
+    }
+    
+    .res-content .booking-date ul li.title {
+        display: inline-block;
+        width: 60px;
+        font-size: 14px;
+        color: #666666;
+        text-align: right
+    }
+    
+    .res-content .left-time-list {
+        width: 40px;
+        float: left
+    }
+    .res-content .main-booking {
+    float: right;
+    width: 1120px;
+    border: 1px solid #e6e6e6
+}
+
+.res-content .main-booking .main-booking-detail {
+    float: left;
+    width: 820px;
+    background-color: #f3f3f3;
+}
+
+.res-content .main-booking .main-booking-detail table {
+    height: 100%;
+    margin-left: 6px;
+    width: 100%;
+}
+.main-booking-detail table tr span{
+	display: block;
+	width: 60px; height: 30px; border: 1px solid #ccc;
+	background: #fff; border-radius: 5px; 
+	margin:5px auto;
+}
+.main-booking-detail table tr span.cur_select{
+ background: #66cc99;
+ border: 1px solid #66cc99;
+}
+.main-booking-detail table tr span.not_select{
+ background: #ccc;
+ border: 1px solid #ccc;
+}
+.res-content .main-booking .main-booking-detail table thead tr th.heads {
+    text-align: center
+}
+
+.res-content .main-booking .main-booking-detail table thead tr th.heads span {
+    max-width: 56px;
+    display: block;
+    font-size: 12px;
+    color: #222222;
+    overflow: hidden;
+    padding: 8px 0 8px 0;
+    word-wrap: break-word;
+    word-break: normal
+}
+
+.res-content .main-booking .main-booking-detail table tbody tr.rows td.single {
+    min-width: 56px;
+    height: 30px;
+    padding: 2px 2px 2px 2px;
+    text-align: center;
+    cursor: pointer
+}
+
+.res-content .main-booking .main-booking-detail table tbody tr.rows td.single span {
+    width: 52px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    border: 1px solid #aaaaaa;
+    border-radius: 3px;
+    font-size: 12px;
+    color: #666666;
+    overflow: hidden
+}
+
+.res-content .main-booking .main-booking-detail table tbody tr.rows td.single span.can-order {
+    background-color: white
+}
+
+.res-content .main-booking .main-booking-detail table tbody tr.rows td.single span.can-not-order {
+    background-color: #aaaaaa
+}
+
+.res-content .main-booking .main-booking-detail table tbody tr.rows td.single span.highlight {
+    background-color: #e7ecf9;
+    color: #4f6dcf;
+    border-color: #4f6dcf
+}
+
+.res-content .main-booking .main-booking-detail table tbody tr.rows td.single span.mark {
+    background-color: #d0d8f3
+}
+
+.res-content .main-booking .main-booking-detail table tbody tr.rows td.single span.half-mark {
+    background-color: #8f98b5
+}
+
+.res-content .main-booking .main-booking-detail table tbody tr.rows td.single span.chosen {
+    border: 1px solid #4f6dcf;
+    background-color: #4f6dcf;
+    color: white
+}
+
+.res-content .main-booking .right-order-plane {
+    float: right;
+    width: 293px
+}
+
+.res-content .main-booking .right-order-plane .title {
+    height: 30px;
+    margin: 0 auto;
+    width: 90%;
+    color: #222222;
+    font-size: 14px;
+    padding-top: 10px
+}
+
+.res-content .main-booking .right-order-plane .title ul {
+    height: 100%;
+    border-bottom: 1px solid #e6e6e6;
+    white-space: nowrap;
+    float: left
+}
+
+.res-content .main-booking .right-order-plane .title li {
+    display: inline-block;
+    max-width: 90px;
+    padding: 0 10px 0 0px;
+    vertical-align: middle
+}
+
+.res-content .main-booking .right-order-plane .title li span {
+    display: block;
+    overflow: hidden;
+    width: 16px;
+    height: 16px
+}
+
+.res-content .main-booking .right-order-plane .title li span.can-order {
+    border: 1px solid #aaaaaa;
+    background-color: white
+}
+
+.res-content .main-booking .right-order-plane .title li span.can-not-order {
+    border: 1px solid #aaaaaa;
+    background-color: #aaaaaa
+}
+
+.res-content .main-booking .right-order-plane .title li span.chosen {
+    border: 1px solid #66cc99;
+    background-color: #66cc99
+}
+
+.res-content .main-booking .right-order-plane .info {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 15px
+}
+
+.res-content .main-booking .right-order-plane .info dl {
+    line-height: 20px
+}
+
+.res-content .main-booking .right-order-plane .info dt {
+    display: block;
+    width: 50px;
+    float: left;
+    text-align: right;
+    font-size: 14px;
+    color: #666666
+}
+
+.res-content .main-booking .right-order-plane .info dd {
+    font-size: 14px;
+    color: #222222;
+    text-align: left
+}
+
+.res-content .main-booking .right-order-plane .info ul.selected-booking {
+    margin-top: 30px
+}
+
+.res-content .main-booking .right-order-plane .info li {
+    margin: 5px 5px;
+    border: 1px solid #aaaaaa;
+    border-radius: 3px;
+    width: 246px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #222222
+}
+
+.res-content .main-booking .right-order-plane .info li span.delete-icon {
+    width: 28px;
+    line-height: 20px;
+    height: 20px;
+    margin: 5px 0;
+    border-width: 0 0 0 1px;
+    border-style: solid;
+    border-color: #aaaaaa;
+    float: right;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    color: #aaaaaa
+}
+
+.res-content .main-booking .right-order-plane .info .court-display {
+    margin-top: 50px;
+    float: left;
+    margin-left: 5px;
+    font-size: 14px;
+    color: #222222
+}
+
+.res-content .main-booking .right-order-plane .info .court-display span.number {
+    padding: 5px;
+    color: #4f6dcf
+}
+
+.res-content .main-booking .right-order-plane .info .court-display span.append-msg {
+    display: none
+}
+
+.res-content .main-booking .right-order-plane .info .price-display {
+    margin: 20px 20px 20px 5px;
+    float: left;
+    font-size: 18px;
+    color: #222222;
+    clear: both
+}
+
+.res-content .main-booking .right-order-plane .info .price-display span.number {
+    padding: 5px;
+    color: #4f6dcf
+}
+
+.res-content .main-booking .right-order-plane .info a.submit-button {
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    border: 0;
+    outline: 0;
+    margin: 100px auto;
+    font-size: 14px;
+    cursor: pointer;
+    background: #66cc99;
+    clear: both
+}
+
+.res-content .main-booking .right-order-plane .info a.active {
+    background: #4f6dcf
+}
+    .res-content .left-time-list ul {
+      
+        padding-bottom: 14px;
+        text-align: right
+    }
+    
+    .res-content .left-time-list ul li {
+        width: 100%;
+        height: 42px;
+        font-size: 12px;
+        color: #666666;
+        line-height: 42px;
+    }
+    
+    .index-login {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0
+    }
+    
+    .index-login .login-bg {
+        width: 100%;
+        height: 100%;
+        -moz-transition: all .3s ease-in 0s;
+        -o-transition: all .3s ease-in 0s;
+        -webkit-transition: all .3s ease-in;
+        -webkit-transition-delay: 0s;
+        transition: all .3s ease-in 0s;
+        opacity: 0;
+        background-color: rgba(0, 0, 0, 0.3)
+    }
+    
+    .index-login .login-bg.active {
+        opacity: 1
+    }
+    
+    .index-login .alert-box {
+        width: 370px;
+        height: auto;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-top: -80px;
+        margin-left: -185px;
+        border-radius: 10px;
+        background-color: white;
+        -moz-transition: all .3s ease-in 0s;
+        -o-transition: all .3s ease-in 0s;
+        -webkit-transition: all .3s ease-in;
+        -webkit-transition-delay: 0s;
+        transition: all .3s ease-in 0s;
+        opacity: 0
+    }
+    
+    .index-login .alert-box.active {
+        opacity: 1
+    }
+    
+    .index-login .alert-box .btn-close {
+        width: 12px;
+        height: 12px;
+        position: relative;
+        display: inline-block;
+        float: right;
+        right: 14px;
+        top: 14px;
+        cursor: pointer;
+        background-image: url("../images/icon_close.png")
+    }
+    
+    .index-login .alert-box .alert-text {
+        font-size: 16px;
+        color: #222;
+        text-align: center;
+        padding: 50px 40px 30px;
+        text-align: center
+    }
+    
+    .index-login .alert-box .bottom-btn {
+        width: 120px;
+        margin: 20px auto;
+    }
+    
+    .index-login .alert-box .bottom-btn .cancle-btn {
+        width: 118px;
+        height: 28px;
+        font-size: 16px;
+        color: #4f6dcf;
+        border: 1px solid #4f6dcf;
+        display: inline-block;
+        border-radius: 20px;
+        margin-right: 38px;
+        cursor: pointer;
+        line-height: 28px
+    }
+    
+    .index-login .alert-box .bottom-btn .cancle-btn:hover {
+        background-color: #4f6dcf;
+        color: white
+    }
+    
+    .index-login .alert-box .bottom-btn .cancle-btn:active {
+        background-color: #5575de
+    }
+    
+    .index-login .alert-box .bottom-btn .sure-btn {
+        width: 120px;
+        height: 30px;
+        font-size: 16px;
+        color: white;
+        border-radius: 20px;
+        background-color: #66cc99;
+        display: inline-block;
+        cursor: pointer;
+        line-height: 30px;
+        text-align: center;
+    }
+    
+    .index-login .alert-box .bottom-btn .sure-btn:hover {
+        background-color: #66cc99
+    }
+    
+    .index-login .alert-box .bottom-btn .sure-btn:active {
+        background-color: #66cc99
+    }
+    
+    .index-login .loading-box {
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        margin-top: -50px;
+        margin-left: -50px;
+        -moz-transition: all .3s ease-in 0s;
+        -o-transition: all .3s ease-in 0s;
+        -webkit-transition: all .3s ease-in;
+        -webkit-transition-delay: 0s;
+        transition: all .3s ease-in 0s;
+        opacity: 0
+    }
+
+    .table-time{ width: 100%;margin-top: 20px;}
+    .table-time th{ color: #666; }
+    .table-time tr{ height: 36px; line-height: 36px; }
+    .table-time td{ text-align: center; }
+    </style>
+    <script type="text/javascript" src="../static/js/mobile/jquery-1.8.3.min.js"></script>
+</head>
+
+<body>
+    <div class="res_warp">
+        <div class="res-top clearfix">
+            <div class="r-top-left">
+                <h2>L区综合球场</h2>
+                <p>
+                    <label>场馆地址：</label>
+                    <span>龙华区XXXXXX</span>
+                </p>
+                <p>
+                    <label>场馆电话：</label>
+                    <span>560-80145</span>
+                </p>
+                <p>
+                    <label>场馆介绍：</label>
+                    <span>篮球比赛场地是一个长方形的坚实平面，篮球场地长28米，宽15米，无障碍物。篮球场地有土质</span>
+                </p>
+                <p>
+                    <label>场馆特点：</label>
+                    <span>篮球比赛场地是一个长方形的坚实平面，篮球场地长28米，宽15米，无障碍物。篮球场地有土质</span>
+                </p>
+                <p>
+                    <label>场馆功能：</label>
+                    <span>篮球/排球/网球</span>
+                </p>
+            </div>
+            <div class="r-top-right">
+                <img src="../res-img02.png">
+            </div>
+        </div>
+        <div class="res-content clearfix">
+            <h3 class="res-title">场馆预订</h3>
+            <div class="booking-date">
+                <ul class="js-week">
+                    <li class="title">日期:</li>
+                    <li class=""></li>
+                </ul>
+            </div>
+            <div class="left-time-list">
+                <ul class="clearfix">
+                    <li class="hour">8:00</li>
+                    <li class="hour">9:00</li>
+                    <li class="hour">10:00</li>
+                    <li class="hour">11:00</li>
+                    <li class="hour">12:00</li>
+                    <li class="hour">13:00</li>
+                    <li class="hour">14:00</li>
+                    <li class="hour">15:00</li>
+                    <li class="hour">16:00</li>
+                    <li class="hour">17:00</li>
+                    <li class="hour">18:00</li>
+                    <li class="hour">19:00</li>
+                    <li class="hour">20:00</li>
+                    <li class="hour">21:00</li>
+
+                </ul>
+            </div>
+            <div class="main-booking">
+                <div class="main-booking-detail">
+                    <table class="main-table js-table">
+                        <tbody class="main-table-body">
+                           <tr>
+							<td data-time="08:00-09:00"><span></span></td>
+							<td data-time="08:00-09:00"><span></span></td>
+							<td data-time="08:00-09:00"><span></span></td>
+							<td data-time="08:00-09:00"><span></span></td>
+							<td data-time="08:00-09:00"><span></span></td>
+							<td data-time="08:00-09:00"><span></span></td>
+							<td data-time="08:00-09:00"><span></span></td>
+						</tr>
+						<tr>
+						
+							<td data-time="09:00-10:00"><span></span></td>
+							<td data-time="09:00-10:00"><span></span></td>
+							<td data-time="09:00-10:00"><span></span></td>
+							<td data-time="09:00-10:00"><span></span></td>
+							<td data-time="09:00-10:00"><span></span></td>
+							<td data-time="09:00-10:00"><span></span></td>
+							<td data-time="09:00-10:00"><span></span></td>
+						</tr>
+						<tr>
+						
+							<td data-time="10:00-11:00"><span></span></td>
+							<td data-time="10:00-11:00"><span></span></td>
+							<td data-time="10:00-11:00"><span></span></td>
+							<td data-time="10:00-11:00"><span></span></td>
+							<td data-time="10:00-11:00"><span></span></td>
+							<td data-time="10:00-11:00"><span></span></td>
+							<td data-time="10:00-11:00"><span></span></td>
+						</tr>
+						<tr>
+							
+							<td data-time="11:00-12:00"><span></span></td>
+							<td data-time="11:00-12:00"><span></span></td>
+							<td data-time="11:00-12:00"><span></span></td>
+							<td data-time="11:00-12:00"><span></span></td>
+							<td data-time="11:00-12:00"><span></span></td>
+							<td data-time="11:00-12:00"><span></span></td>
+							<td data-time="11:00-12:00"><span></span></td>
+						</tr>
+						<tr>
+							
+							<td data-time="12:00-13:00"><span></span></td>
+							<td data-time="12:00-13:00"><span></span></td>
+							<td data-time="12:00-13:00"><span></span></td>
+							<td data-time="12:00-13:00"><span></span></td>
+							<td data-time="12:00-13:00"><span></span></td>
+							<td data-time="12:00-13:00"><span></span></td>
+							<td data-time="12:00-13:00"><span></span></td>
+						</tr>
+						<tr>
+							
+							<td data-time="13:00-14:00"><span></span></td>
+							<td data-time="13:00-14:00"><span></span></td>
+							<td data-time="13:00-14:00"><span></span></td>
+							<td data-time="13:00-14:00"><span></span></td>
+							<td data-time="13:00-14:00"><span></span></td>
+							<td data-time="13:00-14:00"><span></span></td>
+							<td data-time="13:00-14:00"><span></span></td>
+						</tr>
+						<tr>
+							
+							<td data-time="14:00-15:00"><span></span></td>
+							<td data-time="14:00-15:00"><span></span></td>
+							<td data-time="14:00-15:00"><span></span></td>
+							<td data-time="14:00-15:00"><span></span></td>
+							<td data-time="14:00-15:00"><span></span></td>
+							<td data-time="14:00-15:00"><span></span></td>
+							<td data-time="14:00-15:00"><span></span></td>
+						</tr>
+						<tr>
+							
+							<td data-time="15:00-16:00"><span></span></td>
+							<td data-time="15:00-16:00"><span></span></td>
+							<td data-time="15:00-16:00"><span></span></td>
+							<td data-time="15:00-16:00"><span></span></td>
+							<td data-time="15:00-16:00"><span></span></td>
+							<td data-time="15:00-16:00"><span></span></td>
+							<td data-time="15:00-16:00"><span></span></td>
+						</tr>
+						<tr>
+							
+							<td data-time="16:00-17:00"><span></span></td>
+							<td data-time="16:00-17:00"><span></span></td>
+							<td data-time="16:00-17:00"><span></span></td>
+							<td data-time="16:00-17:00"><span></span></td>
+							<td data-time="16:00-17:00"><span></span></td>
+							<td data-time="16:00-17:00"><span></span></td>
+							<td data-time="16:00-17:00"><span></span></td>
+						</tr>
+						<tr>
+							
+							<td data-time="17:00-18:00"><span></span></td>
+							<td data-time="17:00-18:00"><span></span></td>
+							<td data-time="17:00-18:00"><span></span></td>
+							<td data-time="17:00-18:00"><span></span></td>
+							<td data-time="17:00-18:00"><span></span></td>
+							<td data-time="17:00-18:00"><span></span></td>
+							<td data-time="17:00-18:00"><span></span></td>
+						</tr>
+						<tr>
+							
+							<td data-time="18:00-19:00"><span></span></td>
+							<td data-time="18:00-19:00"><span></span></td>
+							<td data-time="18:00-19:00"><span></span></td>
+							<td data-time="18:00-19:00"><span></span></td>
+							<td data-time="18:00-19:00"><span></span></td>
+							<td data-time="18:00-19:00"><span></span></td>
+							<td data-time="18:00-19:00"><span></span></td>
+						</tr>
+						<tr>
+							
+							<td data-time="19:00-20:00"><span></span></td>
+							<td data-time="19:00-20:00"><span></span></td>
+							<td data-time="19:00-20:00"><span></span></td>
+							<td data-time="19:00-20:00"><span></span></td>
+							<td data-time="19:00-20:00""><span></span></td>
+							<td data-time="19:00-20:00"><span></span></td>
+							<td data-time="19:00-20:00"><span></span></td>
+						</tr>
+						<tr>
+						
+							<td data-time="20:00-21:00"><span></span></td>
+							<td data-time="20:00-21:00"><span></span></td>
+							<td data-time="20:00-21:00"><span></span></td>
+							<td data-time="20:00-21:00"><span></span></td>
+							<td data-time="20:00-21:00"><span></span></td>
+							<td data-time="20:00-21:00"><span></span></td>
+							<td data-time="20:00-21:00"><span></span></td>
+						</tr>
+						<tr>
+							
+							<td data-time="21:00-22:00"><span></span></td>
+							<td data-time="21:00-22:00"><span></span></td>
+							<td data-time="21:00-22:00"><span></span></td>
+							<td data-time="21:00-22:00"><span></span></td>
+							<td data-time="21:00-22:00"><span></span></td>
+							<td data-time="21:00-22:00"><span></span></td>
+							<td data-time="21:00-22:00"><span></span></td>
+						</tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="right-order-plane">
+                    <div class="title">
+                        <ul>
+                            <li><span class="can-order"></span></li>
+                            <li>可预定</li>
+                            <li><span class="can-not-order"></span></li>
+                            <li>不可预定</li>
+                            <li> <span class="chosen"></span></li>
+                            <li>当前选定</li>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <dl>
+                            <dt>项目：</dt>
+                            <dd> <strong class="category-name">羽毛球</strong></dd>
+                             <dt>场次：</dt>
+                        </dl>
+                       <table class="table-time">
+                       		<thead>
+                       			<tr>
+	                       			<th>日期</th>
+	                       			<th>时间</th>
+                       			</tr>
+                       		</thead>
+                       		<tbody class="js-timeList">
+                       			
+                       		</tbody>
+                       </table>
+              
+                        <div class="price-display">
+                           </div><a  href="javascript:void(0);" class="submit-button js-submit">预订</a>
+                       </div>
+                       <div class="reg-tips">
+							<label>预定规则：</label>
+							<span>1:不能超过1个小时</span>
+					</div>
+                </div>
+            </div>
+        </div>
+       
+        <h3 class="res-title">场馆预订</h3>
+        <div class="res-comment">
+            <ul class="com-list">
+                <li>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+var resViews = {
+    init: function() {
+        this.ui = {};
+        this.ui.body = $("body")
+        this.ui.table = $(".js-table");
+        this.ui.week = $(".js-week");
+        this.ui.timeList = $(".js-timeList");
+        this.ui.sub = $(".js-submit");
+
+        this.regEvent();
+        this.setDate();
+    },
+    regEvent: function() {
+        var _this = this;
+
+        this.selectTime = [];
+
+        this.ui.table.find("span").on("click", function() {
+ 			var time = $(this).parent().attr("data-time");
+ 			var index = $(this).parent().index() + 1;
+ 			 var date = _this.ui.week.find("li").eq(index).text();
+            if ($(this).hasClass("cur_select")){
+            	$(this).removeClass("cur_select");
+            	for(var i = 0; i<_this.selectTime.length; i++){
+            		if(time == _this.selectTime[i].time && date == _this.selectTime[i].date){
+            			_this.selectTime.splice(i,1);
+            		}
+            	}
+            }else{
+	            if (_this.ui.table.find(".cur_select").length >= 3) {
+	                _this.ui.body.append(_this.tipShow("每次只能选择3个"));
+	                return;
+	            };
+	            var date = _this.ui.week.find("li").eq(index).text();
+	            var json = {time:time,date:date}
+	            $(this).addClass("cur_select");
+	            _this.selectTime.push(json);
+            }
+         	
+		_this.setTimeList();   
+        });
+        this.ui.body.off("click").on("click", ".js-close", function() {
+            $(this).parents(".index-login").remove();
+        });
+         this.ui.sub.click(function(){
+         	if(!_this.ui.timeList.find("tr").length){
+         		_this.ui.body.append(_this.tipShow("请选择预订的场次"));
+         		return;
+         	}
+         	_this.submit();
+         })
+
+
+    },
+    setTimeList:function(){
+    	var tr = "";
+    	$.each(this.selectTime,function(index,value){
+    		tr += '<tr><td>'+value.date+'</td><td>'+value.time+'</td></tr>'
+    	})
+    	this.ui.timeList.empty().append(tr);
+    },
+    setDate: function() {
+        var currDate = new Date(),
+            currYear = currDate.getFullYear(),
+            currMonth = currDate.getMonth() + 1,
+            currDay = currDate.getDate(),
+            weekStart = new Date().getDay(),
+            days = new Date(currYear, currMonth, 0).getDate(),
+            weekArr = new Array("日", "一", "二", "三", "四", "五", "六");
+
+
+        var th = '<li style="width:50px">日期：</li>';
+
+        for (var i = 0; i < weekArr.length; i++) {
+            if (currDay > days) { //日
+                currDay = 1;
+                currMonth++;
+            };
+            if (weekStart > 6) { //星期
+                weekStart = 0;
+            }
+           
+            th += '<li>' + currMonth + '月' + currDay + '日（周' + weekArr[weekStart] + '）</li>';
+         
+            currDay++;
+            weekStart++;
+        }
+        this.ui.week.empty().append(th);
+    },
+
+    tipShow: function(msg) {
+        return '<div class="index-login">' +
+		            '<div class="login-bg active"></div>' +
+		            '<div class="alert-box active">' +
+		            '<div class="btn-close js-close"></div>' +
+		            '<div class="alert-text">' + msg + '</div>' +
+		            '<div class="bottom-btn">' +
+		            	'<div class="sure-btn js-close">确定</div>' +
+		            '</div>' +
+		            '</div>' +
+            	'</div>'
+    },
+    submit:function(){
+
+    }
+}
+resViews.init();
+</script>
+
+</html>
