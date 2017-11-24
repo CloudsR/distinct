@@ -397,7 +397,16 @@ if(ISFRAME && !parent.document.getElementById('leftmenu') && !parent.parent.docu
 	redirect(admincpfilename + '?frames=yes&' + document.URL.substr(document.URL.indexOf(admincpfilename) + admincpfilename.length + 1));
 }
 </script>
-<div id="append_parent"></div><div id="ajaxwaitid"></div>
+<style>
+.index_admin{}
+.index_admin ul{ margin:30px;}
+.index_admin ul li{ float:left;}	
+</style>
+<div id="append_parent"></div><div id="ajaxwaitid" class="index_admin">
+
+
+
+</div>
 <div class="container" id="cpcontainer">
 EOT;
 

@@ -12,16 +12,24 @@ Shenzhen.Eleccom Technology.使用原代码请联系作者QQ: 2300184378 / 2017-
 ------------Width/All CSS------------
 ****************************************************************/
 
-.wp { width: 1170px}
+.wp { width: 1200px}
 .ct2 .mn { width: 800px; overflow: visible}
 .ct2 .sd { width: 340px}
 .ct2_a .mn { display: inline;margin-right: 10px;padding-top: 10px;width: 940px}
+
 .tdats .tfxf { width: 780px !important}
 .tdats .tfx { width: 430px !important}
+
+.ct3_a .mn { width: 710px !important}
+#mood_mystatus { width: 585px !important}
+.mi .moodfm_input { width: 550px !important; border: 1px solid #E6E6E6; background: none}
+.mi #moodfm textarea { padding: 10px !important; margin: 0 !important; width: 500px !important; height: 38px !important}
 
 .biduser { width: 880px !important}
 
 /********* end/结束*********/
+
+.h3{ position: absolute; bottom: 0px; height: 40px; background:rgab(0,0,0,.5); z-index: 2; }
 
 
 
@@ -60,7 +68,7 @@ Shenzhen.Eleccom Technology.使用原代码请联系作者QQ: 2300184378 / 2017-
 .xi2, .xi2 a, .xi3 a { color: #333333}
 .side_tit { position: relative; height: 20px; line-height: 20px; padding: 0; margin: 0 30px 25px 0; border-bottom: 0}
 .side_tit h2 { float: left; line-height: 19px; padding-left: 30px; font-size: 20px; color: #333333; font-weight: 400}
-.span-mark { background-color: #f63756;position: absolute;left: 0;z-index: 1;height: 20px;line-height: 20px;width: 4px;bottom: 0}
+.span-mark { background-color: #66CC99;position: absolute;left: 0;z-index: 1;height: 20px;line-height: 20px;width: 4px;bottom: 0}
 
 .box_1 { padding: 30px 0; margin: 0 0 30px 0; border-top: 0; border-radius: 0;background: #FAFAFA;box-shadow: none}
 .box_1 .bm_c { padding: 0 30px}
@@ -70,7 +78,7 @@ Shenzhen.Eleccom Technology.使用原代码请联系作者QQ: 2300184378 / 2017-
 
 .bm_h { border-color: #E6E6E6}
 .tag_box { position:relative;width:100%;height:30px;margin-bottom:20px;border-bottom:1px solid #F0F0F0}
-.span-mark-author { display:inline-block;border-bottom:4px solid #f63756;position:absolute;left:0;bottom:-1px;z-index:1;height:26px;line-height:20px;margin:-28px 0 0;font-size:18px;font-weight:400}
+.span-mark-author { display:inline-block;border-bottom:4px solid #66CC99;position:absolute;left:0;bottom:-1px;z-index:1;height:26px;line-height:20px;margin:-28px 0 0;font-size:18px;font-weight:400}
 
 /********* end/结束*********/
 
@@ -92,7 +100,7 @@ Shenzhen.Eleccom Technology.使用原代码请联系作者QQ: 2300184378 / 2017-
 ------------全局头部/header------------
 ****************************************************************/
 
-.wp { width: 1170px}
+.wp { width: 1200px}
 
 #elecom_nav { width: 100%; min-width: 1170px; height: auto; margin: 0; overflow: visible ;z-index: 80; box-shadow: none; background: #FFFFFF}
 #top_bar { height: 40px; margin: 0; border-bottom: 0; transition: all 0.4s; background: #E8E8E8}
@@ -100,7 +108,7 @@ Shenzhen.Eleccom Technology.使用原代码请联系作者QQ: 2300184378 / 2017-
 #top_bar .z a { color: #555555; margin-right: 20px}
 
 #elecom_nav2 { width: 100%; min-width: 1170px; height: auto; margin: 0; overflow: visible ;z-index: 80; box-shadow: none; background: #FFFFFF}
-#top_bar2 { height: 60px; margin: 0; border-bottom: 1px solid #F1F1F1; transition: all 0.4s; background: #FFFFFF}
+#top_bar2 { height: 60px; margin: 0; border-bottom: 0; transition: all 0.4s; box-shadow: 0 2px 2px rgba(0,0,0,0.2); background: #FFFFFF}
 #top_bar2 a { color: #333333}
 
 .navbar-header { float: left; display: inline-block; max-width: 500px; height: 80px; padding: 0; margin: 0; overflow: hidden; background: none}
@@ -121,28 +129,35 @@ Shenzhen.Eleccom Technology.使用原代码请联系作者QQ: 2300184378 / 2017-
 ------------Nav/导航条------------
 ****************************************************************/
 
-.nav_box { width: 100%; height: 80px; background: #3F3F3F}
-.navigate { float: left; max-width: 670px; height: 80px; padding: 0; margin: 0; overflow: hidden}
+.nav_box { width: 100%; height: 40px; box-shadow: 0 3px 3px rgba(0,0,0,0.2); background: #66CC99}
+.navigate { float: left; max-width: 100%; height: 40px; padding: 0; margin: 0; overflow: hidden}
 .navigate ul { float: left; white-space: nowrap; overflow: visible}
-.navigate li { float: left; height: 80px}
+.navigate li { float: left; height: 40px}
+.navigate li.hover{
+    background:#7be0ad
+}
 .navigate li span { display: none}
-.navigate li a { float: left; display: inline-block; font-size: 24px !important; height: 80px; line-height: 80px; color: #FFFFFF; position: relative; padding: 0 35px; margin: 0; font-family: "Microsoft Yahei",Arial; border-right: 0; font-weight: 400; transition: all 0s ease 0s}
-.navigate li.a a { text-decoration: none; background: none}
-.navigate li#mn_P1 a { padding-right: 30px; background: url({STYLEIMGDIR}/a_r.png) no-repeat 86px center}
-.navigate li a:hover { color: #3ca5f6 !important; text-decoration: none}
+.navigate li a { float: left; display: inline-block; font-size: 17px !important; height: 40px; line-height: 40px; color: #FFFFFF; position: relative; padding: 0 5px; margin: 0 30px; font-family: "Microsoft Yahei",Arial; border-right: 0; font-weight: 400; transition: all 0s ease 0s}
+.navigate li.a a { height: 56px; text-decoration: none; border-bottom: 4px solid #FFFFFF; background: none}
+.navigate li#mn_P1 a { padding-right: 30px; background: url({STYLEIMGDIR}/a_r.png) no-repeat 50px center}
+.navigate li a:hover { color: #FFFFFF !important; text-decoration: none;}
 .navigate li.hover a { border-bottom: 0}
+.navigate li:hover{
+    background: #7be0ad;
+}
 
 
 
-.navigate2 { float: left; max-width: 670px; height: 60px; padding: 0; margin: 0; overflow: hidden}
+.navigate2 { float: left; max-width: 670px; height: 32px; padding: 0; margin: 14px 0 0 0; overflow: hidden}
 .navigate2 ul { float: left; white-space: nowrap; overflow: visible}
-.navigate2 li { float: left; height: 60px}
+.navigate2 li { float: left; height: 32px}
 .navigate2 li span { display: none}
-.navigate2 li a { float: left; display: inline-block; font-size: 16px !important; height: 60px; line-height: 60px; color: #333333; position: relative; padding: 0 20px; margin: 0; font-family: "Microsoft Yahei",Arial; border-right: 0; font-weight: 400; transition: all 0s ease 0s}
-.navigate2 li.a a { text-decoration: none; background: none}
+.navigate2 li a { float: left; display: inline-block; font-size: 16px !important; height: 32px; line-height: 32px; color: #333333; position: relative; padding: 0 20px; margin: 0; font-family: "Microsoft Yahei",Arial; border-right: 0; font-weight: 400; transition: all 0s ease 0s;}
+.navigate2 li.a a { color: #FFFFFF !important; text-decoration: none; background: #66CC99}
 .navigate2 li#mn_N708e a { padding-right: 30px; background: url({STYLEIMGDIR}/a_r.png) no-repeat 90px center}
-.navigate2 li a:hover { color: #3ca5f6 !important; text-decoration: none}
-.navigate2 li.hover a { border-bottom: 0}
+.navigate2 li a:hover { color: #FFFFFF !important; text-decoration: none; background: #66CC99}
+.navigate2 li.hover{ color: #fff; }
+.navigate2 li.hover a{ border-bottom: 0; background: #66CC99; color: #fff !important;}
 
 
 
@@ -156,7 +171,7 @@ Shenzhen.Eleccom Technology.使用原代码请联系作者QQ: 2300184378 / 2017-
 ------------用户菜单------------
 ****************************************************************/
 
-.elecom_user{float:right;width:80px; font-family: 'Microsoft Yahei'}
+.elecom_user{float:right;width:135px; font-family: 'Microsoft Yahei'}
 .lg_box { width: auto !important; height: 40px; font-size:16px;line-height:40px}
 .lg_box a { float: left; color: #FFFFFF}
 .lg_box li { height: 40px; line-height: 40px}
@@ -184,15 +199,15 @@ Shenzhen.Eleccom Technology.使用原代码请联系作者QQ: 2300184378 / 2017-
 .elecom_user_info .user-main{overflow:hidden;padding-right:8px;font-family:"微软雅黑";position:relative;cursor:pointer}
 .elecom_user_info .user-main .arrow{transition:.25s;top:50%;width:9px;height:5px;right:8px;margin-top:-2px;display:block;position:absolute;-webkit-transition:all .25s;-o-transition:all .25s;background:url({STYLEIMGDIR}/a_d.png) no-repeat 0 0}
 .elecom_user_info .avatar img{width:32px;height:32px;margin: 0;border-radius:50%;display:block;box-shadow:none}
-.elecom_user_info .avatar{position:relative;float:left;overflow:visible; padding-right: 18px}
-.elecom_user_info{border:0;padding-top:4px;padding-bottom:4px;padding-left:10px;margin-left:20px;float:right;position:relative;z-index:200}
+.elecom_user_info .avatar{position:relative;float:left;overflow:visible; padding-right: 6px}
+.elecom_user_info{border:0;padding-top:4px;padding-bottom:4px;padding-left:10px;margin-left: 0;float:right;position:relative;z-index:200}
 .elecom_user_info2 { padding-top: 14px; padding-bottom: 14px}
 .elecom_user_info2 .user_menu { top: 60px !important}
 .unread_num{position:absolute;left:22px;top:0;color:#FFF;padding:0 3px;border-radius:0;background:#E04E4E}
 .unread_num2{position:absolute;left:42px;top:0;color:#FFF;padding:0 3px;border-radius:0;background:#E9962A}
-.elecom_user_info .nickname{padding:0 5px;margin:0;height:32px;color:#3ca5f6;line-height:32px;font-size:13px;float:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:45px}
+.elecom_user_info .nickname{padding:0 5px;margin:0;height:32px;color: #555555;line-height:32px;font-size:13px;float:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:45px}
 .elecom_user_info:hover{ box-shadow: none; background: none}
-.elecom_user_info:hover .nickname{color:#3ca5f6}
+.elecom_user_info:hover .nickname{color: #66CC99}
 .logined .elecom_user_info .nickname{margin:0 5px 0 0}
 .elecom_user_info:hover .user-main .arrow{background:url({STYLEIMGDIR}
 /a_d.png) no-repeat 0 0;transform:rotate(180deg);-webkit-transform:rotate(180deg);-o-transform:rotate(180deg)}
@@ -273,11 +288,15 @@ a:hover.flo i{background-position:-200px 0}
 ------------下拉菜单------------
 ****************************************************************/
 
-.nav_slide .h_pop { width: auto; padding: 0; margin: 1px 0 0 -11px; border: 0; border-radius: 0; box-shadow: none; min-width: 90px; box-shadow: 1px 3px 8px rgba(0,0,0,0.3); background: #FFFFFF}
+.nav_slide .h_pop { width: auto; padding: 0; margin: -1px 0 0 -2px; border: 0; border-radius: 0; box-shadow: none; min-width: 130px;background: #7be0ad}
 .nav_slide .h_pop li { width: auto; text-align: center; overflow: hidden}
-.nav_slide .h_pop li a {display: block;padding: 0 30px;height: 42px;color: #999999;line-height: 42px;font-size: 14px;width: auto;text-align: center;border-bottom: 0}
+.nav_slide .h_pop li a {display: block;padding: 0 30px;height: 42px;color: #fff;line-height: 42px;font-size: 14px;width: auto;text-align: center;border-bottom: 0}
 .nav_slide .h_pop li a:hover { color: #666666; background: #F2F2F5}
 .nav_slide .h_pop li:last-child a { border-bottom: 0}
+
+.nav_slide2 .h_pop{min-width: inherit; background: #66cc99; margin: 0px;}
+.nav_slide2 .h_pop li a{padding:0 22px;}
+.nav_slide2 .h_pop li a:hover{color:#f2f2f2}
 
 /********* end/结束*********/
 
@@ -326,7 +345,7 @@ a#scbar_type.xg1{font-size:18px!important}
 #scbar2 a#scbar_type.xg1{font-size:18px!important}
 #scbar2 .scbar_txt_td{width:160px!important;overflow:hidden}
 #scbar2 #scbar_txt{border:0;width:150px;padding:0;font-size:18px;margin-left:0;background:0 0}
-#scbar2 .scbar_btn_td{width:48px;height:48px;padding: 0 0 0 20px;overflow:hidden;display:block;background:0 0}
+#scbar2 .scbar_btn_td{width:48px;height:48px;overflow:hidden;display:block;background:0 0}
 #scbar2 #scbar_btn{width:48px;height:48px;padding:0;overflow:hidden;text-indent:9999px;background:url({STYLEIMGDIR}
 /new_search2.png) no-repeat 3px center}
 #scbar2 a#scbar_type.xg1 { color: #CCCCCC !important}
@@ -591,3 +610,21 @@ a#scbar_type.xg1{font-size:18px!important}
 .big2-pic-content .t-h1{word-break:inherit;font-size:18px;color:#fff;line-height:1.5;font-weight:400}
 
 /********* end/结束*********/
+
+
+.zhuanti .imgs { position: relative}
+.zhuanti .imgs .play { position: absolute; left: 130px; top: 60px; width: 110px; height: 110px; background: url({STYLEIMGDIR}/play2.png) no-repeat center center}
+.zhuanti .imgs:hover .play { position: absolute; left: 130px; top: 60px; width: 110px; height: 110px; background: url({STYLEIMGDIR}/play3.png) no-repeat center center}
+
+
+.xfs_2{ float: left; width: 840px; margin-top: 30px;}
+.xfs_1{ float: right; width: 340px; margin-top: 30px; background: #fafafa;}
+.xfs_2  h3{ font-size: 20px; padding-left: 15px; border-left: 3px solid #66CC99; height: 25 }
+.act_news li h4{ font-size: 18px; }
+.act_news li{ float: left; width: 33.3%;}
+.act_news li .img1{ margin: 10px;}
+.act_news li span{ display: block; margin-top: 10px; }
+.act_news li p{ margin-top: 10px; line-height: 22px; }
+.act_news .baoming a{ display: block;  float: right;  padding: 10px 20px; background: #66CC99; text-decoration: none; color: #fff;}
+.act_news .baoming a:hover{ background: #7be0ad; }
+.act_news li a:hover{ color: #7be0ad; }

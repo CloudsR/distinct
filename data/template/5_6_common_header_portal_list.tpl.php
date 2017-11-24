@@ -1,8 +1,8 @@
 <?php if(!defined('IN_DISCUZ')) exit('Access Denied'); 
 0
-|| checktplrefresh('./template/elec_201701_hx_dingzhi/common/header.htm', './template/elec_201701_hx_dingzhi/common/header_common.htm', 1510713483, '6', './data/template/5_6_common_header_portal_list.tpl.php', './template/elec_201701_hx_dingzhi', 'common/header_portal_list')
-|| checktplrefresh('./template/elec_201701_hx_dingzhi/common/header.htm', './template/elec_201701_hx_dingzhi/common/pubsearchform.htm', 1510713483, '6', './data/template/5_6_common_header_portal_list.tpl.php', './template/elec_201701_hx_dingzhi', 'common/header_portal_list')
-|| checktplrefresh('./template/elec_201701_hx_dingzhi/common/header.htm', './template/default/common/header_qmenu.htm', 1510713483, '6', './data/template/5_6_common_header_portal_list.tpl.php', './template/elec_201701_hx_dingzhi', 'common/header_portal_list')
+|| checktplrefresh('./template/elec_201701_hx_dingzhi/common/header.htm', './template/elec_201701_hx_dingzhi/common/header_common.htm', 1511514224, '6', './data/template/5_6_common_header_portal_list.tpl.php', './template/elec_201701_hx_dingzhi', 'common/header_portal_list')
+|| checktplrefresh('./template/elec_201701_hx_dingzhi/common/header.htm', './template/elec_201701_hx_dingzhi/common/pubsearchform.htm', 1511514224, '6', './data/template/5_6_common_header_portal_list.tpl.php', './template/elec_201701_hx_dingzhi', 'common/header_portal_list')
+|| checktplrefresh('./template/elec_201701_hx_dingzhi/common/header.htm', './template/default/common/header_qmenu.htm', 1511514224, '6', './data/template/5_6_common_header_portal_list.tpl.php', './template/elec_201701_hx_dingzhi', 'common/header_portal_list')
 ;?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -107,7 +107,7 @@
           <div class="user-main ">
             <div class="avatar"> <a href="home.php?mod=space&amp;uid=<?php echo $_G['uid'];?>" target="_blank" title="访问我的空间" id="umnav" onMouseOver="showMenu({'ctrlid':this.id,'ctrlclass':'a'})"> 
               <?php echo avatar($_G[uid],small);?>              </a><?php if($_G['member']['newprompt']) { ?><span class="unread_num png"><?php echo $_G['member']['newprompt'];?></span><?php } if($_G['member']['newpm']) { ?><span class="unread_num2 png"><?php echo $_G['member']['newpm'];?></span><?php } ?></div>
-            <span class="arrow"></span></div>
+            <span class="nickname"><?php echo $_G['member']['username'];?></span><span class="arrow"></span></div>
           <div class="user_menu">
             <ul>
               <div class="cl" style="padding: 5px 0;">
@@ -390,7 +390,7 @@ jQuery('.elecom_search').fadeOut(300);
 </ul>
 <?php } ?> 
 <!-- 二级导航 -->
-<div class="nav_slide"> <?php echo $_G['setting']['menunavs'];?> </div>
+<div class="nav_slide nav_slide2"> <?php echo $_G['setting']['menunavs'];?> </div>
 
 
 <!-- 用户菜单 -->

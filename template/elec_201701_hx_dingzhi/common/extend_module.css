@@ -304,7 +304,7 @@ Shenzhen.Eleccom Technology.使用原代码请联系作者QQ: 2300184378 / 2017-
 .spvimg img { max-width: none !important; height: 300px}
 .spi{ margin-left: 360px; padding: 15px 30px 0 30px; margin-bottom: 30px; height: 285px; border-left: 0; background: #F6F6F6}
 .spi dl dt{ font-size:14px; color: #999999}
-.spi .pns .pn { width: 290px; height: 40px; line-height: 40px; padding: 0 25px; margin-top: 10px; font-size: 16px; border-radius: 0}
+.spi .pns .pn { width: 290px; height: 80px; line-height: 80px; padding: 0 25px; margin-top: 10px; font-size: 24px; border-radius: 0}
 .pcb strong {  font-weight: bold}
 .pns .pn{padding: 0 8px; height: 25px; line-height: 25px; box-shadow: none; font-size: 12px; font-weight: bold; background-color: #FFC24B; border: 0; border-radius:3px;}
 .pns .pn span{ color:#fff; font-weight:normal; font-family:Microsoft yahei;}
@@ -356,9 +356,9 @@ Shenzhen.Eleccom Technology.使用原代码请联系作者QQ: 2300184378 / 2017-
 .pls .plso { margin: 5px 0px 10px 16px;}
 .pls .plso li {float: left; overflow: hidden; width: 72px; margin-right: 10px;}
 .pls .plso li a { background: #3ca5f6 ; height: 24px; line-height: 24px; padding: 0 10px;text-indent: 0;text-align: center; display: block; width: 52px; color: #fff;}
-.pls .plso li.addflw a:hover{background:#2858a1; text-decoration:none;}   
-.pls .plso li.pm2 a { background: #6999ee;}
-.pls .plso li.pm2 a:hover { background: #4c8fe1; text-decoration:none;}
+.pls .plso li.addflw a:hover { background: #2858a1; text-decoration: none}   
+.pls .plso li.pm2 a { background: #a2e337}
+.pls .plso li.pm2 a:hover { background: #adea49; text-decoration: none}
 
 /* 点评/judge */
 .psth { margin: 10px 0 5px; padding-left: 0px; padding-bottom: 10px; border-bottom: 1px solid #e5e5e5; width: auto;}
@@ -720,6 +720,7 @@ content: " ";filter:alpha(opacity=40);}
 .feng_view .feng_viewRight .view_new.bottom{ border-bottom: none; }
 .feng_view h2 a:hover{ color: #ed0000; }
 
+#pt .z em:first-child { display: none}
 
 .todayNews .columnR .topic_view { height: 220px; width: 340px; position: relative; }
 .todayNews .columnR .topic_view  img { max-width: 340px; background-color: #969696; overflow: hidden; vertical-align: top;}

@@ -4,7 +4,7 @@ var postmaxchars = parseInt('$_G['setting']['maxpostsize']');
 var disablepostctrl = parseInt('{$_G['group']['disablepostctrl']}');
 </script>
 
-<div class="tag_box cl" style="margin: 0 0 25px 0;"><span class="span-mark-author">发表评论</span></div>
+<div class="tag_box cl" style="line-height: 30px; padding: 0 0 0 10px; margin: 0 0 25px 0; border-bottom: 0; border-left: 3px solid #66CC99; font-size: 24px;"><span>发表评论</span></div>
 <div id="f_pst" class="pl" style="border: 0;">
 <form method="post" autocomplete="off" id="fastpostform" action="forum.php?mod=post&action=reply&fid=$_G[fid]&tid=$_G[tid]&extra=$_GET[extra]&replysubmit=yes{if $_GET['ordertype'] != 1}&infloat=yes&handlekey=fastpost{/if}{if $_GET[from]}&from=$_GET[from]{/if}"{if $_GET['ordertype'] != 1} onSubmit="return fastpostvalidate(this)"{/if}>
 	<!--{if empty($_GET[from])}-->
@@ -151,15 +151,17 @@ var disablepostctrl = parseInt('{$_G['group']['disablepostctrl']}');
 	<input type="hidden" name="subject" value="  " />
 	<p class="ptm pnpost">
 		<a href="home.php?mod=spacecp&ac=credit&op=rule&fid=$_G[fid]" class="y" target="_blank" style="display: none;">{lang post_credits_rule}</a>
-		<button {if $allowpostreply}type="submit" {elseif !$_G['uid']}type="button" onclick="showWindow('login', 'member.php?mod=logging&action=login&guestmessage=yes')" {/if}{if !$seccodecheck}onmouseover="checkpostrule('seccheck_fastpost', 'ac=reply');this.onmouseover=null" {/if}name="replysubmit" id="fastpostsubmit" class="pn pnc vm" value="replysubmit" tabindex="5" style="width: 148px;
-height: 48px;
-line-height: 38px;
+		<button {if $allowpostreply}type="submit" {elseif !$_G['uid']}type="button" onclick="showWindow('login', 'member.php?mod=logging&action=login&guestmessage=yes')" {/if}{if !$seccodecheck}onmouseover="checkpostrule('seccheck_fastpost', 'ac=reply');this.onmouseover=null" {/if}name="replysubmit" id="fastpostsubmit" class="pn pnc vm" value="replysubmit" tabindex="5" style="width: auto;
+height: 60px;
+line-height: 60px;
 color: #fff;
 background-color: #3ca5f6;
-font-size: 18px;
+font-size: 24px;
 border-radius: 0;
+padding: 0 36px 0 48px;
 margin-top: 15px;
-margin-bottom: 30px;">发表</button>
+margin-bottom: 30px;
+letter-spacing: 12px;">发布</button>
 		<!--{hook/viewthread_fastpost_btn_extra}-->
 		<!--{if helper_access::check_module('follow')}-->
 		<label class="lb" style="display: none;"><input type="checkbox" name="adddynamic" class="pc" value="1" />{lang post_reply_relay}</label>

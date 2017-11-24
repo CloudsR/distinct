@@ -64,7 +64,7 @@
   </div>
   <div id="top_bar" class="cl"> 
     <div class="wp cl">
-     <div class="left_bars z" style="line-height: 40px; color: #666666; font-size: 16px;">
+     <div class="left_bars z" style="line-height: 40px; color: #666666; font-size: 13px;">
 					<!--{loop $_G['setting']['topnavs'][0] $nav}-->
 						<!--{if $nav['available'] && (!$nav['level'] || ($nav['level'] == 1 && $_G['uid']) || ($nav['level'] == 2 && $_G['adminid'] > 0) || ($nav['level'] == 3 && $_G['adminid'] == 1))}-->$nav[code]<!--{/if}-->
 					<!--{/loop}-->
@@ -89,7 +89,7 @@
             <div class="avatar"> <a href="home.php?mod=space&uid=$_G[uid]" target="_blank" title="{lang visit_my_space}" id="umnav" onMouseOver="showMenu({'ctrlid':this.id,'ctrlclass':'a'})"> 
               <!--{avatar($_G[uid],small)}-->
               </a><!--{if $_G[member][newprompt]}--><span class="unread_num png">$_G[member][newprompt]</span><!--{/if}--><!--{if $_G[member][newpm]}--><span class="unread_num2 png">{$_G[member][newpm]}</span><!--{/if}--></div>
-            <span class="arrow"></span></div>
+            <span class="nickname">{$_G[member][username]}</span><span class="arrow"></span></div>
           <div class="user_menu">
             <ul>
               <div class="cl" style="padding: 5px 0;">
@@ -156,7 +156,7 @@
     </div>
   </div>
   <div class="logo_box cl">
-   <div class="wp cl" style="height: 80px; padding: 50px 0;">
+   <div class="wp cl" style="height: 80px; padding: 20px 0;">
      <!-- 站点LOGO -->
       <div class="navbar-header"> 
          <!--{eval $mnid = getcurrentnav();}-->
@@ -238,7 +238,7 @@
 </ul>
 <!--{/if}--> 
 <!-- 二级导航 -->
-<div class="nav_slide"> $_G[setting][menunavs] </div>
+<div class="nav_slide 22"> $_G[setting][menunavs] </div>
 
 
 <!-- 用户菜单 -->

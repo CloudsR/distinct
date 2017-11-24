@@ -71,13 +71,13 @@
 				<!--{if $post['invisible'] == 0}-->
 					<!--{if $applied && $isverified < 2}-->
 						<p class="xg1 xs1"><!--{if !$isverified}-->{lang activity_wait}<!--{else}-->{lang activity_join_audit}<!--{/if}--></p>
-						<!--{if !$activityclose}--><p><button class="pn vm" type="submit" value="true" name="applylistsubmit" onclick="showDialog($('activityjoincancel').innerHTML, 'info', '{lang activity_join_cancel}')" style="background: #f63756 !important;"><span>{lang activity_join_cancel}</span></button></p><!--{/if}-->
+						<!--{if !$activityclose}--><p><button class="pn vm" type="submit" value="true" name="applylistsubmit" onclick="showDialog($('activityjoincancel').innerHTML, 'info', '{lang activity_join_cancel}')" style="background: #66CC99 !important;"><span>{lang activity_join_cancel}</span></button></p><!--{/if}-->
 					<!--{elseif !$activityclose}-->
 						<p class="pns">
 							<!--{if $isverified != 2}-->
-								<!--{if !$activity['number'] || $aboutmembers > 0}--><button class="pn" value="true" name="ijoin" onclick="{if $_G['uid']}showDialog($('activityjoin').innerHTML, 'info', '{lang activity_join}'){else}showWindow('login', 'member.php?mod=logging&action=login&guestmessage=yes'){/if}" style="background: #f63756 !important;"><span>{lang activity_join}</span></button><!--{/if}-->
+								<!--{if !$activity['number'] || $aboutmembers > 0}--><button class="pn" value="true" name="ijoin" onclick="{if $_G['uid']}showDialog($('activityjoin').innerHTML, 'info', '{lang activity_join}'){else}showWindow('login', 'member.php?mod=logging&action=login&guestmessage=yes'){/if}" style="background: #66CC99 !important;"><span>{lang activity_join}</span></button><!--{/if}-->
 							<!--{else}-->
-								<button class="pn" value="true" name="ijoin" onclick="showDialog($('activityjoin').innerHTML, 'info', '{lang complete_data}')" style="background: #f63756 !important;"><span>{lang complete_data}</span></button>
+								<button class="pn" value="true" name="ijoin" onclick="showDialog($('activityjoin').innerHTML, 'info', '{lang complete_data}')" style="background: #66CC99 !important;"><span>{lang complete_data}</span></button>
 							<!--{/if}-->
 						</p>
 					<!--{/if}-->

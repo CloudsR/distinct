@@ -23,7 +23,7 @@ padding: 0 20px 0 126px; background: #FFFFFF}
 
 .pg_space .tl .icn { width: 50px}
 #ct.ct1.wp { padding: 10px 0; box-shadow: 0 0 0 1px #eee; border-radius: 4px; overflow: hidden; background: #FFFFFF}
-.xunzhang h2 { height: 20px; line-height: 20px; padding-left: 20px; border-left: 4px solid #f63756; margin: 20px 0 !important; font-size: 18px}
+.xunzhang h2 { height: 20px; line-height: 20px; padding-left: 20px; border-left: 4px solid #66CC99; margin: 20px 0 !important; font-size: 18px}
 .xunzhang img { max-width: 35px; margin-right: 6px}
 
 
@@ -32,7 +32,7 @@ padding: 0 20px 0 126px; background: #FFFFFF}
 .tbmu { margin-bottom: 12px; border-bottom: 1px solid #EEEEEE}
 .tbmu .pipe { display: none}
 .tbmu a { padding: 0 5px 8px 5px; margin-right: 10px; font-size: 17px; color: #666666}
-.tbmu .a { font-weight: 400; color: #333333; border-bottom: 3px solid #f63756}
+.tbmu .a { font-weight: 400; color: #333333; border-bottom: 3px solid #66CC99}
 .tl .th { display: none; font-size: 15px; background: none}
 .tl .num { width: 120px}
 .tl tr:hover th, .tl tr:hover td { background: none}
@@ -154,7 +154,7 @@ padding: 0 20px 0 126px; background: #FFFFFF}
 
 
 .u_profile .bbda { border-bottom: 0 !important}
-.u_profile .pbm.mbm.bbda.c p { color: #f63756; font-size: 12px}
+.u_profile .pbm.mbm.bbda.c p { color: #66CC99; font-size: 12px}
 .u_profile li { line-height: 25px; color: #999999}
 .pf_l li { width: 360px}
 .pf_l em { display: inline-block; width: 90px; color: #333333}

@@ -331,21 +331,21 @@
 					</item>
 				</item>
 			</item>
-			<item id="frame`frameQl1G2D">
+			<item id="frame`framezJ4Bsp">
 				<item id="attr">
-					<item id="name"><![CDATA[frameQl1G2D]]></item>
+					<item id="name"><![CDATA[framezJ4Bsp]]></item>
 					<item id="moveable"><![CDATA[true]]></item>
 					<item id="className"><![CDATA[frame move-span cl frame-1]]></item>
 					<item id="titles"><![CDATA[]]></item>
 				</item>
-				<item id="column`frameQl1G2D_left">
+				<item id="column`framezJ4Bsp_left">
 					<item id="attr">
-						<item id="name"><![CDATA[frameQl1G2D_left]]></item>
+						<item id="name"><![CDATA[framezJ4Bsp_left]]></item>
 						<item id="className"><![CDATA[column frame-1-c]]></item>
 					</item>
-					<item id="block`portal_block_2856">
+					<item id="block`portal_block_3301">
 						<item id="attr">
-							<item id="name"><![CDATA[portal_block_2856]]></item>
+							<item id="name"><![CDATA[portal_block_3301]]></item>
 							<item id="className"><![CDATA[block move-span]]></item>
 							<item id="titles"><![CDATA[]]></item>
 						</item>
@@ -486,36 +486,51 @@
 					<item id="makethumb"><![CDATA[1]]></item>
 					<item id="getpic"><![CDATA[1]]></item>
 					<item id="getsummary"><![CDATA[0]]></item>
-					<item id="settarget"><![CDATA[1]]></item>
+					<item id="settarget"><![CDATA[0]]></item>
 					<item id="moreurl"><![CDATA[0]]></item>
 					<item id="fields">
 						<item id="0"><![CDATA[url]]></item>
 						<item id="1"><![CDATA[pic]]></item>
-						<item id="2"><![CDATA[title]]></item>
 					</item>
 					<item id="template">
-						<item id="raw"><![CDATA[<div class="module cl">
-<ul class="slideshow">
-[loop]
-<li style="width: {picwidth}px; height: {picheight}px;"><a href="{url}"{target}><img src="{pic}" width="{picwidth}" height="{picheight}" /></a><span class="title">{title}</span></li>
-[/loop]
-</ul>
-</div>]]></item>
+						<item id="raw"><![CDATA[<div class="focusBox" style="margin:0 auto">
+			<ul class="pic">
+             [loop]
+					<li><a href="{url}" target="_blank"><img src="{pic}" width="{picwidth}" height="{picheight}" /></a></li>
+             [/loop]
+			</ul>
+			<a class="prev" href="javascript:void(0)"></a>
+			<a class="next" href="javascript:void(0)"></a>
+			<ul class="hd">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+	</div>
+
+	<script type="text/javascript">
+		/*鼠标移过，左右按钮显示*/
+		jQuery(".focusBox").hover(function(){ jQuery(this).find(".prev,.next").stop(true,true).fadeTo("show",0.2) },function(){ jQuery(this).find(".prev,.next").fadeOut() });
+		/*SuperSlide图片切换*/
+		jQuery(".focusBox").slide({ mainCell:".pic",effect:"fold", autoPlay:true, delayTime:600, trigger:"click"});
+	</script>]]></item>
 						<item id="footer"><![CDATA[]]></item>
 						<item id="header"><![CDATA[]]></item>
-						<item id="indexplus"><![CDATA[
-						]]></item>
-						<item id="index"><![CDATA[
-						]]></item>
-						<item id="orderplus"><![CDATA[
-						]]></item>
-						<item id="order"><![CDATA[
-						]]></item>
-						<item id="loopplus"><![CDATA[
-						]]></item>
-						<item id="loop"><![CDATA[<li style="width: {picwidth}px; height: {picheight}px;"><a href="{url}"{target}><img src="{pic}" width="{picwidth}" height="{picheight}" /></a><span class="title">{title}</span></li>]]></item>
+						<item id="indexplus">
+						</item>
+						<item id="index">
+						</item>
+						<item id="orderplus">
+						</item>
+						<item id="order">
+						</item>
+						<item id="loopplus">
+						</item>
+						<item id="loop"><![CDATA[<li><a href="{url}" target="_blank"><img src="{pic}" width="{picwidth}" height="{picheight}" /></a></li>]]></item>
 					</item>
-					<item id="hash"><![CDATA[6189e074]]></item>
+					<item id="hash"><![CDATA[5357827e]]></item>
 				</item>
 				<item id="picwidth"><![CDATA[780]]></item>
 				<item id="picheight"><![CDATA[390]]></item>
@@ -543,14 +558,14 @@
 					<item id="titlelength"><![CDATA[40]]></item>
 					<item id="summarylength"><![CDATA[80]]></item>
 					<item id="startrow"><![CDATA[0]]></item>
-					<item id="items"><![CDATA[1]]></item>
+					<item id="items"><![CDATA[5]]></item>
 				</item>
-				<item id="shownum"><![CDATA[1]]></item>
+				<item id="shownum"><![CDATA[5]]></item>
 				<item id="cachetime"><![CDATA[3600]]></item>
 				<item id="cachetimerange"><![CDATA[]]></item>
 				<item id="punctualupdate"><![CDATA[0]]></item>
 				<item id="hidedisplay"><![CDATA[0]]></item>
-				<item id="dateline"><![CDATA[1501564156]]></item>
+				<item id="dateline"><![CDATA[1506315674]]></item>
 				<item id="notinherited"><![CDATA[0]]></item>
 				<item id="isblank"><![CDATA[0]]></item>
 			</item>
@@ -576,31 +591,30 @@
 					<item id="fields">
 						<item id="0"><![CDATA[url]]></item>
 						<item id="1"><![CDATA[pic]]></item>
-						<item id="2"><![CDATA[title]]></item>
 					</item>
 					<item id="template">
 						<item id="raw"><![CDATA[<div class="module cl" style="margin: 0 0 20px 0;">
 <ul class="slideshow">
 [loop]
-<li style="width: {picwidth}px; height: {picheight}px;"><a href="{url}"{target}><img src="{pic}" width="{picwidth}" height="{picheight}" /></a><span class="title">{title}</span></li>
+<li style="width: {picwidth}px; height: {picheight}px;"><a href="{url}"{target}><img src="{pic}" width="{picwidth}" height="{picheight}" /></a></li>
 [/loop]
 </ul>
 </div>]]></item>
 						<item id="footer"><![CDATA[]]></item>
 						<item id="header"><![CDATA[]]></item>
-						<item id="indexplus"><![CDATA[
-						]]></item>
-						<item id="index"><![CDATA[
-						]]></item>
-						<item id="orderplus"><![CDATA[
-						]]></item>
-						<item id="order"><![CDATA[
-						]]></item>
-						<item id="loopplus"><![CDATA[
-						]]></item>
-						<item id="loop"><![CDATA[<li style="width: {picwidth}px; height: {picheight}px;"><a href="{url}"{target}><img src="{pic}" width="{picwidth}" height="{picheight}" /></a><span class="title">{title}</span></li>]]></item>
+						<item id="indexplus">
+						</item>
+						<item id="index">
+						</item>
+						<item id="orderplus">
+						</item>
+						<item id="order">
+						</item>
+						<item id="loopplus">
+						</item>
+						<item id="loop"><![CDATA[<li style="width: {picwidth}px; height: {picheight}px;"><a href="{url}"{target}><img src="{pic}" width="{picwidth}" height="{picheight}" /></a></li>]]></item>
 					</item>
-					<item id="hash"><![CDATA[9ea7c7ac]]></item>
+					<item id="hash"><![CDATA[015a201a]]></item>
 				</item>
 				<item id="picwidth"><![CDATA[370]]></item>
 				<item id="picheight"><![CDATA[220]]></item>
@@ -635,7 +649,7 @@
 				<item id="cachetimerange"><![CDATA[]]></item>
 				<item id="punctualupdate"><![CDATA[0]]></item>
 				<item id="hidedisplay"><![CDATA[0]]></item>
-				<item id="dateline"><![CDATA[1501564156]]></item>
+				<item id="dateline"><![CDATA[1506315633]]></item>
 				<item id="notinherited"><![CDATA[0]]></item>
 				<item id="isblank"><![CDATA[0]]></item>
 			</item>
@@ -664,10 +678,10 @@
 						<item id="2"><![CDATA[title]]></item>
 					</item>
 					<item id="template">
-						<item id="raw"><![CDATA[<div class="cll">
+						<item id="raw"><![CDATA[<div class="s_pic cl">
 <ul style="width: 390px;">
 [loop]
-<li style="float: left; width: {picwidth}px; margin: 0 20px 0 0;">
+<li style="float: left; width: {picwidth}px; height: {picheight}px; margin: 0 20px 0 0; overflow: hidden;">
 	<a href="{url}"{target}><img src="{pic}" width="{picwidth}" height="{picheight}" alt="{title}" /></a>
 </li>
 [/loop]
@@ -675,21 +689,21 @@
 </div>]]></item>
 						<item id="footer"><![CDATA[]]></item>
 						<item id="header"><![CDATA[]]></item>
-						<item id="indexplus"><![CDATA[
-						]]></item>
-						<item id="index"><![CDATA[
-						]]></item>
-						<item id="orderplus"><![CDATA[
-						]]></item>
-						<item id="order"><![CDATA[
-						]]></item>
-						<item id="loopplus"><![CDATA[
-						]]></item>
-						<item id="loop"><![CDATA[<li style="float: left; width: {picwidth}px; margin: 0 20px 0 0;">
+						<item id="indexplus">
+						</item>
+						<item id="index">
+						</item>
+						<item id="orderplus">
+						</item>
+						<item id="order">
+						</item>
+						<item id="loopplus">
+						</item>
+						<item id="loop"><![CDATA[<li style="float: left; width: {picwidth}px; height: {picheight}px; margin: 0 20px 0 0; overflow: hidden;">
 	<a href="{url}"{target}><img src="{pic}" width="{picwidth}" height="{picheight}" alt="{title}" /></a>
 </li>]]></item>
 					</item>
-					<item id="hash"><![CDATA[59d9929c]]></item>
+					<item id="hash"><![CDATA[6be735b4]]></item>
 				</item>
 				<item id="picwidth"><![CDATA[175]]></item>
 				<item id="picheight"><![CDATA[150]]></item>
@@ -724,7 +738,7 @@
 				<item id="cachetimerange"><![CDATA[]]></item>
 				<item id="punctualupdate"><![CDATA[0]]></item>
 				<item id="hidedisplay"><![CDATA[0]]></item>
-				<item id="dateline"><![CDATA[1501564155]]></item>
+				<item id="dateline"><![CDATA[1506315658]]></item>
 				<item id="notinherited"><![CDATA[0]]></item>
 				<item id="isblank"><![CDATA[0]]></item>
 			</item>
@@ -759,7 +773,7 @@
 <ul style="width: 800px;">
 [loop]
 <li style="float: left; width: {picwidth}px; margin: 0 12px 0 0;">
-	<a href="{url}"{target}><img src="{pic}" width="{picwidth}" height="{picheight}" alt="{title}" /></a>
+	<a href="{url}"{target}><img src="{pic}" width="{picwidth}" height="{picheight}" alt="{title}" /><em></em></a>
 </li>
 [/loop]
 </ul>
@@ -768,21 +782,21 @@
 ]]></item>
 						<item id="footer"><![CDATA[]]></item>
 						<item id="header"><![CDATA[]]></item>
-						<item id="indexplus"><![CDATA[
-						]]></item>
-						<item id="index"><![CDATA[
-						]]></item>
-						<item id="orderplus"><![CDATA[
-						]]></item>
-						<item id="order"><![CDATA[
-						]]></item>
-						<item id="loopplus"><![CDATA[
-						]]></item>
+						<item id="indexplus">
+						</item>
+						<item id="index">
+						</item>
+						<item id="orderplus">
+						</item>
+						<item id="order">
+						</item>
+						<item id="loopplus">
+						</item>
 						<item id="loop"><![CDATA[<li style="float: left; width: {picwidth}px; margin: 0 12px 0 0;">
-	<a href="{url}"{target}><img src="{pic}" width="{picwidth}" height="{picheight}" alt="{title}" /></a>
+	<a href="{url}"{target}><img src="{pic}" width="{picwidth}" height="{picheight}" alt="{title}" /><em></em></a>
 </li>]]></item>
 					</item>
-					<item id="hash"><![CDATA[d83c7aa3]]></item>
+					<item id="hash"><![CDATA[f96d5b7a]]></item>
 				</item>
 				<item id="picwidth"><![CDATA[244]]></item>
 				<item id="picheight"><![CDATA[160]]></item>
@@ -817,7 +831,7 @@
 				<item id="cachetimerange"><![CDATA[]]></item>
 				<item id="punctualupdate"><![CDATA[0]]></item>
 				<item id="hidedisplay"><![CDATA[0]]></item>
-				<item id="dateline"><![CDATA[1501564155]]></item>
+				<item id="dateline"><![CDATA[1506315960]]></item>
 				<item id="notinherited"><![CDATA[0]]></item>
 				<item id="isblank"><![CDATA[0]]></item>
 			</item>
@@ -1018,7 +1032,7 @@
 				<item id="cachetimerange"><![CDATA[]]></item>
 				<item id="punctualupdate"><![CDATA[0]]></item>
 				<item id="hidedisplay"><![CDATA[0]]></item>
-				<item id="dateline"><![CDATA[1501564155]]></item>
+				<item id="dateline"><![CDATA[1506315674]]></item>
 				<item id="notinherited"><![CDATA[0]]></item>
 				<item id="isblank"><![CDATA[0]]></item>
 			</item>
@@ -1219,7 +1233,7 @@
 				<item id="cachetimerange"><![CDATA[]]></item>
 				<item id="punctualupdate"><![CDATA[0]]></item>
 				<item id="hidedisplay"><![CDATA[0]]></item>
-				<item id="dateline"><![CDATA[1501564155]]></item>
+				<item id="dateline"><![CDATA[1506315675]]></item>
 				<item id="notinherited"><![CDATA[0]]></item>
 				<item id="isblank"><![CDATA[0]]></item>
 			</item>
@@ -1243,9 +1257,9 @@
 					<item id="settarget"><![CDATA[0]]></item>
 					<item id="moreurl"><![CDATA[0]]></item>
 					<item id="fields">
-						<item id="0"><![CDATA[url]]></item>
-						<item id="1"><![CDATA[forumurl]]></item>
-						<item id="2"><![CDATA[forumname]]></item>
+						<item id="0"><![CDATA[forumurl]]></item>
+						<item id="1"><![CDATA[forumname]]></item>
+						<item id="2"><![CDATA[url]]></item>
 						<item id="3"><![CDATA[pic]]></item>
 						<item id="4"><![CDATA[author]]></item>
 						<item id="5"><![CDATA[dateline]]></item>
@@ -1255,18 +1269,16 @@
 					<item id="template">
 						<item id="raw"><![CDATA[<div class="box bt cl">
    [index=1]
-   <a href="{url}">
    <div class="up_Box cl">
       <div class="img_big">
          <div class="tag">
             <a href="{forumurl}">{forumname}</a>
          </div>
-         <img src="{pic}" width="{picwidth}" height="{picheight}" />
+         <div class="img_box1"><a href="{url}"><img src="{pic}" width="{picwidth}" height="{picheight}" /></a></div>
          <div class="bg_shadow">作者：{author}<em>{dateline}</em></div>
       </div>
-      <h2>{title}</h2>
+      <h2><a href="{url}">{title}</a></h2>
    </div>
-   </a>
    [/index]
    <div class="small_news">
       <ul>
@@ -1323,21 +1335,19 @@
 </div>]]></item>
 						<item id="footer"><![CDATA[]]></item>
 						<item id="header"><![CDATA[]]></item>
-						<item id="indexplus"><![CDATA[
-						]]></item>
+						<item id="indexplus">
+						</item>
 						<item id="index">
-							<item id="1"><![CDATA[<a href="{url}">
-   <div class="up_Box cl">
+							<item id="1"><![CDATA[<div class="up_Box cl">
       <div class="img_big">
          <div class="tag">
             <a href="{forumurl}">{forumname}</a>
          </div>
-         <img src="{pic}" width="{picwidth}" height="{picheight}" />
+         <div class="img_box1"><a href="{url}"><img src="{pic}" width="{picwidth}" height="{picheight}" /></a></div>
          <div class="bg_shadow">作者：{author}<em>{dateline}</em></div>
       </div>
-      <h2>{title}</h2>
-   </div>
-   </a>]]></item>
+      <h2><a href="{url}">{title}</a></h2>
+   </div>]]></item>
 							<item id="2"><![CDATA[<li>
       <a href="{url}">
       <div class="img_left z">
@@ -1387,16 +1397,16 @@
          </a>
          </li>]]></item>
 						</item>
-						<item id="orderplus"><![CDATA[
-						]]></item>
-						<item id="order"><![CDATA[
-						]]></item>
-						<item id="loopplus"><![CDATA[
-						]]></item>
-						<item id="loop"><![CDATA[
-						]]></item>
+						<item id="orderplus">
+						</item>
+						<item id="order">
+						</item>
+						<item id="loopplus">
+						</item>
+						<item id="loop">
+						</item>
 					</item>
-					<item id="hash"><![CDATA[a53b3df0]]></item>
+					<item id="hash"><![CDATA[d1d84ff3]]></item>
 				</item>
 				<item id="picwidth"><![CDATA[360]]></item>
 				<item id="picheight"><![CDATA[200]]></item>
@@ -1431,7 +1441,7 @@
 				<item id="cachetimerange"><![CDATA[]]></item>
 				<item id="punctualupdate"><![CDATA[0]]></item>
 				<item id="hidedisplay"><![CDATA[0]]></item>
-				<item id="dateline"><![CDATA[1501564155]]></item>
+				<item id="dateline"><![CDATA[1506315634]]></item>
 				<item id="notinherited"><![CDATA[0]]></item>
 				<item id="isblank"><![CDATA[0]]></item>
 			</item>
@@ -1455,9 +1465,9 @@
 					<item id="settarget"><![CDATA[0]]></item>
 					<item id="moreurl"><![CDATA[0]]></item>
 					<item id="fields">
-						<item id="0"><![CDATA[url]]></item>
-						<item id="1"><![CDATA[forumurl]]></item>
-						<item id="2"><![CDATA[forumname]]></item>
+						<item id="0"><![CDATA[forumurl]]></item>
+						<item id="1"><![CDATA[forumname]]></item>
+						<item id="2"><![CDATA[url]]></item>
 						<item id="3"><![CDATA[pic]]></item>
 						<item id="4"><![CDATA[author]]></item>
 						<item id="5"><![CDATA[dateline]]></item>
@@ -1467,18 +1477,16 @@
 					<item id="template">
 						<item id="raw"><![CDATA[<div class="box bt cl">
    [index=1]
-   <a href="{url}">
    <div class="up_Box cl">
       <div class="img_big">
          <div class="tag">
             <a href="{forumurl}">{forumname}</a>
          </div>
-         <img src="{pic}" width="{picwidth}" height="{picheight}" />
+         <div class="img_box1"><a href="{url}"><img src="{pic}" width="{picwidth}" height="{picheight}" /></a></div>
          <div class="bg_shadow">作者：{author}<em>{dateline}</em></div>
       </div>
-      <h2>{title}</h2>
+      <h2><a href="{url}">{title}</a></h2>
    </div>
-   </a>
    [/index]
    <div class="small_news">
       <ul>
@@ -1535,21 +1543,19 @@
 </div>]]></item>
 						<item id="footer"><![CDATA[]]></item>
 						<item id="header"><![CDATA[]]></item>
-						<item id="indexplus"><![CDATA[
-						]]></item>
+						<item id="indexplus">
+						</item>
 						<item id="index">
-							<item id="1"><![CDATA[<a href="{url}">
-   <div class="up_Box cl">
+							<item id="1"><![CDATA[<div class="up_Box cl">
       <div class="img_big">
          <div class="tag">
             <a href="{forumurl}">{forumname}</a>
          </div>
-         <img src="{pic}" width="{picwidth}" height="{picheight}" />
+         <div class="img_box1"><a href="{url}"><img src="{pic}" width="{picwidth}" height="{picheight}" /></a></div>
          <div class="bg_shadow">作者：{author}<em>{dateline}</em></div>
       </div>
-      <h2>{title}</h2>
-   </div>
-   </a>]]></item>
+      <h2><a href="{url}">{title}</a></h2>
+   </div>]]></item>
 							<item id="2"><![CDATA[<li>
       <a href="{url}">
       <div class="img_left z">
@@ -1599,16 +1605,16 @@
          </a>
          </li>]]></item>
 						</item>
-						<item id="orderplus"><![CDATA[
-						]]></item>
-						<item id="order"><![CDATA[
-						]]></item>
-						<item id="loopplus"><![CDATA[
-						]]></item>
-						<item id="loop"><![CDATA[
-						]]></item>
+						<item id="orderplus">
+						</item>
+						<item id="order">
+						</item>
+						<item id="loopplus">
+						</item>
+						<item id="loop">
+						</item>
 					</item>
-					<item id="hash"><![CDATA[a53b3df0]]></item>
+					<item id="hash"><![CDATA[d1d84ff3]]></item>
 				</item>
 				<item id="picwidth"><![CDATA[360]]></item>
 				<item id="picheight"><![CDATA[200]]></item>
@@ -1643,7 +1649,7 @@
 				<item id="cachetimerange"><![CDATA[]]></item>
 				<item id="punctualupdate"><![CDATA[0]]></item>
 				<item id="hidedisplay"><![CDATA[0]]></item>
-				<item id="dateline"><![CDATA[1501564155]]></item>
+				<item id="dateline"><![CDATA[1506315657]]></item>
 				<item id="notinherited"><![CDATA[0]]></item>
 				<item id="isblank"><![CDATA[0]]></item>
 			</item>
@@ -1667,33 +1673,33 @@
 					<item id="settarget"><![CDATA[1]]></item>
 					<item id="moreurl"><![CDATA[0]]></item>
 					<item id="fields">
-						<item id="0"><![CDATA[icon]]></item>
-						<item id="1"><![CDATA[url]]></item>
-						<item id="2"><![CDATA[title]]></item>
+						<item id="0"><![CDATA[url]]></item>
+						<item id="1"><![CDATA[title]]></item>
+						<item id="2"><![CDATA[icon]]></item>
 					</item>
 					<item id="template">
 						<item id="raw"><![CDATA[<div class="box icon_rank cl">
 <ul>
 [loop]
-<li><img src="{icon}" width="84" height="84"><a href="{url}" title="{title}"{target}>{title}</a></li>
+<li><a href="{url}" title="{title}"{target}><img src="{icon}" width="80">{title}</a></li>
 [/loop]
 </ul>
 </div>]]></item>
 						<item id="footer"><![CDATA[]]></item>
 						<item id="header"><![CDATA[]]></item>
-						<item id="indexplus"><![CDATA[
-						]]></item>
-						<item id="index"><![CDATA[
-						]]></item>
-						<item id="orderplus"><![CDATA[
-						]]></item>
-						<item id="order"><![CDATA[
-						]]></item>
-						<item id="loopplus"><![CDATA[
-						]]></item>
-						<item id="loop"><![CDATA[<li><img src="{icon}" width="84" height="84"><a href="{url}" title="{title}"{target}>{title}</a></li>]]></item>
+						<item id="indexplus">
+						</item>
+						<item id="index">
+						</item>
+						<item id="orderplus">
+						</item>
+						<item id="order">
+						</item>
+						<item id="loopplus">
+						</item>
+						<item id="loop"><![CDATA[<li><a href="{url}" title="{title}"{target}><img src="{icon}" width="80">{title}</a></li>]]></item>
 					</item>
-					<item id="hash"><![CDATA[d702dbb7]]></item>
+					<item id="hash"><![CDATA[e21c3ada]]></item>
 				</item>
 				<item id="picwidth"><![CDATA[0]]></item>
 				<item id="picheight"><![CDATA[0]]></item>
@@ -1713,7 +1719,7 @@
 				<item id="cachetimerange"><![CDATA[]]></item>
 				<item id="punctualupdate"><![CDATA[0]]></item>
 				<item id="hidedisplay"><![CDATA[0]]></item>
-				<item id="dateline"><![CDATA[1501564155]]></item>
+				<item id="dateline"><![CDATA[1506315926]]></item>
 				<item id="notinherited"><![CDATA[0]]></item>
 				<item id="isblank"><![CDATA[0]]></item>
 			</item>
@@ -1724,7 +1730,7 @@
 				<item id="name"><![CDATA[邮箱]]></item>
 				<item id="title"><![CDATA[]]></item>
 				<item id="classname"><![CDATA[]]></item>
-				<item id="summary"><![CDATA[<a href="#" target="_blank"><img src="template/elec_201701_hx_dingzhi\\style/mail.png" width="100%" /></a>]]></item>
+				<item id="summary"><![CDATA[<a href="#" target="_blank"><img src="template/elec_201701_hx_dingzhi/style/mail.png" width="100%" /></a>]]></item>
 				<item id="uid"><![CDATA[1]]></item>
 				<item id="username"><![CDATA[admin]]></item>
 				<item id="styleid"><![CDATA[0]]></item>
@@ -1736,7 +1742,7 @@
 				<item id="dateuformat"><![CDATA[0]]></item>
 				<item id="script"><![CDATA[banner]]></item>
 				<item id="param">
-					<item id="pic"><![CDATA[template/elec_201701_hx_dingzhi\style/mail.png]]></item>
+					<item id="pic"><![CDATA[template/elec_201701_hx_dingzhi/style/mail.png]]></item>
 					<item id="url"><![CDATA[#]]></item>
 					<item id="atarget"><![CDATA[_blank]]></item>
 					<item id="width"><![CDATA[100%]]></item>
@@ -1745,11 +1751,11 @@
 					<item id="items"><![CDATA[10]]></item>
 				</item>
 				<item id="shownum"><![CDATA[10]]></item>
-				<item id="cachetime"><![CDATA[3600]]></item>
-				<item id="cachetimerange"><![CDATA[]]></item>
+				<item id="cachetime"><![CDATA[0]]></item>
+				<item id="cachetimerange"><![CDATA[0,0]]></item>
 				<item id="punctualupdate"><![CDATA[0]]></item>
 				<item id="hidedisplay"><![CDATA[0]]></item>
-				<item id="dateline"><![CDATA[1501564155]]></item>
+				<item id="dateline"><![CDATA[1505803444]]></item>
 				<item id="notinherited"><![CDATA[0]]></item>
 				<item id="isblank"><![CDATA[0]]></item>
 			</item>
@@ -1875,7 +1881,7 @@
 				<item id="cachetimerange"><![CDATA[]]></item>
 				<item id="punctualupdate"><![CDATA[0]]></item>
 				<item id="hidedisplay"><![CDATA[0]]></item>
-				<item id="dateline"><![CDATA[1501564155]]></item>
+				<item id="dateline"><![CDATA[1506315560]]></item>
 				<item id="notinherited"><![CDATA[0]]></item>
 				<item id="isblank"><![CDATA[0]]></item>
 			</item>
@@ -1960,7 +1966,7 @@
 				<item id="cachetimerange"><![CDATA[]]></item>
 				<item id="punctualupdate"><![CDATA[0]]></item>
 				<item id="hidedisplay"><![CDATA[0]]></item>
-				<item id="dateline"><![CDATA[1501564155]]></item>
+				<item id="dateline"><![CDATA[1506315770]]></item>
 				<item id="notinherited"><![CDATA[0]]></item>
 				<item id="isblank"><![CDATA[0]]></item>
 			</item>
@@ -2041,101 +2047,7 @@
 				<item id="cachetimerange"><![CDATA[]]></item>
 				<item id="punctualupdate"><![CDATA[0]]></item>
 				<item id="hidedisplay"><![CDATA[0]]></item>
-				<item id="dateline"><![CDATA[1501564154]]></item>
-				<item id="notinherited"><![CDATA[0]]></item>
-				<item id="isblank"><![CDATA[0]]></item>
-			</item>
-			<item id="2856">
-				<item id="bid"><![CDATA[2856]]></item>
-				<item id="blockclass"><![CDATA[forum_thread]]></item>
-				<item id="blocktype"><![CDATA[0]]></item>
-				<item id="name"><![CDATA[最新专题]]></item>
-				<item id="title"><![CDATA[]]></item>
-				<item id="classname"><![CDATA[]]></item>
-				<item id="summary"><![CDATA[]]></item>
-				<item id="uid"><![CDATA[1]]></item>
-				<item id="username"><![CDATA[admin]]></item>
-				<item id="styleid"><![CDATA[0]]></item>
-				<item id="blockstyle">
-					<item id="name"><![CDATA[]]></item>
-					<item id="blockclass"><![CDATA[forum_thread]]></item>
-					<item id="makethumb"><![CDATA[1]]></item>
-					<item id="getpic"><![CDATA[1]]></item>
-					<item id="getsummary"><![CDATA[0]]></item>
-					<item id="settarget"><![CDATA[1]]></item>
-					<item id="moreurl"><![CDATA[0]]></item>
-					<item id="fields">
-						<item id="0"><![CDATA[url]]></item>
-						<item id="1"><![CDATA[pic]]></item>
-						<item id="2"><![CDATA[title]]></item>
-					</item>
-					<item id="template">
-						<item id="raw"><![CDATA[<div class="box cl" style="margin: 30px 0;">
-   <div class="cl"><h3>最新专题</h3></div>
-   <div class="topic cl">
-<ul>
-[loop]
-<li style="width: {picwidth}px;">
-	<a href="{url}"{target}><img src="{pic}" width="{picwidth}" height="{picheight}" alt="{title}" /></a>
-	<p><a href="{url}" title="{title}"{target}>{title}</a></p>
-</li>
-[/loop]
-</ul>
-</div>
-</div>]]></item>
-						<item id="footer"><![CDATA[]]></item>
-						<item id="header"><![CDATA[]]></item>
-						<item id="indexplus"><![CDATA[
-						]]></item>
-						<item id="index"><![CDATA[
-						]]></item>
-						<item id="orderplus"><![CDATA[
-						]]></item>
-						<item id="order"><![CDATA[
-						]]></item>
-						<item id="loopplus"><![CDATA[
-						]]></item>
-						<item id="loop"><![CDATA[<li style="width: {picwidth}px;">
-	<a href="{url}"{target}><img src="{pic}" width="{picwidth}" height="{picheight}" alt="{title}" /></a>
-	<p><a href="{url}" title="{title}"{target}>{title}</a></p>
-</li>]]></item>
-					</item>
-					<item id="hash"><![CDATA[e5684106]]></item>
-				</item>
-				<item id="picwidth"><![CDATA[370]]></item>
-				<item id="picheight"><![CDATA[240]]></item>
-				<item id="target"><![CDATA[blank]]></item>
-				<item id="dateformat"><![CDATA[Y-m-d]]></item>
-				<item id="dateuformat"><![CDATA[0]]></item>
-				<item id="script"><![CDATA[thread]]></item>
-				<item id="param">
-					<item id="tids"><![CDATA[]]></item>
-					<item id="uids"><![CDATA[]]></item>
-					<item id="keyword"><![CDATA[]]></item>
-					<item id="tagkeyword"><![CDATA[]]></item>
-					<item id="typeids"><![CDATA[]]></item>
-					<item id="recommend"><![CDATA[0]]></item>
-					<item id="special">
-						<item id="0"><![CDATA[0]]></item>
-					</item>
-					<item id="viewmod"><![CDATA[0]]></item>
-					<item id="rewardstatus"><![CDATA[0]]></item>
-					<item id="picrequired"><![CDATA[1]]></item>
-					<item id="orderby"><![CDATA[lastpost]]></item>
-					<item id="postdateline"><![CDATA[0]]></item>
-					<item id="lastpost"><![CDATA[0]]></item>
-					<item id="highlight"><![CDATA[0]]></item>
-					<item id="titlelength"><![CDATA[40]]></item>
-					<item id="summarylength"><![CDATA[80]]></item>
-					<item id="startrow"><![CDATA[0]]></item>
-					<item id="items"><![CDATA[1]]></item>
-				</item>
-				<item id="shownum"><![CDATA[1]]></item>
-				<item id="cachetime"><![CDATA[3600]]></item>
-				<item id="cachetimerange"><![CDATA[]]></item>
-				<item id="punctualupdate"><![CDATA[0]]></item>
-				<item id="hidedisplay"><![CDATA[0]]></item>
-				<item id="dateline"><![CDATA[1501564154]]></item>
+				<item id="dateline"><![CDATA[1506316909]]></item>
 				<item id="notinherited"><![CDATA[0]]></item>
 				<item id="isblank"><![CDATA[0]]></item>
 			</item>
@@ -2226,7 +2138,7 @@
 				<item id="cachetimerange"><![CDATA[]]></item>
 				<item id="punctualupdate"><![CDATA[0]]></item>
 				<item id="hidedisplay"><![CDATA[0]]></item>
-				<item id="dateline"><![CDATA[1501564189]]></item>
+				<item id="dateline"><![CDATA[1506315676]]></item>
 				<item id="notinherited"><![CDATA[0]]></item>
 				<item id="isblank"><![CDATA[0]]></item>
 			</item>
@@ -2317,7 +2229,7 @@
 				<item id="cachetimerange"><![CDATA[]]></item>
 				<item id="punctualupdate"><![CDATA[0]]></item>
 				<item id="hidedisplay"><![CDATA[0]]></item>
-				<item id="dateline"><![CDATA[1501564196]]></item>
+				<item id="dateline"><![CDATA[1506315960]]></item>
 				<item id="notinherited"><![CDATA[0]]></item>
 				<item id="isblank"><![CDATA[0]]></item>
 			</item>
@@ -2408,7 +2320,7 @@
 				<item id="cachetimerange"><![CDATA[]]></item>
 				<item id="punctualupdate"><![CDATA[0]]></item>
 				<item id="hidedisplay"><![CDATA[0]]></item>
-				<item id="dateline"><![CDATA[1501564202]]></item>
+				<item id="dateline"><![CDATA[1506315769]]></item>
 				<item id="notinherited"><![CDATA[0]]></item>
 				<item id="isblank"><![CDATA[0]]></item>
 			</item>
@@ -2499,7 +2411,7 @@
 				<item id="cachetimerange"><![CDATA[]]></item>
 				<item id="punctualupdate"><![CDATA[0]]></item>
 				<item id="hidedisplay"><![CDATA[0]]></item>
-				<item id="dateline"><![CDATA[1501564210]]></item>
+				<item id="dateline"><![CDATA[1506316911]]></item>
 				<item id="notinherited"><![CDATA[0]]></item>
 				<item id="isblank"><![CDATA[0]]></item>
 			</item>
@@ -2590,7 +2502,43 @@
 				<item id="cachetimerange"><![CDATA[]]></item>
 				<item id="punctualupdate"><![CDATA[0]]></item>
 				<item id="hidedisplay"><![CDATA[0]]></item>
-				<item id="dateline"><![CDATA[1501564217]]></item>
+				<item id="dateline"><![CDATA[1506315676]]></item>
+				<item id="notinherited"><![CDATA[0]]></item>
+				<item id="isblank"><![CDATA[0]]></item>
+			</item>
+			<item id="3301">
+				<item id="bid"><![CDATA[3301]]></item>
+				<item id="blockclass"><![CDATA[html_html]]></item>
+				<item id="blocktype"><![CDATA[0]]></item>
+				<item id="name"><![CDATA[ad111]]></item>
+				<item id="title"><![CDATA[]]></item>
+				<item id="classname"><![CDATA[]]></item>
+				<item id="summary"><![CDATA[<a href="#" target="_blank"><img src="template/elec_201701_hx_dingzhi/style/ad/ad2.png" width="100%" /></a>]]></item>
+				<item id="uid"><![CDATA[1]]></item>
+				<item id="username"><![CDATA[admin]]></item>
+				<item id="styleid"><![CDATA[0]]></item>
+				<item id="blockstyle"><![CDATA[]]></item>
+				<item id="picwidth"><![CDATA[0]]></item>
+				<item id="picheight"><![CDATA[0]]></item>
+				<item id="target"><![CDATA[blank]]></item>
+				<item id="dateformat"><![CDATA[Y-m-d]]></item>
+				<item id="dateuformat"><![CDATA[0]]></item>
+				<item id="script"><![CDATA[banner]]></item>
+				<item id="param">
+					<item id="pic"><![CDATA[template/elec_201701_hx_dingzhi/style/ad/ad2.png]]></item>
+					<item id="url"><![CDATA[#]]></item>
+					<item id="atarget"><![CDATA[_blank]]></item>
+					<item id="width"><![CDATA[100%]]></item>
+					<item id="height"><![CDATA[]]></item>
+					<item id="text"><![CDATA[]]></item>
+					<item id="items"><![CDATA[10]]></item>
+				</item>
+				<item id="shownum"><![CDATA[10]]></item>
+				<item id="cachetime"><![CDATA[3600]]></item>
+				<item id="cachetimerange"><![CDATA[]]></item>
+				<item id="punctualupdate"><![CDATA[0]]></item>
+				<item id="hidedisplay"><![CDATA[0]]></item>
+				<item id="dateline"><![CDATA[1506315925]]></item>
 				<item id="notinherited"><![CDATA[0]]></item>
 				<item id="isblank"><![CDATA[0]]></item>
 			</item>

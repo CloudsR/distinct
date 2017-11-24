@@ -25,15 +25,16 @@ a:hover { text-decoration: none}
 .login_box { padding: 40px 18px; height: 100px; background: #FFFFFF}
 .a_img { float: left; margin-right: 20px}
 .a_img img { width: 95px; padding: 5px; border-radius: 50%; border: 1px solid #DDDDDD}
-.a_info { float: left; width: 205px; font-size: 20px; color: #666666}
+.a_info { float: left; width: 177px; font-size: 20px; color: #666666}
 .lg_button { margin-top: 25px; }
-.lg_button a { float: left; width: 92px; height: 42px; line-height: 42px; margin-right: 20px; display: block; color: #FFFFFF; font-size: 16px; text-align: center; background: #9B9B9B}
+.lg_button a { float: left; width: 78px; height: 42px; line-height: 42px; margin-right: 20px; display: block; color: #FFFFFF; font-size: 16px; text-align: center; background: #3CAFEF}
+.lg_button a:hover { opacity: 0.8}
 
 
-.box { margin-bottom: 30px; background: #FFFFFF}
-.box h3{ float: left; font-size: 24px; line-height: 28px; padding-left: 10px; margin: 15px 10px 15px 12px; border-left: 3px solid #444444; color: #444444}
+.box { margin-bottom: 20px; background: #FFFFFF}
+.box h3{ float: left; font-size: 20px; line-height: 28px; padding-left: 10px; margin: 15px 10px 15px 12px; border-left: 3px solid #66CC99; color: #444444}
 .box span { float: right; line-height: 58px; font-size: 16px; color: #666666}
-.box span a { margin: 0 12px; color: #666666}
+.box span a { margin: 0 15px; color: #666666}
 .video li { position: relative; float: left; width: 244px; height: 160px; margin: 0 0 0 12px !important; overflow: hidden}
 .video li em { display: none; position: absolute; left: 95px; top: 60px; width: 48px; height: 48px; transition: all 0.5s ease 0s; background: url(../play1.png) no-repeat 0 0}
 .video li:hover em { display: block}
@@ -47,18 +48,18 @@ a:hover { text-decoration: none}
 }
 
 
-.big_news { float: left; width: 390px; margin-left: 12px; color: #999999}
+.big_news { float: left; width: 390px; margin-left: 12px; color: #999999; padding-right: 20px; border-right: 1px solid #ccc; margin-bottom: 15px;}
 .big_news a { color: #999999}
-.big_news h2 { line-height: 25px; margin:13px 0; font-size: 22px; font-weight: 400; color: #454545}
-.big_news h2:hover { color: red}
+.big_news h2 { line-height: 25px; margin:13px 0; font-size: 20px; font-weight: 400; color: #454545}
+.big_news h2:hover { color: #66CC99}
 .big_news p { padding-bottom: 20px; margin-top: 10px; line-height: 25px}
-.small_news { float: right; width: 350px; margin-right: 12px}
+.small_news { float: right; width: 380px; margin-right: 12px}
 .small_news li { float: left; margin-bottom: 20px}
 .small_news .img_left { margin-right: 12px}
 .small_news img { width: 140px; max-height: 100px}
 .small_news .info { float: left; width: 185px; color: #999999}
 .small_news .info h2 { line-height: 23px; font-size: 15px; font-weight: 400; margin: 5px 0; color: #666666}
-.small_news .info h2:hover { color: red}
+.small_news .info h2:hover { color: #66CC99}
 .view { padding-left: 20px; background: url(../view.png) no-repeat left center}
 .reply { padding-left: 20px; margin-left: 20px; background: url(../reply.png) no-repeat left center}
 
@@ -73,24 +74,26 @@ a:hover { text-decoration: none}
 .img_big .img_box1 { width: 360px; height: 200px; overflow: hidden}
 .bg_shadow { position: absolute; left: 10px; bottom: 10px; width: 340px; padding: 5px 10px; color: #FFFFFF; background: url(../black03.png) repeat 0 0}
 .bg_shadow em { float: right}
-.up_Box h2 { height: 23px; line-height: 23px; font-size: 20px; font-weight: 400; color: #555555; padding: 0 0 15px 0; margin: 5px 10px 15px 10px; border-bottom: 1px solid #EEEEEE}
+.up_Box h2 { height: 23px; line-height: 23px; font-size: 18px; font-weight: 400; color: #555555; padding: 0 0 15px 0; margin: 5px 10px 15px 10px; border-bottom: 1px solid #EEEEEE}
 .up_Box h2 a { color: #555555}
 
 
 .icon_rank { padding: 20px 0 10px 0}
 .icon_rank ul { width: 400px}
-.icon_rank li { float: left; width: 84px; margin: 0 20px 20px 20px; text-align: center; font-size: 15px; color: #666666}
+.icon_rank li { float: left; width: 73px; margin: 0 20px 20px 20px; text-align: center; font-size: 15px; color: #666666}
 .icon_rank li a { color: #555555}
-.icon_rank li img { margin-bottom: 8px; border-radius: 50%}
+.icon_rank li:hover a, .icon_rank li a:hover { color: #e35454}
+.icon_rank li img { margin-bottom: 8px; border-radius: 0; transition: all 0.5s ease 0s}
+.icon_rank li img:hover { transform:rotate(360deg)}
 
 
 .btn_post {
     display: block;
-    width: 370px;
+    width: 340px;
     height: 120px;
     line-height: 120px;
-	margin: 30px 0;
-    background: #DBC5C5;
+	margin: 20px 0;
+    background: #61ADD7;
 }
 .icon_post {
     width: 64px;
@@ -109,28 +112,29 @@ a:hover { text-decoration: none}
     line-height: 120px;
     text-align: left;
     font-size: 32px;
-	color: #EC516E !important
+	color: #FFFFFF !important
 }
 
 
 .event li { position: relative}
-.event .info { position: absolute; left: 0; width: 340px; padding: 15px; bottom: 20px; background: url(../black03.png) repeat 0 0}
+.event .info { position: absolute; left: 0; width: 310px; padding: 15px; bottom: 20px; background: url(../black03.png) repeat 0 0}
 .event .info p a { color: #FFFFFF; font-size: 24px}
 .event .info em { float: right; width: 100px; height: 30px; font-size: 18px; text-align: center; background: #FC6F7B}
 .event .info em a { color: #FFFFFF}
 
 
-.tab1 { margin-top: 30px; background: #FFFFFF}
+.tab1 { margin: 20px 0; background: #FFFFFF}
 .tab1 .tab-title { height: 52px; line-height: 52px; overflow: visible; background: none}
 .tab1 .tb { height: 52px; line-height: 52px; padding: 0; margin: 0 0 0 10px}
 .tab1 .tb li { margin: 0}
-.tab1 .tb a { width: 155px; font-size: 22px; font-weight: 400 !important; border: 0; color: #AAAAAA; text-align: center}
+.tab1 .tb a { width: 140px; font-size: 20px; font-weight: 400 !important; border: 0; color: #AAAAAA; text-align: center}
 .tab1 .tb .a a { color: #66CC99; border-bottom: 1px solid #66CC99}
 
 
 .ranks ul { padding: 0 0 0 26px; margin: 8px 0; background: url(../rank.png) no-repeat left 3px}
-.ranks li { width: 312px; height: 29px; line-height: 30px; white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ranks li { width: 282px; height: 29px; line-height: 30px; white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .ranks li a { font-size: 15px; color: #777777}
+.ranks li a:hover { color: #66CC99}
 
 
 .topic li p { line-height: 25px; font-size: 20px; margin: 5px 10px 10px 10px}
@@ -141,3 +145,20 @@ a:hover { text-decoration: none}
 .focus1 li p { position: absolute; left: 0; bottom: -30px; height: 30px; line-height: 30px; font-size: 14px; width: 100%; overflow: hidden; transition: all 0.5s ease 0s; background: url(../black03.png) repeat 0 0}
 .focus1 li:hover p { bottom: 0}
 .focus1 li p a { padding: 0 10px; color: #FFFFFF}
+
+
+.focusBox { position: relative; width:840px; height:390px; overflow: hidden; }
+	.focusBox .pic{ position:relative; z-index:0; }
+	.focusBox .pic img { width:840px; height:390px; display: block; }
+	.focusBox .hd { width:100%; position: absolute; bottom: 10px; text-align: center; font-size:0; z-index:1; }
+	.focusBox .hd li{margin: 0 5px; background: url(../dot.png) no-repeat 0 -16px; height: 16px; overflow: hidden; width: 16px; cursor: pointer;
+		display:inline-block; *display:inline; zoom:1;  _background: url(../dot8.png) no-repeat 0 -16px;
+	}
+	.focusBox .hd .on{ background-position:0 0; }
+
+	.focusBox .prev,
+	.focusBox .next { width: 60px; height: 90px; margin: -60px 0 0; display: none; background: url(../ad_ctr.png) no-repeat 0 0; position: absolute; top: 54%; z-index: 10; cursor: pointer; text-indent: -9999px; filter:alpha(opacity=20);opacity:0.2;  }
+	.focusBox .prev { left: 0; }
+	.focusBox .next { background-position: 0 -90px; right: 0; }
+	.focusBox .prev:hover,
+	.focusBox .next:hover { filter:alpha(opacity=50) !important;opacity:0.5 !important;  }

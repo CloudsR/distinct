@@ -253,6 +253,10 @@ a:hover.flo i{background-position:-200px 0}
 .nav_slide .h_pop li a:hover { color: #666666; background: #F2F2F5}
 .nav_slide .h_pop li:last-child a { border-bottom: 0}
 
+.nav_slide2.nav_slide .h_pop{ background: #66cc99; min-width: inherit;}
+.nav_slide2 .h_pop li a{color:#fff }
+
+
 /********* end/结束*********/
 
 

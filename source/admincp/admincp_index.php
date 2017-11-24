@@ -154,183 +154,209 @@ if($isfounder) {
 	$view_mastermobile = !empty($save_mastermobile) ? substr($save_mastermobile, 0 , 3).'*****'.substr($save_mastermobile, -3) : '';
 }
 
+// if($securityadvise) {
+// 	showtableheader('home_security_tips', '', '', 0);
+// 	showtablerow('', 'class="tipsblock"', '<ul>'.$securityadvise.'</ul>');
+// 	showtablefooter();
+// }
+
+
 if($securityadvise) {
-	showtableheader('home_security_tips', '', '', 0);
-	showtablerow('', 'class="tipsblock"', '<ul>'.$securityadvise.'</ul>');
+	//showtableheader('home_security_tips', '', '', 0);
+	showtablerow('', 'class="tipsblock"', '<ul class="in_nav_list">
+										<li><a href="admin.php?action=blockstyle"><i class="i-icon1"></i>模板模块</a></li>
+										<li><a href="admin.php?action=makehtml"><i class="i-icon2"></i>HTML管理</a></li>
+										<li><a href="admin.php?action=templates"><i class="i-icon3"></i>模板管理</a></li>
+										<li><a href="admin.php?action=templates"><i class="i-icon4"></i>风格管理</a></li>
+										<li><a href="admin.php?action=templates"><i class="i-icon5"></i>用户管理</a></li>
+										<li><a href="admin.php?action=templates"><i class="i-icon6"></i>频道栏目</a></li>
+										<li><a href="admin.php?action=templates"><i class="i-icon6"></i>频道栏目</a></li>
+										<li><a href="admin.php?action=templates"><i class="i-icon6"></i>频道栏目</a></li>
+										<li><a href="admin.php?action=templates"><i class="i-icon6"></i>频道栏目</a></li>
+										<li><a href="admin.php?action=templates"><i class="i-icon6"></i>频道栏目</a></li>
+										<li><a href="admin.php?action=templates"><i class="i-icon6"></i>频道栏目</a></li>
+										<li><a href="admin.php?action=templates"><i class="i-icon6"></i>频道栏目</a></li>
+										<li><a href="admin.php?action=templates"><i class="i-icon6"></i>频道栏目</a></li>
+										<li><a href="admin.php?action=templates"><i class="i-icon6"></i>频道栏目</a></li>
+										<li><a href="admin.php?action=templates"><i class="i-icon6"></i>频道栏目</a></li>
+	</ul>');
 	showtablefooter();
 }
 
-$onlines = '';
-$admincp_session = C::t('common_admincp_session')->fetch_all_by_panel(1);
-$members = C::t('common_member')->fetch_all(array_keys($admincp_session), false, 0);
-foreach($admincp_session as $uid => $online) {
-	$onlines .= '<a href="home.php?mod=space&uid='.$online['uid'].'" title="'.dgmdate($online['dateline']).'" target="_blank">'.$members[$uid]['username'].'</a>&nbsp;&nbsp;&nbsp;';
-}
 
 
-echo '<div id="boardnews"></div>';
 
-echo '<style>.rssbook{margin:8px 0 0 25px;}</style>';
-echo '<script >var nId = "4d1e7b6dd9c5070d1a82aeb8be5e72fc64db42701a1bc4d4",nWidth="400px",sColor="light",sText="'.cplang('subscribe_comsenz_email').'" ;</script><script src="http://list.qq.com/zh_CN/htmledition/js/qf/page/qfcode.js" charset="gb18030"></script>';
+// $onlines = '';
+// $admincp_session = C::t('common_admincp_session')->fetch_all_by_panel(1);
+// $members = C::t('common_member')->fetch_all(array_keys($admincp_session), false, 0);
+// foreach($admincp_session as $uid => $online) {
+// 	$onlines .= '<a href="home.php?mod=space&uid='.$online['uid'].'" title="'.dgmdate($online['dateline']).'" target="_blank">'.$members[$uid]['username'].'</a>&nbsp;&nbsp;&nbsp;';
+// }
 
-showtableheader('', '', '', 0);
-showtablerow('', 'class="tipsblock"', '<ul><li style="line-height:15px">'.cplang('scan_discuz_qrcode').'</li></ul>');
-showtablefooter();
 
-showtableheader('', 'nobottom fixpadding');
-if($membersmod || $threadsmod || $postsmod || $medalsmod || $blogsmod || $picturesmod || $doingsmod || $sharesmod || $commentsmod || $articlesmod || $articlecommentsmod || $topiccommentsmod || $threadsdel || !empty($verify)) {
-	showtablerow('', '', '<h3 class="left margintop">'.cplang('home_mods').': </h3><p class="left difflink">'.
-		($membersmod ? '<a href="'.ADMINSCRIPT.'?action=moderate&operation=members">'.cplang('home_mod_members').'</a>(<em class="lightnum">'.$membersmod.'</em>)' : '').
-		($threadsmod ? '<a href="'.ADMINSCRIPT.'?action=moderate&operation=threads&dateline=all">'.cplang('home_mod_threads').'</a>(<em class="lightnum">'.$threadsmod.'</em>)' : '').
-		($postsmod ? '<a href="'.ADMINSCRIPT.'?action=moderate&operation=replies&dateline=all">'.cplang('home_mod_posts').'</a>(<em class="lightnum">'.$postsmod.'</em>)' : '').
-		($medalsmod ? '<a href="'.ADMINSCRIPT.'?action=medals&operation=mod">'.cplang('home_mod_medals').'</a>(<em class="lightnum">'.$medalsmod.'</em>)' : '').
-		($groupmod ? '<a href="'.ADMINSCRIPT.'?action=group&operation=mod">'.cplang('group_mod_wait').'</a>(<em class="lightnum">'.$groupmod.'</em>)' : '').
-		($blogsmod ? '<a href="'.ADMINSCRIPT.'?action=moderate&operation=blogs&dateline=all">'.cplang('home_mod_blogs').'</a>(<em class="lightnum">'.$blogsmod.'</em>)' : '').
-		($picturesmod ? '<a href="'.ADMINSCRIPT.'?action=moderate&operation=pictures&dateline=all">'.cplang('home_mod_pictures').'</a>(<em class="lightnum">'.$picturesmod.'</em>)' : '').
-		($doingsmod ? '<a href="'.ADMINSCRIPT.'?action=moderate&operation=doings&dateline=all">'.cplang('home_mod_doings').'</a>(<em class="lightnum">'.$doingsmod.'</em>)' : '').
-		($sharesmod ? '<a href="'.ADMINSCRIPT.'?action=moderate&operation=shares&dateline=all">'.cplang('home_mod_shares').'</a>(<em class="lightnum">'.$sharesmod.'</em>)' : '').
-		($commentsmod ? '<a href="'.ADMINSCRIPT.'?action=moderate&operation=comments&dateline=all">'.cplang('home_mod_comments').'</a>(<em class="lightnum">'.$commentsmod.'</em>)' : '').
-		($articlesmod ? '<a href="'.ADMINSCRIPT.'?action=moderate&operation=articles&dateline=all">'.cplang('home_mod_articles').'</a>(<em class="lightnum">'.$articlesmod.'</em>)' : '').
-		($articlecommentsmod ? '<a href="'.ADMINSCRIPT.'?action=moderate&operation=articlecomments&dateline=all">'.cplang('home_mod_articlecomments').'</a>(<em class="lightnum">'.$articlecommentsmod.'</em>)' : '').
-		($topiccommentsmod ? '<a href="'.ADMINSCRIPT.'?action=moderate&operation=topiccomments&dateline=all">'.cplang('home_mod_topiccomments').'</a>(<em class="lightnum">'.$topiccommentsmod.'</em>)' : '').
-		($threadsdel ? '<a href="'.ADMINSCRIPT.'?action=recyclebin">'.cplang('home_del_threads').'</a>(<em class="lightnum">'.$threadsdel.'</em>)' : '').
-		$verify.
-		'</p><div class="clear"></div>'
-	);
-}
-showtablefooter();
+// echo '<div id="boardnews"></div>';
 
-showtableheader('home_onlines', 'nobottom fixpadding');
-echo '<tr><td>'.$onlines.'</td></tr>';
-showtablefooter();
+// echo '<style>.rssbook{margin:8px 0 0 25px;}</style>';
+// echo '<script >var nId = "4d1e7b6dd9c5070d1a82aeb8be5e72fc64db42701a1bc4d4",nWidth="400px",sColor="light",sText="'.cplang('subscribe_comsenz_email').'" ;</script><script src="http://list.qq.com/zh_CN/htmledition/js/qf/page/qfcode.js" charset="gb18030"></script>';
 
-showformheader('index');
-showtableheader('home_notes', 'fixpadding"', '', '3');
+// showtableheader('', '', '', 0);
+// showtablerow('', 'class="tipsblock"', '<ul><li style="line-height:15px">'.cplang('scan_discuz_qrcode').'</li></ul>');
+// showtablefooter();
 
-foreach(C::t('common_adminnote')->fetch_all_by_access(0) as $note) {
-	if($note['expiration'] < TIMESTAMP) {
-		C::t('common_adminnote')->delete($note['id']);
-	} else {
-		$note['adminenc'] = rawurlencode($note['admin']);
-		$note['expiration'] = ceil(($note['expiration'] - $note['dateline']) / 86400);
-		$note['dateline'] = dgmdate($note['dateline'], 'dt');
-		showtablerow('', array('', '', ''), array(
-			$isfounder || $_G['member']['username'] == $note['admin'] ? '<a href="'.ADMINSCRIPT.'?action=index&notesubmit=yes&noteid='.$note['id'].'"><img src="static/image/admincp/close.gif" width="7" height="8" title="'.cplang('delete').'" /></a>' : '',
-			"<span class=\"bold\"><a href=\"home.php?mod=space&username=$note[adminenc]\" target=\"_blank\">$note[admin]</a></span> $note[dateline] (".cplang('validity').": $note[expiration] ".cplang('days').")<br />$note[message]",
-		));
-	}
-}
+// showtableheader('', 'nobottom fixpadding');
+// if($membersmod || $threadsmod || $postsmod || $medalsmod || $blogsmod || $picturesmod || $doingsmod || $sharesmod || $commentsmod || $articlesmod || $articlecommentsmod || $topiccommentsmod || $threadsdel || !empty($verify)) {
+// 	showtablerow('', '', '<h3 class="left margintop">'.cplang('home_mods').': </h3><p class="left difflink">'.
+// 		($membersmod ? '<a href="'.ADMINSCRIPT.'?action=moderate&operation=members">'.cplang('home_mod_members').'</a>(<em class="lightnum">'.$membersmod.'</em>)' : '').
+// 		($threadsmod ? '<a href="'.ADMINSCRIPT.'?action=moderate&operation=threads&dateline=all">'.cplang('home_mod_threads').'</a>(<em class="lightnum">'.$threadsmod.'</em>)' : '').
+// 		($postsmod ? '<a href="'.ADMINSCRIPT.'?action=moderate&operation=replies&dateline=all">'.cplang('home_mod_posts').'</a>(<em class="lightnum">'.$postsmod.'</em>)' : '').
+// 		($medalsmod ? '<a href="'.ADMINSCRIPT.'?action=medals&operation=mod">'.cplang('home_mod_medals').'</a>(<em class="lightnum">'.$medalsmod.'</em>)' : '').
+// 		($groupmod ? '<a href="'.ADMINSCRIPT.'?action=group&operation=mod">'.cplang('group_mod_wait').'</a>(<em class="lightnum">'.$groupmod.'</em>)' : '').
+// 		($blogsmod ? '<a href="'.ADMINSCRIPT.'?action=moderate&operation=blogs&dateline=all">'.cplang('home_mod_blogs').'</a>(<em class="lightnum">'.$blogsmod.'</em>)' : '').
+// 		($picturesmod ? '<a href="'.ADMINSCRIPT.'?action=moderate&operation=pictures&dateline=all">'.cplang('home_mod_pictures').'</a>(<em class="lightnum">'.$picturesmod.'</em>)' : '').
+// 		($doingsmod ? '<a href="'.ADMINSCRIPT.'?action=moderate&operation=doings&dateline=all">'.cplang('home_mod_doings').'</a>(<em class="lightnum">'.$doingsmod.'</em>)' : '').
+// 		($sharesmod ? '<a href="'.ADMINSCRIPT.'?action=moderate&operation=shares&dateline=all">'.cplang('home_mod_shares').'</a>(<em class="lightnum">'.$sharesmod.'</em>)' : '').
+// 		($commentsmod ? '<a href="'.ADMINSCRIPT.'?action=moderate&operation=comments&dateline=all">'.cplang('home_mod_comments').'</a>(<em class="lightnum">'.$commentsmod.'</em>)' : '').
+// 		($articlesmod ? '<a href="'.ADMINSCRIPT.'?action=moderate&operation=articles&dateline=all">'.cplang('home_mod_articles').'</a>(<em class="lightnum">'.$articlesmod.'</em>)' : '').
+// 		($articlecommentsmod ? '<a href="'.ADMINSCRIPT.'?action=moderate&operation=articlecomments&dateline=all">'.cplang('home_mod_articlecomments').'</a>(<em class="lightnum">'.$articlecommentsmod.'</em>)' : '').
+// 		($topiccommentsmod ? '<a href="'.ADMINSCRIPT.'?action=moderate&operation=topiccomments&dateline=all">'.cplang('home_mod_topiccomments').'</a>(<em class="lightnum">'.$topiccommentsmod.'</em>)' : '').
+// 		($threadsdel ? '<a href="'.ADMINSCRIPT.'?action=recyclebin">'.cplang('home_del_threads').'</a>(<em class="lightnum">'.$threadsdel.'</em>)' : '').
+// 		$verify.
+// 		'</p><div class="clear"></div>'
+// 	);
+// }
+// showtablefooter();
 
-showtablerow('', array(), array(
-	cplang('home_notes_add'),
-	'<input type="text" class="txt" name="newmessage" value="" style="width:300px;" />'.cplang('validity').': <input type="text" class="txt" name="newexpiration" value="30" style="width:30px;" />'.cplang('days').'&nbsp;<input name="notesubmit" value="'.cplang('submit').'" type="submit" class="btn" />'
-));
-showtablefooter();
-showformfooter();
+// showtableheader('home_onlines', 'nobottom fixpadding');
+// echo '<tr><td>'.$onlines.'</td></tr>';
+// showtablefooter();
 
-loaducenter();
+// showformheader('index');
+// showtableheader('home_notes', 'fixpadding"', '', '3');
 
-showtableheader('home_sys_info', 'fixpadding');
-showtablerow('', array('class="vtop td24 lineheight"', 'class="lineheight smallfont"'), array(
-	cplang('home_discuz_version'),
-	'Discuz! '.DISCUZ_VERSION.' Release '.DISCUZ_RELEASE.' <a href="http://faq.comsenz.com/checkversion.php?product=Discuz&version='.DISCUZ_VERSION.'&release='.DISCUZ_RELEASE.'&charset='.CHARSET.'&dbcharset='.$dbcharset.'" class="lightlink2 smallfont" target="_blank">'.cplang('home_check_newversion').'</a> <a href="http://www.comsenz.com/purchase/discuz/" class="lightlink2 smallfont" target="_blank">&#19987;&#19994;&#25903;&#25345;&#19982;&#26381;&#21153;</a> <a href="http://idc.comsenz.com" class="lightlink2 smallfont" target="_blank">&#68;&#105;&#115;&#99;&#117;&#122;&#33;&#19987;&#29992;&#20027;&#26426;</a>'
-));
-showtablerow('', array('class="vtop td24 lineheight"', 'class="lineheight smallfont"'), array(
-	cplang('home_ucclient_version'),
-	'UCenter '.UC_CLIENT_VERSION.' Release '.UC_CLIENT_RELEASE
-));
-showtablerow('', array('class="vtop td24 lineheight"', 'class="lineheight smallfont"'), array(
-	cplang('home_environment'),
-	$serverinfo
-));
-showtablerow('', array('class="vtop td24 lineheight"', 'class="lineheight smallfont"'), array(
-	cplang('home_serversoftware'),
-	$serversoft
-));
-showtablerow('', array('class="vtop td24 lineheight"', 'class="lineheight smallfont"'), array(
-	cplang('home_database'),
-	$dbversion
-));
-showtablerow('', array('class="vtop td24 lineheight"', 'class="lineheight smallfont"'), array(
-	cplang('home_upload_perm'),
-	$fileupload
-));
-showtablerow('', array('class="vtop td24 lineheight"', 'class="lineheight smallfont"'), array(
-	cplang('home_database_size'),
-	$dbsize
-));
-showtablerow('', array('class="vtop td24 lineheight"', 'class="lineheight smallfont"'), array(
-	cplang('home_attach_size'),
-	$attachsize
-));
-showtablefooter();
+// foreach(C::t('common_adminnote')->fetch_all_by_access(0) as $note) {
+// 	if($note['expiration'] < TIMESTAMP) {
+// 		C::t('common_adminnote')->delete($note['id']);
+// 	} else {
+// 		$note['adminenc'] = rawurlencode($note['admin']);
+// 		$note['expiration'] = ceil(($note['expiration'] - $note['dateline']) / 86400);
+// 		$note['dateline'] = dgmdate($note['dateline'], 'dt');
+// 		showtablerow('', array('', '', ''), array(
+// 			$isfounder || $_G['member']['username'] == $note['admin'] ? '<a href="'.ADMINSCRIPT.'?action=index&notesubmit=yes&noteid='.$note['id'].'"><img src="static/image/admincp/close.gif" width="7" height="8" title="'.cplang('delete').'" /></a>' : '',
+// 			"<span class=\"bold\"><a href=\"home.php?mod=space&username=$note[adminenc]\" target=\"_blank\">$note[admin]</a></span> $note[dateline] (".cplang('validity').": $note[expiration] ".cplang('days').")<br />$note[message]",
+// 		));
+// 	}
+// }
 
-showtableheader('home_dev', 'fixpadding');
-showtablerow('', array('class="vtop td24 lineheight"'), array(
-	cplang('home_dev_copyright'),
-	'<span class="bold"><a href="http://www.comsenz.com" class="lightlink2" target="_blank">&#x5317;&#x4EAC;&#x5EB7;&#x76DB;&#x65B0;&#x521B;&#x79D1;&#x6280;&#x6709;&#x9650;&#x8D23;&#x4EFB;&#x516C;&#x53F8;</a></span>'
-));
-showtablerow('', array('class="vtop td24 lineheight"', 'class="lineheight smallfont team"'), array(
-	cplang('home_dev_manager'),
-	'<a href="http://www.discuz.net/home.php?mod=space&uid=1" class="lightlink2 smallfont" target="_blank">&#x6234;&#x5FD7;&#x5EB7; (Kevin \'Crossday\' Day)</a>'
-));
-showtablerow('', array('class="vtop td24 lineheight"', 'class="lineheight smallfont team"'), array(
-	cplang('home_dev_team'),
-	'
-	 <a href="http://www.discuz.net/home.php?mod=space&uid=174393" class="lightlink2 smallfont" target="_blank">Guode \'sup\' Li</a>
-	 <a href="http://www.discuz.net/home.php?mod=space&uid=859" class="lightlink2 smallfont" target="_blank">Hypo \'Cnteacher\' Wang</a>
-	 <a href="http://www.discuz.net/home.php?mod=space&uid=263098" class="lightlink2 smallfont" target="_blank">Liming \'huangliming\' Huang</a>
-	 <a href="http://www.discuz.net/home.php?mod=space&uid=706770" class="lightlink2 smallfont" target="_blank">Jun \'Yujunhao\' Du</a>
-	 <a href="http://www.discuz.net/home.php?mod=space&uid=80629" class="lightlink2 smallfont" target="_blank">Ning \'Monkey\' Hou</a>
-	 <a href="http://www.discuz.net/home.php?mod=space&uid=246213" class="lightlink2 smallfont" target="_blank">Lanbo Liu</a>
-	 <a href="http://www.discuz.net/home.php?mod=space&uid=322293" class="lightlink2 smallfont" target="_blank">Qingpeng \'andy888\' Zheng</a>
-	 <a href="http://www.discuz.net/home.php?mod=space&uid=401635" class="lightlink2 smallfont" target="_blank">Guosheng \'bilicen\' Zhang</a>
-	 <a href="http://www.discuz.net/home.php?mod=space&uid=2829" class="lightlink2 smallfont" target="_blank">Mengshu \'msxcms\' Chen</a>
-	 <a href="http://www.discuz.net/home.php?mod=space&uid=492114" class="lightlink2 smallfont" target="_blank">Liang \'Metthew\' Xu</a>
-	 <a href="http://www.discuz.net/home.php?mod=space&uid=1087718" class="lightlink2 smallfont" target="_blank">Yushuai \'Max\' Cong</a>
-	 <a href="http://www.discuz.net/home.php?mod=space&uid=875919" class="lightlink2 smallfont" target="_blank">Jie \'tom115701\' Zhang</a>
-	 '
-));
-showtablerow('', array('class="vtop td24 lineheight"', 'class="lineheight team"'), array(
-	cplang('home_dev_skins'),
-	'<a href="http://www.discuz.net/home.php?mod=space&uid=294092" class="lightlink2 smallfont" target="_blank">Fangming \'Lushnis\' Li</a>
-	<a href="http://www.discuz.net/home.php?mod=space&uid=674006" class="lightlink2 smallfont" target="_blank">Jizhou \'Iavav\' Yuan</a>
-	<a href="http://www.discuz.net/home.php?mod=space&uid=717854" class="lightlink2 smallfont" target="_blank">Ruitao \'Pony.M\' Ma</a>'
-));
-showtablerow('', array('class="vtop td24 lineheight"', 'class="lineheight team"'), array(
-	cplang('home_dev_thanks'),
-	'<a href="http://www.discuz.net/home.php?mod=space&uid=122246" class="lightlink2 smallfont" target="_blank">Heyond</a>
-	<a href="http://www.discuz.net/home.php?mod=space&uid=632268" class="lightlink2 smallfont" target="_blank">JinboWang</a>
-	<a href="http://www.discuz.net/home.php?mod=space&uid=15104" class="lightlink2 smallfont" target="_blank">Redstone</a>
-	<a href="http://www.discuz.net/home.php?mod=space&uid=10407" class="lightlink2 smallfont" target="_blank">Qiang Liu</a>
-	<a href="http://www.discuz.net/home.php?mod=space&uid=210272" class="lightlink2 smallfont" target="_blank">XiaoDunFang</a>
-	<a href="http://www.discuz.net/home.php?mod=space&uid=86282" class="lightlink2 smallfont" target="_blank">Jianxieshui</a>
-	<a href="http://www.discuz.net/home.php?mod=space&uid=9600" class="lightlink2 smallfont" target="_blank">Theoldmemory</a>
-	<a href="http://www.discuz.net/home.php?mod=space&uid=2629" class="lightlink2 smallfont" target="_blank">Rain5017</a>
-	<a href="http://www.discuz.net/home.php?mod=space&uid=26926" class="lightlink2 smallfont" target="_blank">Snow Wolf</a>
-	<a href="http://www.discuz.net/home.php?mod=space&uid=17149" class="lightlink2 smallfont" target="_blank">Hehechuan</a>
-	<a href="http://www.discuz.net/home.php?mod=space&uid=9132" class="lightlink2 smallfont" target="_blank">Pk0909</a>
-	<a href="http://www.discuz.net/home.php?mod=space&uid=248" class="lightlink2 smallfont" target="_blank">feixin</a>
-	<a href="http://www.discuz.net/home.php?mod=space&uid=675" class="lightlink2 smallfont" target="_blank">Laobing Jiuba</a>
-	<a href="http://www.discuz.net/home.php?mod=space&uid=13877" class="lightlink2 smallfont" target="_blank">Artery</a>
-	<a href="http://www.discuz.net/home.php?mod=space&uid=233" class="lightlink2 smallfont" target="_blank">Huli Hutu</a>
-	<a href="http://www.discuz.net/home.php?mod=space&uid=122" class="lightlink2 smallfont" target="_blank">Lao Gui</a>
-	<a href="http://www.discuz.net/home.php?mod=space&uid=159" class="lightlink2 smallfont" target="_blank">Tyc</a>
-	<a href="http://www.discuz.net/home.php?mod=space&uid=177" class="lightlink2 smallfont" target="_blank">Stoneage</a>
-	<a href="http://www.discuz.net/home.php?mod=space&uid=7155" class="lightlink2 smallfont" target="_blank">Gregry</a>'
-));
-showtablerow('', array('class="vtop td24 lineheight"', 'class="lineheight"'), array(
-	cplang('home_dev_links'),
-	'<a href="http://www.comsenz.com" class="lightlink2" target="_blank">&#x516C;&#x53F8;&#x7F51;&#x7AD9;</a>,
-		<a href="http://idc.comsenz.com" class="lightlink2" target="_blank">&#x865A;&#x62DF;&#x4E3B;&#x673A;</a>,
-		<a href="http://www.comsenz.com/purchase/discuzx" class="lightlink2" target="_blank">&#x8D2D;&#x4E70;&#x6388;&#x6743;</a>,
-		<a href="http://www.discuz.com/" class="lightlink2" target="_blank">&#x44;&#x69;&#x73;&#x63;&#x75;&#x7A;&#x21;&#x20;&#x4EA7;&#x54C1;</a>,
-		<a href="http://www.comsenz.com/downloads/styles/discuz" class="lightlink2" target="_blank">&#x6A21;&#x677F;</a>,
-		<a href="http://www.comsenz.com/downloads/plugins/discuz" class="lightlink2" target="_blank">&#x63D2;&#x4EF6;</a>,
-		<a href="http://faq.comsenz.com" class="lightlink2" target="_blank">&#x6587;&#x6863;</a>,
-		<a href="http://www.discuz.net/" class="lightlink2" target="_blank">&#x8BA8;&#x8BBA;&#x533A;</a>'
-));
-showtablefooter();
+// showtablerow('', array(), array(
+// 	cplang('home_notes_add'),
+// 	'<input type="text" class="txt" name="newmessage" value="" style="width:300px;" />'.cplang('validity').': <input type="text" class="txt" name="newexpiration" value="30" style="width:30px;" />'.cplang('days').'&nbsp;<input name="notesubmit" value="'.cplang('submit').'" type="submit" class="btn" />'
+// ));
+// showtablefooter();
+// showformfooter();
+
+// loaducenter();
+
+// showtableheader('home_sys_info', 'fixpadding');
+// showtablerow('', array('class="vtop td24 lineheight"', 'class="lineheight smallfont"'), array(
+// 	cplang('home_discuz_version'),
+// 	'Discuz! '.DISCUZ_VERSION.' Release '.DISCUZ_RELEASE.' <a href="http://faq.comsenz.com/checkversion.php?product=Discuz&version='.DISCUZ_VERSION.'&release='.DISCUZ_RELEASE.'&charset='.CHARSET.'&dbcharset='.$dbcharset.'" class="lightlink2 smallfont" target="_blank">'.cplang('home_check_newversion').'</a> <a href="http://www.comsenz.com/purchase/discuz/" class="lightlink2 smallfont" target="_blank">&#19987;&#19994;&#25903;&#25345;&#19982;&#26381;&#21153;</a> <a href="http://idc.comsenz.com" class="lightlink2 smallfont" target="_blank">&#68;&#105;&#115;&#99;&#117;&#122;&#33;&#19987;&#29992;&#20027;&#26426;</a>'
+// ));
+// showtablerow('', array('class="vtop td24 lineheight"', 'class="lineheight smallfont"'), array(
+// 	cplang('home_ucclient_version'),
+// 	'UCenter '.UC_CLIENT_VERSION.' Release '.UC_CLIENT_RELEASE
+// ));
+// showtablerow('', array('class="vtop td24 lineheight"', 'class="lineheight smallfont"'), array(
+// 	cplang('home_environment'),
+// 	$serverinfo
+// ));
+// showtablerow('', array('class="vtop td24 lineheight"', 'class="lineheight smallfont"'), array(
+// 	cplang('home_serversoftware'),
+// 	$serversoft
+// ));
+// showtablerow('', array('class="vtop td24 lineheight"', 'class="lineheight smallfont"'), array(
+// 	cplang('home_database'),
+// 	$dbversion
+// ));
+// showtablerow('', array('class="vtop td24 lineheight"', 'class="lineheight smallfont"'), array(
+// 	cplang('home_upload_perm'),
+// 	$fileupload
+// ));
+// showtablerow('', array('class="vtop td24 lineheight"', 'class="lineheight smallfont"'), array(
+// 	cplang('home_database_size'),
+// 	$dbsize
+// ));
+// showtablerow('', array('class="vtop td24 lineheight"', 'class="lineheight smallfont"'), array(
+// 	cplang('home_attach_size'),
+// 	$attachsize
+// ));
+// showtablefooter();
+
+// showtableheader('home_dev', 'fixpadding');
+// showtablerow('', array('class="vtop td24 lineheight"'), array(
+// 	cplang('home_dev_copyright'),
+// 	'<span class="bold"><a href="http://www.comsenz.com" class="lightlink2" target="_blank">&#x5317;&#x4EAC;&#x5EB7;&#x76DB;&#x65B0;&#x521B;&#x79D1;&#x6280;&#x6709;&#x9650;&#x8D23;&#x4EFB;&#x516C;&#x53F8;</a></span>'
+// ));
+// showtablerow('', array('class="vtop td24 lineheight"', 'class="lineheight smallfont team"'), array(
+// 	cplang('home_dev_manager'),
+// 	'<a href="http://www.discuz.net/home.php?mod=space&uid=1" class="lightlink2 smallfont" target="_blank">&#x6234;&#x5FD7;&#x5EB7; (Kevin \'Crossday\' Day)</a>'
+// ));
+// showtablerow('', array('class="vtop td24 lineheight"', 'class="lineheight smallfont team"'), array(
+// 	cplang('home_dev_team'),
+// 	'
+// 	 <a href="http://www.discuz.net/home.php?mod=space&uid=174393" class="lightlink2 smallfont" target="_blank">Guode \'sup\' Li</a>
+// 	 <a href="http://www.discuz.net/home.php?mod=space&uid=859" class="lightlink2 smallfont" target="_blank">Hypo \'Cnteacher\' Wang</a>
+// 	 <a href="http://www.discuz.net/home.php?mod=space&uid=263098" class="lightlink2 smallfont" target="_blank">Liming \'huangliming\' Huang</a>
+// 	 <a href="http://www.discuz.net/home.php?mod=space&uid=706770" class="lightlink2 smallfont" target="_blank">Jun \'Yujunhao\' Du</a>
+// 	 <a href="http://www.discuz.net/home.php?mod=space&uid=80629" class="lightlink2 smallfont" target="_blank">Ning \'Monkey\' Hou</a>
+// 	 <a href="http://www.discuz.net/home.php?mod=space&uid=246213" class="lightlink2 smallfont" target="_blank">Lanbo Liu</a>
+// 	 <a href="http://www.discuz.net/home.php?mod=space&uid=322293" class="lightlink2 smallfont" target="_blank">Qingpeng \'andy888\' Zheng</a>
+// 	 <a href="http://www.discuz.net/home.php?mod=space&uid=401635" class="lightlink2 smallfont" target="_blank">Guosheng \'bilicen\' Zhang</a>
+// 	 <a href="http://www.discuz.net/home.php?mod=space&uid=2829" class="lightlink2 smallfont" target="_blank">Mengshu \'msxcms\' Chen</a>
+// 	 <a href="http://www.discuz.net/home.php?mod=space&uid=492114" class="lightlink2 smallfont" target="_blank">Liang \'Metthew\' Xu</a>
+// 	 <a href="http://www.discuz.net/home.php?mod=space&uid=1087718" class="lightlink2 smallfont" target="_blank">Yushuai \'Max\' Cong</a>
+// 	 <a href="http://www.discuz.net/home.php?mod=space&uid=875919" class="lightlink2 smallfont" target="_blank">Jie \'tom115701\' Zhang</a>
+// 	 '
+// ));
+// showtablerow('', array('class="vtop td24 lineheight"', 'class="lineheight team"'), array(
+// 	cplang('home_dev_skins'),
+// 	'<a href="http://www.discuz.net/home.php?mod=space&uid=294092" class="lightlink2 smallfont" target="_blank">Fangming \'Lushnis\' Li</a>
+// 	<a href="http://www.discuz.net/home.php?mod=space&uid=674006" class="lightlink2 smallfont" target="_blank">Jizhou \'Iavav\' Yuan</a>
+// 	<a href="http://www.discuz.net/home.php?mod=space&uid=717854" class="lightlink2 smallfont" target="_blank">Ruitao \'Pony.M\' Ma</a>'
+// ));
+// showtablerow('', array('class="vtop td24 lineheight"', 'class="lineheight team"'), array(
+// 	cplang('home_dev_thanks'),
+// 	'<a href="http://www.discuz.net/home.php?mod=space&uid=122246" class="lightlink2 smallfont" target="_blank">Heyond</a>
+// 	<a href="http://www.discuz.net/home.php?mod=space&uid=632268" class="lightlink2 smallfont" target="_blank">JinboWang</a>
+// 	<a href="http://www.discuz.net/home.php?mod=space&uid=15104" class="lightlink2 smallfont" target="_blank">Redstone</a>
+// 	<a href="http://www.discuz.net/home.php?mod=space&uid=10407" class="lightlink2 smallfont" target="_blank">Qiang Liu</a>
+// 	<a href="http://www.discuz.net/home.php?mod=space&uid=210272" class="lightlink2 smallfont" target="_blank">XiaoDunFang</a>
+// 	<a href="http://www.discuz.net/home.php?mod=space&uid=86282" class="lightlink2 smallfont" target="_blank">Jianxieshui</a>
+// 	<a href="http://www.discuz.net/home.php?mod=space&uid=9600" class="lightlink2 smallfont" target="_blank">Theoldmemory</a>
+// 	<a href="http://www.discuz.net/home.php?mod=space&uid=2629" class="lightlink2 smallfont" target="_blank">Rain5017</a>
+// 	<a href="http://www.discuz.net/home.php?mod=space&uid=26926" class="lightlink2 smallfont" target="_blank">Snow Wolf</a>
+// 	<a href="http://www.discuz.net/home.php?mod=space&uid=17149" class="lightlink2 smallfont" target="_blank">Hehechuan</a>
+// 	<a href="http://www.discuz.net/home.php?mod=space&uid=9132" class="lightlink2 smallfont" target="_blank">Pk0909</a>
+// 	<a href="http://www.discuz.net/home.php?mod=space&uid=248" class="lightlink2 smallfont" target="_blank">feixin</a>
+// 	<a href="http://www.discuz.net/home.php?mod=space&uid=675" class="lightlink2 smallfont" target="_blank">Laobing Jiuba</a>
+// 	<a href="http://www.discuz.net/home.php?mod=space&uid=13877" class="lightlink2 smallfont" target="_blank">Artery</a>
+// 	<a href="http://www.discuz.net/home.php?mod=space&uid=233" class="lightlink2 smallfont" target="_blank">Huli Hutu</a>
+// 	<a href="http://www.discuz.net/home.php?mod=space&uid=122" class="lightlink2 smallfont" target="_blank">Lao Gui</a>
+// 	<a href="http://www.discuz.net/home.php?mod=space&uid=159" class="lightlink2 smallfont" target="_blank">Tyc</a>
+// 	<a href="http://www.discuz.net/home.php?mod=space&uid=177" class="lightlink2 smallfont" target="_blank">Stoneage</a>
+// 	<a href="http://www.discuz.net/home.php?mod=space&uid=7155" class="lightlink2 smallfont" target="_blank">Gregry</a>'
+// ));
+// showtablerow('', array('class="vtop td24 lineheight"', 'class="lineheight"'), array(
+// 	cplang('home_dev_links'),
+// 	'<a href="http://www.comsenz.com" class="lightlink2" target="_blank">&#x516C;&#x53F8;&#x7F51;&#x7AD9;</a>,
+// 		<a href="http://idc.comsenz.com" class="lightlink2" target="_blank">&#x865A;&#x62DF;&#x4E3B;&#x673A;</a>,
+// 		<a href="http://www.comsenz.com/purchase/discuzx" class="lightlink2" target="_blank">&#x8D2D;&#x4E70;&#x6388;&#x6743;</a>,
+// 		<a href="http://www.discuz.com/" class="lightlink2" target="_blank">&#x44;&#x69;&#x73;&#x63;&#x75;&#x7A;&#x21;&#x20;&#x4EA7;&#x54C1;</a>,
+// 		<a href="http://www.comsenz.com/downloads/styles/discuz" class="lightlink2" target="_blank">&#x6A21;&#x677F;</a>,
+// 		<a href="http://www.comsenz.com/downloads/plugins/discuz" class="lightlink2" target="_blank">&#x63D2;&#x4EF6;</a>,
+// 		<a href="http://faq.comsenz.com" class="lightlink2" target="_blank">&#x6587;&#x6863;</a>,
+// 		<a href="http://www.discuz.net/" class="lightlink2" target="_blank">&#x8BA8;&#x8BBA;&#x533A;</a>'
+// ));
+// showtablefooter();
 
 echo '</div>';
 

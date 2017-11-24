@@ -1,0 +1,266 @@
+ /* -----------------------------------------------------------------
+
+The Whole CSS written by Elecom.
+(C) Elecom Inc.
+Annoucement here,Copyright
+Shenzhen.Eleccom Technology.使用原代码请联系作者QQ: 2300184378 / 2017-04-09 20:00:06
+
+---------------------------------------------------------------------------------------*/
+
+
+a:hover { text-decoration: none}
+.img_big .img_box1 img, .s_pic img, .slideshow img { transition: all .5s ease-in-out}
+.img_big .img_box1:hover img, .s_pic li:hover img, .slideshow:hover img {
+    -webkit-transform: scale(1.04);
+    -moz-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+    -o-transform: scale(1.04);
+    transform: scale(1.04);
+}
+
+
+.slideshow span.title, .slidebar li { height: 50px; line-height: 50px; font-size: 20px; font-weight: 400; background: url(../black03.png) repeat 0 0}
+
+
+.login_box { padding: 40px 18px; height: 100px; background: #F8F8F8}
+.a_img { float: left; margin-right: 20px}
+.a_img img { width: 95px; padding: 5px; border-radius: 50%; border: 1px solid #DDDDDD}
+.a_info { float: left; width: 177px; font-size: 20px; color: #666666}
+.lg_button { margin-top: 25px; }
+.lg_button a { float: left; width: 92px; height: 42px; line-height: 42px; margin-right: 20px; display: block; color: #FFFFFF; font-size: 16px; text-align: center; background: #3CAFEF}
+.lg_button a:hover { opacity: 0.8}
+
+
+.box { margin-bottom: 20px; background: #FFFFFF}
+.box h3{ float: left; font-size: 24px; line-height: 25px; padding-left: 10px; margin: 15px 10px 15px 0; border-left: 3px solid #444444; color: #444444; font-weight: 400}
+.box span { float: right; line-height: 58px; font-size: 16px; color: #666666}
+.box span a { margin: 0 15px; color: #666666}
+.video li { position: relative; float: left; width: 244px; height: 160px; margin: 0 !important; overflow: hidden}
+.video li em { display: none; position: absolute; left: 95px; top: 60px; width: 48px; height: 48px; transition: all 0.5s ease 0s; background: url(../play1.png) no-repeat 0 0}
+.video li:hover em { display: block}
+.video li img { transition: all .5s ease-in-out}
+.video li:hover img {
+    -webkit-transform: scale(1.04);
+    -moz-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+    -o-transform: scale(1.04);
+    transform: scale(1.04);
+}
+
+
+.big_news { float: left; width: 390px; margin-left: 0; color: #999999}
+.big_news a { color: #999999}
+.big_news h2 { line-height: 25px; margin:13px 0; font-size: 20px; font-weight: 400; color: #454545}
+.big_news h2:hover { color: red}
+.big_news p { padding-bottom: 20px; margin-top: 10px; line-height: 25px}
+.small_news { float: right; width: 370px; margin-right: 0}
+.small_news li { float: left; margin-bottom: 20px}
+.small_news .img_left { margin-right: 12px}
+.small_news img { width: 140px; max-height: 100px}
+.small_news .info { float: left; width: 200px; color: #999999}
+.small_news .info h2 { line-height: 23px; font-size: 15px; font-weight: 400; margin: 5px 0; color: #666666}
+.small_news .info h2:hover { color: red}
+.view { padding-left: 20px; background: url(../view.png) no-repeat left center}
+.reply { padding-left: 20px; margin-left: 20px; background: url(../reply.png) no-repeat left center}
+
+
+.bt .small_news { float: left; width: 360px; margin: 0 0 0 10px}
+.bt .small_news img { width: 120px; max-height: 80px}
+.bt .small_news .info h2 { height: 23px; overflow: hidden}
+.bt .small_news .info { width: 225px}
+.img_big { position: relative; padding: 10px; overflow: hidden}
+.img_big .tag { position: absolute; left: 30px; top: 0; width: 18px; padding: 5px; font-size: 18px; color: #FFFFFF; z-index: 100; background: #3CAFEF}
+.img_big .tag a { color: #FFFFFF}
+.img_big .img_box1 { width: 360px; height: 200px; overflow: hidden}
+.bg_shadow { position: absolute; left: 10px; bottom: 10px; width: 340px; padding: 5px 10px; color: #FFFFFF; background: url(../black03.png) repeat 0 0}
+.bg_shadow em { float: right}
+.up_Box h2 { height: 23px; line-height: 23px; font-size: 18px; font-weight: 400; color: #555555; padding: 0 0 15px 0; margin: 5px 10px 15px 10px; border-bottom: 1px solid #EEEEEE}
+.up_Box h2 a { color: #555555}
+
+
+.icon_rank { padding: 20px 0 10px 0}
+.icon_rank ul { width: 400px}
+.icon_rank li { float: left; width: 84px; margin: 0 20px 20px 20px; text-align: center; font-size: 15px; color: #666666}
+.icon_rank li a { color: #555555}
+.icon_rank li:hover a, .icon_rank li a:hover { color: #e35454}
+.icon_rank li img { margin-bottom: 8px; border-radius: 0; transition: all 0.5s ease 0s}
+.icon_rank li img:hover { transform:rotate(360deg)}
+
+
+.btn_post {
+    display: block;
+    width: 370px;
+    height: 60px;
+    line-height: 60px;
+	margin: 10px 0 0 0;
+    background: #61ADD7;
+}
+.icon_post {
+    width: 30px;
+    height: 30px;
+    background: url(../post_portal1.png) no-repeat 0 0;
+}
+.btn_post .icon_post {
+    float: left;
+    margin-left: 45px;
+    margin-right: 25px;
+    margin-top: 15px;
+}
+.btn_post p {
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    text-align: left;
+    font-size: 20px;
+	color: #FFFFFF !important
+}
+
+
+.event li { position: relative}
+.event .info { position: absolute; left: 0; width: 340px; padding: 15px; bottom: 20px; background: url(../black03.png) repeat 0 0}
+.event .info p a { color: #FFFFFF; font-size: 24px}
+.event .info em { float: right; width: 100px; height: 30px; font-size: 18px; text-align: center; background: #FC6F7B}
+.event .info em a { color: #FFFFFF}
+
+
+.tab1 { margin: 20px 0 0 0; background: none}
+.tab1 .tab-title { height: 52px; line-height: 52px; overflow: visible; background: none}
+.tab1 .tb { height: 52px; line-height: 52px; padding: 0; margin: 0}
+.tab1 .tb li { margin: 0}
+.tab1 .tb a { width: 165px; font-size: 20px; font-weight: 400 !important; border: 0; color: #AAAAAA; text-align: center}
+.tab1 .tb .a a { color: #66CC99; border-bottom: 1px solid #66CC99; background: none}
+.tab1 .tb-c { padding: 16px 10px}
+
+
+.ranks ul { padding: 0 0 0 26px; margin: 8px 0; background: url(../rank.png) no-repeat left 3px}
+.ranks li { width: 312px; height: 29px; line-height: 30px; white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ranks li a { font-size: 15px; color: #777777}
+.ranks li a:hover { color: #3CAFEF}
+
+
+.topic li p { line-height: 25px; font-size: 20px; margin: 5px 10px 10px 10px}
+.topic li p a { color: #666666}
+
+
+.focus1 li { float: left; margin: 0 10px 10px 0; position: relative; overflow: hidden}
+.focus1 li p { position: absolute; left: 0; bottom: -30px; height: 30px; line-height: 30px; font-size: 14px; width: 100%; overflow: hidden; transition: all 0.5s ease 0s; background: url(../black03.png) repeat 0 0}
+.focus1 li:hover p { bottom: 0}
+.focus1 li p a { padding: 0 10px; color: #FFFFFF}
+
+
+.focusBox { position: relative; width:780px; height:390px; overflow: hidden; }
+	.focusBox .pic{ position:relative; z-index:0; }
+	.focusBox .pic img { width:780px; height:390px; display: block; }
+	.focusBox .hd { width:100%; position: absolute; bottom: 10px; text-align: center; font-size:0; z-index:1; }
+	.focusBox .hd li{margin: 0 5px; background: url(../dot.png) no-repeat 0 -16px; height: 16px; overflow: hidden; width: 16px; cursor: pointer;
+		display:inline-block; *display:inline; zoom:1;  _background: url(../dot8.png) no-repeat 0 -16px;
+	}
+	.focusBox .hd .on{ background-position:0 0; }
+
+	.focusBox .prev,
+	.focusBox .next { width: 60px; height: 90px; margin: -60px 0 0; display: none; background: url(../ad_ctr.png) no-repeat 0 0; position: absolute; top: 54%; z-index: 10; cursor: pointer; text-indent: -9999px; filter:alpha(opacity=20);opacity:0.2;  }
+	.focusBox .prev { left: 0; }
+	.focusBox .next { background-position: 0 -90px; right: 0; }
+	.focusBox .prev:hover,
+	.focusBox .next:hover { filter:alpha(opacity=50) !important;opacity:0.5 !important;  }
+	
+
+.zhuanjia ul { width: 802px; height: 300px; overflow: hidden}	
+.zhuanjia li { float: left; width: 246px; height: 300px; margin: 0 20px 0 0; overflow: hidden}
+
+.law ul { width: 802px; overflow: visible}	
+.law li { float: left; margin: 0 20px 20px 0; transition: all 0.5s ease 0s}
+.law li:hover { box-shadow: 0 3px 8px rgba(0,0,0,0.3)}
+.law li h3 { padding: 0 6px; margin: 6px 0; font-size: 16px; border-left: 0}
+.law li p { padding: 0 6px 6px 6px; line-height: 22px; color: #999999}
+
+
+.zhuanti h3 { border-color: #66CC99}
+.zhuanti li p { padding: 8px 20px; font-size: 20px; border: 1px solid #EEEEEE; border-top: 0}
+.zhuanti li p a:hover { color: #3CAFEF}
+.zhuanti .imgs { display: block; height: 240px; overflow: hidden}
+
+
+.zx_left li img, .zhuanjia li img, .zhuanti .imgs img {
+    transition: all .5s ease-in-out;
+}
+.zx_left li img:hover, .zhuanjia li img:hover, .zhuanti .imgs img:hover {
+    -webkit-transform: scale(1.04);
+    -moz-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+    -o-transform: scale(1.04);
+    transform: scale(1.04);
+}
+
+
+.zx_left { width: 620px; height: 400px; overflow: hidden}
+
+
+.zx_right li { float: left; width: 100% !important}
+.zx_right li .img_z { float: left; width: 180px; margin-right: 10px; margin-bottom: 20px}
+.zx_right li h3 { font-size: 20px; font-weight: 400; margin-bottom: 20px; line-height: 25px}
+.zx_right li:hover h3 a, .zx_right li h3 a:hover { color: #3CAFEF}
+.zx_right li p { color: #999999}
+
+
+.zx_third { padding-top: 6px; border-top: 1px solid #EEEEEE}
+.zx_third li { float: left; width: 100%; line-height: 38px; font-size: 16px}
+.zx_third li:nth-child(1) span { color: #3CAFEF}
+.zx_third li:nth-child(2) span { color: #66CC99}
+.zx_third li em { float: right; font-size: 14px; color: #666666}
+.zx_third li em a { color: #888888}
+.zx_third li a:hover { color: #666666; text-decoration: underline}
+
+
+/* tab/切换框架 */
+
+.tabBar{ width: 100%; font-family:"Microsoft YaHei"; padding-top: 0}
+.tabBar .hd { position: relative}
+.tabBar .hd ul { float: left; width: 100%; height: 58px; line-height: 58px; margin: 0 0 15px 0; z-index: 151; zoom: 1; border: 0; background: none}
+.tabBar .hd li { float :left; height: 58px; line-height: 58px; padding: 0; margin: 0 40px 0 0; color: #989898; cursor: pointer; font-weight: 400; font-size: 20px}
+.tabBar .hd li.on { height: 52px; line-height: 55px; color: #53a8e6; border-bottom: 3px solid #53a8e6; font-weight: 400; background: #FFFFFF}
+.tabBar .hd.navfixed { width: 100%; position: fixed; top: 0; left: 0; box-shadow: 0 0 5px rgba(0,0,0,0.3); z-index: 150; background: #F7F7F7}
+.tabBar .hd.navfixed ul { float: none; width: 1170px; margin: 0 auto; border: 0}
+
+.tabBar .bd{ border: 0; padding: 0; clear:both; position:relative; height: auto;  overflow: hidden}
+.tabBar .bd .conWrap{ width: 100%; height: auto !important}
+.tabBar .bd .conWrap .con { position: relative !important}
+
+
+/* 幻灯下方列表/Down List */
+
+.mod-art-list { padding: 12px 0; margin: 0; border-bottom: 0; background: #FFFFFF}
+.mod-art-list:last-child { border-bottom: 0}
+.mod-art-list_imgouter { position: relative; float: left; width: 245px; height: 150px; margin: 0 20px 0 0; overflow: hidden}
+.mod-art-list_con { position: relative; float: left; width: 505px; height: 150px}
+.mod-art-list_con h3 { line-height: 28px; font-size: 20px; font-weight: 400}
+.ui_colorG { color: #555555}
+.ui_colorG:hover { color: #33B0DE}
+.ui_2_userinfo { width: 100%; position: absolute; left: 0; bottom: 0; line-height: 32px; margin: 0; font-size: 14px; color: #BBBBBB}
+.ui_2_userinfo span, .ui_2_userinfo em { float: left}
+.ui_2_userinfo .authors { margin-right: 5px; font-family: Arial,"微软雅黑","Microsoft yahei","Hiragino Sans GB","冬青黑体简体中文 w3","Microsoft Yahei","Hiragino Sans GB","冬青黑体简体中文 w3",STXihei,"华文细黑",SimSun,"宋体",Heiti,"黑体",sans-serif}
+.ui_2_userinfo .authors img { float: left; border-radius: 50%; margin: 3px 10px 0 0}
+.ui_2_userinfo .authors a { color: #BBBBBB; font-weight: 400}
+
+.ui_2_user { float: left; width: 26px; height: 26px; margin: 2px 0 0 0}
+.ui_2_user img { border-radius: 50%}
+.mod-art-list_con p { line-height: 24px; font-size: 14px; margin: 20px 0 0 0; height: 24px; word-wrap: break-word; word-break: break-all; color: #999999}
+.cdg { color: #5E5E5E}
+.ui_2_userinfo a, .clg { color: #BBBBBB}
+a.ds_inlineB:hover { color: #FF0000}
+
+.tag_down{position:absolute;width:auto; left: 0; top: 20px; height:18px;line-height:18px;border:0;border-radius:0;text-align:center; background-color: #4A90E2;height: 28px;line-height: 28px;padding: 0 12px;color: #fff; z-index: 100; font-size: 14px}
+.tag_down a{display:block;padding:0;color: #FFFFFF;transition:all 0s ease 0s}
+
+.more_box { position: relative; padding-top: 10px; padding-bottom: 20px; margin-top: 10px; text-align: center; border-top: 1px solid #FFFFFF}
+.more_box .addmore{ padding: 0 25px; height:36px;width: auto;line-height:36px;color: #9e9e9e;font-size:15px; font-weight: 400; text-align:center;cursor:pointer;display:inline-block;border: 1px solid #d5d5d5; transition:all .2s ease-out; border-radius: 38px; background: none}
+.more_box .addmore:hover{ color: #444444; border: 1px solid #333333}
+
+/* end */
+
+
+.guanzhu { position: relative; padding: 20px 20px 30px 20px; background: #E8F0F3}
+.guanzhu h3 { font-size: 18px; margin-bottom: 20px; font-weight: 400}
+.guanzhu p { margin-bottom: 20px; color: #666666}
+.guanzhu span { color: #888888}
+.guanzhu .join { position: absolute; right: 20px; bottom: 20px; display: block; width: 80px; height: 30px; line-height: 30px; font-size: 14px; color: #FFFFFF; text-align: center; background: #66CC99}

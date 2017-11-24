@@ -561,3 +561,17 @@ a.faq { background: url(faq.gif) no-repeat 0 2px; padding:1px; margin-left:10px;
 .pbg { position: relative; margin: 10px 0; width: 200px; height: 16px; background: url(bg_progressbar.png) 0 0 repeat-x; border-radius: 5px; }
 	.pbr { height: 16px; width: 200px; background-image: url(bg_progressbar.png); background-color: #5AAF4A; background-position: 0 -16px; background-repeat: repeat-x; border-radius: 5px; }
 	.pbg .xs0 { position: absolute; top: 0; right: 8px; }
+
+
+
+
+	.in_nav_list li{ float: left; width: 200px; margin-top: 30px; text-align: center;}
+	.in_nav_list li a{ font-size: 16px; color: #666; text-decoration: none; }
+	.in_nav_list li a:hover{ color: #02B9E3 }
+	.in_nav_list li i{ display: block; width: 85px; height: 85px;  margin:0 auto 15px;}
+	.in_nav_list li i.i-icon1{ background: url("icon/icon_1.png"); }
+	.in_nav_list li i.i-icon2{ background: url("icon/icon_2.png"); }
+	.in_nav_list li i.i-icon3{ background: url("icon/icon_3.png"); }
+	.in_nav_list li i.i-icon4{ background: url("icon/icon_4.png"); }
+	.in_nav_list li i.i-icon5{ background: url("icon/icon_5.png"); }
+	.in_nav_list li i.i-icon6{ background: url("icon/icon_6.png"); }

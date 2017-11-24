@@ -88,7 +88,7 @@ a:hover { text-decoration: none}
 .tit01 .add{margin-right: 10px;margin-top: 5px;padding-left:30px;background: url(../add.png) no-repeat 0 45%;}
 .tit01 h1, .tit01 h2, .tit01 h3, .tit01 h4 { color: #555555}
 .tit_top { width: 800px; height: 20px; line-height: 20px; padding: 5px 0; margin: 0; border-bottom: 0; overflow: hidden; background: #FFFFFF}
-.tit_top h3 { float: left; padding-left: 13px; margin: 0; font-size: 20px; color: #333333; font-weight: bold; border-left: 4px solid #f63756; background: none}
+.tit_top h3 { float: left; padding-left: 13px; margin: 0; font-size: 20px; color: #333333; font-weight: bold; border-left: 4px solid #66CC99; background: none}
 .tit_top .post { display: block; width: auto; height: 25px; line-height: 25px; padding: 0 0 0 30px; margin: 2px 0 0 0; color: #666666; font-size: 13px; background: none}
 
 
@@ -260,7 +260,7 @@ a:hover { text-decoration: none}
 .ry-list-wrap .ry-box{position:relative;width:370px;height:auto;margin-right:30px;float:left;margin-top:30px}
 .ry-list-wrap .ry-box:hover{box-shadow:0 0 15px rgba(45,50,55,.3);-webkit-transform:translateY(-5px);-moz-transform:translateY(-4px);-ms-transform:translateY(-4px);-o-transform:translateY(-4px);transform:translateY(-4px)}
 .ry-list-wrap .ry-box:hover .ry-content{border:1px solid #FFF}
-.ry-mod-angle{position:absolute;left:-10px;height:24px;color:#fff;text-align:center;background-color:#f63756;line-height:24px;padding:0 10px;z-index:20;top:20px;font-size:14px}
+.ry-mod-angle{position:absolute;left:-10px;height:24px;color:#fff;text-align:center;background-color:#66CC99;line-height:24px;padding:0 10px;z-index:20;top:20px;font-size:14px}
 .ry-mod-angle::after{content:" ";position:absolute;left:0;top:24px;width:0;height:0;border-top:6px solid #cd213d;border-left:10px solid transparent}
 .ry-list-wrap .ry-box .pic-box{height:278px;overflow:hidden}
 .ry-list-wrap .ry-box .pic-box .pic-content{position:absolute;width:370px;height:278px;background:-webkit-gradient(linear,0 50%,0 100%,from(rgba(0,0,0,0)),to(#121515));background:-moz-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,0),#121515);background:-ms-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,0),#121515);background:-o-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,0),#121515)}

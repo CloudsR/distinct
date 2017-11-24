@@ -7,7 +7,7 @@
 <!--[diy=diynavtop]--><div id="diynavtop" class="area"></div><!--[/diy]-->
 <div id="pt" class="bm cl">
 	<div class="z">
-		<a href="./" class="nvhm" title="{lang homepage}">$_G[setting][bbname]</a><em>&raquo;</em><a href="forum.php">{$_G[setting][navs][2][navname]}</a>$navigation
+		<a href="forum.php">{$_G[setting][navs][2][navname]}</a>$navigation
 	</div>
 </div>
 
@@ -47,7 +47,7 @@ jQuery(function() {
 				<!--{if $_G[forum][banner] && !$subforumonly}--><img src="$_G[forum][banner]" alt="$_G['forum'][name]" /><!--{/if}-->
 				<div class="cl">
                    <div class="side_tit" style="padding: 0 0 15px 0; margin: 10px 0 10px 0; border-bottom: 1px solid #F0F0F0;">
-                      <h2 style="padding: 0 0 13px 0; border-bottom: 4px solid #f63756;"><a href="forum.php?mod=forumdisplay&fid=$_G[fid]">$_G['forum'][name]</a></h2>
+                      <h2 style="padding: 0 0 13px 0; border-bottom: 4px solid #66CC99;"><a href="forum.php?mod=forumdisplay&fid=$_G[fid]">$_G['forum'][name]</a></h2>
                       <span class="management z" style="margin: 2px 0 0 20px;">
 						<a href="home.php?mod=spacecp&ac=favorite&type=forum&id=$_G[fid]&handlekey=favoriteforum&formhash={FORMHASH}" id="a_favorite" onclick="showWindow(this.id, this.href, 'get', 0);">{lang forum_favorite} <em class="xi1" id="number_favorite" {if !$_G[forum][favtimes]} style="display:none;"{/if}>(<span id="number_favorite_num">$_G[forum][favtimes]</span>)</em></a>
 						<!--{if rssforumperm($_G['forum']) && $_G[setting][rssstatus] && !$_GET['archiveid'] && !$subforumonly}--><span class="pipe"></span><a href="forum.php?mod=rss&fid=$_G[fid]&auth=$rssauth" class="fa_rss" target="_blank" title="RSS">{lang rss_subscribe_this}</a><!--{/if}-->
