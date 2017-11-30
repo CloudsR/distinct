@@ -787,3 +787,11 @@
 <?PHP exit;?>	1512022817	admin	1	::1	index	GET={}; POST={};
 <?PHP exit;?>	1512027842	admin	1	::1	index	GET={frames=yes; }; POST={frames=yes; };
 <?PHP exit;?>	1512027843	admin	1	::1	index	GET={}; POST={};
+<?PHP exit;?>	1512029666	admin	1	::1	templates	GET={}; POST={};
+<?PHP exit;?>	1512029668	admin	1	::1	templates	GET={frames=yes; }; POST={};
+<?PHP exit;?>	1512029669	admin	1	::1	templates	GET={}; POST={};
+<?PHP exit;?>	1512029672	admin	1	::1	styles	GET={}; POST={};
+<?PHP exit;?>	1512029682	admin	1	::1	styles	GET={updatecsscache=1; namenew={1=后台底部架构; 3=macastudio; 4=工会默认; 5=elec_201701_hx_dingz; 6=pellyword_house; 7=wfdsoft_start; 8=新锐创想轻主题社区; 9=elec_201701_hx_dingz; }; defaultnew1=1; defaultnew2=1; defaultnew3=1; defaultnew=3; stylesubmit=更新 CSS 缓存; }; POST={updatecsscache=1; namenew={1=后台底部架构; 3=macastudio; 4=工会默认; 5=elec_201701_hx_dingz; 6=pellyword_house; 7=wfdsoft_start; 8=新锐创想轻主题社区; 9=elec_201701_hx_dingz; }; defaultnew1=1; defaultnew2=1; defaultnew3=1; defaultnew=3; stylesubmit=更新 CSS 缓存; };
+<?PHP exit;?>	1512029688	admin	1	::1	styles	GET={}; POST={};
+<?PHP exit;?>	1512029776	admin	1	::1	styles	GET={updatecsscache=1; namenew={1=后台底部架构; 3=macastudio; 4=工会默认; 5=elec_201701_hx_dingz; 6=pellyword_house; 7=wfdsoft_start; 8=新锐创想轻主题社区; 9=elec_201701_hx_dingz; }; defaultnew1=1; defaultnew2=1; defaultnew3=1; defaultnew=3; stylesubmit=更新 CSS 缓存; }; POST={updatecsscache=1; namenew={1=后台底部架构; 3=macastudio; 4=工会默认; 5=elec_201701_hx_dingz; 6=pellyword_house; 7=wfdsoft_start; 8=新锐创想轻主题社区; 9=elec_201701_hx_dingz; }; defaultnew1=1; defaultnew2=1; defaultnew3=1; defaultnew=3; stylesubmit=更新 CSS 缓存; };
+<?PHP exit;?>	1512029782	admin	1	::1	styles	GET={}; POST={};

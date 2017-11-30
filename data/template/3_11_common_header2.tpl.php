@@ -1,8 +1,8 @@
 <?php if(!defined('IN_DISCUZ')) exit('Access Denied'); 
 0
-|| checktplrefresh('./template/macastudio/common/header2.htm', './template/macastudio/common/header_common.htm', 1512010785, '11', './data/template/3_11_common_header2.tpl.php', './template/macastudio', 'common/header2')
-|| checktplrefresh('./template/macastudio/common/header2.htm', './template/macastudio/common/pubsearchform2.htm', 1512010785, '11', './data/template/3_11_common_header2.tpl.php', './template/macastudio', 'common/header2')
-|| checktplrefresh('./template/macastudio/common/header2.htm', './template/default/common/header_qmenu.htm', 1512010785, '11', './data/template/3_11_common_header2.tpl.php', './template/macastudio', 'common/header2')
+|| checktplrefresh('./template/macastudio/common/header2.htm', './template/macastudio/common/header_common.htm', 1512029786, '11', './data/template/3_11_common_header2.tpl.php', './template/macastudio', 'common/header2')
+|| checktplrefresh('./template/macastudio/common/header2.htm', './template/macastudio/common/pubsearchform2.htm', 1512029786, '11', './data/template/3_11_common_header2.tpl.php', './template/macastudio', 'common/header2')
+|| checktplrefresh('./template/macastudio/common/header2.htm', './template/default/common/header_qmenu.htm', 1512029786, '11', './data/template/3_11_common_header2.tpl.php', './template/macastudio', 'common/header2')
 ;?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
