@@ -417,7 +417,7 @@ EOT;
 
 function showsubmenu($title, $menus = array(), $right = '', $replace = array()) {
 	if(empty($menus)) {
-		$s = '<div class="itemtitle">'.$right.'<h3>'.cplang($title, $replace).'</h3></div>';
+		// $s = '<div class="itemtitle">'.$right.'<h3>'.cplang($title, $replace).'</h3></div>';
 	} elseif(is_array($menus)) {
 		$s = '<div class="itemtitle">'.$right.'<h3>'.cplang($title, $replace).'</h3><ul class="tab1">';
 		foreach($menus as $k => $menu) {

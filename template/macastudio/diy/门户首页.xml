@@ -1,0 +1,2549 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="spacecss"><![CDATA[]]></item>
+	<item id="layoutdata">
+		<item id="diy_1">
+			<item id="frame`framezY55bB">
+				<item id="attr">
+					<item id="name"><![CDATA[framezY55bB]]></item>
+					<item id="moveable"><![CDATA[true]]></item>
+					<item id="className"><![CDATA[frame move-span cl frame-1]]></item>
+					<item id="titles"><![CDATA[]]></item>
+				</item>
+				<item id="column`framezY55bB_left">
+					<item id="attr">
+						<item id="name"><![CDATA[framezY55bB_left]]></item>
+						<item id="className"><![CDATA[column frame-1-c]]></item>
+					</item>
+					<item id="block`portal_block_2842">
+						<item id="attr">
+							<item id="name"><![CDATA[portal_block_2842]]></item>
+							<item id="className"><![CDATA[block move-span]]></item>
+							<item id="titles"><![CDATA[]]></item>
+						</item>
+					</item>
+				</item>
+			</item>
+		</item>
+		<item id="diy_2">
+			<item id="frame`framezoNnll">
+				<item id="attr">
+					<item id="name"><![CDATA[framezoNnll]]></item>
+					<item id="moveable"><![CDATA[true]]></item>
+					<item id="className"><![CDATA[frame move-span cl frame-1]]></item>
+					<item id="titles"><![CDATA[]]></item>
+				</item>
+				<item id="column`framezoNnll_left">
+					<item id="attr">
+						<item id="name"><![CDATA[framezoNnll_left]]></item>
+						<item id="className"><![CDATA[column frame-1-c]]></item>
+					</item>
+					<item id="block`portal_block_2843">
+						<item id="attr">
+							<item id="name"><![CDATA[portal_block_2843]]></item>
+							<item id="className"><![CDATA[block move-span]]></item>
+							<item id="titles"><![CDATA[]]></item>
+						</item>
+					</item>
+				</item>
+			</item>
+			<item id="frame`framefquxTE">
+				<item id="attr">
+					<item id="name"><![CDATA[framefquxTE]]></item>
+					<item id="moveable"><![CDATA[true]]></item>
+					<item id="className"><![CDATA[frame move-span cl frame-1]]></item>
+					<item id="titles"><![CDATA[]]></item>
+				</item>
+				<item id="column`framefquxTE_left">
+					<item id="attr">
+						<item id="name"><![CDATA[framefquxTE_left]]></item>
+						<item id="className"><![CDATA[column frame-1-c]]></item>
+					</item>
+					<item id="block`portal_block_2844">
+						<item id="attr">
+							<item id="name"><![CDATA[portal_block_2844]]></item>
+							<item id="className"><![CDATA[block move-span]]></item>
+							<item id="titles"><![CDATA[]]></item>
+						</item>
+					</item>
+				</item>
+			</item>
+		</item>
+		<item id="diy_3">
+			<item id="frame`frameNatd2I">
+				<item id="attr">
+					<item id="name"><![CDATA[frameNatd2I]]></item>
+					<item id="moveable"><![CDATA[true]]></item>
+					<item id="className"><![CDATA[frame move-span cl frame-1]]></item>
+					<item id="titles"><![CDATA[]]></item>
+				</item>
+				<item id="column`frameNatd2I_left">
+					<item id="attr">
+						<item id="name"><![CDATA[frameNatd2I_left]]></item>
+						<item id="className"><![CDATA[column frame-1-c]]></item>
+					</item>
+					<item id="block`portal_block_2845">
+						<item id="attr">
+							<item id="name"><![CDATA[portal_block_2845]]></item>
+							<item id="className"><![CDATA[block move-span]]></item>
+							<item id="titles"><![CDATA[]]></item>
+						</item>
+					</item>
+				</item>
+			</item>
+			<item id="frame`frameWFkB9s">
+				<item id="attr">
+					<item id="name"><![CDATA[frameWFkB9s]]></item>
+					<item id="moveable"><![CDATA[true]]></item>
+					<item id="className"><![CDATA[frame move-span cl frame-1]]></item>
+					<item id="titles"><![CDATA[]]></item>
+				</item>
+				<item id="column`frameWFkB9s_left">
+					<item id="attr">
+						<item id="name"><![CDATA[frameWFkB9s_left]]></item>
+						<item id="className"><![CDATA[column frame-1-c]]></item>
+					</item>
+					<item id="block`portal_block_2846">
+						<item id="attr">
+							<item id="name"><![CDATA[portal_block_2846]]></item>
+							<item id="className"><![CDATA[block move-span]]></item>
+							<item id="titles"><![CDATA[]]></item>
+						</item>
+					</item>
+				</item>
+			</item>
+			<item id="frame`frameF7tKRh">
+				<item id="attr">
+					<item id="name"><![CDATA[frameF7tKRh]]></item>
+					<item id="moveable"><![CDATA[true]]></item>
+					<item id="className"><![CDATA[frame move-span cl frame-1]]></item>
+					<item id="titles"><![CDATA[]]></item>
+				</item>
+				<item id="column`frameF7tKRh_left">
+					<item id="attr">
+						<item id="name"><![CDATA[frameF7tKRh_left]]></item>
+						<item id="className"><![CDATA[column frame-1-c]]></item>
+					</item>
+					<item id="block`portal_block_2847">
+						<item id="attr">
+							<item id="name"><![CDATA[portal_block_2847]]></item>
+							<item id="className"><![CDATA[block move-span]]></item>
+							<item id="titles"><![CDATA[]]></item>
+						</item>
+					</item>
+				</item>
+			</item>
+		</item>
+		<item id="diy_4">
+			<item id="frame`frameEQ4k44">
+				<item id="attr">
+					<item id="name"><![CDATA[frameEQ4k44]]></item>
+					<item id="moveable"><![CDATA[true]]></item>
+					<item id="className"><![CDATA[frame move-span cl frame-1]]></item>
+					<item id="titles"><![CDATA[]]></item>
+				</item>
+				<item id="column`frameEQ4k44_left">
+					<item id="attr">
+						<item id="name"><![CDATA[frameEQ4k44_left]]></item>
+						<item id="className"><![CDATA[column frame-1-c]]></item>
+					</item>
+					<item id="block`portal_block_2849">
+						<item id="attr">
+							<item id="name"><![CDATA[portal_block_2849]]></item>
+							<item id="className"><![CDATA[block move-span]]></item>
+							<item id="titles"><![CDATA[]]></item>
+						</item>
+					</item>
+				</item>
+			</item>
+		</item>
+		<item id="diy_5">
+			<item id="frame`frameXv000P">
+				<item id="attr">
+					<item id="name"><![CDATA[frameXv000P]]></item>
+					<item id="moveable"><![CDATA[true]]></item>
+					<item id="className"><![CDATA[frame move-span cl frame-1]]></item>
+					<item id="titles"><![CDATA[]]></item>
+				</item>
+				<item id="column`frameXv000P_left">
+					<item id="attr">
+						<item id="name"><![CDATA[frameXv000P_left]]></item>
+						<item id="className"><![CDATA[column frame-1-c]]></item>
+					</item>
+					<item id="block`portal_block_2848">
+						<item id="attr">
+							<item id="name"><![CDATA[portal_block_2848]]></item>
+							<item id="className"><![CDATA[block move-span]]></item>
+							<item id="titles"><![CDATA[]]></item>
+						</item>
+					</item>
+				</item>
+			</item>
+		</item>
+		<item id="diy_10">
+			<item id="frame`frameu18SsZ">
+				<item id="attr">
+					<item id="name"><![CDATA[frameu18SsZ]]></item>
+					<item id="moveable"><![CDATA[true]]></item>
+					<item id="className"><![CDATA[frame move-span cl frame-1]]></item>
+					<item id="titles"><![CDATA[]]></item>
+				</item>
+				<item id="column`frameu18SsZ_left">
+					<item id="attr">
+						<item id="name"><![CDATA[frameu18SsZ_left]]></item>
+						<item id="className"><![CDATA[column frame-1-c]]></item>
+					</item>
+					<item id="block`portal_block_2850">
+						<item id="attr">
+							<item id="name"><![CDATA[portal_block_2850]]></item>
+							<item id="className"><![CDATA[block move-span]]></item>
+							<item id="titles"><![CDATA[]]></item>
+						</item>
+					</item>
+				</item>
+			</item>
+			<item id="frame`framee7bPPI">
+				<item id="attr">
+					<item id="name"><![CDATA[framee7bPPI]]></item>
+					<item id="moveable"><![CDATA[true]]></item>
+					<item id="className"><![CDATA[frame move-span cl frame-1]]></item>
+					<item id="titles"><![CDATA[]]></item>
+				</item>
+				<item id="column`framee7bPPI_left">
+					<item id="attr">
+						<item id="name"><![CDATA[framee7bPPI_left]]></item>
+						<item id="className"><![CDATA[column frame-1-c]]></item>
+					</item>
+					<item id="block`portal_block_2851">
+						<item id="attr">
+							<item id="name"><![CDATA[portal_block_2851]]></item>
+							<item id="className"><![CDATA[block move-span]]></item>
+							<item id="titles"><![CDATA[]]></item>
+						</item>
+					</item>
+				</item>
+			</item>
+			<item id="frame`frameaSspZa">
+				<item id="attr">
+					<item id="name"><![CDATA[frameaSspZa]]></item>
+					<item id="moveable"><![CDATA[true]]></item>
+					<item id="className"><![CDATA[frame move-span cl frame-1]]></item>
+					<item id="titles"><![CDATA[]]></item>
+				</item>
+				<item id="column`frameaSspZa_left">
+					<item id="attr">
+						<item id="name"><![CDATA[frameaSspZa_left]]></item>
+						<item id="className"><![CDATA[column frame-1-c]]></item>
+					</item>
+					<item id="block`portal_block_2852">
+						<item id="attr">
+							<item id="name"><![CDATA[portal_block_2852]]></item>
+							<item id="className"><![CDATA[block move-span]]></item>
+							<item id="titles"><![CDATA[]]></item>
+						</item>
+					</item>
+				</item>
+			</item>
+			<item id="frame`framexBBGXv">
+				<item id="attr">
+					<item id="name"><![CDATA[framexBBGXv]]></item>
+					<item id="moveable"><![CDATA[true]]></item>
+					<item id="className"><![CDATA[frame move-span cl frame-1]]></item>
+					<item id="titles"><![CDATA[]]></item>
+				</item>
+				<item id="column`framexBBGXv_left">
+					<item id="attr">
+						<item id="name"><![CDATA[framexBBGXv_left]]></item>
+						<item id="className"><![CDATA[column frame-1-c]]></item>
+					</item>
+					<item id="block`portal_block_2853">
+						<item id="attr">
+							<item id="name"><![CDATA[portal_block_2853]]></item>
+							<item id="className"><![CDATA[block move-span]]></item>
+							<item id="titles"><![CDATA[]]></item>
+						</item>
+					</item>
+				</item>
+			</item>
+			<item id="tab`tabne4EgN">
+				<item id="attr">
+					<item id="name"><![CDATA[tabne4EgN]]></item>
+					<item id="moveable"><![CDATA[true]]></item>
+					<item id="className"><![CDATA[tab1 frame-tab move-span cl]]></item>
+					<item id="titles">
+						<item id="className">
+							<item id="0"><![CDATA[tab-title title column cl]]></item>
+						</item>
+						<item id="style"><![CDATA[]]></item>
+						<item id="switchType">
+							<item id="0"><![CDATA[click]]></item>
+						</item>
+					</item>
+				</item>
+				<item id="column`tabne4EgN_title">
+					<item id="attr">
+						<item id="name"><![CDATA[tabne4EgN_title]]></item>
+						<item id="className"><![CDATA[tab-title title column cl]]></item>
+					</item>
+					<item id="block`portal_block_2854">
+						<item id="attr">
+							<item id="name"><![CDATA[portal_block_2854]]></item>
+							<item id="className"><![CDATA[block move-span]]></item>
+							<item id="titles">
+								<item id="className">
+									<item id="0"><![CDATA[blocktitle title]]></item>
+								</item>
+								<item id="style"><![CDATA[]]></item>
+								<item id="first">
+									<item id="text"><![CDATA[文章排行]]></item>
+									<item id="href"><![CDATA[]]></item>
+									<item id="color"><![CDATA[]]></item>
+									<item id="float"><![CDATA[]]></item>
+									<item id="margin"><![CDATA[]]></item>
+									<item id="font-size"><![CDATA[]]></item>
+									<item id="className"><![CDATA[titletext]]></item>
+									<item id="src"><![CDATA[]]></item>
+								</item>
+							</item>
+						</item>
+					</item>
+					<item id="block`portal_block_2855">
+						<item id="attr">
+							<item id="name"><![CDATA[portal_block_2855]]></item>
+							<item id="className"><![CDATA[block move-span]]></item>
+							<item id="titles">
+								<item id="className">
+									<item id="0"><![CDATA[blocktitle title]]></item>
+								</item>
+								<item id="style"><![CDATA[]]></item>
+								<item id="first">
+									<item id="text"><![CDATA[论坛热议]]></item>
+									<item id="href"><![CDATA[]]></item>
+									<item id="color"><![CDATA[]]></item>
+									<item id="float"><![CDATA[]]></item>
+									<item id="margin"><![CDATA[]]></item>
+									<item id="font-size"><![CDATA[]]></item>
+									<item id="className"><![CDATA[titletext]]></item>
+									<item id="src"><![CDATA[]]></item>
+								</item>
+							</item>
+						</item>
+					</item>
+				</item>
+			</item>
+			<item id="frame`framezJ4Bsp">
+				<item id="attr">
+					<item id="name"><![CDATA[framezJ4Bsp]]></item>
+					<item id="moveable"><![CDATA[true]]></item>
+					<item id="className"><![CDATA[frame move-span cl frame-1]]></item>
+					<item id="titles"><![CDATA[]]></item>
+				</item>
+				<item id="column`framezJ4Bsp_left">
+					<item id="attr">
+						<item id="name"><![CDATA[framezJ4Bsp_left]]></item>
+						<item id="className"><![CDATA[column frame-1-c]]></item>
+					</item>
+					<item id="block`portal_block_3301">
+						<item id="attr">
+							<item id="name"><![CDATA[portal_block_3301]]></item>
+							<item id="className"><![CDATA[block move-span]]></item>
+							<item id="titles"><![CDATA[]]></item>
+						</item>
+					</item>
+				</item>
+			</item>
+		</item>
+		<item id="diy_11">
+			<item id="frame`framet8VHHP">
+				<item id="attr">
+					<item id="name"><![CDATA[framet8VHHP]]></item>
+					<item id="moveable"><![CDATA[true]]></item>
+					<item id="className"><![CDATA[frame move-span cl frame-1]]></item>
+					<item id="titles"><![CDATA[]]></item>
+				</item>
+				<item id="column`framet8VHHP_left">
+					<item id="attr">
+						<item id="name"><![CDATA[framet8VHHP_left]]></item>
+						<item id="className"><![CDATA[column frame-1-c]]></item>
+					</item>
+					<item id="block`portal_block_2859">
+						<item id="attr">
+							<item id="name"><![CDATA[portal_block_2859]]></item>
+							<item id="className"><![CDATA[block move-span]]></item>
+							<item id="titles"><![CDATA[]]></item>
+						</item>
+					</item>
+				</item>
+			</item>
+			<item id="frame`framei9z6n9">
+				<item id="attr">
+					<item id="name"><![CDATA[framei9z6n9]]></item>
+					<item id="moveable"><![CDATA[true]]></item>
+					<item id="className"><![CDATA[frame move-span cl frame-1]]></item>
+					<item id="titles"><![CDATA[]]></item>
+				</item>
+				<item id="column`framei9z6n9_left">
+					<item id="attr">
+						<item id="name"><![CDATA[framei9z6n9_left]]></item>
+						<item id="className"><![CDATA[column frame-1-c]]></item>
+					</item>
+					<item id="block`portal_block_2858">
+						<item id="attr">
+							<item id="name"><![CDATA[portal_block_2858]]></item>
+							<item id="className"><![CDATA[block move-span]]></item>
+							<item id="titles"><![CDATA[]]></item>
+						</item>
+					</item>
+				</item>
+			</item>
+		</item>
+		<item id="diy_12">
+			<item id="frame`frameA6nSGN">
+				<item id="attr">
+					<item id="name"><![CDATA[frameA6nSGN]]></item>
+					<item id="moveable"><![CDATA[true]]></item>
+					<item id="className"><![CDATA[frame move-span cl frame-1]]></item>
+					<item id="titles"><![CDATA[]]></item>
+				</item>
+				<item id="column`frameA6nSGN_left">
+					<item id="attr">
+						<item id="name"><![CDATA[frameA6nSGN_left]]></item>
+						<item id="className"><![CDATA[column frame-1-c]]></item>
+					</item>
+					<item id="block`portal_block_2860">
+						<item id="attr">
+							<item id="name"><![CDATA[portal_block_2860]]></item>
+							<item id="className"><![CDATA[block move-span]]></item>
+							<item id="titles"><![CDATA[]]></item>
+						</item>
+					</item>
+				</item>
+			</item>
+		</item>
+		<item id="diy_13">
+			<item id="frame`frameGqbsS8">
+				<item id="attr">
+					<item id="name"><![CDATA[frameGqbsS8]]></item>
+					<item id="moveable"><![CDATA[true]]></item>
+					<item id="className"><![CDATA[frame move-span cl frame-1]]></item>
+					<item id="titles"><![CDATA[]]></item>
+				</item>
+				<item id="column`frameGqbsS8_left">
+					<item id="attr">
+						<item id="name"><![CDATA[frameGqbsS8_left]]></item>
+						<item id="className"><![CDATA[column frame-1-c]]></item>
+					</item>
+					<item id="block`portal_block_2857">
+						<item id="attr">
+							<item id="name"><![CDATA[portal_block_2857]]></item>
+							<item id="className"><![CDATA[block move-span]]></item>
+							<item id="titles"><![CDATA[]]></item>
+						</item>
+					</item>
+				</item>
+			</item>
+		</item>
+		<item id="diy_15">
+			<item id="frame`frameCL5Jwk">
+				<item id="attr">
+					<item id="name"><![CDATA[frameCL5Jwk]]></item>
+					<item id="moveable"><![CDATA[true]]></item>
+					<item id="className"><![CDATA[frame move-span cl frame-1]]></item>
+					<item id="titles"><![CDATA[]]></item>
+				</item>
+				<item id="column`frameCL5Jwk_left">
+					<item id="attr">
+						<item id="name"><![CDATA[frameCL5Jwk_left]]></item>
+						<item id="className"><![CDATA[column frame-1-c]]></item>
+					</item>
+					<item id="block`portal_block_2861">
+						<item id="attr">
+							<item id="name"><![CDATA[portal_block_2861]]></item>
+							<item id="className"><![CDATA[block move-span]]></item>
+							<item id="titles"><![CDATA[]]></item>
+						</item>
+					</item>
+				</item>
+			</item>
+		</item>
+	</item>
+	<item id="blockdata">
+		<item id="block">
+			<item id="2842">
+				<item id="bid"><![CDATA[2842]]></item>
+				<item id="blockclass"><![CDATA[forum_thread]]></item>
+				<item id="blocktype"><![CDATA[0]]></item>
+				<item id="name"><![CDATA[门户幻灯]]></item>
+				<item id="title"><![CDATA[]]></item>
+				<item id="classname"><![CDATA[]]></item>
+				<item id="summary"><![CDATA[]]></item>
+				<item id="uid"><![CDATA[1]]></item>
+				<item id="username"><![CDATA[admin]]></item>
+				<item id="styleid"><![CDATA[0]]></item>
+				<item id="blockstyle">
+					<item id="name"><![CDATA[]]></item>
+					<item id="blockclass"><![CDATA[forum_thread]]></item>
+					<item id="makethumb"><![CDATA[1]]></item>
+					<item id="getpic"><![CDATA[1]]></item>
+					<item id="getsummary"><![CDATA[0]]></item>
+					<item id="settarget"><![CDATA[0]]></item>
+					<item id="moreurl"><![CDATA[0]]></item>
+					<item id="fields">
+						<item id="0"><![CDATA[url]]></item>
+						<item id="1"><![CDATA[pic]]></item>
+					</item>
+					<item id="template">
+						<item id="raw"><![CDATA[<div class="focusBox" style="margin:0 auto">
+			<ul class="pic">
+             [loop]
+					<li><a href="{url}" target="_blank"><img src="{pic}" width="{picwidth}" height="{picheight}" /></a></li>
+             [/loop]
+			</ul>
+			<a class="prev" href="javascript:void(0)"></a>
+			<a class="next" href="javascript:void(0)"></a>
+			<ul class="hd">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+	</div>
+
+	<script type="text/javascript">
+		/*鼠标移过，左右按钮显示*/
+		jQuery(".focusBox").hover(function(){ jQuery(this).find(".prev,.next").stop(true,true).fadeTo("show",0.2) },function(){ jQuery(this).find(".prev,.next").fadeOut() });
+		/*SuperSlide图片切换*/
+		jQuery(".focusBox").slide({ mainCell:".pic",effect:"fold", autoPlay:true, delayTime:600, trigger:"click"});
+	</script>]]></item>
+						<item id="footer"><![CDATA[]]></item>
+						<item id="header"><![CDATA[]]></item>
+						<item id="indexplus">
+						</item>
+						<item id="index">
+						</item>
+						<item id="orderplus">
+						</item>
+						<item id="order">
+						</item>
+						<item id="loopplus">
+						</item>
+						<item id="loop"><![CDATA[<li><a href="{url}" target="_blank"><img src="{pic}" width="{picwidth}" height="{picheight}" /></a></li>]]></item>
+					</item>
+					<item id="hash"><![CDATA[5357827e]]></item>
+				</item>
+				<item id="picwidth"><![CDATA[780]]></item>
+				<item id="picheight"><![CDATA[390]]></item>
+				<item id="target"><![CDATA[blank]]></item>
+				<item id="dateformat"><![CDATA[Y-m-d]]></item>
+				<item id="dateuformat"><![CDATA[0]]></item>
+				<item id="script"><![CDATA[thread]]></item>
+				<item id="param">
+					<item id="tids"><![CDATA[]]></item>
+					<item id="uids"><![CDATA[]]></item>
+					<item id="keyword"><![CDATA[]]></item>
+					<item id="tagkeyword"><![CDATA[]]></item>
+					<item id="typeids"><![CDATA[]]></item>
+					<item id="recommend"><![CDATA[0]]></item>
+					<item id="special">
+						<item id="0"><![CDATA[0]]></item>
+					</item>
+					<item id="viewmod"><![CDATA[0]]></item>
+					<item id="rewardstatus"><![CDATA[0]]></item>
+					<item id="picrequired"><![CDATA[1]]></item>
+					<item id="orderby"><![CDATA[lastpost]]></item>
+					<item id="postdateline"><![CDATA[0]]></item>
+					<item id="lastpost"><![CDATA[0]]></item>
+					<item id="highlight"><![CDATA[0]]></item>
+					<item id="titlelength"><![CDATA[40]]></item>
+					<item id="summarylength"><![CDATA[80]]></item>
+					<item id="startrow"><![CDATA[0]]></item>
+					<item id="items"><![CDATA[5]]></item>
+				</item>
+				<item id="shownum"><![CDATA[5]]></item>
+				<item id="cachetime"><![CDATA[3600]]></item>
+				<item id="cachetimerange"><![CDATA[]]></item>
+				<item id="punctualupdate"><![CDATA[0]]></item>
+				<item id="hidedisplay"><![CDATA[0]]></item>
+				<item id="dateline"><![CDATA[1506315674]]></item>
+				<item id="notinherited"><![CDATA[0]]></item>
+				<item id="isblank"><![CDATA[0]]></item>
+			</item>
+			<item id="2843">
+				<item id="bid"><![CDATA[2843]]></item>
+				<item id="blockclass"><![CDATA[forum_thread]]></item>
+				<item id="blocktype"><![CDATA[0]]></item>
+				<item id="name"><![CDATA[幻灯-right-1]]></item>
+				<item id="title"><![CDATA[]]></item>
+				<item id="classname"><![CDATA[]]></item>
+				<item id="summary"><![CDATA[]]></item>
+				<item id="uid"><![CDATA[1]]></item>
+				<item id="username"><![CDATA[admin]]></item>
+				<item id="styleid"><![CDATA[0]]></item>
+				<item id="blockstyle">
+					<item id="name"><![CDATA[]]></item>
+					<item id="blockclass"><![CDATA[forum_thread]]></item>
+					<item id="makethumb"><![CDATA[1]]></item>
+					<item id="getpic"><![CDATA[1]]></item>
+					<item id="getsummary"><![CDATA[0]]></item>
+					<item id="settarget"><![CDATA[1]]></item>
+					<item id="moreurl"><![CDATA[0]]></item>
+					<item id="fields">
+						<item id="0"><![CDATA[url]]></item>
+						<item id="1"><![CDATA[pic]]></item>
+					</item>
+					<item id="template">
+						<item id="raw"><![CDATA[<div class="module cl" style="margin: 0 0 20px 0;">
+<ul class="slideshow">
+[loop]
+<li style="width: {picwidth}px; height: {picheight}px;"><a href="{url}"{target}><img src="{pic}" width="{picwidth}" height="{picheight}" /></a></li>
+[/loop]
+</ul>
+</div>]]></item>
+						<item id="footer"><![CDATA[]]></item>
+						<item id="header"><![CDATA[]]></item>
+						<item id="indexplus">
+						</item>
+						<item id="index">
+						</item>
+						<item id="orderplus">
+						</item>
+						<item id="order">
+						</item>
+						<item id="loopplus">
+						</item>
+						<item id="loop"><![CDATA[<li style="width: {picwidth}px; height: {picheight}px;"><a href="{url}"{target}><img src="{pic}" width="{picwidth}" height="{picheight}" /></a></li>]]></item>
+					</item>
+					<item id="hash"><![CDATA[015a201a]]></item>
+				</item>
+				<item id="picwidth"><![CDATA[370]]></item>
+				<item id="picheight"><![CDATA[220]]></item>
+				<item id="target"><![CDATA[blank]]></item>
+				<item id="dateformat"><![CDATA[Y-m-d]]></item>
+				<item id="dateuformat"><![CDATA[0]]></item>
+				<item id="script"><![CDATA[thread]]></item>
+				<item id="param">
+					<item id="tids"><![CDATA[]]></item>
+					<item id="uids"><![CDATA[]]></item>
+					<item id="keyword"><![CDATA[]]></item>
+					<item id="tagkeyword"><![CDATA[]]></item>
+					<item id="typeids"><![CDATA[]]></item>
+					<item id="recommend"><![CDATA[0]]></item>
+					<item id="special">
+						<item id="0"><![CDATA[0]]></item>
+					</item>
+					<item id="viewmod"><![CDATA[0]]></item>
+					<item id="rewardstatus"><![CDATA[0]]></item>
+					<item id="picrequired"><![CDATA[1]]></item>
+					<item id="orderby"><![CDATA[lastpost]]></item>
+					<item id="postdateline"><![CDATA[0]]></item>
+					<item id="lastpost"><![CDATA[0]]></item>
+					<item id="highlight"><![CDATA[0]]></item>
+					<item id="titlelength"><![CDATA[40]]></item>
+					<item id="summarylength"><![CDATA[80]]></item>
+					<item id="startrow"><![CDATA[1]]></item>
+					<item id="items"><![CDATA[1]]></item>
+				</item>
+				<item id="shownum"><![CDATA[1]]></item>
+				<item id="cachetime"><![CDATA[3600]]></item>
+				<item id="cachetimerange"><![CDATA[]]></item>
+				<item id="punctualupdate"><![CDATA[0]]></item>
+				<item id="hidedisplay"><![CDATA[0]]></item>
+				<item id="dateline"><![CDATA[1506315633]]></item>
+				<item id="notinherited"><![CDATA[0]]></item>
+				<item id="isblank"><![CDATA[0]]></item>
+			</item>
+			<item id="2844">
+				<item id="bid"><![CDATA[2844]]></item>
+				<item id="blockclass"><![CDATA[forum_thread]]></item>
+				<item id="blocktype"><![CDATA[0]]></item>
+				<item id="name"><![CDATA[幻灯-right-2]]></item>
+				<item id="title"><![CDATA[]]></item>
+				<item id="classname"><![CDATA[]]></item>
+				<item id="summary"><![CDATA[]]></item>
+				<item id="uid"><![CDATA[1]]></item>
+				<item id="username"><![CDATA[admin]]></item>
+				<item id="styleid"><![CDATA[0]]></item>
+				<item id="blockstyle">
+					<item id="name"><![CDATA[]]></item>
+					<item id="blockclass"><![CDATA[forum_thread]]></item>
+					<item id="makethumb"><![CDATA[1]]></item>
+					<item id="getpic"><![CDATA[1]]></item>
+					<item id="getsummary"><![CDATA[0]]></item>
+					<item id="settarget"><![CDATA[1]]></item>
+					<item id="moreurl"><![CDATA[0]]></item>
+					<item id="fields">
+						<item id="0"><![CDATA[url]]></item>
+						<item id="1"><![CDATA[pic]]></item>
+						<item id="2"><![CDATA[title]]></item>
+					</item>
+					<item id="template">
+						<item id="raw"><![CDATA[<div class="s_pic cl">
+<ul style="width: 390px;">
+[loop]
+<li style="float: left; width: {picwidth}px; height: {picheight}px; margin: 0 20px 0 0; overflow: hidden;">
+	<a href="{url}"{target}><img src="{pic}" width="{picwidth}" height="{picheight}" alt="{title}" /></a>
+</li>
+[/loop]
+</ul>
+</div>]]></item>
+						<item id="footer"><![CDATA[]]></item>
+						<item id="header"><![CDATA[]]></item>
+						<item id="indexplus">
+						</item>
+						<item id="index">
+						</item>
+						<item id="orderplus">
+						</item>
+						<item id="order">
+						</item>
+						<item id="loopplus">
+						</item>
+						<item id="loop"><![CDATA[<li style="float: left; width: {picwidth}px; height: {picheight}px; margin: 0 20px 0 0; overflow: hidden;">
+	<a href="{url}"{target}><img src="{pic}" width="{picwidth}" height="{picheight}" alt="{title}" /></a>
+</li>]]></item>
+					</item>
+					<item id="hash"><![CDATA[6be735b4]]></item>
+				</item>
+				<item id="picwidth"><![CDATA[175]]></item>
+				<item id="picheight"><![CDATA[150]]></item>
+				<item id="target"><![CDATA[blank]]></item>
+				<item id="dateformat"><![CDATA[Y-m-d]]></item>
+				<item id="dateuformat"><![CDATA[0]]></item>
+				<item id="script"><![CDATA[thread]]></item>
+				<item id="param">
+					<item id="tids"><![CDATA[]]></item>
+					<item id="uids"><![CDATA[]]></item>
+					<item id="keyword"><![CDATA[]]></item>
+					<item id="tagkeyword"><![CDATA[]]></item>
+					<item id="typeids"><![CDATA[]]></item>
+					<item id="recommend"><![CDATA[0]]></item>
+					<item id="special">
+						<item id="0"><![CDATA[0]]></item>
+					</item>
+					<item id="viewmod"><![CDATA[0]]></item>
+					<item id="rewardstatus"><![CDATA[0]]></item>
+					<item id="picrequired"><![CDATA[1]]></item>
+					<item id="orderby"><![CDATA[lastpost]]></item>
+					<item id="postdateline"><![CDATA[0]]></item>
+					<item id="lastpost"><![CDATA[0]]></item>
+					<item id="highlight"><![CDATA[0]]></item>
+					<item id="titlelength"><![CDATA[40]]></item>
+					<item id="summarylength"><![CDATA[80]]></item>
+					<item id="startrow"><![CDATA[2]]></item>
+					<item id="items"><![CDATA[2]]></item>
+				</item>
+				<item id="shownum"><![CDATA[2]]></item>
+				<item id="cachetime"><![CDATA[3600]]></item>
+				<item id="cachetimerange"><![CDATA[]]></item>
+				<item id="punctualupdate"><![CDATA[0]]></item>
+				<item id="hidedisplay"><![CDATA[0]]></item>
+				<item id="dateline"><![CDATA[1506315658]]></item>
+				<item id="notinherited"><![CDATA[0]]></item>
+				<item id="isblank"><![CDATA[0]]></item>
+			</item>
+			<item id="2845">
+				<item id="bid"><![CDATA[2845]]></item>
+				<item id="blockclass"><![CDATA[forum_thread]]></item>
+				<item id="blocktype"><![CDATA[0]]></item>
+				<item id="name"><![CDATA[视频]]></item>
+				<item id="title"><![CDATA[]]></item>
+				<item id="classname"><![CDATA[]]></item>
+				<item id="summary"><![CDATA[]]></item>
+				<item id="uid"><![CDATA[1]]></item>
+				<item id="username"><![CDATA[admin]]></item>
+				<item id="styleid"><![CDATA[0]]></item>
+				<item id="blockstyle">
+					<item id="name"><![CDATA[]]></item>
+					<item id="blockclass"><![CDATA[forum_thread]]></item>
+					<item id="makethumb"><![CDATA[1]]></item>
+					<item id="getpic"><![CDATA[1]]></item>
+					<item id="getsummary"><![CDATA[0]]></item>
+					<item id="settarget"><![CDATA[1]]></item>
+					<item id="moreurl"><![CDATA[0]]></item>
+					<item id="fields">
+						<item id="0"><![CDATA[url]]></item>
+						<item id="1"><![CDATA[pic]]></item>
+						<item id="2"><![CDATA[title]]></item>
+					</item>
+					<item id="template">
+						<item id="raw"><![CDATA[<div class="box video cl">
+   <div class="cl"><h3>视频</h3></div>
+   <div class="cl" style="float: left; width: 100%; margin: 2px 0 0 0; padding: 12px 0; border-top: 1px solid #EEEEEE;">
+<ul style="width: 800px;">
+[loop]
+<li style="float: left; width: {picwidth}px; margin: 0 12px 0 0;">
+	<a href="{url}"{target}><img src="{pic}" width="{picwidth}" height="{picheight}" alt="{title}" /><em></em></a>
+</li>
+[/loop]
+</ul>
+</div>
+</div>
+]]></item>
+						<item id="footer"><![CDATA[]]></item>
+						<item id="header"><![CDATA[]]></item>
+						<item id="indexplus">
+						</item>
+						<item id="index">
+						</item>
+						<item id="orderplus">
+						</item>
+						<item id="order">
+						</item>
+						<item id="loopplus">
+						</item>
+						<item id="loop"><![CDATA[<li style="float: left; width: {picwidth}px; margin: 0 12px 0 0;">
+	<a href="{url}"{target}><img src="{pic}" width="{picwidth}" height="{picheight}" alt="{title}" /><em></em></a>
+</li>]]></item>
+					</item>
+					<item id="hash"><![CDATA[f96d5b7a]]></item>
+				</item>
+				<item id="picwidth"><![CDATA[244]]></item>
+				<item id="picheight"><![CDATA[160]]></item>
+				<item id="target"><![CDATA[blank]]></item>
+				<item id="dateformat"><![CDATA[Y-m-d]]></item>
+				<item id="dateuformat"><![CDATA[0]]></item>
+				<item id="script"><![CDATA[thread]]></item>
+				<item id="param">
+					<item id="tids"><![CDATA[]]></item>
+					<item id="uids"><![CDATA[]]></item>
+					<item id="keyword"><![CDATA[]]></item>
+					<item id="tagkeyword"><![CDATA[]]></item>
+					<item id="typeids"><![CDATA[]]></item>
+					<item id="recommend"><![CDATA[0]]></item>
+					<item id="special">
+						<item id="0"><![CDATA[0]]></item>
+					</item>
+					<item id="viewmod"><![CDATA[0]]></item>
+					<item id="rewardstatus"><![CDATA[0]]></item>
+					<item id="picrequired"><![CDATA[1]]></item>
+					<item id="orderby"><![CDATA[lastpost]]></item>
+					<item id="postdateline"><![CDATA[0]]></item>
+					<item id="lastpost"><![CDATA[0]]></item>
+					<item id="highlight"><![CDATA[0]]></item>
+					<item id="titlelength"><![CDATA[40]]></item>
+					<item id="summarylength"><![CDATA[80]]></item>
+					<item id="startrow"><![CDATA[0]]></item>
+					<item id="items"><![CDATA[3]]></item>
+				</item>
+				<item id="shownum"><![CDATA[3]]></item>
+				<item id="cachetime"><![CDATA[3600]]></item>
+				<item id="cachetimerange"><![CDATA[]]></item>
+				<item id="punctualupdate"><![CDATA[0]]></item>
+				<item id="hidedisplay"><![CDATA[0]]></item>
+				<item id="dateline"><![CDATA[1506315960]]></item>
+				<item id="notinherited"><![CDATA[0]]></item>
+				<item id="isblank"><![CDATA[0]]></item>
+			</item>
+			<item id="2846">
+				<item id="bid"><![CDATA[2846]]></item>
+				<item id="blockclass"><![CDATA[forum_thread]]></item>
+				<item id="blocktype"><![CDATA[0]]></item>
+				<item id="name"><![CDATA[新闻资讯]]></item>
+				<item id="title"><![CDATA[]]></item>
+				<item id="classname"><![CDATA[]]></item>
+				<item id="summary"><![CDATA[]]></item>
+				<item id="uid"><![CDATA[1]]></item>
+				<item id="username"><![CDATA[admin]]></item>
+				<item id="styleid"><![CDATA[0]]></item>
+				<item id="blockstyle">
+					<item id="name"><![CDATA[]]></item>
+					<item id="blockclass"><![CDATA[forum_thread]]></item>
+					<item id="makethumb"><![CDATA[1]]></item>
+					<item id="getpic"><![CDATA[1]]></item>
+					<item id="getsummary"><![CDATA[1]]></item>
+					<item id="settarget"><![CDATA[0]]></item>
+					<item id="moreurl"><![CDATA[0]]></item>
+					<item id="fields">
+						<item id="0"><![CDATA[url]]></item>
+						<item id="1"><![CDATA[pic]]></item>
+						<item id="2"><![CDATA[title]]></item>
+						<item id="3"><![CDATA[author]]></item>
+						<item id="4"><![CDATA[views]]></item>
+						<item id="5"><![CDATA[replies]]></item>
+						<item id="6"><![CDATA[summary]]></item>
+						<item id="7"><![CDATA[dateline]]></item>
+					</item>
+					<item id="template">
+						<item id="raw"><![CDATA[<div class="box cl">
+   <div class="cl" style="paddding: 0 0 12px 0; margin: 0 0 12px 0; border-bottom: 1px solid #EEEEEE;"><h3>新闻资讯</h3><span><a href="#">栏目A</a>/<a href="#">栏目B</a>/<a href="#">栏目C</a></span></div>
+   <div class="big_news">
+    [index=1]<a href="{url}">
+      <img src="{pic}" width="{picwidth}" height="{picheight}" />
+      <h2>{title}</h2>
+      <div class="cl">作者：{author}<div class="y"><em class="view">{views}</em><em class="reply">{replies}</em></div></div>
+      <p>{summary}...</p></a>
+    [/index]
+   </div>
+   
+   <div class="small_news">
+      <ul>
+       [index=2]<li>
+      <a href="{url}">
+      <div class="img_left z">
+         <img src="{pic}" width="{picwidth}" height="{picheight}" />
+         </div>
+         <div class="info">
+         {dateline}
+         <h2>{title}</h2>
+         <div class="cl">作者：{author}<div class="y"><em class="view">{views}</em><em class="reply">{replies}</em></div></div>
+         </div>
+         </a>
+         </li>[/index]
+         [index=3]<li>
+      <a href="{url}">
+      <div class="img_left z">
+         <img src="{pic}" width="{picwidth}" height="{picheight}" />
+         </div>
+         <div class="info">
+         {dateline}
+         <h2>{title}</h2>
+         <div class="cl">作者：{author}<div class="y"><em class="view">{views}</em><em class="reply">{replies}</em></div></div>
+         </div>
+         </a>
+         </li>[/index]
+         [index=4]<li>
+      <a href="{url}">
+      <div class="img_left z">
+         <img src="{pic}" width="{picwidth}" height="{picheight}" />
+         </div>
+         <div class="info">
+         {dateline}
+         <h2>{title}</h2>
+         <div class="cl">作者：{author}<div class="y"><em class="view">{views}</em><em class="reply">{replies}</em></div></div>
+         </div>
+         </a>
+         </li>[/index]
+         [index=5]<li>
+      <a href="{url}">
+      <div class="img_left z">
+         <img src="{pic}" width="{picwidth}" height="{picheight}" />
+         </div>
+         <div class="info">
+         {dateline}
+         <h2>{title}</h2>
+         <div class="cl">作者：{author}<div class="y"><em class="view">{views}</em><em class="reply">{replies}</em></div></div>
+         </div>
+         </a>
+         </li>[/index]
+         </ul>
+      </div>
+</div>]]></item>
+						<item id="footer"><![CDATA[]]></item>
+						<item id="header"><![CDATA[]]></item>
+						<item id="indexplus"><![CDATA[
+						]]></item>
+						<item id="index">
+							<item id="1"><![CDATA[<a href="{url}">
+      <img src="{pic}" width="{picwidth}" height="{picheight}" />
+      <h2>{title}</h2>
+      <div class="cl">作者：{author}<div class="y"><em class="view">{views}</em><em class="reply">{replies}</em></div></div>
+      <p>{summary}...</p></a>]]></item>
+							<item id="2"><![CDATA[<li>
+      <a href="{url}">
+      <div class="img_left z">
+         <img src="{pic}" width="{picwidth}" height="{picheight}" />
+         </div>
+         <div class="info">
+         {dateline}
+         <h2>{title}</h2>
+         <div class="cl">作者：{author}<div class="y"><em class="view">{views}</em><em class="reply">{replies}</em></div></div>
+         </div>
+         </a>
+         </li>]]></item>
+							<item id="3"><![CDATA[<li>
+      <a href="{url}">
+      <div class="img_left z">
+         <img src="{pic}" width="{picwidth}" height="{picheight}" />
+         </div>
+         <div class="info">
+         {dateline}
+         <h2>{title}</h2>
+         <div class="cl">作者：{author}<div class="y"><em class="view">{views}</em><em class="reply">{replies}</em></div></div>
+         </div>
+         </a>
+         </li>]]></item>
+							<item id="4"><![CDATA[<li>
+      <a href="{url}">
+      <div class="img_left z">
+         <img src="{pic}" width="{picwidth}" height="{picheight}" />
+         </div>
+         <div class="info">
+         {dateline}
+         <h2>{title}</h2>
+         <div class="cl">作者：{author}<div class="y"><em class="view">{views}</em><em class="reply">{replies}</em></div></div>
+         </div>
+         </a>
+         </li>]]></item>
+							<item id="5"><![CDATA[<li>
+      <a href="{url}">
+      <div class="img_left z">
+         <img src="{pic}" width="{picwidth}" height="{picheight}" />
+         </div>
+         <div class="info">
+         {dateline}
+         <h2>{title}</h2>
+         <div class="cl">作者：{author}<div class="y"><em class="view">{views}</em><em class="reply">{replies}</em></div></div>
+         </div>
+         </a>
+         </li>]]></item>
+						</item>
+						<item id="orderplus"><![CDATA[
+						]]></item>
+						<item id="order"><![CDATA[
+						]]></item>
+						<item id="loopplus"><![CDATA[
+						]]></item>
+						<item id="loop"><![CDATA[
+						]]></item>
+					</item>
+					<item id="hash"><![CDATA[6c8dc31f]]></item>
+				</item>
+				<item id="picwidth"><![CDATA[390]]></item>
+				<item id="picheight"><![CDATA[280]]></item>
+				<item id="target"><![CDATA[blank]]></item>
+				<item id="dateformat"><![CDATA[Y-m-d]]></item>
+				<item id="dateuformat"><![CDATA[0]]></item>
+				<item id="script"><![CDATA[thread]]></item>
+				<item id="param">
+					<item id="tids"><![CDATA[]]></item>
+					<item id="uids"><![CDATA[]]></item>
+					<item id="keyword"><![CDATA[]]></item>
+					<item id="tagkeyword"><![CDATA[]]></item>
+					<item id="typeids"><![CDATA[]]></item>
+					<item id="recommend"><![CDATA[0]]></item>
+					<item id="special">
+						<item id="0"><![CDATA[0]]></item>
+					</item>
+					<item id="viewmod"><![CDATA[0]]></item>
+					<item id="rewardstatus"><![CDATA[0]]></item>
+					<item id="picrequired"><![CDATA[1]]></item>
+					<item id="orderby"><![CDATA[lastpost]]></item>
+					<item id="postdateline"><![CDATA[0]]></item>
+					<item id="lastpost"><![CDATA[0]]></item>
+					<item id="highlight"><![CDATA[0]]></item>
+					<item id="titlelength"><![CDATA[40]]></item>
+					<item id="summarylength"><![CDATA[200]]></item>
+					<item id="startrow"><![CDATA[0]]></item>
+					<item id="items"><![CDATA[5]]></item>
+				</item>
+				<item id="shownum"><![CDATA[5]]></item>
+				<item id="cachetime"><![CDATA[3600]]></item>
+				<item id="cachetimerange"><![CDATA[]]></item>
+				<item id="punctualupdate"><![CDATA[0]]></item>
+				<item id="hidedisplay"><![CDATA[0]]></item>
+				<item id="dateline"><![CDATA[1506315674]]></item>
+				<item id="notinherited"><![CDATA[0]]></item>
+				<item id="isblank"><![CDATA[0]]></item>
+			</item>
+			<item id="2847">
+				<item id="bid"><![CDATA[2847]]></item>
+				<item id="blockclass"><![CDATA[forum_thread]]></item>
+				<item id="blocktype"><![CDATA[0]]></item>
+				<item id="name"><![CDATA[新闻资讯]]></item>
+				<item id="title"><![CDATA[]]></item>
+				<item id="classname"><![CDATA[]]></item>
+				<item id="summary"><![CDATA[]]></item>
+				<item id="uid"><![CDATA[1]]></item>
+				<item id="username"><![CDATA[admin]]></item>
+				<item id="styleid"><![CDATA[0]]></item>
+				<item id="blockstyle">
+					<item id="name"><![CDATA[]]></item>
+					<item id="blockclass"><![CDATA[forum_thread]]></item>
+					<item id="makethumb"><![CDATA[1]]></item>
+					<item id="getpic"><![CDATA[1]]></item>
+					<item id="getsummary"><![CDATA[1]]></item>
+					<item id="settarget"><![CDATA[0]]></item>
+					<item id="moreurl"><![CDATA[0]]></item>
+					<item id="fields">
+						<item id="0"><![CDATA[url]]></item>
+						<item id="1"><![CDATA[pic]]></item>
+						<item id="2"><![CDATA[title]]></item>
+						<item id="3"><![CDATA[author]]></item>
+						<item id="4"><![CDATA[views]]></item>
+						<item id="5"><![CDATA[replies]]></item>
+						<item id="6"><![CDATA[summary]]></item>
+						<item id="7"><![CDATA[dateline]]></item>
+					</item>
+					<item id="template">
+						<item id="raw"><![CDATA[<div class="box cl">
+   <div class="cl" style="paddding: 0 0 12px 0; margin: 0 0 12px 0; border-bottom: 1px solid #EEEEEE;"><h3>今日热门</h3><span><a href="#">栏目A</a>/<a href="#">栏目B</a>/<a href="#">栏目C</a></span></div>
+   <div class="big_news">
+    [index=1]<a href="{url}">
+      <img src="{pic}" width="{picwidth}" height="{picheight}" />
+      <h2>{title}</h2>
+      <div class="cl">作者：{author}<div class="y"><em class="view">{views}</em><em class="reply">{replies}</em></div></div>
+      <p>{summary}...</p></a>
+    [/index]
+   </div>
+   
+   <div class="small_news">
+      <ul>
+       [index=2]<li>
+      <a href="{url}">
+      <div class="img_left z">
+         <img src="{pic}" width="{picwidth}" height="{picheight}" />
+         </div>
+         <div class="info">
+         {dateline}
+         <h2>{title}</h2>
+         <div class="cl">作者：{author}<div class="y"><em class="view">{views}</em><em class="reply">{replies}</em></div></div>
+         </div>
+         </a>
+         </li>[/index]
+         [index=3]<li>
+      <a href="{url}">
+      <div class="img_left z">
+         <img src="{pic}" width="{picwidth}" height="{picheight}" />
+         </div>
+         <div class="info">
+         {dateline}
+         <h2>{title}</h2>
+         <div class="cl">作者：{author}<div class="y"><em class="view">{views}</em><em class="reply">{replies}</em></div></div>
+         </div>
+         </a>
+         </li>[/index]
+         [index=4]<li>
+      <a href="{url}">
+      <div class="img_left z">
+         <img src="{pic}" width="{picwidth}" height="{picheight}" />
+         </div>
+         <div class="info">
+         {dateline}
+         <h2>{title}</h2>
+         <div class="cl">作者：{author}<div class="y"><em class="view">{views}</em><em class="reply">{replies}</em></div></div>
+         </div>
+         </a>
+         </li>[/index]
+         [index=5]<li>
+      <a href="{url}">
+      <div class="img_left z">
+         <img src="{pic}" width="{picwidth}" height="{picheight}" />
+         </div>
+         <div class="info">
+         {dateline}
+         <h2>{title}</h2>
+         <div class="cl">作者：{author}<div class="y"><em class="view">{views}</em><em class="reply">{replies}</em></div></div>
+         </div>
+         </a>
+         </li>[/index]
+         </ul>
+      </div>
+</div>]]></item>
+						<item id="footer"><![CDATA[]]></item>
+						<item id="header"><![CDATA[]]></item>
+						<item id="indexplus"><![CDATA[
+						]]></item>
+						<item id="index">
+							<item id="1"><![CDATA[<a href="{url}">
+      <img src="{pic}" width="{picwidth}" height="{picheight}" />
+      <h2>{title}</h2>
+      <div class="cl">作者：{author}<div class="y"><em class="view">{views}</em><em class="reply">{replies}</em></div></div>
+      <p>{summary}...</p></a>]]></item>
+							<item id="2"><![CDATA[<li>
+      <a href="{url}">
+      <div class="img_left z">
+         <img src="{pic}" width="{picwidth}" height="{picheight}" />
+         </div>
+         <div class="info">
+         {dateline}
+         <h2>{title}</h2>
+         <div class="cl">作者：{author}<div class="y"><em class="view">{views}</em><em class="reply">{replies}</em></div></div>
+         </div>
+         </a>
+         </li>]]></item>
+							<item id="3"><![CDATA[<li>
+      <a href="{url}">
+      <div class="img_left z">
+         <img src="{pic}" width="{picwidth}" height="{picheight}" />
+         </div>
+         <div class="info">
+         {dateline}
+         <h2>{title}</h2>
+         <div class="cl">作者：{author}<div class="y"><em class="view">{views}</em><em class="reply">{replies}</em></div></div>
+         </div>
+         </a>
+         </li>]]></item>
+							<item id="4"><![CDATA[<li>
+      <a href="{url}">
+      <div class="img_left z">
+         <img src="{pic}" width="{picwidth}" height="{picheight}" />
+         </div>
+         <div class="info">
+         {dateline}
+         <h2>{title}</h2>
+         <div class="cl">作者：{author}<div class="y"><em class="view">{views}</em><em class="reply">{replies}</em></div></div>
+         </div>
+         </a>
+         </li>]]></item>
+							<item id="5"><![CDATA[<li>
+      <a href="{url}">
+      <div class="img_left z">
+         <img src="{pic}" width="{picwidth}" height="{picheight}" />
+         </div>
+         <div class="info">
+         {dateline}
+         <h2>{title}</h2>
+         <div class="cl">作者：{author}<div class="y"><em class="view">{views}</em><em class="reply">{replies}</em></div></div>
+         </div>
+         </a>
+         </li>]]></item>
+						</item>
+						<item id="orderplus"><![CDATA[
+						]]></item>
+						<item id="order"><![CDATA[
+						]]></item>
+						<item id="loopplus"><![CDATA[
+						]]></item>
+						<item id="loop"><![CDATA[
+						]]></item>
+					</item>
+					<item id="hash"><![CDATA[b24d2274]]></item>
+				</item>
+				<item id="picwidth"><![CDATA[390]]></item>
+				<item id="picheight"><![CDATA[280]]></item>
+				<item id="target"><![CDATA[blank]]></item>
+				<item id="dateformat"><![CDATA[Y-m-d]]></item>
+				<item id="dateuformat"><![CDATA[0]]></item>
+				<item id="script"><![CDATA[thread]]></item>
+				<item id="param">
+					<item id="tids"><![CDATA[]]></item>
+					<item id="uids"><![CDATA[]]></item>
+					<item id="keyword"><![CDATA[]]></item>
+					<item id="tagkeyword"><![CDATA[]]></item>
+					<item id="typeids"><![CDATA[]]></item>
+					<item id="recommend"><![CDATA[0]]></item>
+					<item id="special">
+						<item id="0"><![CDATA[0]]></item>
+					</item>
+					<item id="viewmod"><![CDATA[0]]></item>
+					<item id="rewardstatus"><![CDATA[0]]></item>
+					<item id="picrequired"><![CDATA[1]]></item>
+					<item id="orderby"><![CDATA[lastpost]]></item>
+					<item id="postdateline"><![CDATA[0]]></item>
+					<item id="lastpost"><![CDATA[0]]></item>
+					<item id="highlight"><![CDATA[0]]></item>
+					<item id="titlelength"><![CDATA[40]]></item>
+					<item id="summarylength"><![CDATA[200]]></item>
+					<item id="startrow"><![CDATA[1]]></item>
+					<item id="items"><![CDATA[5]]></item>
+				</item>
+				<item id="shownum"><![CDATA[5]]></item>
+				<item id="cachetime"><![CDATA[3600]]></item>
+				<item id="cachetimerange"><![CDATA[]]></item>
+				<item id="punctualupdate"><![CDATA[0]]></item>
+				<item id="hidedisplay"><![CDATA[0]]></item>
+				<item id="dateline"><![CDATA[1506315675]]></item>
+				<item id="notinherited"><![CDATA[0]]></item>
+				<item id="isblank"><![CDATA[0]]></item>
+			</item>
+			<item id="2848">
+				<item id="bid"><![CDATA[2848]]></item>
+				<item id="blockclass"><![CDATA[forum_thread]]></item>
+				<item id="blocktype"><![CDATA[0]]></item>
+				<item id="name"><![CDATA[焦点新闻]]></item>
+				<item id="title"><![CDATA[]]></item>
+				<item id="classname"><![CDATA[]]></item>
+				<item id="summary"><![CDATA[]]></item>
+				<item id="uid"><![CDATA[1]]></item>
+				<item id="username"><![CDATA[admin]]></item>
+				<item id="styleid"><![CDATA[0]]></item>
+				<item id="blockstyle">
+					<item id="name"><![CDATA[]]></item>
+					<item id="blockclass"><![CDATA[forum_thread]]></item>
+					<item id="makethumb"><![CDATA[1]]></item>
+					<item id="getpic"><![CDATA[1]]></item>
+					<item id="getsummary"><![CDATA[0]]></item>
+					<item id="settarget"><![CDATA[0]]></item>
+					<item id="moreurl"><![CDATA[0]]></item>
+					<item id="fields">
+						<item id="0"><![CDATA[forumurl]]></item>
+						<item id="1"><![CDATA[forumname]]></item>
+						<item id="2"><![CDATA[url]]></item>
+						<item id="3"><![CDATA[pic]]></item>
+						<item id="4"><![CDATA[author]]></item>
+						<item id="5"><![CDATA[dateline]]></item>
+						<item id="6"><![CDATA[title]]></item>
+						<item id="7"><![CDATA[replies]]></item>
+					</item>
+					<item id="template">
+						<item id="raw"><![CDATA[<div class="box bt cl">
+   [index=1]
+   <div class="up_Box cl">
+      <div class="img_big">
+         <div class="tag">
+            <a href="{forumurl}">{forumname}</a>
+         </div>
+         <div class="img_box1"><a href="{url}"><img src="{pic}" width="{picwidth}" height="{picheight}" /></a></div>
+         <div class="bg_shadow">作者：{author}<em>{dateline}</em></div>
+      </div>
+      <h2><a href="{url}">{title}</a></h2>
+   </div>
+   [/index]
+   <div class="small_news">
+      <ul>
+       [index=2]<li>
+      <a href="{url}">
+      <div class="img_left z">
+         <img src="{pic}" width="{picwidth}" height="{picheight}" />
+         </div>
+         <div class="info">
+         {dateline}
+         <h2>{title}</h2>
+         <div class="cl">作者：{author}<div class="y"><em class="reply">{replies}</em></div></div>
+         </div>
+         </a>
+         </li>[/index]
+         [index=3]<li>
+      <a href="{url}">
+      <div class="img_left z">
+         <img src="{pic}" width="{picwidth}" height="{picheight}" />
+         </div>
+         <div class="info">
+         {dateline}
+         <h2>{title}</h2>
+         <div class="cl">作者：{author}<div class="y"><em class="reply">{replies}</em></div></div>
+         </div>
+         </a>
+         </li>[/index]
+         [index=4]<li>
+      <a href="{url}">
+      <div class="img_left z">
+         <img src="{pic}" width="{picwidth}" height="{picheight}" />
+         </div>
+         <div class="info">
+         {dateline}
+         <h2>{title}</h2>
+         <div class="cl">作者：{author}<div class="y"><em class="reply">{replies}</em></div></div>
+         </div>
+         </a>
+         </li>[/index]
+         [index=5]<li>
+      <a href="{url}">
+      <div class="img_left z">
+         <img src="{pic}" width="{picwidth}" height="{picheight}" />
+         </div>
+         <div class="info">
+         {dateline}
+         <h2>{title}</h2>
+         <div class="cl">作者：{author}<div class="y"><em class="reply">{replies}</em></div></div>
+         </div>
+         </a>
+         </li>[/index]
+         </ul>
+      </div>
+</div>]]></item>
+						<item id="footer"><![CDATA[]]></item>
+						<item id="header"><![CDATA[]]></item>
+						<item id="indexplus">
+						</item>
+						<item id="index">
+							<item id="1"><![CDATA[<div class="up_Box cl">
+      <div class="img_big">
+         <div class="tag">
+            <a href="{forumurl}">{forumname}</a>
+         </div>
+         <div class="img_box1"><a href="{url}"><img src="{pic}" width="{picwidth}" height="{picheight}" /></a></div>
+         <div class="bg_shadow">作者：{author}<em>{dateline}</em></div>
+      </div>
+      <h2><a href="{url}">{title}</a></h2>
+   </div>]]></item>
+							<item id="2"><![CDATA[<li>
+      <a href="{url}">
+      <div class="img_left z">
+         <img src="{pic}" width="{picwidth}" height="{picheight}" />
+         </div>
+         <div class="info">
+         {dateline}
+         <h2>{title}</h2>
+         <div class="cl">作者：{author}<div class="y"><em class="reply">{replies}</em></div></div>
+         </div>
+         </a>
+         </li>]]></item>
+							<item id="3"><![CDATA[<li>
+      <a href="{url}">
+      <div class="img_left z">
+         <img src="{pic}" width="{picwidth}" height="{picheight}" />
+         </div>
+         <div class="info">
+         {dateline}
+         <h2>{title}</h2>
+         <div class="cl">作者：{author}<div class="y"><em class="reply">{replies}</em></div></div>
+         </div>
+         </a>
+         </li>]]></item>
+							<item id="4"><![CDATA[<li>
+      <a href="{url}">
+      <div class="img_left z">
+         <img src="{pic}" width="{picwidth}" height="{picheight}" />
+         </div>
+         <div class="info">
+         {dateline}
+         <h2>{title}</h2>
+         <div class="cl">作者：{author}<div class="y"><em class="reply">{replies}</em></div></div>
+         </div>
+         </a>
+         </li>]]></item>
+							<item id="5"><![CDATA[<li>
+      <a href="{url}">
+      <div class="img_left z">
+         <img src="{pic}" width="{picwidth}" height="{picheight}" />
+         </div>
+         <div class="info">
+         {dateline}
+         <h2>{title}</h2>
+         <div class="cl">作者：{author}<div class="y"><em class="reply">{replies}</em></div></div>
+         </div>
+         </a>
+         </li>]]></item>
+						</item>
+						<item id="orderplus">
+						</item>
+						<item id="order">
+						</item>
+						<item id="loopplus">
+						</item>
+						<item id="loop">
+						</item>
+					</item>
+					<item id="hash"><![CDATA[d1d84ff3]]></item>
+				</item>
+				<item id="picwidth"><![CDATA[360]]></item>
+				<item id="picheight"><![CDATA[200]]></item>
+				<item id="target"><![CDATA[blank]]></item>
+				<item id="dateformat"><![CDATA[Y-m-d]]></item>
+				<item id="dateuformat"><![CDATA[0]]></item>
+				<item id="script"><![CDATA[thread]]></item>
+				<item id="param">
+					<item id="tids"><![CDATA[]]></item>
+					<item id="uids"><![CDATA[]]></item>
+					<item id="keyword"><![CDATA[]]></item>
+					<item id="tagkeyword"><![CDATA[]]></item>
+					<item id="typeids"><![CDATA[]]></item>
+					<item id="recommend"><![CDATA[0]]></item>
+					<item id="special">
+						<item id="0"><![CDATA[0]]></item>
+					</item>
+					<item id="viewmod"><![CDATA[0]]></item>
+					<item id="rewardstatus"><![CDATA[0]]></item>
+					<item id="picrequired"><![CDATA[1]]></item>
+					<item id="orderby"><![CDATA[lastpost]]></item>
+					<item id="postdateline"><![CDATA[0]]></item>
+					<item id="lastpost"><![CDATA[0]]></item>
+					<item id="highlight"><![CDATA[0]]></item>
+					<item id="titlelength"><![CDATA[35]]></item>
+					<item id="summarylength"><![CDATA[80]]></item>
+					<item id="startrow"><![CDATA[1]]></item>
+					<item id="items"><![CDATA[5]]></item>
+				</item>
+				<item id="shownum"><![CDATA[5]]></item>
+				<item id="cachetime"><![CDATA[3600]]></item>
+				<item id="cachetimerange"><![CDATA[]]></item>
+				<item id="punctualupdate"><![CDATA[0]]></item>
+				<item id="hidedisplay"><![CDATA[0]]></item>
+				<item id="dateline"><![CDATA[1506315634]]></item>
+				<item id="notinherited"><![CDATA[0]]></item>
+				<item id="isblank"><![CDATA[0]]></item>
+			</item>
+			<item id="2849">
+				<item id="bid"><![CDATA[2849]]></item>
+				<item id="blockclass"><![CDATA[forum_thread]]></item>
+				<item id="blocktype"><![CDATA[0]]></item>
+				<item id="name"><![CDATA[焦点新闻]]></item>
+				<item id="title"><![CDATA[]]></item>
+				<item id="classname"><![CDATA[]]></item>
+				<item id="summary"><![CDATA[]]></item>
+				<item id="uid"><![CDATA[1]]></item>
+				<item id="username"><![CDATA[admin]]></item>
+				<item id="styleid"><![CDATA[0]]></item>
+				<item id="blockstyle">
+					<item id="name"><![CDATA[]]></item>
+					<item id="blockclass"><![CDATA[forum_thread]]></item>
+					<item id="makethumb"><![CDATA[1]]></item>
+					<item id="getpic"><![CDATA[1]]></item>
+					<item id="getsummary"><![CDATA[0]]></item>
+					<item id="settarget"><![CDATA[0]]></item>
+					<item id="moreurl"><![CDATA[0]]></item>
+					<item id="fields">
+						<item id="0"><![CDATA[forumurl]]></item>
+						<item id="1"><![CDATA[forumname]]></item>
+						<item id="2"><![CDATA[url]]></item>
+						<item id="3"><![CDATA[pic]]></item>
+						<item id="4"><![CDATA[author]]></item>
+						<item id="5"><![CDATA[dateline]]></item>
+						<item id="6"><![CDATA[title]]></item>
+						<item id="7"><![CDATA[replies]]></item>
+					</item>
+					<item id="template">
+						<item id="raw"><![CDATA[<div class="box bt cl">
+   [index=1]
+   <div class="up_Box cl">
+      <div class="img_big">
+         <div class="tag">
+            <a href="{forumurl}">{forumname}</a>
+         </div>
+         <div class="img_box1"><a href="{url}"><img src="{pic}" width="{picwidth}" height="{picheight}" /></a></div>
+         <div class="bg_shadow">作者：{author}<em>{dateline}</em></div>
+      </div>
+      <h2><a href="{url}">{title}</a></h2>
+   </div>
+   [/index]
+   <div class="small_news">
+      <ul>
+       [index=2]<li>
+      <a href="{url}">
+      <div class="img_left z">
+         <img src="{pic}" width="{picwidth}" height="{picheight}" />
+         </div>
+         <div class="info">
+         {dateline}
+         <h2>{title}</h2>
+         <div class="cl">作者：{author}<div class="y"><em class="reply">{replies}</em></div></div>
+         </div>
+         </a>
+         </li>[/index]
+         [index=3]<li>
+      <a href="{url}">
+      <div class="img_left z">
+         <img src="{pic}" width="{picwidth}" height="{picheight}" />
+         </div>
+         <div class="info">
+         {dateline}
+         <h2>{title}</h2>
+         <div class="cl">作者：{author}<div class="y"><em class="reply">{replies}</em></div></div>
+         </div>
+         </a>
+         </li>[/index]
+         [index=4]<li>
+      <a href="{url}">
+      <div class="img_left z">
+         <img src="{pic}" width="{picwidth}" height="{picheight}" />
+         </div>
+         <div class="info">
+         {dateline}
+         <h2>{title}</h2>
+         <div class="cl">作者：{author}<div class="y"><em class="reply">{replies}</em></div></div>
+         </div>
+         </a>
+         </li>[/index]
+         [index=5]<li>
+      <a href="{url}">
+      <div class="img_left z">
+         <img src="{pic}" width="{picwidth}" height="{picheight}" />
+         </div>
+         <div class="info">
+         {dateline}
+         <h2>{title}</h2>
+         <div class="cl">作者：{author}<div class="y"><em class="reply">{replies}</em></div></div>
+         </div>
+         </a>
+         </li>[/index]
+         </ul>
+      </div>
+</div>]]></item>
+						<item id="footer"><![CDATA[]]></item>
+						<item id="header"><![CDATA[]]></item>
+						<item id="indexplus">
+						</item>
+						<item id="index">
+							<item id="1"><![CDATA[<div class="up_Box cl">
+      <div class="img_big">
+         <div class="tag">
+            <a href="{forumurl}">{forumname}</a>
+         </div>
+         <div class="img_box1"><a href="{url}"><img src="{pic}" width="{picwidth}" height="{picheight}" /></a></div>
+         <div class="bg_shadow">作者：{author}<em>{dateline}</em></div>
+      </div>
+      <h2><a href="{url}">{title}</a></h2>
+   </div>]]></item>
+							<item id="2"><![CDATA[<li>
+      <a href="{url}">
+      <div class="img_left z">
+         <img src="{pic}" width="{picwidth}" height="{picheight}" />
+         </div>
+         <div class="info">
+         {dateline}
+         <h2>{title}</h2>
+         <div class="cl">作者：{author}<div class="y"><em class="reply">{replies}</em></div></div>
+         </div>
+         </a>
+         </li>]]></item>
+							<item id="3"><![CDATA[<li>
+      <a href="{url}">
+      <div class="img_left z">
+         <img src="{pic}" width="{picwidth}" height="{picheight}" />
+         </div>
+         <div class="info">
+         {dateline}
+         <h2>{title}</h2>
+         <div class="cl">作者：{author}<div class="y"><em class="reply">{replies}</em></div></div>
+         </div>
+         </a>
+         </li>]]></item>
+							<item id="4"><![CDATA[<li>
+      <a href="{url}">
+      <div class="img_left z">
+         <img src="{pic}" width="{picwidth}" height="{picheight}" />
+         </div>
+         <div class="info">
+         {dateline}
+         <h2>{title}</h2>
+         <div class="cl">作者：{author}<div class="y"><em class="reply">{replies}</em></div></div>
+         </div>
+         </a>
+         </li>]]></item>
+							<item id="5"><![CDATA[<li>
+      <a href="{url}">
+      <div class="img_left z">
+         <img src="{pic}" width="{picwidth}" height="{picheight}" />
+         </div>
+         <div class="info">
+         {dateline}
+         <h2>{title}</h2>
+         <div class="cl">作者：{author}<div class="y"><em class="reply">{replies}</em></div></div>
+         </div>
+         </a>
+         </li>]]></item>
+						</item>
+						<item id="orderplus">
+						</item>
+						<item id="order">
+						</item>
+						<item id="loopplus">
+						</item>
+						<item id="loop">
+						</item>
+					</item>
+					<item id="hash"><![CDATA[d1d84ff3]]></item>
+				</item>
+				<item id="picwidth"><![CDATA[360]]></item>
+				<item id="picheight"><![CDATA[200]]></item>
+				<item id="target"><![CDATA[blank]]></item>
+				<item id="dateformat"><![CDATA[Y-m-d]]></item>
+				<item id="dateuformat"><![CDATA[0]]></item>
+				<item id="script"><![CDATA[thread]]></item>
+				<item id="param">
+					<item id="tids"><![CDATA[]]></item>
+					<item id="uids"><![CDATA[]]></item>
+					<item id="keyword"><![CDATA[]]></item>
+					<item id="tagkeyword"><![CDATA[]]></item>
+					<item id="typeids"><![CDATA[]]></item>
+					<item id="recommend"><![CDATA[0]]></item>
+					<item id="special">
+						<item id="0"><![CDATA[0]]></item>
+					</item>
+					<item id="viewmod"><![CDATA[0]]></item>
+					<item id="rewardstatus"><![CDATA[0]]></item>
+					<item id="picrequired"><![CDATA[1]]></item>
+					<item id="orderby"><![CDATA[lastpost]]></item>
+					<item id="postdateline"><![CDATA[0]]></item>
+					<item id="lastpost"><![CDATA[0]]></item>
+					<item id="highlight"><![CDATA[0]]></item>
+					<item id="titlelength"><![CDATA[35]]></item>
+					<item id="summarylength"><![CDATA[80]]></item>
+					<item id="startrow"><![CDATA[0]]></item>
+					<item id="items"><![CDATA[5]]></item>
+				</item>
+				<item id="shownum"><![CDATA[5]]></item>
+				<item id="cachetime"><![CDATA[3600]]></item>
+				<item id="cachetimerange"><![CDATA[]]></item>
+				<item id="punctualupdate"><![CDATA[0]]></item>
+				<item id="hidedisplay"><![CDATA[0]]></item>
+				<item id="dateline"><![CDATA[1506315657]]></item>
+				<item id="notinherited"><![CDATA[0]]></item>
+				<item id="isblank"><![CDATA[0]]></item>
+			</item>
+			<item id="2850">
+				<item id="bid"><![CDATA[2850]]></item>
+				<item id="blockclass"><![CDATA[forum_forum]]></item>
+				<item id="blocktype"><![CDATA[0]]></item>
+				<item id="name"><![CDATA[热门板块]]></item>
+				<item id="title"><![CDATA[]]></item>
+				<item id="classname"><![CDATA[]]></item>
+				<item id="summary"><![CDATA[]]></item>
+				<item id="uid"><![CDATA[1]]></item>
+				<item id="username"><![CDATA[admin]]></item>
+				<item id="styleid"><![CDATA[0]]></item>
+				<item id="blockstyle">
+					<item id="name"><![CDATA[]]></item>
+					<item id="blockclass"><![CDATA[forum_forum]]></item>
+					<item id="makethumb"><![CDATA[0]]></item>
+					<item id="getpic"><![CDATA[0]]></item>
+					<item id="getsummary"><![CDATA[0]]></item>
+					<item id="settarget"><![CDATA[1]]></item>
+					<item id="moreurl"><![CDATA[0]]></item>
+					<item id="fields">
+						<item id="0"><![CDATA[url]]></item>
+						<item id="1"><![CDATA[title]]></item>
+						<item id="2"><![CDATA[icon]]></item>
+					</item>
+					<item id="template">
+						<item id="raw"><![CDATA[<div class="box icon_rank cl">
+<ul>
+[loop]
+<li><a href="{url}" title="{title}"{target}><img src="{icon}" width="80">{title}</a></li>
+[/loop]
+</ul>
+</div>]]></item>
+						<item id="footer"><![CDATA[]]></item>
+						<item id="header"><![CDATA[]]></item>
+						<item id="indexplus">
+						</item>
+						<item id="index">
+						</item>
+						<item id="orderplus">
+						</item>
+						<item id="order">
+						</item>
+						<item id="loopplus">
+						</item>
+						<item id="loop"><![CDATA[<li><a href="{url}" title="{title}"{target}><img src="{icon}" width="80">{title}</a></li>]]></item>
+					</item>
+					<item id="hash"><![CDATA[e21c3ada]]></item>
+				</item>
+				<item id="picwidth"><![CDATA[0]]></item>
+				<item id="picheight"><![CDATA[0]]></item>
+				<item id="target"><![CDATA[blank]]></item>
+				<item id="dateformat"><![CDATA[Y-m-d]]></item>
+				<item id="dateuformat"><![CDATA[0]]></item>
+				<item id="script"><![CDATA[forum]]></item>
+				<item id="param">
+					<item id="fids"><![CDATA[]]></item>
+					<item id="titlelength"><![CDATA[40]]></item>
+					<item id="summarylength"><![CDATA[80]]></item>
+					<item id="orderby"><![CDATA[displayorder]]></item>
+					<item id="items"><![CDATA[9]]></item>
+				</item>
+				<item id="shownum"><![CDATA[9]]></item>
+				<item id="cachetime"><![CDATA[3600]]></item>
+				<item id="cachetimerange"><![CDATA[]]></item>
+				<item id="punctualupdate"><![CDATA[0]]></item>
+				<item id="hidedisplay"><![CDATA[0]]></item>
+				<item id="dateline"><![CDATA[1506315926]]></item>
+				<item id="notinherited"><![CDATA[0]]></item>
+				<item id="isblank"><![CDATA[0]]></item>
+			</item>
+			<item id="2851">
+				<item id="bid"><![CDATA[2851]]></item>
+				<item id="blockclass"><![CDATA[html_html]]></item>
+				<item id="blocktype"><![CDATA[0]]></item>
+				<item id="name"><![CDATA[邮箱]]></item>
+				<item id="title"><![CDATA[]]></item>
+				<item id="classname"><![CDATA[]]></item>
+				<item id="summary"><![CDATA[<a href="#" target="_blank"><img src="template/elec_201701_hx_dingzhi/style/mail.png" width="100%" /></a>]]></item>
+				<item id="uid"><![CDATA[1]]></item>
+				<item id="username"><![CDATA[admin]]></item>
+				<item id="styleid"><![CDATA[0]]></item>
+				<item id="blockstyle"><![CDATA[]]></item>
+				<item id="picwidth"><![CDATA[0]]></item>
+				<item id="picheight"><![CDATA[0]]></item>
+				<item id="target"><![CDATA[blank]]></item>
+				<item id="dateformat"><![CDATA[Y-m-d]]></item>
+				<item id="dateuformat"><![CDATA[0]]></item>
+				<item id="script"><![CDATA[banner]]></item>
+				<item id="param">
+					<item id="pic"><![CDATA[template/elec_201701_hx_dingzhi/style/mail.png]]></item>
+					<item id="url"><![CDATA[#]]></item>
+					<item id="atarget"><![CDATA[_blank]]></item>
+					<item id="width"><![CDATA[100%]]></item>
+					<item id="height"><![CDATA[]]></item>
+					<item id="text"><![CDATA[]]></item>
+					<item id="items"><![CDATA[10]]></item>
+				</item>
+				<item id="shownum"><![CDATA[10]]></item>
+				<item id="cachetime"><![CDATA[0]]></item>
+				<item id="cachetimerange"><![CDATA[0,0]]></item>
+				<item id="punctualupdate"><![CDATA[0]]></item>
+				<item id="hidedisplay"><![CDATA[0]]></item>
+				<item id="dateline"><![CDATA[1505803444]]></item>
+				<item id="notinherited"><![CDATA[0]]></item>
+				<item id="isblank"><![CDATA[0]]></item>
+			</item>
+			<item id="2852">
+				<item id="bid"><![CDATA[2852]]></item>
+				<item id="blockclass"><![CDATA[html_html]]></item>
+				<item id="blocktype"><![CDATA[0]]></item>
+				<item id="name"><![CDATA[发帖]]></item>
+				<item id="title"><![CDATA[]]></item>
+				<item id="classname"><![CDATA[]]></item>
+				<item id="summary"><![CDATA[<a class="btn btn_post" onclick="showWindow('nav', this.href, 'get', 0)" href="forum.php?mod=misc&amp;action=nav"><i class="icon_post"></i>
+        <p>发布新主题</p>
+        </a>]]></item>
+				<item id="uid"><![CDATA[1]]></item>
+				<item id="username"><![CDATA[admin]]></item>
+				<item id="styleid"><![CDATA[0]]></item>
+				<item id="blockstyle"><![CDATA[]]></item>
+				<item id="picwidth"><![CDATA[0]]></item>
+				<item id="picheight"><![CDATA[0]]></item>
+				<item id="target"><![CDATA[blank]]></item>
+				<item id="dateformat"><![CDATA[Y-m-d]]></item>
+				<item id="dateuformat"><![CDATA[0]]></item>
+				<item id="script"><![CDATA[blank]]></item>
+				<item id="param">
+					<item id="content"><![CDATA[<a class=\"btn btn_post\" onclick=\"showWindow(\'nav\', this.href, \'get\', 0)\" href=\"forum.php?mod=misc&amp;action=nav\"><i class=\"icon_post\"></i>
+        <p>发布新主题</p>
+        </a>]]></item>
+					<item id="items"><![CDATA[10]]></item>
+				</item>
+				<item id="shownum"><![CDATA[10]]></item>
+				<item id="cachetime"><![CDATA[0]]></item>
+				<item id="cachetimerange"><![CDATA[0,0]]></item>
+				<item id="punctualupdate"><![CDATA[0]]></item>
+				<item id="hidedisplay"><![CDATA[0]]></item>
+				<item id="dateline"><![CDATA[1501564155]]></item>
+				<item id="notinherited"><![CDATA[0]]></item>
+				<item id="isblank"><![CDATA[0]]></item>
+			</item>
+			<item id="2853">
+				<item id="bid"><![CDATA[2853]]></item>
+				<item id="blockclass"><![CDATA[forum_thread]]></item>
+				<item id="blocktype"><![CDATA[0]]></item>
+				<item id="name"><![CDATA[活动推荐]]></item>
+				<item id="title"><![CDATA[]]></item>
+				<item id="classname"><![CDATA[]]></item>
+				<item id="summary"><![CDATA[]]></item>
+				<item id="uid"><![CDATA[1]]></item>
+				<item id="username"><![CDATA[admin]]></item>
+				<item id="styleid"><![CDATA[0]]></item>
+				<item id="blockstyle">
+					<item id="name"><![CDATA[]]></item>
+					<item id="blockclass"><![CDATA[forum_thread]]></item>
+					<item id="makethumb"><![CDATA[1]]></item>
+					<item id="getpic"><![CDATA[1]]></item>
+					<item id="getsummary"><![CDATA[0]]></item>
+					<item id="settarget"><![CDATA[1]]></item>
+					<item id="moreurl"><![CDATA[0]]></item>
+					<item id="fields">
+						<item id="0"><![CDATA[url]]></item>
+						<item id="1"><![CDATA[pic]]></item>
+						<item id="2"><![CDATA[title]]></item>
+					</item>
+					<item id="template">
+						<item id="raw"><![CDATA[<div class="event cl">
+<ul>
+[loop]
+<li style="width: {picwidth}px;">
+	<a href="{url}"{target}><img src="{pic}" width="{picwidth}" height="{picheight}" alt="{title}" /></a>
+	<div class="info"><p><a href="{url}" title="{title}"{target}>{title}</a></p><em><a href="{url}">立即报名</a></em></div>
+</li>
+[/loop]
+</ul>
+</div>]]></item>
+						<item id="footer"><![CDATA[]]></item>
+						<item id="header"><![CDATA[]]></item>
+						<item id="indexplus"><![CDATA[
+						]]></item>
+						<item id="index"><![CDATA[
+						]]></item>
+						<item id="orderplus"><![CDATA[
+						]]></item>
+						<item id="order"><![CDATA[
+						]]></item>
+						<item id="loopplus"><![CDATA[
+						]]></item>
+						<item id="loop"><![CDATA[<li style="width: {picwidth}px;">
+	<a href="{url}"{target}><img src="{pic}" width="{picwidth}" height="{picheight}" alt="{title}" /></a>
+	<div class="info"><p><a href="{url}" title="{title}"{target}>{title}</a></p><em><a href="{url}">立即报名</a></em></div>
+</li>]]></item>
+					</item>
+					<item id="hash"><![CDATA[f187fb41]]></item>
+				</item>
+				<item id="picwidth"><![CDATA[370]]></item>
+				<item id="picheight"><![CDATA[300]]></item>
+				<item id="target"><![CDATA[blank]]></item>
+				<item id="dateformat"><![CDATA[Y-m-d]]></item>
+				<item id="dateuformat"><![CDATA[0]]></item>
+				<item id="script"><![CDATA[thread]]></item>
+				<item id="param">
+					<item id="tids"><![CDATA[]]></item>
+					<item id="uids"><![CDATA[]]></item>
+					<item id="keyword"><![CDATA[]]></item>
+					<item id="tagkeyword"><![CDATA[]]></item>
+					<item id="typeids"><![CDATA[]]></item>
+					<item id="recommend"><![CDATA[0]]></item>
+					<item id="special">
+						<item id="0"><![CDATA[0]]></item>
+					</item>
+					<item id="viewmod"><![CDATA[0]]></item>
+					<item id="rewardstatus"><![CDATA[0]]></item>
+					<item id="picrequired"><![CDATA[1]]></item>
+					<item id="orderby"><![CDATA[lastpost]]></item>
+					<item id="postdateline"><![CDATA[0]]></item>
+					<item id="lastpost"><![CDATA[0]]></item>
+					<item id="highlight"><![CDATA[0]]></item>
+					<item id="titlelength"><![CDATA[15]]></item>
+					<item id="summarylength"><![CDATA[80]]></item>
+					<item id="startrow"><![CDATA[0]]></item>
+					<item id="items"><![CDATA[1]]></item>
+				</item>
+				<item id="shownum"><![CDATA[1]]></item>
+				<item id="cachetime"><![CDATA[3600]]></item>
+				<item id="cachetimerange"><![CDATA[]]></item>
+				<item id="punctualupdate"><![CDATA[0]]></item>
+				<item id="hidedisplay"><![CDATA[0]]></item>
+				<item id="dateline"><![CDATA[1506315560]]></item>
+				<item id="notinherited"><![CDATA[0]]></item>
+				<item id="isblank"><![CDATA[0]]></item>
+			</item>
+			<item id="2854">
+				<item id="bid"><![CDATA[2854]]></item>
+				<item id="blockclass"><![CDATA[portal_article]]></item>
+				<item id="blocktype"><![CDATA[0]]></item>
+				<item id="name"><![CDATA[文章排行]]></item>
+				<item id="title"><![CDATA[<div class="blocktitle title"><span class="titletext" style="float:;margin-left:px;font-size:;color: !important;">文章排行</span></div>]]></item>
+				<item id="classname"><![CDATA[]]></item>
+				<item id="summary"><![CDATA[]]></item>
+				<item id="uid"><![CDATA[1]]></item>
+				<item id="username"><![CDATA[admin]]></item>
+				<item id="styleid"><![CDATA[0]]></item>
+				<item id="blockstyle">
+					<item id="name"><![CDATA[]]></item>
+					<item id="blockclass"><![CDATA[portal_article]]></item>
+					<item id="makethumb"><![CDATA[0]]></item>
+					<item id="getpic"><![CDATA[0]]></item>
+					<item id="getsummary"><![CDATA[0]]></item>
+					<item id="settarget"><![CDATA[1]]></item>
+					<item id="moreurl"><![CDATA[0]]></item>
+					<item id="fields">
+						<item id="0"><![CDATA[url]]></item>
+						<item id="1"><![CDATA[title]]></item>
+					</item>
+					<item id="template">
+						<item id="raw"><![CDATA[<div class="ranks cl">
+<ul>
+[loop]
+<li><a href="{url}" title="{title}"{target}>{title}</a></li>
+[/loop]
+</ul>
+</div>]]></item>
+						<item id="footer"><![CDATA[]]></item>
+						<item id="header"><![CDATA[]]></item>
+						<item id="indexplus"><![CDATA[
+						]]></item>
+						<item id="index"><![CDATA[
+						]]></item>
+						<item id="orderplus"><![CDATA[
+						]]></item>
+						<item id="order"><![CDATA[
+						]]></item>
+						<item id="loopplus"><![CDATA[
+						]]></item>
+						<item id="loop"><![CDATA[<li><a href="{url}" title="{title}"{target}>{title}</a></li>]]></item>
+					</item>
+					<item id="hash"><![CDATA[9b2dcdce]]></item>
+				</item>
+				<item id="picwidth"><![CDATA[0]]></item>
+				<item id="picheight"><![CDATA[0]]></item>
+				<item id="target"><![CDATA[blank]]></item>
+				<item id="dateformat"><![CDATA[Y-m-d]]></item>
+				<item id="dateuformat"><![CDATA[0]]></item>
+				<item id="script"><![CDATA[article]]></item>
+				<item id="param">
+					<item id="aids"><![CDATA[]]></item>
+					<item id="uids"><![CDATA[]]></item>
+					<item id="keyword"><![CDATA[]]></item>
+					<item id="picrequired"><![CDATA[0]]></item>
+					<item id="starttime"><![CDATA[]]></item>
+					<item id="endtime"><![CDATA[]]></item>
+					<item id="publishdateline"><![CDATA[0]]></item>
+					<item id="titlelength"><![CDATA[40]]></item>
+					<item id="summarylength"><![CDATA[80]]></item>
+					<item id="startrow"><![CDATA[0]]></item>
+					<item id="items"><![CDATA[10]]></item>
+					<item id="tids"><![CDATA[]]></item>
+					<item id="tagkeyword"><![CDATA[]]></item>
+					<item id="typeids"><![CDATA[]]></item>
+					<item id="recommend"><![CDATA[0]]></item>
+					<item id="viewmod"><![CDATA[0]]></item>
+					<item id="rewardstatus"><![CDATA[0]]></item>
+					<item id="orderby"><![CDATA[lastpost]]></item>
+					<item id="postdateline"><![CDATA[0]]></item>
+					<item id="lastpost"><![CDATA[0]]></item>
+					<item id="highlight"><![CDATA[0]]></item>
+				</item>
+				<item id="shownum"><![CDATA[10]]></item>
+				<item id="cachetime"><![CDATA[3600]]></item>
+				<item id="cachetimerange"><![CDATA[]]></item>
+				<item id="punctualupdate"><![CDATA[0]]></item>
+				<item id="hidedisplay"><![CDATA[0]]></item>
+				<item id="dateline"><![CDATA[1506315770]]></item>
+				<item id="notinherited"><![CDATA[0]]></item>
+				<item id="isblank"><![CDATA[0]]></item>
+			</item>
+			<item id="2855">
+				<item id="bid"><![CDATA[2855]]></item>
+				<item id="blockclass"><![CDATA[forum_thread]]></item>
+				<item id="blocktype"><![CDATA[0]]></item>
+				<item id="name"><![CDATA[论坛热议]]></item>
+				<item id="title"><![CDATA[<div class="blocktitle title"><span class="titletext" style="float:;margin-left:px;font-size:;color: !important;">论坛热议</span></div>]]></item>
+				<item id="classname"><![CDATA[]]></item>
+				<item id="summary"><![CDATA[]]></item>
+				<item id="uid"><![CDATA[1]]></item>
+				<item id="username"><![CDATA[admin]]></item>
+				<item id="styleid"><![CDATA[0]]></item>
+				<item id="blockstyle">
+					<item id="name"><![CDATA[]]></item>
+					<item id="blockclass"><![CDATA[forum_thread]]></item>
+					<item id="makethumb"><![CDATA[0]]></item>
+					<item id="getpic"><![CDATA[0]]></item>
+					<item id="getsummary"><![CDATA[0]]></item>
+					<item id="settarget"><![CDATA[1]]></item>
+					<item id="moreurl"><![CDATA[0]]></item>
+					<item id="fields">
+						<item id="0"><![CDATA[url]]></item>
+						<item id="1"><![CDATA[title]]></item>
+					</item>
+					<item id="template">
+						<item id="raw"><![CDATA[<div class="ranks cl">
+<ul>
+[loop]
+<li><a href="{url}" title="{title}"{target}>{title}</a></li>
+[/loop]
+</ul>
+</div>]]></item>
+						<item id="footer"><![CDATA[]]></item>
+						<item id="header"><![CDATA[]]></item>
+						<item id="indexplus"><![CDATA[
+						]]></item>
+						<item id="index"><![CDATA[
+						]]></item>
+						<item id="orderplus"><![CDATA[
+						]]></item>
+						<item id="order"><![CDATA[
+						]]></item>
+						<item id="loopplus"><![CDATA[
+						]]></item>
+						<item id="loop"><![CDATA[<li><a href="{url}" title="{title}"{target}>{title}</a></li>]]></item>
+					</item>
+					<item id="hash"><![CDATA[cee8e5da]]></item>
+				</item>
+				<item id="picwidth"><![CDATA[0]]></item>
+				<item id="picheight"><![CDATA[0]]></item>
+				<item id="target"><![CDATA[blank]]></item>
+				<item id="dateformat"><![CDATA[Y-m-d]]></item>
+				<item id="dateuformat"><![CDATA[0]]></item>
+				<item id="script"><![CDATA[thread]]></item>
+				<item id="param">
+					<item id="tids"><![CDATA[]]></item>
+					<item id="uids"><![CDATA[]]></item>
+					<item id="keyword"><![CDATA[]]></item>
+					<item id="tagkeyword"><![CDATA[]]></item>
+					<item id="typeids"><![CDATA[]]></item>
+					<item id="recommend"><![CDATA[0]]></item>
+					<item id="viewmod"><![CDATA[0]]></item>
+					<item id="rewardstatus"><![CDATA[0]]></item>
+					<item id="picrequired"><![CDATA[0]]></item>
+					<item id="orderby"><![CDATA[lastpost]]></item>
+					<item id="postdateline"><![CDATA[0]]></item>
+					<item id="lastpost"><![CDATA[0]]></item>
+					<item id="highlight"><![CDATA[0]]></item>
+					<item id="titlelength"><![CDATA[40]]></item>
+					<item id="summarylength"><![CDATA[80]]></item>
+					<item id="startrow"><![CDATA[0]]></item>
+					<item id="items"><![CDATA[10]]></item>
+				</item>
+				<item id="shownum"><![CDATA[10]]></item>
+				<item id="cachetime"><![CDATA[3600]]></item>
+				<item id="cachetimerange"><![CDATA[]]></item>
+				<item id="punctualupdate"><![CDATA[0]]></item>
+				<item id="hidedisplay"><![CDATA[0]]></item>
+				<item id="dateline"><![CDATA[1506316909]]></item>
+				<item id="notinherited"><![CDATA[0]]></item>
+				<item id="isblank"><![CDATA[0]]></item>
+			</item>
+			<item id="2857">
+				<item id="bid"><![CDATA[2857]]></item>
+				<item id="blockclass"><![CDATA[forum_thread]]></item>
+				<item id="blocktype"><![CDATA[0]]></item>
+				<item id="name"><![CDATA[焦点4]]></item>
+				<item id="title"><![CDATA[]]></item>
+				<item id="classname"><![CDATA[]]></item>
+				<item id="summary"><![CDATA[]]></item>
+				<item id="uid"><![CDATA[1]]></item>
+				<item id="username"><![CDATA[admin]]></item>
+				<item id="styleid"><![CDATA[0]]></item>
+				<item id="blockstyle">
+					<item id="name"><![CDATA[]]></item>
+					<item id="blockclass"><![CDATA[forum_thread]]></item>
+					<item id="makethumb"><![CDATA[1]]></item>
+					<item id="getpic"><![CDATA[1]]></item>
+					<item id="getsummary"><![CDATA[0]]></item>
+					<item id="settarget"><![CDATA[1]]></item>
+					<item id="moreurl"><![CDATA[0]]></item>
+					<item id="fields">
+						<item id="0"><![CDATA[url]]></item>
+						<item id="1"><![CDATA[pic]]></item>
+						<item id="2"><![CDATA[title]]></item>
+					</item>
+					<item id="template">
+						<item id="raw"><![CDATA[<div class="focus1 cl">
+<ul>
+[loop]
+<li style="width: {picwidth}px; height: {picheight}px;">
+	<a href="{url}"{target}><img src="{pic}" width="{picwidth}" height="{picheight}" alt="{title}" /></a>
+	<p><a href="{url}" title="{title}"{target}>{title}</a></p>
+</li>
+[/loop]
+</ul>
+</div>]]></item>
+						<item id="footer"><![CDATA[]]></item>
+						<item id="header"><![CDATA[]]></item>
+						<item id="indexplus"><![CDATA[
+						]]></item>
+						<item id="index"><![CDATA[
+						]]></item>
+						<item id="orderplus"><![CDATA[
+						]]></item>
+						<item id="order"><![CDATA[
+						]]></item>
+						<item id="loopplus"><![CDATA[
+						]]></item>
+						<item id="loop"><![CDATA[<li style="width: {picwidth}px; height: {picheight}px;">
+	<a href="{url}"{target}><img src="{pic}" width="{picwidth}" height="{picheight}" alt="{title}" /></a>
+	<p><a href="{url}" title="{title}"{target}>{title}</a></p>
+</li>]]></item>
+					</item>
+					<item id="hash"><![CDATA[eb1eeaf9]]></item>
+				</item>
+				<item id="picwidth"><![CDATA[250]]></item>
+				<item id="picheight"><![CDATA[370]]></item>
+				<item id="target"><![CDATA[blank]]></item>
+				<item id="dateformat"><![CDATA[Y-m-d]]></item>
+				<item id="dateuformat"><![CDATA[0]]></item>
+				<item id="script"><![CDATA[thread]]></item>
+				<item id="param">
+					<item id="tids"><![CDATA[]]></item>
+					<item id="uids"><![CDATA[]]></item>
+					<item id="keyword"><![CDATA[]]></item>
+					<item id="tagkeyword"><![CDATA[]]></item>
+					<item id="typeids"><![CDATA[]]></item>
+					<item id="recommend"><![CDATA[0]]></item>
+					<item id="special">
+						<item id="0"><![CDATA[0]]></item>
+					</item>
+					<item id="viewmod"><![CDATA[0]]></item>
+					<item id="rewardstatus"><![CDATA[0]]></item>
+					<item id="picrequired"><![CDATA[1]]></item>
+					<item id="orderby"><![CDATA[lastpost]]></item>
+					<item id="postdateline"><![CDATA[0]]></item>
+					<item id="lastpost"><![CDATA[0]]></item>
+					<item id="highlight"><![CDATA[0]]></item>
+					<item id="titlelength"><![CDATA[40]]></item>
+					<item id="summarylength"><![CDATA[80]]></item>
+					<item id="startrow"><![CDATA[5]]></item>
+					<item id="items"><![CDATA[1]]></item>
+				</item>
+				<item id="shownum"><![CDATA[1]]></item>
+				<item id="cachetime"><![CDATA[3600]]></item>
+				<item id="cachetimerange"><![CDATA[]]></item>
+				<item id="punctualupdate"><![CDATA[0]]></item>
+				<item id="hidedisplay"><![CDATA[0]]></item>
+				<item id="dateline"><![CDATA[1506315676]]></item>
+				<item id="notinherited"><![CDATA[0]]></item>
+				<item id="isblank"><![CDATA[0]]></item>
+			</item>
+			<item id="2858">
+				<item id="bid"><![CDATA[2858]]></item>
+				<item id="blockclass"><![CDATA[forum_thread]]></item>
+				<item id="blocktype"><![CDATA[0]]></item>
+				<item id="name"><![CDATA[焦点2]]></item>
+				<item id="title"><![CDATA[]]></item>
+				<item id="classname"><![CDATA[]]></item>
+				<item id="summary"><![CDATA[]]></item>
+				<item id="uid"><![CDATA[1]]></item>
+				<item id="username"><![CDATA[admin]]></item>
+				<item id="styleid"><![CDATA[0]]></item>
+				<item id="blockstyle">
+					<item id="name"><![CDATA[]]></item>
+					<item id="blockclass"><![CDATA[forum_thread]]></item>
+					<item id="makethumb"><![CDATA[1]]></item>
+					<item id="getpic"><![CDATA[1]]></item>
+					<item id="getsummary"><![CDATA[0]]></item>
+					<item id="settarget"><![CDATA[1]]></item>
+					<item id="moreurl"><![CDATA[0]]></item>
+					<item id="fields">
+						<item id="0"><![CDATA[url]]></item>
+						<item id="1"><![CDATA[pic]]></item>
+						<item id="2"><![CDATA[title]]></item>
+					</item>
+					<item id="template">
+						<item id="raw"><![CDATA[<div class="focus1 cl">
+<ul style="width: 380px;">
+[loop]
+<li style="width: {picwidth}px; height: {picheight}px;">
+	<a href="{url}"{target}><img src="{pic}" width="{picwidth}" height="{picheight}" alt="{title}" /></a>
+	<p><a href="{url}" title="{title}"{target}>{title}</a></p>
+</li>
+[/loop]
+</ul>
+</div>]]></item>
+						<item id="footer"><![CDATA[]]></item>
+						<item id="header"><![CDATA[]]></item>
+						<item id="indexplus"><![CDATA[
+						]]></item>
+						<item id="index"><![CDATA[
+						]]></item>
+						<item id="orderplus"><![CDATA[
+						]]></item>
+						<item id="order"><![CDATA[
+						]]></item>
+						<item id="loopplus"><![CDATA[
+						]]></item>
+						<item id="loop"><![CDATA[<li style="width: {picwidth}px; height: {picheight}px;">
+	<a href="{url}"{target}><img src="{pic}" width="{picwidth}" height="{picheight}" alt="{title}" /></a>
+	<p><a href="{url}" title="{title}"{target}>{title}</a></p>
+</li>]]></item>
+					</item>
+					<item id="hash"><![CDATA[038ae2ba]]></item>
+				</item>
+				<item id="picwidth"><![CDATA[180]]></item>
+				<item id="picheight"><![CDATA[180]]></item>
+				<item id="target"><![CDATA[blank]]></item>
+				<item id="dateformat"><![CDATA[Y-m-d]]></item>
+				<item id="dateuformat"><![CDATA[0]]></item>
+				<item id="script"><![CDATA[thread]]></item>
+				<item id="param">
+					<item id="tids"><![CDATA[]]></item>
+					<item id="uids"><![CDATA[]]></item>
+					<item id="keyword"><![CDATA[]]></item>
+					<item id="tagkeyword"><![CDATA[]]></item>
+					<item id="typeids"><![CDATA[]]></item>
+					<item id="recommend"><![CDATA[0]]></item>
+					<item id="special">
+						<item id="0"><![CDATA[0]]></item>
+					</item>
+					<item id="viewmod"><![CDATA[0]]></item>
+					<item id="rewardstatus"><![CDATA[0]]></item>
+					<item id="picrequired"><![CDATA[1]]></item>
+					<item id="orderby"><![CDATA[lastpost]]></item>
+					<item id="postdateline"><![CDATA[0]]></item>
+					<item id="lastpost"><![CDATA[0]]></item>
+					<item id="highlight"><![CDATA[0]]></item>
+					<item id="titlelength"><![CDATA[40]]></item>
+					<item id="summarylength"><![CDATA[80]]></item>
+					<item id="startrow"><![CDATA[1]]></item>
+					<item id="items"><![CDATA[2]]></item>
+				</item>
+				<item id="shownum"><![CDATA[2]]></item>
+				<item id="cachetime"><![CDATA[3600]]></item>
+				<item id="cachetimerange"><![CDATA[]]></item>
+				<item id="punctualupdate"><![CDATA[0]]></item>
+				<item id="hidedisplay"><![CDATA[0]]></item>
+				<item id="dateline"><![CDATA[1506315960]]></item>
+				<item id="notinherited"><![CDATA[0]]></item>
+				<item id="isblank"><![CDATA[0]]></item>
+			</item>
+			<item id="2859">
+				<item id="bid"><![CDATA[2859]]></item>
+				<item id="blockclass"><![CDATA[forum_thread]]></item>
+				<item id="blocktype"><![CDATA[0]]></item>
+				<item id="name"><![CDATA[焦点1]]></item>
+				<item id="title"><![CDATA[]]></item>
+				<item id="classname"><![CDATA[]]></item>
+				<item id="summary"><![CDATA[]]></item>
+				<item id="uid"><![CDATA[1]]></item>
+				<item id="username"><![CDATA[admin]]></item>
+				<item id="styleid"><![CDATA[0]]></item>
+				<item id="blockstyle">
+					<item id="name"><![CDATA[]]></item>
+					<item id="blockclass"><![CDATA[forum_thread]]></item>
+					<item id="makethumb"><![CDATA[1]]></item>
+					<item id="getpic"><![CDATA[1]]></item>
+					<item id="getsummary"><![CDATA[0]]></item>
+					<item id="settarget"><![CDATA[1]]></item>
+					<item id="moreurl"><![CDATA[0]]></item>
+					<item id="fields">
+						<item id="0"><![CDATA[url]]></item>
+						<item id="1"><![CDATA[pic]]></item>
+						<item id="2"><![CDATA[title]]></item>
+					</item>
+					<item id="template">
+						<item id="raw"><![CDATA[<div class="focus1 cl">
+<ul>
+[loop]
+<li style="width: {picwidth}px; height: {picheight}px;">
+	<a href="{url}"{target}><img src="{pic}" width="{picwidth}" height="{picheight}" alt="{title}" /></a>
+	<p><a href="{url}" title="{title}"{target}>{title}</a></p>
+</li>
+[/loop]
+</ul>
+</div>]]></item>
+						<item id="footer"><![CDATA[]]></item>
+						<item id="header"><![CDATA[]]></item>
+						<item id="indexplus"><![CDATA[
+						]]></item>
+						<item id="index"><![CDATA[
+						]]></item>
+						<item id="orderplus"><![CDATA[
+						]]></item>
+						<item id="order"><![CDATA[
+						]]></item>
+						<item id="loopplus"><![CDATA[
+						]]></item>
+						<item id="loop"><![CDATA[<li style="width: {picwidth}px; height: {picheight}px;">
+	<a href="{url}"{target}><img src="{pic}" width="{picwidth}" height="{picheight}" alt="{title}" /></a>
+	<p><a href="{url}" title="{title}"{target}>{title}</a></p>
+</li>]]></item>
+					</item>
+					<item id="hash"><![CDATA[eb1eeaf9]]></item>
+				</item>
+				<item id="picwidth"><![CDATA[370]]></item>
+				<item id="picheight"><![CDATA[180]]></item>
+				<item id="target"><![CDATA[blank]]></item>
+				<item id="dateformat"><![CDATA[Y-m-d]]></item>
+				<item id="dateuformat"><![CDATA[0]]></item>
+				<item id="script"><![CDATA[thread]]></item>
+				<item id="param">
+					<item id="tids"><![CDATA[]]></item>
+					<item id="uids"><![CDATA[]]></item>
+					<item id="keyword"><![CDATA[]]></item>
+					<item id="tagkeyword"><![CDATA[]]></item>
+					<item id="typeids"><![CDATA[]]></item>
+					<item id="recommend"><![CDATA[0]]></item>
+					<item id="special">
+						<item id="0"><![CDATA[0]]></item>
+					</item>
+					<item id="viewmod"><![CDATA[0]]></item>
+					<item id="rewardstatus"><![CDATA[0]]></item>
+					<item id="picrequired"><![CDATA[1]]></item>
+					<item id="orderby"><![CDATA[lastpost]]></item>
+					<item id="postdateline"><![CDATA[0]]></item>
+					<item id="lastpost"><![CDATA[0]]></item>
+					<item id="highlight"><![CDATA[0]]></item>
+					<item id="titlelength"><![CDATA[40]]></item>
+					<item id="summarylength"><![CDATA[80]]></item>
+					<item id="startrow"><![CDATA[0]]></item>
+					<item id="items"><![CDATA[1]]></item>
+				</item>
+				<item id="shownum"><![CDATA[1]]></item>
+				<item id="cachetime"><![CDATA[3600]]></item>
+				<item id="cachetimerange"><![CDATA[]]></item>
+				<item id="punctualupdate"><![CDATA[0]]></item>
+				<item id="hidedisplay"><![CDATA[0]]></item>
+				<item id="dateline"><![CDATA[1506315769]]></item>
+				<item id="notinherited"><![CDATA[0]]></item>
+				<item id="isblank"><![CDATA[0]]></item>
+			</item>
+			<item id="2860">
+				<item id="bid"><![CDATA[2860]]></item>
+				<item id="blockclass"><![CDATA[forum_thread]]></item>
+				<item id="blocktype"><![CDATA[0]]></item>
+				<item id="name"><![CDATA[焦点3]]></item>
+				<item id="title"><![CDATA[]]></item>
+				<item id="classname"><![CDATA[]]></item>
+				<item id="summary"><![CDATA[]]></item>
+				<item id="uid"><![CDATA[1]]></item>
+				<item id="username"><![CDATA[admin]]></item>
+				<item id="styleid"><![CDATA[0]]></item>
+				<item id="blockstyle">
+					<item id="name"><![CDATA[]]></item>
+					<item id="blockclass"><![CDATA[forum_thread]]></item>
+					<item id="makethumb"><![CDATA[1]]></item>
+					<item id="getpic"><![CDATA[1]]></item>
+					<item id="getsummary"><![CDATA[0]]></item>
+					<item id="settarget"><![CDATA[1]]></item>
+					<item id="moreurl"><![CDATA[0]]></item>
+					<item id="fields">
+						<item id="0"><![CDATA[url]]></item>
+						<item id="1"><![CDATA[pic]]></item>
+						<item id="2"><![CDATA[title]]></item>
+					</item>
+					<item id="template">
+						<item id="raw"><![CDATA[<div class="focus1 cl">
+<ul>
+[loop]
+<li style="width: {picwidth}px; height: {picheight}px;">
+	<a href="{url}"{target}><img src="{pic}" width="{picwidth}" height="{picheight}" alt="{title}" /></a>
+	<p><a href="{url}" title="{title}"{target}>{title}</a></p>
+</li>
+[/loop]
+</ul>
+</div>]]></item>
+						<item id="footer"><![CDATA[]]></item>
+						<item id="header"><![CDATA[]]></item>
+						<item id="indexplus"><![CDATA[
+						]]></item>
+						<item id="index"><![CDATA[
+						]]></item>
+						<item id="orderplus"><![CDATA[
+						]]></item>
+						<item id="order"><![CDATA[
+						]]></item>
+						<item id="loopplus"><![CDATA[
+						]]></item>
+						<item id="loop"><![CDATA[<li style="width: {picwidth}px; height: {picheight}px;">
+	<a href="{url}"{target}><img src="{pic}" width="{picwidth}" height="{picheight}" alt="{title}" /></a>
+	<p><a href="{url}" title="{title}"{target}>{title}</a></p>
+</li>]]></item>
+					</item>
+					<item id="hash"><![CDATA[eb1eeaf9]]></item>
+				</item>
+				<item id="picwidth"><![CDATA[180]]></item>
+				<item id="picheight"><![CDATA[180]]></item>
+				<item id="target"><![CDATA[blank]]></item>
+				<item id="dateformat"><![CDATA[Y-m-d]]></item>
+				<item id="dateuformat"><![CDATA[0]]></item>
+				<item id="script"><![CDATA[thread]]></item>
+				<item id="param">
+					<item id="tids"><![CDATA[]]></item>
+					<item id="uids"><![CDATA[]]></item>
+					<item id="keyword"><![CDATA[]]></item>
+					<item id="tagkeyword"><![CDATA[]]></item>
+					<item id="typeids"><![CDATA[]]></item>
+					<item id="recommend"><![CDATA[0]]></item>
+					<item id="special">
+						<item id="0"><![CDATA[0]]></item>
+					</item>
+					<item id="viewmod"><![CDATA[0]]></item>
+					<item id="rewardstatus"><![CDATA[0]]></item>
+					<item id="picrequired"><![CDATA[1]]></item>
+					<item id="orderby"><![CDATA[lastpost]]></item>
+					<item id="postdateline"><![CDATA[0]]></item>
+					<item id="lastpost"><![CDATA[0]]></item>
+					<item id="highlight"><![CDATA[0]]></item>
+					<item id="titlelength"><![CDATA[40]]></item>
+					<item id="summarylength"><![CDATA[80]]></item>
+					<item id="startrow"><![CDATA[3]]></item>
+					<item id="items"><![CDATA[2]]></item>
+				</item>
+				<item id="shownum"><![CDATA[2]]></item>
+				<item id="cachetime"><![CDATA[3600]]></item>
+				<item id="cachetimerange"><![CDATA[]]></item>
+				<item id="punctualupdate"><![CDATA[0]]></item>
+				<item id="hidedisplay"><![CDATA[0]]></item>
+				<item id="dateline"><![CDATA[1506316911]]></item>
+				<item id="notinherited"><![CDATA[0]]></item>
+				<item id="isblank"><![CDATA[0]]></item>
+			</item>
+			<item id="2861">
+				<item id="bid"><![CDATA[2861]]></item>
+				<item id="blockclass"><![CDATA[forum_thread]]></item>
+				<item id="blocktype"><![CDATA[0]]></item>
+				<item id="name"><![CDATA[焦点5]]></item>
+				<item id="title"><![CDATA[]]></item>
+				<item id="classname"><![CDATA[]]></item>
+				<item id="summary"><![CDATA[]]></item>
+				<item id="uid"><![CDATA[1]]></item>
+				<item id="username"><![CDATA[admin]]></item>
+				<item id="styleid"><![CDATA[0]]></item>
+				<item id="blockstyle">
+					<item id="name"><![CDATA[]]></item>
+					<item id="blockclass"><![CDATA[forum_thread]]></item>
+					<item id="makethumb"><![CDATA[1]]></item>
+					<item id="getpic"><![CDATA[1]]></item>
+					<item id="getsummary"><![CDATA[0]]></item>
+					<item id="settarget"><![CDATA[1]]></item>
+					<item id="moreurl"><![CDATA[0]]></item>
+					<item id="fields">
+						<item id="0"><![CDATA[url]]></item>
+						<item id="1"><![CDATA[pic]]></item>
+						<item id="2"><![CDATA[title]]></item>
+					</item>
+					<item id="template">
+						<item id="raw"><![CDATA[<div class="focus1 cl">
+<ul>
+[loop]
+<li style="width: {picwidth}px; height: {picheight}px;">
+	<a href="{url}"{target}><img src="{pic}" width="{picwidth}" height="{picheight}" alt="{title}" /></a>
+	<p><a href="{url}" title="{title}"{target}>{title}</a></p>
+</li>
+[/loop]
+</ul>
+</div>]]></item>
+						<item id="footer"><![CDATA[]]></item>
+						<item id="header"><![CDATA[]]></item>
+						<item id="indexplus"><![CDATA[
+						]]></item>
+						<item id="index"><![CDATA[
+						]]></item>
+						<item id="orderplus"><![CDATA[
+						]]></item>
+						<item id="order"><![CDATA[
+						]]></item>
+						<item id="loopplus"><![CDATA[
+						]]></item>
+						<item id="loop"><![CDATA[<li style="width: {picwidth}px; height: {picheight}px;">
+	<a href="{url}"{target}><img src="{pic}" width="{picwidth}" height="{picheight}" alt="{title}" /></a>
+	<p><a href="{url}" title="{title}"{target}>{title}</a></p>
+</li>]]></item>
+					</item>
+					<item id="hash"><![CDATA[eb1eeaf9]]></item>
+				</item>
+				<item id="picwidth"><![CDATA[300]]></item>
+				<item id="picheight"><![CDATA[180]]></item>
+				<item id="target"><![CDATA[blank]]></item>
+				<item id="dateformat"><![CDATA[Y-m-d]]></item>
+				<item id="dateuformat"><![CDATA[0]]></item>
+				<item id="script"><![CDATA[thread]]></item>
+				<item id="param">
+					<item id="tids"><![CDATA[]]></item>
+					<item id="uids"><![CDATA[]]></item>
+					<item id="keyword"><![CDATA[]]></item>
+					<item id="tagkeyword"><![CDATA[]]></item>
+					<item id="typeids"><![CDATA[]]></item>
+					<item id="recommend"><![CDATA[0]]></item>
+					<item id="special">
+						<item id="0"><![CDATA[0]]></item>
+					</item>
+					<item id="viewmod"><![CDATA[0]]></item>
+					<item id="rewardstatus"><![CDATA[0]]></item>
+					<item id="picrequired"><![CDATA[1]]></item>
+					<item id="orderby"><![CDATA[lastpost]]></item>
+					<item id="postdateline"><![CDATA[0]]></item>
+					<item id="lastpost"><![CDATA[0]]></item>
+					<item id="highlight"><![CDATA[0]]></item>
+					<item id="titlelength"><![CDATA[40]]></item>
+					<item id="summarylength"><![CDATA[80]]></item>
+					<item id="startrow"><![CDATA[6]]></item>
+					<item id="items"><![CDATA[2]]></item>
+				</item>
+				<item id="shownum"><![CDATA[2]]></item>
+				<item id="cachetime"><![CDATA[3600]]></item>
+				<item id="cachetimerange"><![CDATA[]]></item>
+				<item id="punctualupdate"><![CDATA[0]]></item>
+				<item id="hidedisplay"><![CDATA[0]]></item>
+				<item id="dateline"><![CDATA[1506315676]]></item>
+				<item id="notinherited"><![CDATA[0]]></item>
+				<item id="isblank"><![CDATA[0]]></item>
+			</item>
+			<item id="3301">
+				<item id="bid"><![CDATA[3301]]></item>
+				<item id="blockclass"><![CDATA[html_html]]></item>
+				<item id="blocktype"><![CDATA[0]]></item>
+				<item id="name"><![CDATA[ad111]]></item>
+				<item id="title"><![CDATA[]]></item>
+				<item id="classname"><![CDATA[]]></item>
+				<item id="summary"><![CDATA[<a href="#" target="_blank"><img src="template/elec_201701_hx_dingzhi/style/ad/ad2.png" width="100%" /></a>]]></item>
+				<item id="uid"><![CDATA[1]]></item>
+				<item id="username"><![CDATA[admin]]></item>
+				<item id="styleid"><![CDATA[0]]></item>
+				<item id="blockstyle"><![CDATA[]]></item>
+				<item id="picwidth"><![CDATA[0]]></item>
+				<item id="picheight"><![CDATA[0]]></item>
+				<item id="target"><![CDATA[blank]]></item>
+				<item id="dateformat"><![CDATA[Y-m-d]]></item>
+				<item id="dateuformat"><![CDATA[0]]></item>
+				<item id="script"><![CDATA[banner]]></item>
+				<item id="param">
+					<item id="pic"><![CDATA[template/elec_201701_hx_dingzhi/style/ad/ad2.png]]></item>
+					<item id="url"><![CDATA[#]]></item>
+					<item id="atarget"><![CDATA[_blank]]></item>
+					<item id="width"><![CDATA[100%]]></item>
+					<item id="height"><![CDATA[]]></item>
+					<item id="text"><![CDATA[]]></item>
+					<item id="items"><![CDATA[10]]></item>
+				</item>
+				<item id="shownum"><![CDATA[10]]></item>
+				<item id="cachetime"><![CDATA[3600]]></item>
+				<item id="cachetimerange"><![CDATA[]]></item>
+				<item id="punctualupdate"><![CDATA[0]]></item>
+				<item id="hidedisplay"><![CDATA[0]]></item>
+				<item id="dateline"><![CDATA[1506315925]]></item>
+				<item id="notinherited"><![CDATA[0]]></item>
+				<item id="isblank"><![CDATA[0]]></item>
+			</item>
+		</item>
+		<item id="style">
+		</item>
+	</item>
+</root>

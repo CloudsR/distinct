@@ -563,8 +563,8 @@ a.faq { background: url(faq.gif) no-repeat 0 2px; padding:1px; margin-left:10px;
 	.pbg .xs0 { position: absolute; top: 0; right: 8px; }
 
 
-
-
+	.in-h3{ margin-top: 30px; }
+	.in_nav_list{ padding-bottom: 20px; border-bottom: 1px solid #ccc; }
 	.in_nav_list li{ float: left; width: 200px; margin-top: 30px; text-align: center;}
 	.in_nav_list li a{ font-size: 16px; color: #666; text-decoration: none; }
 	.in_nav_list li a:hover{ color: #02B9E3 }

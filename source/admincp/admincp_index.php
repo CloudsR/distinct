@@ -163,16 +163,24 @@ if($isfounder) {
 
 if($securityadvise) {
 	//showtableheader('home_security_tips', '', '', 0);
-	showtablerow('', 'class="tipsblock"', '<ul class="in_nav_list">
+	showtablerow('', 'class="tipsblock"', '<p></p>
+										<h3 class="in-h3">管理中心</h3>
+										<ul class="in_nav_list cl">
 										<li><a href="admin.php?action=blockstyle"><i class="i-icon1"></i>模板模块</a></li>
 										<li><a href="admin.php?action=makehtml"><i class="i-icon2"></i>HTML管理</a></li>
 										<li><a href="admin.php?action=templates"><i class="i-icon3"></i>模板管理</a></li>
 										<li><a href="admin.php?action=templates"><i class="i-icon4"></i>风格管理</a></li>
+										</ul>
+										<h3 class="in-h3">管理中心</h3>
+										<ul class="in_nav_list cl">
 										<li><a href="admin.php?action=templates"><i class="i-icon5"></i>用户管理</a></li>
 										<li><a href="admin.php?action=templates"><i class="i-icon6"></i>频道栏目</a></li>
 										<li><a href="admin.php?action=templates"><i class="i-icon6"></i>频道栏目</a></li>
 										<li><a href="admin.php?action=templates"><i class="i-icon6"></i>频道栏目</a></li>
 										<li><a href="admin.php?action=templates"><i class="i-icon6"></i>频道栏目</a></li>
+										</ul>
+										<h3 class="in-h3">管理中心</h3>
+										<ul class="in_nav_list cl">
 										<li><a href="admin.php?action=templates"><i class="i-icon6"></i>频道栏目</a></li>
 										<li><a href="admin.php?action=templates"><i class="i-icon6"></i>频道栏目</a></li>
 										<li><a href="admin.php?action=templates"><i class="i-icon6"></i>频道栏目</a></li>
