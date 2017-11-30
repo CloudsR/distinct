@@ -785,3 +785,5 @@
 <?PHP exit;?>	1512022815	admin	1	::1	styles	GET={}; POST={};
 <?PHP exit;?>	1512022817	admin	1	::1	nav	GET={}; POST={};
 <?PHP exit;?>	1512022817	admin	1	::1	index	GET={}; POST={};
+<?PHP exit;?>	1512027842	admin	1	::1	index	GET={frames=yes; }; POST={frames=yes; };
+<?PHP exit;?>	1512027843	admin	1	::1	index	GET={}; POST={};

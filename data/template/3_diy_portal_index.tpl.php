@@ -19,10 +19,10 @@ block_get('163,164,165,166,167,168,170,169,171,172,173,174,175,176,182,179,178,1
     <div style="float: left; width: 840px;">
          <!--[diy=diy_3]--><div id="diy_3" class="area"><div id="framevWUDcI" class="frame move-span cl frame-1"><div id="framevWUDcI_left" class="column frame-1-c"><div id="framevWUDcI_left_temp" class="move-span temp"></div><?php block_display('166');?></div></div><div id="frameH5It74" class="frame move-span cl frame-1"><div id="frameH5It74_left" class="column frame-1-c"><div id="frameH5It74_left_temp" class="move-span temp"></div><?php block_display('167');?></div></div><div id="frameE8Q75a" class="frame move-span cl frame-1"><div id="frameE8Q75a_left" class="column frame-1-c"><div id="frameE8Q75a_left_temp" class="move-span temp"></div><?php block_display('168');?></div></div></div><!--[/diy]-->
          <div class="cl">
-         <div class="cl" style="float: left; width: 380px;">
+         <div class="cl" style="float: left; width: 410px;">
          <!--[diy=diy_4]--><div id="diy_4" class="area"><div id="frameJHj7rU" class="frame move-span cl frame-1"><div id="frameJHj7rU_left" class="column frame-1-c"><div id="frameJHj7rU_left_temp" class="move-span temp"></div><?php block_display('170');?></div></div></div><!--[/diy]-->
          </div>
-         <div class="cl" style="float: right; width: 380px;">
+         <div class="cl" style="float: right; width: 410px;">
          <!--[diy=diy_5]--><div id="diy_5" class="area"><div id="frameJNcemm" class="frame move-span cl frame-1"><div id="frameJNcemm_left" class="column frame-1-c"><div id="frameJNcemm_left_temp" class="move-span temp"></div><?php block_display('169');?></div></div></div><!--[/diy]-->
          </div>
          </div>
