@@ -33,21 +33,28 @@
 			#sg li span { color:#999; }
 			.sml { background:#FFF; cursor:default; }
 			.smo { background:#E5EDF2; cursor:default; }
+			#scbar2 .search-warp input[type="text"]{ padding: 0 10px; width: 300px;}
             </style>
             <div style="display: none; position: absolute; top:37px; left:44px;" id="sg">
                 <div id="st_box" cellpadding="2" cellspacing="0"></div>
             </div>
 		<!--{/if}-->
-		<table cellspacing="0" cellpadding="0">
+		<div class="search-warp">
+				<input type="text" name="srchtxt" id="scbar_txt" value="{lang enter_content}" autocomplete="off" x-webkit-speech speech>
+				<button type="submit" name="searchsubmit" id="scbar_btn" sc="1" class="pn pnc" value="true"><strong class="xi2">{lang search}</strong></button>
+				<div class="cl"></div>
+				
+		</div>
+		<div class=""><ul id="scbar_type_menu" class="p_pop cl"><!--{echo implode('', $slist);}--></ul></div>	
+		<table cellspacing="0" cellpadding="0" style="display: none;">
 			<tr>
-                <td class="scbar_btn_td"><button type="submit" name="searchsubmit" id="scbar_btn" sc="1" class="pn pnc" value="true"><strong class="xi2">{lang search}</strong></button></td>
+               
                 <td class="scbar_type_td"><a style="display: inline-block;" href="javascript:;" id="scbar_type" class="xg1" onclick="showMenu(this.id)" hidefocus="true">{lang search}</a><i style="display: inline-block; width: 9px; margin-left: 5px;vertical-align: middle; height: 5px; background: url(../template/elec_201701_hx_dingzhi/style/a_d.png);"></i></td>
-				<td class="scbar_txt_td"><input type="text" name="srchtxt" id="scbar_txt" value="{lang enter_content}" autocomplete="off" x-webkit-speech speech /></td>
 			</tr>
 		</table>
 	</form>
 </div>
-<ul id="scbar_type_menu" class="p_pop" style="display: none;"><!--{echo implode('', $slist);}--></ul>
+<!-- <ul id="scbar_type_menu" class="p_pop" style="display: none;"><!--{echo implode('', $slist);}--></ul> -->
 <script type="text/javascript">
 	initSearchmenu('scbar', '$searchparams[url]');
 </script>

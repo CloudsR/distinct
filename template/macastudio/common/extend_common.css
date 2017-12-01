@@ -328,33 +328,33 @@ a#scbar_type.xg1{font-size:18px!important}
 #scbar_txt{border:0;width:430px;padding:0;font-size:18px;margin-left:0;background:0 0}
 .scbar_btn_td{width:40px;height:61px;padding:0;overflow:hidden;display:block;background:0 0}
 #scbar_btn{width:40px;height:61px;padding:0;overflow:hidden;text-indent:9999px;background:url({STYLEIMGDIR}
-/new_search.png) no-repeat 3px center}
+/new_search.png) no-repeat center center}
 #scbar_type{padding-left:0;text-align:center}
-#scbar_type_menu{width: auto;margin:0;border:none;box-shadow:2px 2px 3px rgba(0,0,0,.5);padding:5px;min-width:50px;text-align:center!important;z-index:20000!important;background:#FFF}
+#scbar_type_menu{width: auto;margin:0;border:none;min-width:50px;text-align:center!important;z-index:20000!important;background:#FFF}
 #scbar_type_menu.pop2 { left: 440px !important; top: 60px !important}
+#scbar_type_menu.p_pop{ box-shadow: none !important; }
 #scbar_type_menu.p_pop li{float:none}
 #scbar_type_menu.p_pop a{color:{ALLCOL}
 ;padding:3px 8px;margin:4px 0;border:0}
 #scbar_type_menu.p_pop a:hover{color:#FFF;background:{ALLCOL}}
 
 
-#scbar2{float: right;height:48px;line-height:48px;margin: 20px 0 0 0;overflow:visible; border:1px solid #B4B4B4 !important;box-shadow:none;background:0 0}
+#scbar2{float: right;height:48px;line-height:48px;margin: 5px 0 0 0;overflow:visible; box-shadow:none;background:0 0}
 #scbar2 .scbar_txt_td, #scbar2 .scbar_type_td{background:0 0}
 #scbar2 .scbar_type_td{text-align:left;width:65px!important;line-height:48px}
 #scbar2 .scbar_narrow #scbar_txt{width:430px!important}
 #scbar2 a#scbar_type.xg1{font-size:18px!important}
 #scbar2 .scbar_txt_td{width:160px!important;overflow:hidden}
-#scbar2 #scbar_txt{border:0;width:150px;padding:0;font-size:18px;margin-left:0;background:0 0}
+#scbar2 #scbar_txt{border:0;width:300px;padding:5px 10px;font-size:16px;margin-left:0;background:0 0; height: 38px; line-height: 38px; float: left;}
 #scbar2 .scbar_btn_td{width:48px;height:48px;overflow:hidden;display:block;background:0 0}
-#scbar2 #scbar_btn{width:48px;height:48px;padding:0;overflow:hidden;text-indent:9999px;background:url({STYLEIMGDIR}
-/new_search2.png) no-repeat 3px center}
+#scbar2 #scbar_btn{width:48px;height:48px;padding:0;overflow:hidden;text-indent:9999px; float: left;}
 #scbar2 a#scbar_type.xg1 { color: #CCCCCC !important}
 #scbar2 a#scbar_txt.xg1 { color: #CCCCCC !important}
+#scbar2 .search-warp{ border:1px solid #B4B4B4 !important; }
 #scbar2 #scbar_type{padding-left:0;text-align:center}
-#scbar2 #scbar_type_menu{width: auto; margin:0;border:none;box-shadow:2px 2px 3px rgba(0,0,0,.5);padding:5px;min-width:50px;text-align:center!important;z-index:20000!important;background:#FFF}
-#scbar2 #scbar_type_menu.p_pop li{float:none}
-#scbar2 #scbar_type_menu.p_pop a{color:{ALLCOL}
-;padding:3px 8px;margin:4px 0;border:0}
+#scbar2 #scbar_type_menu{width: auto; margin:0;border:none;min-width:50px;text-align:center!important;z-index:20000!important;background:#FFF}
+#scbar2 #scbar_type_menu.p_pop li{float:left; margin-right:15px; }
+#scbar2 #scbar_type_menu.p_pop a{color:{ALLCOL};padding:0px 8px;border:0; line-height:14px;}
 #scbar2 #scbar_type_menu.p_pop a:hover{color:#FFF;background:{ALLCOL}}
 
 

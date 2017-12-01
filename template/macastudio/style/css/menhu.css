@@ -82,8 +82,8 @@ a:hover { text-decoration: none}
 .icon_rank ul { width: 400px}
 .icon_rank li { float: left; width: 73px; margin: 0 20px 20px 20px; text-align: center; font-size: 15px; color: #666666}
 .icon_rank li a { color: #555555}
-.icon_rank li:hover a, .icon_rank li a:hover { color: #e35454}
-.icon_rank li img { margin-bottom: 8px; border-radius: 0; transition: all 0.5s ease 0s}
+.icon_rank li:hover a, .icon_rank li a:hover { color: #66CC99}
+.icon_rank li img { margin-bottom: 8px; border-radius: 0; transition: all 0.5s ease 0s; display: block;margin: 0 auto 8px;}
 .icon_rank li img:hover { transform:rotate(360deg)}
 
 

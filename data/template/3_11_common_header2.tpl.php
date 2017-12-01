@@ -1,8 +1,8 @@
 <?php if(!defined('IN_DISCUZ')) exit('Access Denied'); 
 0
-|| checktplrefresh('./template/macastudio/common/header2.htm', './template/macastudio/common/header_common.htm', 1512029786, '11', './data/template/3_11_common_header2.tpl.php', './template/macastudio', 'common/header2')
-|| checktplrefresh('./template/macastudio/common/header2.htm', './template/macastudio/common/pubsearchform2.htm', 1512029786, '11', './data/template/3_11_common_header2.tpl.php', './template/macastudio', 'common/header2')
-|| checktplrefresh('./template/macastudio/common/header2.htm', './template/default/common/header_qmenu.htm', 1512029786, '11', './data/template/3_11_common_header2.tpl.php', './template/macastudio', 'common/header2')
+|| checktplrefresh('./template/macastudio/common/header2.htm', './template/macastudio/common/header_common.htm', 1512121841, '11', './data/template/3_11_common_header2.tpl.php', './template/macastudio', 'common/header2')
+|| checktplrefresh('./template/macastudio/common/header2.htm', './template/macastudio/common/pubsearchform2.htm', 1512121841, '11', './data/template/3_11_common_header2.tpl.php', './template/macastudio', 'common/header2')
+|| checktplrefresh('./template/macastudio/common/header2.htm', './template/default/common/header_qmenu.htm', 1512121841, '11', './data/template/3_11_common_header2.tpl.php', './template/macastudio', 'common/header2')
 ;?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -215,21 +215,28 @@ EOF;
 #sg li span { color:#999; }
 .sml { background:#FFF; cursor:default; }
 .smo { background:#E5EDF2; cursor:default; }
+#scbar2 .search-warp input[type="text"]{ padding: 0 10px; width: 300px;}
             </style>
             <div style="display: none; position: absolute; top:37px; left:44px;" id="sg">
                 <div id="st_box" cellpadding="2" cellspacing="0"></div>
             </div>
 <?php } ?>
-<table cellspacing="0" cellpadding="0">
+<div class="search-warp">
+<input type="text" name="srchtxt" id="scbar_txt" value="请输入搜索内容" autocomplete="off" x-webkit-speech speech>
+<button type="submit" name="searchsubmit" id="scbar_btn" sc="1" class="pn pnc" value="true"><strong class="xi2">搜索</strong></button>
+<div class="cl"></div>
+
+</div>
+<div class=""><ul id="scbar_type_menu" class="p_pop cl"><?php echo implode('', $slist);; ?></ul></div>	
+<table cellspacing="0" cellpadding="0" style="display: none;">
 <tr>
-                <td class="scbar_btn_td"><button type="submit" name="searchsubmit" id="scbar_btn" sc="1" class="pn pnc" value="true"><strong class="xi2">搜索</strong></button></td>
+               
                 <td class="scbar_type_td"><a style="display: inline-block;" href="javascript:;" id="scbar_type" class="xg1" onclick="showMenu(this.id)" hidefocus="true">搜索</a><i style="display: inline-block; width: 9px; margin-left: 5px;vertical-align: middle; height: 5px; background: url(../template/elec_201701_hx_dingzhi/style/a_d.png);"></i></td>
-<td class="scbar_txt_td"><input type="text" name="srchtxt" id="scbar_txt" value="请输入搜索内容" autocomplete="off" x-webkit-speech speech /></td>
 </tr>
 </table>
 </form>
 </div>
-<ul id="scbar_type_menu" class="p_pop" style="display: none;"><?php echo implode('', $slist);; ?></ul>
+<!-- <ul id="scbar_type_menu" class="p_pop" style="display: none;"><?php echo implode('', $slist);; ?></ul> -->
 <script type="text/javascript">
 initSearchmenu('scbar', '<?php echo $searchparams['url'];?>');
 </script>
