@@ -221,3 +221,20 @@ a:hover { text-decoration: none}
 
 
 .news li { margin: 5px; font-size: 18px; line-height: 30px}
+
+
+.hot-act .baoming{position: absolute; float: right; width: auto; bottom: 60px;}
+
+#act-list{ position: relative; }
+#act-list .hot-img{ float: left;; }
+#act-list .hot-act{ float: right; width: 450px; padding-right: 30px; }
+#act-list li p:hover{ color: #66CC99;}
+.hot-act .baoming{position: inherit; float: right; width: auto;}
+.hot-act h4{ margin-top: 15px; font-size:20px; }
+.hot-act p{font-size: 14px; line-height: 22px; margin-top: 20px; margin-bottom: 15px; position: inherit;}
+.hot-act .baoming a{ display: block;
+    float: right;
+    padding: 10px 20px;
+    background: #66CC99;
+    text-decoration: none;
+    color: #fff;}

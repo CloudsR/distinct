@@ -32,9 +32,9 @@ a:hover { text-decoration: none}
 
 
 .box { margin-bottom: 20px; background: #FFFFFF}
-.box h3{ float: left; font-size: 24px; line-height: 25px; padding-left: 10px; margin: 15px 10px 15px 0; border-left: 3px solid #444444; color: #444444; font-weight: 400}
-.box span { float: right; line-height: 58px; font-size: 16px; color: #666666}
-.box span a { margin: 0 15px; color: #666666}
+.box h3{ float: left; font-size: 20px; line-height: 25px; padding-left: 10px; margin: 15px 10px 15px 0; border-left: 3px solid #444444; color: #444444; font-weight: 400}
+.box span { float: right; line-height: 58px; font-size: 12px; color: #666666}
+.box span a { margin: 0 10px; color: #666666}
 .video li { position: relative; float: left; width: 244px; height: 160px; margin: 0 !important; overflow: hidden}
 .video li em { display: none; position: absolute; left: 95px; top: 60px; width: 48px; height: 48px; transition: all 0.5s ease 0s; background: url(../play1.png) no-repeat 0 0}
 .video li:hover em { display: block}
@@ -221,3 +221,20 @@ a:hover { text-decoration: none}
 
 
 .news li { margin: 5px; font-size: 18px; line-height: 30px}
+
+
+.hot-act .baoming{position: absolute; float: right; width: auto; bottom: 60px;}
+
+#act-list{ position: relative; }
+#act-list .hot-img{ float: left;; }
+#act-list .hot-act{ float: right; width: 450px; padding-right: 30px; }
+#act-list li p:hover{ color: #66CC99;}
+.hot-act .baoming{position: inherit; float: right; width: auto;}
+.hot-act h4{ margin-top: 15px; font-size:20px; }
+.hot-act p{font-size: 14px; line-height: 22px; margin-top: 20px; margin-bottom: 15px; position: inherit;}
+.hot-act .baoming a{ display: block;
+    float: right;
+    padding: 10px 20px;
+    background: #66CC99;
+    text-decoration: none;
+    color: #fff;}

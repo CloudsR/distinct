@@ -74,7 +74,7 @@ Shenzhen.Eleccom Technology.使用原代码请联系作者QQ: 2300184378 / 2017-
 .box_1 .bm_c { padding: 0 30px}
 
 .pn { min-width: 50px; border: 0 !important}
-.pnpost .pn, .pns .pn { color: #FFFFFF; background: #3ca5f6 !important}
+.pnpost .pn, .pns .pn { color: #FFFFFF; background: #66cc99 !important}
 
 .bm_h { border-color: #E6E6E6}
 .tag_box { position:relative;width:100%;height:30px;margin-bottom:20px;border-bottom:1px solid #F0F0F0}
@@ -178,8 +178,8 @@ Shenzhen.Eleccom Technology.使用原代码请联系作者QQ: 2300184378 / 2017-
 .lg_box .log a {
     position: relative;
     color: #fff;
-	height: 40px;
-	line-height: 40px;
+    height: 40px;
+    line-height: 40px;
     text-align: center;
     z-index: 10;
 }
@@ -618,33 +618,43 @@ a#scbar_type.xg1{font-size:18px!important}
 
 
 .xfs_2{ float: left; width: 840px; margin-top: 30px;}
-.xfs_1{ float: right; width: 320px; padding: 0 10px; margin-top: 30px; background: #fafafa;}
+.xfs_1{ float: right; width: 320px; padding: 0 10px;  background: #fafafa;}
 .xfs_2  h3{ font-size: 20px; padding-left: 15px; border-left: 3px solid #66CC99; height: 25px }
-.act_news{margin-bottom: 20px;}
-.act_news li h4{ font-size: 18px; }
-.act_news li{ float: left; width: 240px; padding: 10px 13px; transition: all 300ms ease-out}
-.act_news li:hover{ box-shadow:1px 1px 10px rgba(0,0,0,.3); }
-.act_news li .img1{ margin: 10px 0;}
-.act_news li span{ display: block; margin-top: 10px; }
-.act_news li p{ margin-top: 10px; line-height: 22px; }
-.act_news .baoming a{ display: block;  float: right;  padding: 10px 20px; background: #66CC99; text-decoration: none; color: #fff;}
-.act_news .baoming a:hover{ background: #7be0ad; color: #fff;}
-.act_news li a:hover{ color: #7be0ad; }
+.event .act_news{margin-bottom: 20px; width: 840px !important;}
+.event .act_news li{ margin:0; }
+.event .act_news li h3{font-size:18px; width: auto;}
+.event .act_news li h4{ font-size: 18px; }
+.event .act_news li{ float: left; width: 255px; padding: 10px 12px; transition: all 300ms ease-out}
+.event .act_news li:hover{ box-shadow:1px 1px 10px rgba(0,0,0,.3); }
+.event .act_news li .img1{ width: auto; }
+.event .act_news li span{ display: block; margin-top: 10px; }
+.event .act_news li p{ line-height: 22px; font-size:13px; width: auto;  height: 70px; overflow: hidden;}
+.event .act_news .baoming{ width: auto; line-height: inherit;}
+.event .act_news .baoming a{ display: block;  float: right; font-size: 15px;  padding: 10px 20px; background: #66CC99; text-decoration: none; color: #fff;}
+.event .act_news .baoming a:hover{ background: #7be0ad; color: #fff;}
+.event .act_news li .info1{ height: 210px; overflow: hidden; }
+.event .act_news li a:hover{ color: #7be0ad; }
 .xfs_1 h3{ font-size: 20px; padding-left: 15px; border-left: 3px solid #66CC99; }
-.xfs_1 .zhuanti{  }
+.xfs_1 .zhuanti{  background: none;}
 .xfs_1 .zhuanti ul li{ height: 80px; overflow: hidden; }
 .xfs_1 .zhuanti ul li .imgs{width: 100px; height: 100px; float: left;}
 .xfs_1 .zhuanti ul li .imgs img{width: 100px; height: 80px;}
-.xfs_1 .zhuanti ul li p{ float: left; margin-left: 10px; width: 203px; }
+.xfs_1 .zhuanti ul li p{ float: left; margin-left: 10px; width: 203px;  padding: 0; font-size: 14px; border:none;}
+.xfs_1 .zhuanti ul li p a:hover{ color: #66cc99 }
 #act-list{ position: relative; }
 #act-list .hot-img{ float: left;; }
 #act-list .hot-act{ float: right; width: 450px; padding-right: 30px; }
 #act-list li p:hover{ color: #66CC99;}
 .hot-act h4{ margin-top: 15px; font-size:20px; }
 .hot-act p{font-size: 14px; line-height: 22px; margin-top: 20px; margin-bottom: 15px;}
+.hot-act .baoming{
+    height: inherit; line-height: inherit;  margin-top: 30px; 
+}
 .hot-act .baoming a{ display: block;
     float: right;
     padding: 10px 20px;
     background: #66CC99;
     text-decoration: none;
-    color: #fff;}
+    color: #fff;
+}
+    .xfs_1 .box{ background: none; }

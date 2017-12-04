@@ -1505,6 +1505,7 @@ a.progressCancel { display: block; float: right; width: 14px; height: 14px; back
 .frame, .frame-tab { margin-bottom: 10px; border: 1px solid {WRAPBORDERCOLOR}; background: {WRAPBG}; }
 	.title { padding: 0 10px; height: 32px; font-size: 14px; font-weight: 700; line-height: 32px; overflow: hidden; }
 		.frame-title, .frametitle, .tab-title { background: {COMMONBG} url({IMGDIR}/title.png) repeat-x 0 100%; }
+		 .tab-title { background:none; }
 
 	/* 新的框架结构 */
 	.frame-1-1-l, .frame-1-1-1-l, .frame-1-1-1-c, .frame-2-1-l, .frame-1-2-l, .frame-3-1-l, .frame-1-3-l { float: left; }
@@ -1551,7 +1552,7 @@ a.progressCancel { display: block; float: right; width: 14px; height: 14px; back
 			.frame-tab .tb li, .frame-tab .tb li a { -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; border-top: none; background: transparent none; }
 				* html .frame-tab .tb li a { float: left; }
 				.frame-tab .tb .a a { background: #FFF; font-weight: 700; }
-		.frame-tab .tb-c { padding: 10px 16px; }
+		/*.frame-tab .tb-c { padding: 10px 16px; }*/
 
 .block { margin: 10px 10px 0; }
 	.frame-1-2 .sd .block, .col-l .block, .frame-2-1 .mn .block, .frame-1-1-1 .col-c .block, .frame-1-3 .sd .block, .frame-3-1 .mn .block { margin-right: 10px; }

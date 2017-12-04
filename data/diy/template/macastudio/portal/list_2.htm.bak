@@ -13,7 +13,7 @@
 <div class="cl" style="padding: 20px 0; margin: 20px 0 0 0; background: #FFFFFF;">
    <div class="wp cl">
       <div style="float: left; width: 630px;">
-      <!--[diy=diy_1]--><div id="diy_1" class="area"></div><!--[/diy]-->
+      <!--[diy=diy_1]--><div id="diy_1" class="area"><div id="frameP41BRQ" class="frame move-span cl frame-1"><div id="frameP41BRQ_left" class="column frame-1-c"><div id="frameP41BRQ_left_temp" class="move-span temp"></div><!--{block/229}--></div></div></div><!--[/diy]-->
       </div>
       <div style="float: right; width: 530px;">
       <!--[diy=diy_2]--><div id="diy_2" class="area"></div><!--[/diy]-->
@@ -21,21 +21,21 @@
    </div>
 </div>
 <div class="wp cl">
- <div style="float: left; width: 780px;">
-      <!--[diy=diy_3]--><div id="diy_3" class="area"></div><!--[/diy]-->
+ <div style="float: left; width: 840px;">
+      <!--[diy=diy_3]--><div id="diy_3" class="area"><div id="frameBN7LTF" class="frame move-span cl frame-1"><div id="frameBN7LTF_left" class="column frame-1-c"><div id="frameBN7LTF_left_temp" class="move-span temp"></div><!--{block/228}--></div></div></div><!--[/diy]-->
       </div>
-      <div style="float: right; width: 370px;">
-         <!--[diy=diy_10]--><div id="diy_10" class="area"></div><!--[/diy]-->
+      <div style="float: right; width: 340px;">
+         <!--[diy=diy_10]--><div id="diy_10" class="area"><div id="frameEwyNfc" class="xfs xfs_1 frame move-span cl frame-1"><div id="frameEwyNfc_left" class="column frame-1-c"><div id="frameEwyNfc_left_temp" class="move-span temp"></div><!--{block/236}--><!--{block/232}--></div></div></div><!--[/diy]-->
       </div>
 </div>
 <div class="wp cl">
 <!--[diy=diy_11]--><div id="diy_11" class="area"></div><!--[/diy]-->
 </div>
 <div class="wp cl">
- <div style="float: left; width: 780px;">
+ <div style="float: left; width: 840px;">
       <!--[diy=diy_12]--><div id="diy_12" class="area"></div><!--[/diy]-->
       </div>
-      <div style="float: right; width: 370px;">
+      <div style="float: right; width: 340px;">
          <!--[diy=diy_13]--><div id="diy_13" class="area"></div><!--[/diy]-->
       </div>
 </div>
